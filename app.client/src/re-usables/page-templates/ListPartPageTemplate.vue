@@ -33,7 +33,7 @@
                                 </WTd>
                                 <slot :name="`tbody-${index-1}`"></slot>
                             </WTr>
-                             <slot name="summaryRow"></slot>
+                            <slot name="summaryRow"></slot>
                         </tbody>
                     </table>
                     <!---->
@@ -67,7 +67,7 @@
     const WTd = defineAsyncComponent(() => import('@/re-usables/components/Table/Td.vue'))
     const WTh = defineAsyncComponent(() => import('@/re-usables/components/Table/Th.vue'))
     import { useRouter } from 'vue-router'
-    import {EllipsisVerticalIcon, ChevronDoubleDownIcon } from '@heroicons/vue/24/outline'
+    import { EllipsisVerticalIcon, ChevronDoubleDownIcon } from '@heroicons/vue/24/outline'
     export default {
         components: { WTd, WTr, WTh, FiltersBar, ListActionsBar, FormActionsBar, WButton, EllipsisVerticalIcon, ChevronDoubleDownIcon, WCheckbox },
         props: {
@@ -103,8 +103,10 @@
             }
         },
         methods: {
-            FnFetchData() {
-                var url = this.appConfig.baseApiRoute + this.pageProps.controller + '/' + this.indexFn + this.filter;
+            FnFetchData(url = "") {
+                if (url == "") {
+                    url = this.appConfig.baseApiRoute + this.pageProps.controller + '/' + this.indexFn + this.filter;
+                }
                 if (!this.isLoadingMore) {
                     this.isFetchingData = true;
                 }
@@ -138,9 +140,9 @@
                     if (this.filter == "") {
                         this.filterQuery = '?';
                     } else {
-                        this.filterQuery = this.filter +'&';
+                        this.filterQuery = this.filter + '&';
                     }
-                    this.filterQuery = this.filterQuery+"order_by=" + actionParams.colName + "___" + actionParams.actionValue + "__order_by";
+                    this.filterQuery = this.filterQuery + "order_by=" + actionParams.colName + "___" + actionParams.actionValue + "__order_by";
                 } else {
                     if (this.filterQuery.indexOf("order_by=") > 0) {
                         var mySubString = this.filterQuery.substring(this.filterQuery.indexOf("order_by="), this.filterQuery.lastIndexOf("__order_by"));
@@ -159,9 +161,9 @@
                     if (this.filter == "") {
                         this.filterQuery = '?';
                     } else {
-                        this.filterQuery = this.filter +'&';
+                        this.filterQuery = this.filter + '&';
                     }
-                    this.filterQuery = this.filterQuery+'filter=any___' + this.search + "__filter";
+                    this.filterQuery = this.filterQuery + 'filter=any___' + this.search + "__filter";
                 } else {
                     if (this.filter == "") {
                         this.filterQuery = '?';
@@ -170,7 +172,7 @@
                     }
                     this.filterQuery = this.filterQuery;
                 }
-                this.FnFetchData(this.appConfig.baseApiRoute + this.pageProps.controller + '/index'+ this.filterQuery);
+                this.FnFetchData(this.appConfig.baseApiRoute + this.pageProps.controller + '/index' + this.filterQuery);
             },
             FnFieldCellClass(fieldProps, value) {
                 if (fieldProps.CellStyleIf != undefined && fieldProps.CellStyleIf[value] != null) {
@@ -203,18 +205,18 @@
                         if (this.filter == "") {
                             this.filterQuery = '?';
                         } else {
-                            this.filterQuery = this.filter+'&';
+                            this.filterQuery = this.filter + '&';
                         }
-                        this.filterQuery = this.filterQuery+'filter=any___' + this.search;
+                        this.filterQuery = this.filterQuery + 'filter=any___' + this.search;
                     }
                     for (let i = 0; i < newFilters.length; i++) {
                         if (this.filterQuery == "") {
                             if (this.filter == "") {
                                 this.filterQuery = '?';
                             } else {
-                                this.filterQuery = this.filter+'&';
+                                this.filterQuery = this.filter + '&';
                             }
-                            this.filterQuery = this.filterQuery+"filter=" + newFilters[i].field + "___" + newFilters[i].value;
+                            this.filterQuery = this.filterQuery + "filter=" + newFilters[i].field + "___" + newFilters[i].value;
                         } else {
                             this.filterQuery = this.filterQuery + "&&" + newFilters[i].field + "___" + newFilters[i].value;
                         }
@@ -227,7 +229,7 @@
                     } else {
                         this.filterQuery = this.filter;
                     }
-                    this.FnFetchData(this.appConfig.baseApiRoute + this.pageProps.controller + '/index'+this.filterQuery);
+                    this.FnFetchData(this.appConfig.baseApiRoute + this.pageProps.controller + '/index' + this.filterQuery);
                 }
             },
             FnOnResetFilters() {
@@ -289,7 +291,7 @@
             FnGetPkeyHeaderValue(record) {
                 var value;
                 /*var pKeys = this.pageProps.pKeyHeader.split("+");
-                
+
                 if (pKeys.length <= 1) {
                     value = record[this.pageProps.pKeyHeader]
                 } else {
@@ -308,9 +310,9 @@
                         this.filterQuery = '?';
                     } else {
 
-                        this.filterQuery = this.filter+'&';
+                        this.filterQuery = this.filter + '&';
                     }
-                    this.filterQuery = this.filterQuery+"take_max=" + this.newRecordsLimit + "__take_max";
+                    this.filterQuery = this.filterQuery + "take_max=" + this.newRecordsLimit + "__take_max";
                 } else {
                     if (this.filterQuery.indexOf("take_max=") > 0) {
                         var currentMax = this.filterQuery.substring(this.filterQuery.indexOf("take_max="), this.filterQuery.lastIndexOf("__take_max"));
@@ -325,7 +327,7 @@
                 this.$root.loader = { isLoading: true, message: '' };
                 var deleteCount = this.selectedRows.length;
                 for (let i = 0; i < this.selectedRows.length; i++) {
-                    var obj = this.records[this.selectedRows[i]-1];
+                    var obj = this.records[this.selectedRows[i] - 1];
                     const requestOptions = {
                         method: "POST",
                         headers: { 'Content-Type': "application/json" },
@@ -353,7 +355,7 @@
                 this.$root.FnNotification(deleteCount + " record(s) deleted successfully.", "bg-green-600", false);
             },
             FnDeleteSingle(recIndex) {
-                if(!confirm("Are you sure you want to delete this document?")){return}
+                if (!confirm("Are you sure you want to delete this document?")) { return }
                 this.$root.loader = { isLoading: true, message: '' };
                 var deleteCount = this.selectedRows.length;
                 var obj = this.records[recIndex];
@@ -379,8 +381,8 @@
                         var msg = this.appConfig.errors.dataDeletionFailure;
                         this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                     });
-            this.selectedRows = [];
-            this.$root.FnNotification(deleteCount + " record(s) deleted successfully.", "bg-green-600", false);
+                this.selectedRows = [];
+                this.$root.FnNotification(deleteCount + " record(s) deleted successfully.", "bg-green-600", false);
             },
             FnEdit(recIndex) {
                 this.router.push(this.pageProps.formRoute + "/edit/" + this.records[recIndex][this.pageProps.keys.recKey]);

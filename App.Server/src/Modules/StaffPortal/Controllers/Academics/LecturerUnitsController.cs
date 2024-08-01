@@ -28,7 +28,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 }
                 dynamic response = new ExpandoObject();
 
-                var baseQuery = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).PgLecturerUnitsDetails
+                var baseQuery = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).QyLecturerUnitDetails
                     //.Where(obj => obj.Lecturer == GeneralController.SessionUser(HttpContext).userNo)
                     .Where(obj => obj.Semester == semester)
                     .AsQueryable();
@@ -41,7 +41,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 else
                 {
                     ClassProperties clsProps = new ClassProperties();
-                    PgLecturersList ModelInstance = new PgLecturersList();
+                    QyLecturerUnitDetails ModelInstance = new QyLecturerUnitDetails();
                     clsProps.WSName = ModelInstance.GetType().Name;
                     clsProps.WSInstance = ModelInstance;
                     List<object> baseResults = new List<object>(baseQuery);

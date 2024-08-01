@@ -1,13 +1,15 @@
 <template>
-    <div v-if="actionsProps.scope == undefined || actionsProps.scope == 'singleRecord'" :class="[pageProps.pageType == 'list'? 'flex-col':'flex-col sm:flex-row','flex gap-0.5']">
-        <WButton v-if="pageProps.pageType == 'form' && formData.myAction != 'view'" class="!bg-blue-500 rounded-sm" @click="OnSubmit('save')"><CheckIcon class="iconSmall" />Save</WButton>
+    <div :class="[pageProps.pageType == 'list'? 'flex-col':'flex-row sm:flex-row','flex gap-0.5 bg-red-500']">
+        <!--<WRouterLink :to="`/ess/academics/student-unit/list?semester=${record.Semester.replaceAll('/','__')}&programme=${record.Code.replaceAll('/','__')}&unit=${record.Unit.replaceAll('/','__')}`" class="flex items-center !bg-blue-500" title="Edit"><PencilSquareIcon class="iconSmall" /><span> Assign Marks</span></WRouterLink>-->
+        <WRouterLink :to="`/ess/academics/student-unit/list?semester=${encodeURIComponent(record.Semester)}&programme=${encodeURIComponent(record.Code)}&unit=${encodeURIComponent(record.Unit)}`" class="flex items-center !bg-blue-500" title="Edit"><PencilSquareIcon class="iconSmall" /><span> Assign Marks</span></WRouterLink>
+        <!--<WButton v-if="pageProps.pageType == 'form' && formData.myAction != 'view'" class="!bg-blue-500 rounded-sm" @click="OnSubmit('save')"><CheckIcon class="iconSmall" />Save</WButton>
         <WButton v-if="record.Status != undefined && pageProps.pageType == 'form' && formData.myAction != 'view'" class="!bg-green-500 rounded-sm" @click="OnSubmit('submit')"><CheckIcon class="iconSmall" />Save & Send for Approval</WButton>
         <WRouterLink :to="pageProps.formRoute+'/edit?parentId='+record[pageProps.keys.parentKey]+'&recId='+record[pageProps.keys.recKey]" v-if="record.Status != undefined && record.Status == 'Open' && $route.params.action != 'edit'" class="flex items-center !bg-blue-500" title="Edit"><PencilSquareIcon class="iconSmall" /><span> Edit</span></WRouterLink>
         <WRouterLink :to="pageProps.formRoute+'/view?parentId='+record[pageProps.keys.parentKey]+'&recId='+record[pageProps.keys.recKey]" v-if="record[pageProps.keys.recKey] != undefined && $route.params.action != 'view' && pageProps.pageType == 'list'" class="flex items-center !bg-gray-500" title="View"><EyeIcon class="iconSmall" /><span> View</span></WRouterLink>
         <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Open'" @click="OnDeleteRecord()" class="flex items-center !bg-red-500" title="delete"><TrashIcon class="iconSmall" /><span> Delete</span></WButton>
         <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Pending Approval'" @click="OnCancelApproval('staffClaim')" class="flex items-center !bg-red-500" title="cancel"><ArrowUturnLeftIcon class="iconSmall" /><span> Cancel Approval</span></WButton>
         <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Pending Approval'" @click="OnDelegateApproval('staffClaim')" class="flex items-center !bg-yellow-500" title="delegate"><DocumentIcon class="iconSmall" /><span> Delegate Approval</span></WButton>
-        <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Released'" @click="OnViewReport()" class="flex items-center !bg-green-500" title="delegate"><PrinterIcon class="iconSmall" /><span> Report</span></WButton>
+        <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Released'" @click="OnViewReport()" class="flex items-center !bg-green-500" title="delegate"><PrinterIcon class="iconSmall" /><span> Report</span></WButton>-->
     </div>
 </template>
 <script>

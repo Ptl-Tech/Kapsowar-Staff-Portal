@@ -39,8 +39,6 @@ namespace App.Server.src.Modules.ESS.Controllers
                     QyImprestHeaders ModelInstance = new QyImprestHeaders();
                     clsProps.WSName = ModelInstance.GetType().Name;
                     clsProps.WSInstance = ModelInstance;
-                    //clsProps.pKey = "LaboratoryNo";
-                    //
                     List<object> baseResults = new List<object>(baseQuery);
                     var records = GV.SearchFilter.FnSearchFilter(HttpContext, baseResults, clsProps);
                     return Ok(new { records });

@@ -3,76 +3,40 @@
   "WorkspaceRootPath": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\controllers\\academics\\studentunitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\controllers\\academics\\studentunitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\controllers\\academics\\lecturerunitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\controllers\\academics\\lecturerunitscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\lecturerunitlist.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\lecturerunitlist.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\lecturerunitlist22.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\lecturerunitlist22.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\lecturerunitform.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\lecturerunitform.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\profiles\\superuserprofile.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\profiles\\superuserprofile.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|c:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\node_modules\\@vue\\runtime-core\\dist\\runtime-core.esm-bundler.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app.client\\node_modules\\@vue\\runtime-core\\dist\\runtime-core.esm-bundler.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\controllers\\academics\\lecturerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\controllers\\academics\\lecturerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\controllers\\academics\\programmescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\controllers\\academics\\programmescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\config\\routes\\staff-portal-routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\config\\routes\\staff-portal-routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\re_usables\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\re_usables\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\re-usables\\modules\\auth\\login.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\re-usables\\modules\\auth\\login.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\academics\\student-list\\studentlist.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\academics\\student-list\\studentlist.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\app.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\app.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\academics\\programme-list\\programmelist.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\academics\\programme-list\\programmelist.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\controllers\\academics\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\controllers\\academics\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\models\\academics\\marksentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\models\\academics\\marksentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\re_usables\\generalclasses\\wsclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\re_usables\\generalclasses\\wsclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\purchase-request\\header\\purchaserequestheaderactions.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\purchase-request\\header\\purchaserequestheaderactions.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\academics\\student-unit\\studentunitactions.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\academics\\student-unit\\studentunitactions.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\store-request\\header\\storerequestheaderactions.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\store-request\\header\\storerequestheaderactions.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\academics\\student-unit\\studentunitlist.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\academics\\student-unit\\studentunitlist.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\app.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\app.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\re-usables\\page-templates\\listpartpagetemplate.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\re-usables\\page-templates\\listpartpagetemplate.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\re-usables\\components\\listpageactionsbar.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\re-usables\\components\\listpageactionsbar.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,238 +46,127 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LecturerUnitList.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\LecturerUnitList.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\LecturerUnitList.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\LecturerUnitList.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\LecturerUnitList.vue",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAADQAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-02-11T18:11:56.202Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "runtime-core.esm-bundler.js",
-              "DocumentMoniker": "c:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\node_modules\\@vue\\runtime-core\\dist\\runtime-core.esm-bundler.js",
-              "RelativeDocumentMoniker": "app.client\\node_modules\\@vue\\runtime-core\\dist\\runtime-core.esm-bundler.js",
-              "ToolTip": "c:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\node_modules\\@vue\\runtime-core\\dist\\runtime-core.esm-bundler.js",
-              "RelativeToolTip": "app.client\\node_modules\\@vue\\runtime-core\\dist\\runtime-core.esm-bundler.js",
-              "ViewState": "AgIAAAEBAAAAAAAAAAAowAsBAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-11T18:30:51.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LecturerUnitsController.cs",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\LecturerUnitsController.cs",
-              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\LecturerUnitsController.cs",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\LecturerUnitsController.cs",
-              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\LecturerUnitsController.cs",
-              "ViewState": "AgIAAGcAAAAAAAAAAAAcwHAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-11T18:05:06.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LecturerUnitForm.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\LecturerUnitForm.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\LecturerUnitForm.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\LecturerUnitForm.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\LecturerUnitForm.vue",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-02-11T17:48:59.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LecturerUnitList22.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\LecturerUnitList22.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\LecturerUnitList22.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\LecturerUnitList22.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\academics\\lecturer-unit\\LecturerUnitList22.vue",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAD0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-02-11T17:55:26.232Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Login.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\modules\\auth\\Login.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\re-usables\\modules\\auth\\Login.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\modules\\auth\\Login.vue",
-              "RelativeToolTip": "app.client\\src\\re-usables\\modules\\auth\\Login.vue",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-02-06T19:31:36.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "App.Server.csproj",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\App.Server.csproj",
-              "RelativeDocumentMoniker": "App.Server\\App.Server.csproj",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\App.Server.csproj",
-              "RelativeToolTip": "App.Server\\App.Server.csproj",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-06T19:13:17.719Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProgrammesController.cs",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\ProgrammesController.cs",
-              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\ProgrammesController.cs",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\ProgrammesController.cs",
-              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\ProgrammesController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAuwBkAAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T18:55:17.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProgrammeList.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\programme-list\\ProgrammeList.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\academics\\programme-list\\ProgrammeList.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\programme-list\\ProgrammeList.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\academics\\programme-list\\ProgrammeList.vue",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACsAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-02-06T18:44:02.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LecturersController.cs",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\LecturersController.cs",
-              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\LecturersController.cs",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\LecturersController.cs",
-              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\LecturersController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAA1wB8AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T18:40:22.31Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
               "Title": "WSClient.cs",
               "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\GeneralClasses\\WSClient.cs",
               "RelativeDocumentMoniker": "App.Server\\src\\Re_usables\\GeneralClasses\\WSClient.cs",
               "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\GeneralClasses\\WSClient.cs",
               "RelativeToolTip": "App.Server\\src\\Re_usables\\GeneralClasses\\WSClient.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAiwH4AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwE4AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T18:29:06.938Z"
+              "WhenOpened": "2025-02-14T09:16:12.659Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SuperUserProfile.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\profiles\\SuperUserProfile.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\profiles\\SuperUserProfile.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\profiles\\SuperUserProfile.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\profiles\\SuperUserProfile.vue",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-02-06T17:56:14.134Z",
+              "DocumentIndex": 1,
+              "Title": "LecturerUnitsController.cs",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\LecturerUnitsController.cs",
+              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\LecturerUnitsController.cs",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\LecturerUnitsController.cs",
+              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\LecturerUnitsController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAA9wB4AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T09:06:55.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.Server",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\App.Server.csproj",
+              "RelativeDocumentMoniker": "App.Server\\App.Server.csproj",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\App.Server.csproj",
+              "RelativeToolTip": "App.Server\\App.Server.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-14T07:56:10.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MarksEntry.cs",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Models\\Academics\\MarksEntry.cs",
+              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Models\\Academics\\MarksEntry.cs",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Models\\Academics\\MarksEntry.cs",
+              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Models\\Academics\\MarksEntry.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAIwCAAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T11:31:41.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "staff-portal-routes.js",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\config\\routes\\staff-portal-routes.js",
-              "RelativeDocumentMoniker": "app.client\\src\\config\\routes\\staff-portal-routes.js",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\config\\routes\\staff-portal-routes.js",
-              "RelativeToolTip": "app.client\\src\\config\\routes\\staff-portal-routes.js",
-              "ViewState": "AgIAAMIAAAAAAAAAAAAUwNIAAACoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-06T17:51:36.752Z",
+              "Title": "ListPageActionsBar.vue",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\components\\ListPageActionsBar.vue",
+              "RelativeDocumentMoniker": "app.client\\src\\re-usables\\components\\ListPageActionsBar.vue",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\components\\ListPageActionsBar.vue",
+              "RelativeToolTip": "app.client\\src\\re-usables\\components\\ListPageActionsBar.vue",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-02-13T11:25:47.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ListPartPageTemplate.vue",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\page-templates\\ListPartPageTemplate.vue",
+              "RelativeDocumentMoniker": "app.client\\src\\re-usables\\page-templates\\ListPartPageTemplate.vue",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\page-templates\\ListPartPageTemplate.vue",
+              "RelativeToolTip": "app.client\\src\\re-usables\\page-templates\\ListPartPageTemplate.vue",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-02-13T11:24:46.037Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "StudentList.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\student-list\\StudentList.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\academics\\student-list\\StudentList.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\student-list\\StudentList.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\academics\\student-list\\StudentList.vue",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "StudentUnitActions.vue",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\student-unit\\StudentUnitActions.vue",
+              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\academics\\student-unit\\StudentUnitActions.vue",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\student-unit\\StudentUnitActions.vue",
+              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\academics\\student-unit\\StudentUnitActions.vue",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC8AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-02-06T17:51:16.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "App.Server\\src\\Re_usables\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "App.Server\\src\\Re_usables\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAEAAAAAAAAAAAAAQwE0AAACJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T17:29:17.282Z",
+              "WhenOpened": "2025-02-13T11:18:13.885Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "StudentsController.cs",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\StudentsController.cs",
-              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\StudentsController.cs",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\StudentsController.cs",
-              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\StudentsController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "StudentUnitsController.cs",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\StudentUnitsController.cs",
+              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\StudentUnitsController.cs",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\StudentUnitsController.cs",
+              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\Academics\\StudentUnitsController.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAAwE8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-06T17:27:59.484Z"
+              "WhenOpened": "2025-02-13T09:20:47.791Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "StoreRequestHeaderActions.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\store-request\\header\\StoreRequestHeaderActions.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\store-request\\header\\StoreRequestHeaderActions.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\store-request\\header\\StoreRequestHeaderActions.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\store-request\\header\\StoreRequestHeaderActions.vue",
-              "ViewState": "AgIAAOEAAAAAAAAAAAAAAPEAAAApAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "StudentUnitList.vue",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\student-unit\\StudentUnitList.vue",
+              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\academics\\student-unit\\StudentUnitList.vue",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\academics\\student-unit\\StudentUnitList.vue",
+              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\academics\\student-unit\\StudentUnitList.vue",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAADwAAACZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-28T16:57:00.579Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "PurchaseRequestHeaderActions.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\purchase-request\\header\\PurchaseRequestHeaderActions.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\purchase-request\\header\\PurchaseRequestHeaderActions.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\purchase-request\\header\\PurchaseRequestHeaderActions.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\purchase-request\\header\\PurchaseRequestHeaderActions.vue",
-              "ViewState": "AgIAAN4AAAAAAAAAAAAAAPIAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-28T16:56:27.907Z"
+              "WhenOpened": "2025-02-13T08:44:11.984Z",
+              "EditorCaption": ""
             }
           ]
         }

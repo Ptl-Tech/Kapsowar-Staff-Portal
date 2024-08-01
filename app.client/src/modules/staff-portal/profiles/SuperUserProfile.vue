@@ -66,7 +66,7 @@
                     <DocumentCheckIcon class="iconSmall" /> Lecturer Section
                 </template>
                 <template #content>
-                    <sidebar-link :to="{name:'lecturerUnitForm',params:{action:'edit'}}" :active="this.$route.name == 'lecturerUnitForm'?true:false" :sidebarDropdown="true" :isLast="false">Lecturer Assigned Units</sidebar-link>
+                    <sidebar-link :to="{name:'lecturerUnitForm',params:{action:'edit'}}" :active="this.$route.name == 'lecturerUnitForm'?true:false" :sidebarDropdown="true" :isLast="true">Lecturer Assigned Units</sidebar-link>
                 </template>
             </SidebarDropdown>
             <!---->

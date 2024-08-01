@@ -12,12 +12,7 @@
                     <span v-if="!(actionsProps != undefined && actionsProps.isSearch != undefined && actionsProps.isSearch == false)">
                         <WInput placeholder="search" v-model="search" @input="FnOnSearch()" class="!w-16 sm:!w-24 md:!w-36 !py-1 h-6" />
                     </span>
-                    <span v-if="(actionsProps != undefined && actionsProps.moreActions != undefined)">
-                        <slot name="listMoreActions"></slot>
-                    </span>
-                    <span v-if="(actionsProps != undefined && actionsProps.reports != undefined)">
-                        <slot name="listReports"></slot>
-                    </span>
+
                     <span v-if="(actionsProps != undefined && actionsProps.isAttachments != undefined && actionsProps.isAttachments == true)">
                         <WButton @click="FnEmitAction('attachments')" class="flex items-center" :disabled="selectedRows.length == 0 || (selectedRows != null && selectedRows.length > 1)? true:false"><DocumentIcon class="iconSmall" /> Attachments</WButton>
                     </span>
@@ -35,6 +30,12 @@
                             <option value="desc">Descending</option>
                         </WSelect>
                     </span>
+                    <span v-if="(actionsProps != undefined && actionsProps.moreActions != undefined)">
+                        <slot name="listMoreActions"></slot>
+                    </span>
+                    <span v-if="(actionsProps != undefined && actionsProps.reports != undefined)">
+                        <slot name="listReports"></slot>
+                    </span>
                     <!--<span v-if="!(actionsProps != undefined && actionsProps.isFilter != undefined && actionsProps.isFilter == false)">
                         <WButton @click="FnEmitAction('filter')" class="flex items-center !py-1 !font-normal" title="Filter list"><FunnelIcon class="h-3 w-3" /> <span class="hidden sm:flex">Filter</span></WButton>
                     </span>-->
@@ -49,11 +50,11 @@
     import WInput from '@/re-usables/components/WInput.vue'
     import WButton from '@/re-usables/components/WButton.vue'
     import WSelect from '@/re-usables/components/WSelect.vue'
-    import { FunnelIcon, PlusIcon, ChevronDoubleDownIcon, PencilIcon, TrashIcon, DocumentIcon, ArrowsPointingOutIcon,ChevronDownIcon } from '@heroicons/vue/24/outline'
+    import { FunnelIcon, PlusIcon, ChevronDoubleDownIcon, PencilIcon, TrashIcon, DocumentIcon, ArrowsPointingOutIcon, ChevronDownIcon } from '@heroicons/vue/24/outline'
     export default {
-        components: { WInput, Dropdown, WRouterLink,WSelect, FunnelIcon, WButton, PlusIcon, ChevronDownIcon, ChevronDoubleDownIcon, PencilIcon, TrashIcon, DocumentIcon, ArrowsPointingOutIcon },
+        components: { WInput, Dropdown, WRouterLink, WSelect, FunnelIcon, WButton, PlusIcon, ChevronDownIcon, ChevronDoubleDownIcon, PencilIcon, TrashIcon, DocumentIcon, ArrowsPointingOutIcon },
         props: { pageProps: { default: {} }, actionsProps: { default: {} }, selectedRows: { default: [] } },
-        emits: { delete: null, edit: null, filter: null, orderList:null,search:null},
+        emits: { delete: null, edit: null, filter: null, orderList: null, search: null },
         data() {
             return {
                 search: "",
@@ -62,7 +63,7 @@
                 sortFields: [],
                 typingTimeout: 1000, //milliseconds
                 actionButton: "group flex w-full items-center rounded-md px-2 py-2 text-sm",
-                sort: {field:'',value:'',isFetching:false},
+                sort: { field: '', value: '', isFetching: false },
             }
         },
         methods: {
@@ -72,7 +73,7 @@
             FnOnSearch() {
                 clearTimeout(this.typingTimer);
                 var self = this;
-                this.typingTimer = setTimeout(function () { self.$emit("search", self.search)}, this.typingTimeout);
+                this.typingTimer = setTimeout(function () { self.$emit("search", self.search) }, this.typingTimeout);
             },
             FnGetSortFields() {
                 if (this.sort.field == "" && this.sortFields.length == 0) {

@@ -50,7 +50,7 @@ namespace App.Server
             try
             {
                 initiateService();
-                varCompanyName = navCompany;
+                //varCompanyName = navCompany;
                 varCodeunit = varCodeunit == "" ? defaultCodeunit : varCodeunit;
                 return soapBaseUrl + navInstance + "/WS/"+ varCompanyName + "/Codeunit/" + varCodeunit;
             }
@@ -67,7 +67,10 @@ namespace App.Server
                 if(Config.AuthenticationMethod != "Windows")
                 {
                     initiateService();
-                    companyName = navCompany;
+                    if (companyName == "")
+                    {
+                        companyName = navCompany;
+                    }
                     BasicHttpBinding _binding = new BasicHttpBinding();
                     _binding.Security.Mode = BasicHttpSecurityMode.TransportCredentialOnly;
                     _binding.Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic;
@@ -80,7 +83,10 @@ namespace App.Server
                 }
                 else
                 {
-                    companyName = navCompany;
+                    if (companyName == "")
+                    {
+                        companyName = navCompany;
+                    }
                     string uri = GetSOAPUrl(context,(companyName == "" ? defaultNavCompany : companyName), (WebServiceName == "" ? defaultCodeunit : WebServiceName));
                     BasicHttpBinding binding = new BasicHttpBinding();
                     EndpointAddress address = new EndpointAddress(uri);

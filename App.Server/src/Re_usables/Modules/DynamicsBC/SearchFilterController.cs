@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http.Extensions;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Linq.Dynamic.Core;
+using System.Web;
 
 namespace App.Server
 {
@@ -202,6 +203,7 @@ namespace App.Server
         {
             //
             string fullUrl = MyHttpContext.Request.GetDisplayUrl();
+            fullUrl = HttpUtility.UrlDecode(fullUrl);
             //check if there is a search query in url
             string query = "";
             string anyQuery = "";

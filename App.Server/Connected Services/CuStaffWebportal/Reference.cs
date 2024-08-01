@@ -100,6 +100,9 @@ namespace CuStaffWebportal
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnStoreRequestReport", ReplyAction="*")]
         System.Threading.Tasks.Task<CuStaffWebportal.FnStoreRequestReport_Result> FnStoreRequestReportAsync(CuStaffWebportal.FnStoreRequestReport request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnMarksEntry", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnMarksEntry_Result> FnMarksEntryAsync(CuStaffWebportal.FnMarksEntry request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1194,6 +1197,54 @@ namespace CuStaffWebportal
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnMarksEntry", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnMarksEntry
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=1)]
+        public string staffNo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=2)]
+        public string sessionToken;
+        
+        public FnMarksEntry()
+        {
+        }
+        
+        public FnMarksEntry(string jString, string staffNo, string sessionToken)
+        {
+            this.jString = jString;
+            this.staffNo = staffNo;
+            this.sessionToken = sessionToken;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnMarksEntry_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnMarksEntry_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnMarksEntry_Result()
+        {
+        }
+        
+        public FnMarksEntry_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     public interface CuStaffWebportal_PortChannel : CuStaffWebportal.CuStaffWebportal_Port, System.ServiceModel.IClientChannel
     {
@@ -1596,6 +1647,21 @@ namespace CuStaffWebportal
             CuStaffWebportal.FnStoreRequestReport inValue = new CuStaffWebportal.FnStoreRequestReport();
             inValue.jString = jString;
             return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnStoreRequestReportAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnMarksEntry_Result> CuStaffWebportal.CuStaffWebportal_Port.FnMarksEntryAsync(CuStaffWebportal.FnMarksEntry request)
+        {
+            return base.Channel.FnMarksEntryAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnMarksEntry_Result> FnMarksEntryAsync(string jString, string staffNo, string sessionToken)
+        {
+            CuStaffWebportal.FnMarksEntry inValue = new CuStaffWebportal.FnMarksEntry();
+            inValue.jString = jString;
+            inValue.staffNo = staffNo;
+            inValue.sessionToken = sessionToken;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnMarksEntryAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

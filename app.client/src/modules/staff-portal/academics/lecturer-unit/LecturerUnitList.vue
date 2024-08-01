@@ -12,7 +12,7 @@
                 <WTh>Actions</WTh>
             </template>
             <template v-for="(record,index) in records" #[`tbody-${index}`]>
-                <WTd>{{record.Programme}}</WTd>
+                <WTd>{{record.Description}}</WTd>
                 <WTd>{{record.Stage}}</WTd>
                 <WTd>{{record.Semester}}</WTd>
                 <WTd>{{record.Unit}}</WTd>
@@ -20,9 +20,9 @@
                 <WTd>{{record.Unit_Name}}</WTd>
                 <WTd>{{record.Unit_Name}}</WTd>
                 <WTd>
-                    <!--<EllipsisMenu :docNo="record[pageProps.keys.parentKey]+'#'+record[pageProps.keys.recKey]">
-                    <Actions :record="record" :header="header" :pageProps="pageProps" />
-                </EllipsisMenu>-->
+                    <EllipsisMenu :docNo="record[pageProps.keys.parentKey]+'#'+record[pageProps.keys.recKey]+'#'+record.Semester+'#'+record.Programme">
+                        <Actions :record="record" :header="header" :pageProps="pageProps"/>
+                    </EllipsisMenu>
                 </WTd>
             </template>
         </ListPartPageTemplate>
@@ -30,7 +30,7 @@
 </template>
 <script>
     import { W } from '@/re-usables/imports/ListPageComponents.js';
-    import Actions from '@/modules/staff-portal/imprest-request/line/ImprestLineActions.vue';
+    import Actions from '@/modules/staff-portal/academics/lecturer-unit/LecturerUnitActions.vue';
 
     export default {
         props: { props: { default: {} }, filter: { default: "" } },
@@ -41,7 +41,7 @@
                 pageProps: {
                     title: 'Lecturer Units',
                     pageType: "list",
-                    keys: { recKey: 'Line_No', parentKey: 'No' },
+                    keys: { recKey: 'Line_No', parentKey: 'Unit_No' },
                     controller: 'LecturerUnits',
                     //formRoute: "/ess/imprest-request/line/form",
                     //listRoute: "/ess/imprest-request/line/list",
