@@ -1,0 +1,2 @@
+C:\Work\KRCS New System\App\app.client\obj\Debug\app.client.esproj.CoreCompileInputs.cache
+C:\Work\KRCS New System\KRCS Supplier Portal\app.client\obj\Debug\app.client.esproj.CoreCompileInputs.cache

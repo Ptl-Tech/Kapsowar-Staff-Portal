@@ -1,0 +1,16 @@
+{
+  "ExtendedData": {
+    "inputs": [
+      "http://DESKTOP-P80SI0S.redcross.or.ke:6022/Kapsowar-Live/WS/AIC%20Kapsowar%20Mission%20Hospital/Codeunit/CuNewStaffWebportal"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "namespaceMappings": [
+      "*, CuStaffWebportal"
+    ],
+    "targetFramework": "net8.0",
+    "typeReuseMode": "All"
+  }
+}
