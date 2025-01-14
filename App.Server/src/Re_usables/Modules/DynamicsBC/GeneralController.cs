@@ -143,14 +143,14 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
             string base64File = Convert.ToBase64String(fileBytes);
             return base64File;
         }
-        public static APIHeader GetAPIHeader(HttpContext context)
-        {
-            APIHeader apiHeader = new();
-            apiHeader.staffNo = context.Request.Headers["staffNo"].ToString();
-            apiHeader.sessionToken = context.Request.Headers["sessionToken"].ToString();
-            apiHeader.branchCode = context.Request.Headers["branchCode"].ToString();
-            return apiHeader;
-        }
+        //public static APIHeader GetAPIHeader(HttpContext context)
+        //{
+        //    APIHeader apiHeader = new();
+        //    apiHeader.staffNo = context.Request.Headers["staffNo"].ToString();
+        //    apiHeader.sessionToken = context.Request.Headers["sessionToken"].ToString();
+        //    apiHeader.branchCode = context.Request.Headers["branchCode"].ToString();
+        //    return apiHeader;
+        //}
         //
         [HttpGet]
         public async Task<IActionResult> ODATAFilter(string webservice, string query = "", bool isList = true)

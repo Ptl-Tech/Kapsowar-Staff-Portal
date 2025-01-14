@@ -1,18 +1,18 @@
 const config = {
     solution: {
-        name: 'STAFF PORTAL',
-        tagline: 'STAFF PORTAL',
+        name: 'Staff Portal',
+        tagline: 'Staff Portal',
         dataSource: 'NAV',
         userAvatarGeneral: '/images/user-avatar-general.png',
     },
     client: {
-        name:'Kenya Redcross Society',
+        name:'Kapsowar Mission Hospital',
         logoPath: '/images/client-logo.jpg',
-        logoPath2: '/images/client-logo-2.png',
-        bgImagePath: '/images/background3.jpeg',
+        logoPath2: '/images/client-logo2.jpg',
+        bgImagePath: '/images/background.jpg',
     },
     developer: {
-      name: 'Kenya Redcross Society',
+      name: 'Potestas Technologies Ltd.',
         logoPath: '/images/client.png',
         websiteUrl: 'https://www.test.com',
         tagline: '',
@@ -24,7 +24,6 @@ const config = {
         validationErrors: "There are validation error(s). Kindly check all the fields."
     },
     baseApiRoute: "/api/",
-    baseAppRoute: "/hmis/",
 };
 
 export { config }

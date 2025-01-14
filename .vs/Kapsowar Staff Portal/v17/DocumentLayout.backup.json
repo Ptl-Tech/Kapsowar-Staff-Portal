@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\re-usables\\components\\navbar.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\re-usables\\components\\navbar.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -13,34 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\config\\app-settings.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\config\\app-settings.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\re-usables\\components\\authenticationcardlogo.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\re-usables\\components\\authenticationcardlogo.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\re-usables\\components\\authenticationcard.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\re-usables\\components\\authenticationcard.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\re-usables\\components\\clientapplicationmark.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\re-usables\\components\\clientapplicationmark.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\re-usables\\modules\\auth\\login.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\re-usables\\modules\\auth\\login.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\assets\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\assets\\css\\custom.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\re-usables\\page-templates\\guest.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\re-usables\\page-templates\\guest.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\re-usables\\components\\navbar.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\re-usables\\components\\navbar.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\app.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -82,63 +54,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\index.html",
-              "RelativeDocumentMoniker": "app.client\\index.html",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\index.html",
-              "RelativeToolTip": "app.client\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-01-14T19:03:59.036Z",
+              "Title": "Navbar.vue",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\components\\Navbar.vue",
+              "RelativeDocumentMoniker": "app.client\\src\\re-usables\\components\\Navbar.vue",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\components\\Navbar.vue",
+              "RelativeToolTip": "app.client\\src\\re-usables\\components\\Navbar.vue",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-01-14T18:42:19.388Z",
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ClientApplicationMark.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\components\\ClientApplicationMark.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\re-usables\\components\\ClientApplicationMark.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\components\\ClientApplicationMark.vue",
-              "RelativeToolTip": "app.client\\src\\re-usables\\components\\ClientApplicationMark.vue",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-14T18:58:14.026Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AuthenticationCardLogo.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\components\\AuthenticationCardLogo.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\re-usables\\components\\AuthenticationCardLogo.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\components\\AuthenticationCardLogo.vue",
-              "RelativeToolTip": "app.client\\src\\re-usables\\components\\AuthenticationCardLogo.vue",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-14T18:58:01.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuthenticationCard.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\components\\AuthenticationCard.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\re-usables\\components\\AuthenticationCard.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\components\\AuthenticationCard.vue",
-              "RelativeToolTip": "app.client\\src\\re-usables\\components\\AuthenticationCard.vue",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-14T18:43:19.243Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
@@ -148,7 +81,7 @@
               "RelativeDocumentMoniker": "app.client\\src\\config\\app-settings.js",
               "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\config\\app-settings.js",
               "RelativeToolTip": "app.client\\src\\config\\app-settings.js",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-01-14T18:34:43.447Z",
               "EditorCaption": ""
@@ -161,66 +94,14 @@
               "RelativeDocumentMoniker": "app.client\\src\\App.vue",
               "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\App.vue",
               "RelativeToolTip": "app.client\\src\\App.vue",
-              "ViewState": "AgIAAOEAAAAAAAAAAAAAAPMAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
               "WhenOpened": "2025-01-14T18:34:23.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\modules\\auth\\Login.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\re-usables\\modules\\auth\\Login.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\modules\\auth\\Login.vue",
-              "RelativeToolTip": "app.client\\src\\re-usables\\modules\\auth\\Login.vue",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAF0AAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-14T18:55:40.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "custom.css",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\assets\\css\\custom.css",
-              "RelativeDocumentMoniker": "app.client\\src\\assets\\css\\custom.css",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\assets\\css\\custom.css",
-              "RelativeToolTip": "app.client\\src\\assets\\css\\custom.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-14T18:54:43.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Guest.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\page-templates\\Guest.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\re-usables\\page-templates\\Guest.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\page-templates\\Guest.vue",
-              "RelativeToolTip": "app.client\\src\\re-usables\\page-templates\\Guest.vue",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-14T18:43:44.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Navbar.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\components\\Navbar.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\re-usables\\components\\Navbar.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\re-usables\\components\\Navbar.vue",
-              "RelativeToolTip": "app.client\\src\\re-usables\\components\\Navbar.vue",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-14T18:42:19.388Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "App.Server",
               "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\App.Server.csproj",
               "RelativeDocumentMoniker": "App.Server\\App.Server.csproj",
@@ -233,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "App.Server",
               "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\App.Server.csproj",
               "RelativeDocumentMoniker": "App.Server\\App.Server.csproj",
@@ -245,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
               "Title": "GeneralController.cs",
               "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\Modules\\DynamicsBC\\GeneralController.cs",
               "RelativeDocumentMoniker": "App.Server\\src\\Re_usables\\Modules\\DynamicsBC\\GeneralController.cs",
@@ -258,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 7,
               "Title": "GV.cs",
               "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\GeneralClasses\\GV.cs",
               "RelativeDocumentMoniker": "App.Server\\src\\Re_usables\\GeneralClasses\\GV.cs",
@@ -271,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 8,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\Models\\User.cs",
               "RelativeDocumentMoniker": "App.Server\\src\\Re_usables\\Models\\User.cs",
@@ -284,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 5,
               "Title": "AuthenticationController.cs",
               "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\Controllers\\AuthenticationController.cs",
               "RelativeDocumentMoniker": "App.Server\\src\\Re_usables\\Controllers\\AuthenticationController.cs",
@@ -297,7 +178,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 9,
               "Title": "DimensionsController.cs",
               "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\Modules\\DynamicsBC\\DimensionsController.cs",
               "RelativeDocumentMoniker": "App.Server\\src\\Re_usables\\Modules\\DynamicsBC\\DimensionsController.cs",
@@ -310,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 10,
               "Title": "WSClient.cs",
               "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\GeneralClasses\\WSClient.cs",
               "RelativeDocumentMoniker": "App.Server\\src\\Re_usables\\GeneralClasses\\WSClient.cs",

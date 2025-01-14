@@ -60,7 +60,7 @@ namespace App.Server
             }
         }
         //WebPortalClient - Used when executing functions in codeunit.
-        public CuStaffWebportal.CuNewStaffWebportal_PortClient CuStaffWebportal(HttpContext context, string companyName = "",string WebServiceName = "")
+        public CuStaffWebportal.CuStaffWebportal_PortClient CuStaffWebportal(HttpContext context, string companyName = "",string WebServiceName = "")
         {
             try
             {
@@ -73,7 +73,7 @@ namespace App.Server
                     _binding.Security.Transport.ClientCredentialType = HttpClientCredentialType.Basic;
                     _binding.MaxReceivedMessageSize = 50000000;
                     string uri = GetSOAPUrl(context,(companyName == "" ? defaultNavCompany : companyName), (WebServiceName == "" ? defaultCodeunit : WebServiceName));
-                    CuStaffWebportal.CuNewStaffWebportal_PortClient _ws = new CuStaffWebportal.CuNewStaffWebportal_PortClient(_binding, new EndpointAddress(uri));
+                    CuStaffWebportal.CuStaffWebportal_PortClient _ws = new CuStaffWebportal.CuStaffWebportal_PortClient(_binding, new EndpointAddress(uri));
                     _ws.ClientCredentials.UserName.UserName = navUsername;
                     _ws.ClientCredentials.UserName.Password = navPassword;
                     return _ws;
@@ -91,7 +91,7 @@ namespace App.Server
                     binding.MaxReceivedMessageSize = 50000000;
                     binding.TextEncoding = Encoding.UTF8;
                     binding.Security.Mode = BasicHttpSecurityMode.TransportCredentialOnly;
-                    CuStaffWebportal.CuNewStaffWebportal_PortClient _client = new CuStaffWebportal.CuNewStaffWebportal_PortClient(binding, address);
+                    CuStaffWebportal.CuStaffWebportal_PortClient _client = new CuStaffWebportal.CuStaffWebportal_PortClient(binding, address);
                     if (_client.ClientCredentials != null)
                     {
                         _client.ClientCredentials.Windows.ClientCredential = new NetworkCredential(navUsername, navPassword);

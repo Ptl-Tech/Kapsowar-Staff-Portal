@@ -12,7 +12,7 @@ namespace App.Server
         public static SearchFilterController SearchFilter = new();
         //public static ApprovalManagementController ApprovalMgt = new();
         public static GeneralController GenController = new();
-        //public static DimensionsController DimsController = new();
+        public static DimensionsController DimsController = new();
         //public static PermissionsController PermissionsController = new();
         //public static DimensionNameNo DimNameNo = new();
         //public enum DimensionNames { DONOR, PROJECT, BUDGETLINE, REGION, DEPARTMENT, COUNTY, MODULE };

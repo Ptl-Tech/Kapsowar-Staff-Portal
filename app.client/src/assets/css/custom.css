@@ -3,26 +3,26 @@
 @tailwind utilities;
 @layer utilities {
     /*
-        APP THEME 1 - redish Theme
+        APP THEME 1 - 
     */
     .bg-theme-1 {
-        background-color: #EC1F27; /*#0060A3*/
+        background-color: #8D182A; /*#0060A3*/
         color: white;
     }
 
     .text-theme-1 {
-        color: #EC1F27;
+        color: #8D182A;
     }
 
     .link-theme-1:hover, .link-theme-1:focus {
-        background-color: #EC1F27;
+        background-color: #8D182A;
         color: white;
     }
     .border-theme-1 {
-        border-color: #EC1F27;
+        border-color: #8D182A;
     }
     /*
-        APP THEME 2 - Yellow-ish Theme
+        APP THEME 2 -
     */
     .bg-theme-2 {
         background-color: #374050; /*#AE8543*/

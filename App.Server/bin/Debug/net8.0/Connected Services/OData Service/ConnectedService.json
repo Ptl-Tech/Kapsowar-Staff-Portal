@@ -16,7 +16,7 @@
     "GenerateOperationImports": false,
     "ServiceName": "OData Service",
     "AcceptAllUntrustedCertificates": false,
-    "Endpoint": "C:\\Work\\KRCS New System\\$metadata.xml",
+    "Endpoint": "C:\\Work\\Other\\ptl\\Kapsowar\\$metadata.xml",
     "EdmxVersion": {
       "Major": 4,
       "Minor": 0,

@@ -12,38 +12,38 @@ namespace CuStaffWebportal
     
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", ConfigurationName="CuStaffWebportal.CuNewStaffWebportal_Port")]
-    public interface CuNewStaffWebportal_Port
+    [System.ServiceModel.ServiceContractAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", ConfigurationName="CuStaffWebportal.CuStaffWebportal_Port")]
+    public interface CuStaffWebportal_Port
     {
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal:FnSavePasswordResetTo" +
-            "ken", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnSavePasswordResetToken" +
+            "", ReplyAction="*")]
         System.Threading.Tasks.Task<CuStaffWebportal.FnSavePasswordResetToken_Result> FnSavePasswordResetTokenAsync(CuStaffWebportal.FnSavePasswordResetToken request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal:FnResetPassword", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnResetPassword", ReplyAction="*")]
         System.Threading.Tasks.Task<CuStaffWebportal.FnResetPassword_Result> FnResetPasswordAsync(CuStaffWebportal.FnResetPassword request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal:FnChangePassword", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnChangePassword", ReplyAction="*")]
         System.Threading.Tasks.Task<CuStaffWebportal.FnChangePassword_Result> FnChangePasswordAsync(CuStaffWebportal.FnChangePassword request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal:FnMFALogin", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnMFALogin", ReplyAction="*")]
         System.Threading.Tasks.Task<CuStaffWebportal.FnMFALogin_Result> FnMFALoginAsync(CuStaffWebportal.FnMFALogin request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal:FnUpdateOTPCode", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnUpdateOTPCode", ReplyAction="*")]
         System.Threading.Tasks.Task<CuStaffWebportal.FnUpdateOTPCode_Result> FnUpdateOTPCodeAsync(CuStaffWebportal.FnUpdateOTPCode request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal:FnSendEmail", ReplyAction="*")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnSendEmail", ReplyAction="*")]
         System.Threading.Tasks.Task<CuStaffWebportal.FnSendEmail_Result> FnSendEmailAsync(CuStaffWebportal.FnSendEmail request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FnSavePasswordResetToken", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnSavePasswordResetToken", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
     public partial class FnSavePasswordResetToken
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
         public string jString;
         
         public FnSavePasswordResetToken()
@@ -59,11 +59,11 @@ namespace CuStaffWebportal
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FnSavePasswordResetToken_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnSavePasswordResetToken_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
     public partial class FnSavePasswordResetToken_Result
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
         public string return_value;
         
         public FnSavePasswordResetToken_Result()
@@ -79,11 +79,11 @@ namespace CuStaffWebportal
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FnResetPassword", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnResetPassword", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
     public partial class FnResetPassword
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
         public string jString;
         
         public FnResetPassword()
@@ -99,11 +99,11 @@ namespace CuStaffWebportal
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FnResetPassword_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnResetPassword_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
     public partial class FnResetPassword_Result
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
         public string return_value;
         
         public FnResetPassword_Result()
@@ -119,11 +119,11 @@ namespace CuStaffWebportal
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FnChangePassword", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnChangePassword", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
     public partial class FnChangePassword
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
         public string jString;
         
         public FnChangePassword()
@@ -139,11 +139,11 @@ namespace CuStaffWebportal
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FnChangePassword_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnChangePassword_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
     public partial class FnChangePassword_Result
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
         public string return_value;
         
         public FnChangePassword_Result()
@@ -159,11 +159,11 @@ namespace CuStaffWebportal
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FnMFALogin", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnMFALogin", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
     public partial class FnMFALogin
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
         public string jString;
         
         public FnMFALogin()
@@ -179,11 +179,11 @@ namespace CuStaffWebportal
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FnMFALogin_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnMFALogin_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
     public partial class FnMFALogin_Result
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
         public string return_value;
         
         public FnMFALogin_Result()
@@ -199,11 +199,11 @@ namespace CuStaffWebportal
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FnUpdateOTPCode", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnUpdateOTPCode", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
     public partial class FnUpdateOTPCode
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
         public string jString;
         
         public FnUpdateOTPCode()
@@ -219,11 +219,11 @@ namespace CuStaffWebportal
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FnUpdateOTPCode_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnUpdateOTPCode_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
     public partial class FnUpdateOTPCode_Result
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
         public string return_value;
         
         public FnUpdateOTPCode_Result()
@@ -239,20 +239,20 @@ namespace CuStaffWebportal
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FnSendEmail", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnSendEmail", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
     public partial class FnSendEmail
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
         public string subject;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=1)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=1)]
         public string recipients;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=2)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=2)]
         public string emailMessage;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=3)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=3)]
         public string ccRecipients;
         
         public FnSendEmail()
@@ -271,11 +271,11 @@ namespace CuStaffWebportal
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="FnSendEmail_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", IsWrapped=true)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnSendEmail_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
     public partial class FnSendEmail_Result
     {
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuNewStaffWebportal", Order=0)]
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
         public bool return_value;
         
         public FnSendEmail_Result()
@@ -289,13 +289,13 @@ namespace CuStaffWebportal
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    public interface CuNewStaffWebportal_PortChannel : CuStaffWebportal.CuNewStaffWebportal_Port, System.ServiceModel.IClientChannel
+    public interface CuStaffWebportal_PortChannel : CuStaffWebportal.CuStaffWebportal_Port, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    public partial class CuNewStaffWebportal_PortClient : System.ServiceModel.ClientBase<CuStaffWebportal.CuNewStaffWebportal_Port>, CuStaffWebportal.CuNewStaffWebportal_Port
+    public partial class CuStaffWebportal_PortClient : System.ServiceModel.ClientBase<CuStaffWebportal.CuStaffWebportal_Port>, CuStaffWebportal.CuStaffWebportal_Port
     {
         
         /// <summary>
@@ -305,41 +305,41 @@ namespace CuStaffWebportal
         /// <param name="clientCredentials">The client credentials</param>
         static partial void ConfigureEndpoint(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint, System.ServiceModel.Description.ClientCredentials clientCredentials);
         
-        public CuNewStaffWebportal_PortClient() : 
-                base(CuNewStaffWebportal_PortClient.GetDefaultBinding(), CuNewStaffWebportal_PortClient.GetDefaultEndpointAddress())
+        public CuStaffWebportal_PortClient() : 
+                base(CuStaffWebportal_PortClient.GetDefaultBinding(), CuStaffWebportal_PortClient.GetDefaultEndpointAddress())
         {
-            this.Endpoint.Name = EndpointConfiguration.CuNewStaffWebportal_Port.ToString();
+            this.Endpoint.Name = EndpointConfiguration.CuStaffWebportal_Port.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
-        public CuNewStaffWebportal_PortClient(EndpointConfiguration endpointConfiguration) : 
-                base(CuNewStaffWebportal_PortClient.GetBindingForEndpoint(endpointConfiguration), CuNewStaffWebportal_PortClient.GetEndpointAddress(endpointConfiguration))
-        {
-            this.Endpoint.Name = endpointConfiguration.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
-        }
-        
-        public CuNewStaffWebportal_PortClient(EndpointConfiguration endpointConfiguration, string remoteAddress) : 
-                base(CuNewStaffWebportal_PortClient.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
+        public CuStaffWebportal_PortClient(EndpointConfiguration endpointConfiguration) : 
+                base(CuStaffWebportal_PortClient.GetBindingForEndpoint(endpointConfiguration), CuStaffWebportal_PortClient.GetEndpointAddress(endpointConfiguration))
         {
             this.Endpoint.Name = endpointConfiguration.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
-        public CuNewStaffWebportal_PortClient(EndpointConfiguration endpointConfiguration, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(CuNewStaffWebportal_PortClient.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
+        public CuStaffWebportal_PortClient(EndpointConfiguration endpointConfiguration, string remoteAddress) : 
+                base(CuStaffWebportal_PortClient.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
         {
             this.Endpoint.Name = endpointConfiguration.ToString();
             ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
-        public CuNewStaffWebportal_PortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public CuStaffWebportal_PortClient(EndpointConfiguration endpointConfiguration, System.ServiceModel.EndpointAddress remoteAddress) : 
+                base(CuStaffWebportal_PortClient.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
+        {
+            this.Endpoint.Name = endpointConfiguration.ToString();
+            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
+        }
+        
+        public CuStaffWebportal_PortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress)
         {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CuStaffWebportal.FnSavePasswordResetToken_Result> CuStaffWebportal.CuNewStaffWebportal_Port.FnSavePasswordResetTokenAsync(CuStaffWebportal.FnSavePasswordResetToken request)
+        System.Threading.Tasks.Task<CuStaffWebportal.FnSavePasswordResetToken_Result> CuStaffWebportal.CuStaffWebportal_Port.FnSavePasswordResetTokenAsync(CuStaffWebportal.FnSavePasswordResetToken request)
         {
             return base.Channel.FnSavePasswordResetTokenAsync(request);
         }
@@ -348,11 +348,11 @@ namespace CuStaffWebportal
         {
             CuStaffWebportal.FnSavePasswordResetToken inValue = new CuStaffWebportal.FnSavePasswordResetToken();
             inValue.jString = jString;
-            return ((CuStaffWebportal.CuNewStaffWebportal_Port)(this)).FnSavePasswordResetTokenAsync(inValue);
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnSavePasswordResetTokenAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CuStaffWebportal.FnResetPassword_Result> CuStaffWebportal.CuNewStaffWebportal_Port.FnResetPasswordAsync(CuStaffWebportal.FnResetPassword request)
+        System.Threading.Tasks.Task<CuStaffWebportal.FnResetPassword_Result> CuStaffWebportal.CuStaffWebportal_Port.FnResetPasswordAsync(CuStaffWebportal.FnResetPassword request)
         {
             return base.Channel.FnResetPasswordAsync(request);
         }
@@ -361,11 +361,11 @@ namespace CuStaffWebportal
         {
             CuStaffWebportal.FnResetPassword inValue = new CuStaffWebportal.FnResetPassword();
             inValue.jString = jString;
-            return ((CuStaffWebportal.CuNewStaffWebportal_Port)(this)).FnResetPasswordAsync(inValue);
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnResetPasswordAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CuStaffWebportal.FnChangePassword_Result> CuStaffWebportal.CuNewStaffWebportal_Port.FnChangePasswordAsync(CuStaffWebportal.FnChangePassword request)
+        System.Threading.Tasks.Task<CuStaffWebportal.FnChangePassword_Result> CuStaffWebportal.CuStaffWebportal_Port.FnChangePasswordAsync(CuStaffWebportal.FnChangePassword request)
         {
             return base.Channel.FnChangePasswordAsync(request);
         }
@@ -374,11 +374,11 @@ namespace CuStaffWebportal
         {
             CuStaffWebportal.FnChangePassword inValue = new CuStaffWebportal.FnChangePassword();
             inValue.jString = jString;
-            return ((CuStaffWebportal.CuNewStaffWebportal_Port)(this)).FnChangePasswordAsync(inValue);
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnChangePasswordAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CuStaffWebportal.FnMFALogin_Result> CuStaffWebportal.CuNewStaffWebportal_Port.FnMFALoginAsync(CuStaffWebportal.FnMFALogin request)
+        System.Threading.Tasks.Task<CuStaffWebportal.FnMFALogin_Result> CuStaffWebportal.CuStaffWebportal_Port.FnMFALoginAsync(CuStaffWebportal.FnMFALogin request)
         {
             return base.Channel.FnMFALoginAsync(request);
         }
@@ -387,11 +387,11 @@ namespace CuStaffWebportal
         {
             CuStaffWebportal.FnMFALogin inValue = new CuStaffWebportal.FnMFALogin();
             inValue.jString = jString;
-            return ((CuStaffWebportal.CuNewStaffWebportal_Port)(this)).FnMFALoginAsync(inValue);
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnMFALoginAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CuStaffWebportal.FnUpdateOTPCode_Result> CuStaffWebportal.CuNewStaffWebportal_Port.FnUpdateOTPCodeAsync(CuStaffWebportal.FnUpdateOTPCode request)
+        System.Threading.Tasks.Task<CuStaffWebportal.FnUpdateOTPCode_Result> CuStaffWebportal.CuStaffWebportal_Port.FnUpdateOTPCodeAsync(CuStaffWebportal.FnUpdateOTPCode request)
         {
             return base.Channel.FnUpdateOTPCodeAsync(request);
         }
@@ -400,11 +400,11 @@ namespace CuStaffWebportal
         {
             CuStaffWebportal.FnUpdateOTPCode inValue = new CuStaffWebportal.FnUpdateOTPCode();
             inValue.jString = jString;
-            return ((CuStaffWebportal.CuNewStaffWebportal_Port)(this)).FnUpdateOTPCodeAsync(inValue);
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnUpdateOTPCodeAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<CuStaffWebportal.FnSendEmail_Result> CuStaffWebportal.CuNewStaffWebportal_Port.FnSendEmailAsync(CuStaffWebportal.FnSendEmail request)
+        System.Threading.Tasks.Task<CuStaffWebportal.FnSendEmail_Result> CuStaffWebportal.CuStaffWebportal_Port.FnSendEmailAsync(CuStaffWebportal.FnSendEmail request)
         {
             return base.Channel.FnSendEmailAsync(request);
         }
@@ -416,7 +416,7 @@ namespace CuStaffWebportal
             inValue.recipients = recipients;
             inValue.emailMessage = emailMessage;
             inValue.ccRecipients = ccRecipients;
-            return ((CuStaffWebportal.CuNewStaffWebportal_Port)(this)).FnSendEmailAsync(inValue);
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnSendEmailAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()
@@ -426,7 +426,7 @@ namespace CuStaffWebportal
         
         private static System.ServiceModel.Channels.Binding GetBindingForEndpoint(EndpointConfiguration endpointConfiguration)
         {
-            if ((endpointConfiguration == EndpointConfiguration.CuNewStaffWebportal_Port))
+            if ((endpointConfiguration == EndpointConfiguration.CuStaffWebportal_Port))
             {
                 System.ServiceModel.BasicHttpBinding result = new System.ServiceModel.BasicHttpBinding();
                 result.MaxBufferSize = int.MaxValue;
@@ -440,28 +440,28 @@ namespace CuStaffWebportal
         
         private static System.ServiceModel.EndpointAddress GetEndpointAddress(EndpointConfiguration endpointConfiguration)
         {
-            if ((endpointConfiguration == EndpointConfiguration.CuNewStaffWebportal_Port))
+            if ((endpointConfiguration == EndpointConfiguration.CuStaffWebportal_Port))
             {
                 return new System.ServiceModel.EndpointAddress("http://desktop-p80si0s.redcross.or.ke:6022/Kapsowar-Live/WS/AIC Kapsowar Mission " +
-                        "Hospital/Codeunit/CuNewStaffWebportal");
+                        "Hospital/Codeunit/CuStaffWebportal");
             }
             throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
         }
         
         private static System.ServiceModel.Channels.Binding GetDefaultBinding()
         {
-            return CuNewStaffWebportal_PortClient.GetBindingForEndpoint(EndpointConfiguration.CuNewStaffWebportal_Port);
+            return CuStaffWebportal_PortClient.GetBindingForEndpoint(EndpointConfiguration.CuStaffWebportal_Port);
         }
         
         private static System.ServiceModel.EndpointAddress GetDefaultEndpointAddress()
         {
-            return CuNewStaffWebportal_PortClient.GetEndpointAddress(EndpointConfiguration.CuNewStaffWebportal_Port);
+            return CuStaffWebportal_PortClient.GetEndpointAddress(EndpointConfiguration.CuStaffWebportal_Port);
         }
         
         public enum EndpointConfiguration
         {
             
-            CuNewStaffWebportal_Port,
+            CuStaffWebportal_Port,
         }
     }
 }

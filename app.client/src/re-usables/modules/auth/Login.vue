@@ -3,12 +3,12 @@
         <GuestLayout>
             <authentication-card>
                 <template #title>
-                    Supplier Portal Login
+                    Staff Portal Login
                 </template>
                 <template #body>
                     <form @submit.prevent="submitForm()">
-                        <field-group label="Email Address" :valErrors="valErrors.email" :showMandatory="true"> 
-                            <w-input type="email" v-model="form.staffNo" required/>
+                        <field-group label="Staff No." :valErrors="valErrors.userNo" :showMandatory="true"> 
+                            <w-input type="text" v-model="form.userNo" required/>
                         </field-group>
                         <field-group label="Password" :valErrors="valErrors.Password" :showMandatory="true">
                             <w-input type="password" v-model="form.Password" required/>
@@ -18,8 +18,6 @@
                         </div>
                         <div class="text-center mt-2 sm:mt-4 flex gap-1 justify-center">
                           <router-link to="/auth/forgot-password" class="text-blue-500 text-sm">Forgot Password?</router-link>
-                          <span> or </span>
-                          <router-link to="/auth/register" class="text-blue-500 text-sm">Not Registered?</router-link>
                         </div>
                     </form>
                 </template>
@@ -43,7 +41,7 @@
         data() {
             return {
                 form: {
-                    email: "",
+                    userNo: "",
                     Password: "",
                     sessionToken:"",
                 },
