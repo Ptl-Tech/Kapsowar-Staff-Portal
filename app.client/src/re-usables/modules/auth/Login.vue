@@ -10,8 +10,8 @@
                         <field-group label="Staff No." :valErrors="valErrors.userNo" :showMandatory="true"> 
                             <w-input type="text" v-model="form.userNo" required/>
                         </field-group>
-                        <field-group label="Password" :valErrors="valErrors.Password" :showMandatory="true">
-                            <w-input type="password" v-model="form.Password" required/>
+                        <field-group label="Password" :valErrors="valErrors.password" :showMandatory="true">
+                            <w-input type="password" v-model="form.password" required/>
                         </field-group>
                         <div class="mt-4">
                             <w-button type="submit" class="w-full !text-center !rounded-full bg-theme-1 link hover:bg-theme-1">LOGIN</w-button>
@@ -42,7 +42,7 @@
             return {
                 form: {
                     userNo: "",
-                    Password: "",
+                    password: "",
                     sessionToken:"",
                 },
                 valErrors: [],
@@ -51,6 +51,10 @@
         mounted() {
             if (this.$root.isAuthenticated) {
                 this.router.push('/dashboard');
+            }
+            if (this.$route.query.verification != undefined && this.$route.query.verification) {
+                var msg = "Account verified successfully. You can now login and access the portal services.";
+                this.$root.FnNotification({ type: "popup", theme: "green", message: msg });
             }
         },
         methods: {
@@ -79,21 +83,19 @@
                             }
                         }
                         else if (data && data.errors) {
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = String(data.errors);
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: String(data.errors) });
                         } 
                         else {
                             var authUser = data.authUser;
                             if(authUser != undefined){
                                 localStorage.setItem("authUser", JSON.stringify(authUser));
-                                localStorage.setItem("sessionToken", authUser.sessionToken);
                                 this.$root.authUser = authUser;
-                                if (authUser.IsMFAVerified) {
-                                    this.router.push('/hmis/security/visitor/list?status=Active-Today');
+                                if (authUser.isMFAVerified) {
+                                    this.$router.push({name:"dashboard"});
                                 } else {
-                                    this.router.push('/auth/otp-login');
+                                    this.router.push({name:"authOTPLogin"});
                                     var msg = data.msg
-                                    this.$root.FnNotification(msg, 'bg-green-500', false);
+                                    this.$root.FnNotification({ type: "popup", theme: "green", message: msg });
                                 }
                             }
                         }
@@ -101,8 +103,7 @@
                         this.$root.loader.message = "";
                     }).catch((error) => {
                         this.$root.loader.isLoading = false;
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = String(error);
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: String(error) });
                     });
             },
         },

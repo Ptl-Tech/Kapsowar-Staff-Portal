@@ -9,7 +9,8 @@ namespace App.Server.Modules.HMIS.Models
         [DisplayName("Staff No.")]
         public string userNo { get; set; } = "";
         [Required]
-        public string Password { get; set; } = "";
+        public string password { get; set; } = "";
+        public string? sessionToken { get; set; } = "";
     }
     public class SessionUser
     {
@@ -21,6 +22,7 @@ namespace App.Server.Modules.HMIS.Models
         [Required]
         [DisplayName("Staff No.")]
         public string userNo { get; set; } = "";
+        public string? resetToken { get; set; } = "";
     }
     public class AuthUser
     {
@@ -42,6 +44,7 @@ namespace App.Server.Modules.HMIS.Models
         public bool isAccountVerified { get; set; }
         public string branchCode { get; set; } = "";
         public string responsibilityCenter { get; set; } = "";
+        public bool isLecturer { get; set; }
     }
     public class ResetPassword
     {
@@ -49,11 +52,11 @@ namespace App.Server.Modules.HMIS.Models
         [DisplayName("Staff No.")]
         public string userNo { get; set; } = "";
         [Required]
-        public string NewPassword { get; set; } = "";
+        public string newPassword { get; set; } = "";
         [Required]
-        public string ConfirmPassword { get; set; } = "";
+        public string confirmPassword { get; set; } = "";
         [Required]
-        public string ResetTokenCode { get; set; } = "";
+        public string resetTokenCode { get; set; } = "";
     }
     public class OTPLogin
     {
@@ -68,14 +71,15 @@ namespace App.Server.Modules.HMIS.Models
         public string userNo { get; set; } = "";
         [Required]
         public string OTPCode { get; set; } = "";
+        public string? sessionToken { get; set; } = "";
     }
-    //public class SendVerificationLink
-    //{
-    //    [Required]
-    //    public Guid userNo { get; set; }
-    //    [Required]
-    //    public string verificationToken { get; set; } = "";
-    //}
+    public class SendVerificationLink
+    {
+        [Required]
+        public Guid userNo { get; set; }
+        [Required]
+        public string verificationToken { get; set; } = "";
+    }
     public class ChangePassword
     {
         [Required]
@@ -87,26 +91,4 @@ namespace App.Server.Modules.HMIS.Models
         public string? hashedPassword { get; set; } = "";
         public string? userNo { get; set; } = "";
     }
-    //public class UserRegistration
-    //{
-    //    public string? userNo { get; set; } = "";
-    //    [Required]
-    //    public string companyName { get; set; } = "";
-    //    [Required]
-    //    [DisplayName("Company Pin No.")]
-    //    public string kraPinNo { get; set; } = "";
-    //    [Required]
-    //    public string companyEmail { get; set; } = "";
-    //    [Required]
-    //    public string password { get; set; } = "";
-    //    [Required]
-    //    public string confirmPassword { get; set; } = "";
-    //    public string? verificationToken { get; set; } = "";
-    //}
-    //public class VerifyAccount
-    //{
-    //    public string? userNo { get; set; } = "";
-    //    [Required]
-    //    public string token { get; set; } = "";
-    //}
 }

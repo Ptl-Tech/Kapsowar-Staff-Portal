@@ -35,19 +35,19 @@
         components: { AuthenticationCard, FieldGroup, WInput, WButton, GuestLayout },
         setup() {
             const router = useRouter()
-            return {router };
+            return { router };
         },
         data() {
             return {
                 form: {
-                    staffNo: "",
+                    userNo: "",
                     OTPCode: "",
                 },
-                valErrors:[],
+                valErrors: [],
             }
         },
         mounted() {
-          this.form.staffNo = this.$root.authUser.staffNo;
+            this.form.userNo = this.$root.authUser.userNo;
         },
         methods: {
             submitForm() {
@@ -62,31 +62,29 @@
                         return response.json();
                     })
                     .then(data => {
-                        
+
                         if (data && data.valErrors) {
                             if (data.valErrors != null) {
                                 this.valErrors = data.valErrors;
                             }
                         }
                         else if (data && data.errors) {
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = String(data.errors);
-                        } 
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: String(data.errors) });
+                        }
                         else {
                             var authUser = data;
                             if (authUser != undefined) {
                                 localStorage.setItem("authUser", JSON.stringify(authUser));
+                                localStorage.setItem("sessionToken", authUser.sessionToken);
                                 this.$root.authUser = authUser;
-                              //this.router.push('/dashboard');
-                                this.router.push('/hmis/security/visitor/list?status=Active-Today');
+                                this.router.push({ name: "dashboard" });
                             }
                         }
                         this.$root.loader.isLoading = false;
-                        
+
                     }).catch((error) => {
                         this.$root.loader.isLoading = false;
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = String(error);
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: String(error) });
                     });
             },
             FnResendOTP() {
@@ -108,17 +106,15 @@
                             }
                         }
                         else if (data && data.errors) {
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = String(data.errors);
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: String(data.errors) });
+                        } else {
+                            var msg = "An OTP Code has been sent to your email. Use the code for authentication below.";
+                            this.$root.FnNotification({ type: "popup", theme: "green", message: msg });
                         }
-                        var msg = "An OTP Code has been sent to your email. Use the code for authentication below.";
-                        this.$root.FnNotification(msg, 'bg-green-500', false);
                         this.$root.loader.isLoading = false;
-
                     }).catch((error) => {
                         this.$root.loader.isLoading = false;
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = String(error);
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: String(error) });
                     });
             }
         },

@@ -14,8 +14,8 @@
                 </div>
                 <div class="relative sm:flex w-full">
                     <!--Sidebar-->
-                    <div id="sidebar" class="z-40 sm:30 bg-theme-1 top-0 sm:top-11 w-50 sm:w-48 hidden sm:block absolute sm:relative borderx-t border-gray-400">
-                        <Sidebar></Sidebar>
+                    <div id="sidebar" class="z-40 sm:30 bg-theme-2 top-0 sm:top-12 w-50 sm:w-48 hidden sm:block absolute sm:relative borderx-t border-gray-400">
+                        <DefaultSidebar></DefaultSidebar>
                     </div>
                     <main class="containerx w-full">
                         <!--Body-->
@@ -48,7 +48,7 @@
     import WFooter from '@/re-usables/components/Footer.vue';
     import LoadingPage from '@/re-usables/components/Loading.vue';
     const NotificationModal = defineAsyncComponent(() => import('@/re-usables/components/NotificationModal.vue'));
-    import Sidebar from '@/modules/HMIS/profiles/Profile_SuperUser.vue'
+    import DefaultSidebar from '@/modules/staff-portal/profiles/SuperUserProfile.vue'
     const NotificationPopup = defineAsyncComponent(() => import('@/re-usables/components/NotificationPopup.vue'))
     import { useRouter } from 'vue-router'
     import { useGeneralComposable } from '@/re-usables/composables/GeneralComposable.js';
@@ -61,7 +61,7 @@
         props: {
             layoutProps: { Default: [] }
         },
-        components: { NotificationModal, Navbar, WFooter, LoadingPage, NotificationPopup, Sidebar },
+        components: { NotificationModal, Navbar, WFooter, LoadingPage, NotificationPopup, DefaultSidebar },
         data() {
             return {
                 isAuthenticated: false,
@@ -110,7 +110,7 @@
                                 this.ClearSession();
                                 this.router.go();
                             }
-                            else if (!data.isExpired && !this.authUser.IsMFAVerified) {
+                            else if (!data.isExpired && !this.authUser.isMFAVerified) {
                                 this.isAuthenticated = false;
                                 this.router.push('/auth/otp-login');
                             }

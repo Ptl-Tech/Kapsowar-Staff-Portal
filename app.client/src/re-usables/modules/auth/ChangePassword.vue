@@ -54,8 +54,8 @@
             submitForm() {
                 var validatePass = this.validatePassword();
                 if (validatePass != "success") {
-                    this.$root.errorModal.isShow = true;
-                    this.$root.errorModal.message = "<b>The Password must contain:</b><br/> - at least one capital letter.<br/>-at least one special character.<br/>-at least 8 characters long.<br/>-both letters and numbers.";
+                    var msg = "<b>The Password must contain:</b><br/> - at least one capital letter.<br/>-at least one special character.<br/>-at least 8 characters long.<br/>-both letters and numbers.";
+                    this.$root.FnNotification({ type: "modal", theme: "red", message:msg });
                     return;
                 }
                 this.$root.loader.isLoading = true;
@@ -76,22 +76,20 @@
                             }
                         }
                         else if (data && data.errors) {
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = String(data.errors);
+                            this.$root.FnNotification({ type: "modal", theme: "red", message:String(data.errors) });
                         } 
                         else {
                             localStorage.removeItem("authUser");
                             this.router.push('/auth/login');
                             this.router.go();
                             var msg = "Password changed successfully. Use the new password to login.";
-                            this.$root.FnNotification(msg, 'bg-green-500', false);
+                            this.$root.FnNotification({ type: "popup", theme: "green", message: msg });
                         }
                         this.$root.loader.isLoading = false;
                         
                     }).catch((error) => {
                         this.$root.loader.isLoading = false;
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = String(error);
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: String(error) });
                     });
             },
             validatePassword() {

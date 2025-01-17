@@ -80,7 +80,7 @@ import GridCol from '@/re-usables/components/GridCol.vue';
                     this.form.sessionToken = sessionToken;
                 }
                 this.$root.loader.isLoading = true;
-                this.$root.loader.message = "Authenticating/sending OTP";
+                this.$root.loader.message = "Registering...";
                 const requestOptions = {
                     method: "POST",
                     headers: { 'Content-Type': 'application/json' },
@@ -101,14 +101,14 @@ import GridCol from '@/re-usables/components/GridCol.vue';
                         } 
                         else {
                             this.$router.push({ name: "authLogin" });
-                            var msg = "Registered successfully. However, we need to verify the email is actually yours. We have sent a link to your email for verification.";
+                            var msg = "Registered successfully. However, we need to verify the email is actually yours before you login. We have sent a link to your email for verification.";
                             this.$root.FnNotification({ type: "modal", theme: "green", message: msg });
                         }
                         this.$root.loader.isLoading = false;
                         this.$root.loader.message = "";
                     }).catch((error) => {
                         this.$root.loader.isLoading = false;
-                        this.$root.FnNotification({ type: "modal", theme: "red", title: "Error", message: error });
+                        this.$root.FnNotification({ type: "modal", theme: "red", title: "Error", message: String(error) });
                     });
             },
         },

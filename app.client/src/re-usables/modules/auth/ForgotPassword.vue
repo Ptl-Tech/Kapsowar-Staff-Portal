@@ -7,8 +7,8 @@
                 </template>
                 <template #body>
                     <form @submit.prevent="submitForm()">
-                        <field-group label="Email" :valErrors="valErrors.staffNo" :showMandatory="true">
-                            <w-input type="email" v-model="form.staffNo" required="true" />
+                        <field-group label="Staff No." :valErrors="valErrors.userNo" :showMandatory="true">
+                            <w-input type="text" v-model="form.userNo" required="true" />
                         </field-group>
                         <div class="mt-4">
                             <w-button type="submit" class="w-full !text-center !rounded-full bg-theme-1 hover:bg-theme-1 link">SEND RESET TOKEN</w-button>
@@ -38,7 +38,7 @@
         data() {
             return {
                 form: {
-                    staffNo: "",
+                    userNo: "",
                     NavCompany: "",
                 },
                 valErrors: [],
@@ -53,7 +53,7 @@
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(this.form)
                 };
-                fetch('/api/authentication/SendResetToken', requestOptions)
+                fetch('/api/authentication/ForgotPassword', requestOptions)
                     .then(response => {
                         return response.json();
                     })
@@ -65,18 +65,16 @@
                             }
                         }
                         else if (data && data.errors) {
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = String(data.errors);
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: String(data.errors) });
                         } 
                         else {
-                            this.router.push('/auth/reset-password/' + this.form.staffNo);
+                            this.router.push('/auth/reset-password/' + this.form.userNo);
                             var msg = "A reset token code has been sent to your email. Kindly use the code below to reset your password.";
-                            this.$root.FnNotification(msg, 'bg-green-500', false);
+                            this.$root.FnNotification({ type: "popup", theme: "green", message: msg });
                         }
                     }).catch((error) => {
                         this.$root.loader.isLoading = false;
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = String(error);
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: String(error) });
                     });
             }
         },

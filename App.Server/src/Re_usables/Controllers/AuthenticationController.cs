@@ -1,5 +1,4 @@
 ﻿using App.Server.Modules.HMIS.Models;
-using App.Server.Re_usables.GeneralClasses;
 using App.Server.src.Re_usables.Modules.DynamicsBC;
 using Microsoft.AspNetCore.Mvc;
 using NAV;
@@ -23,66 +22,61 @@ namespace App.Server.Modules.HMIS.Controllers
                     return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
                 }
                 GV.GenController.SetNavCompany(HttpContext);
-                var employee = GV.WSclient.ODATAClient().QyEmployees.Where(x => x.No == obj.userNo).Where(x => x.Status == "Active").FirstOrDefault();
-                if (employee != null)
+                var QyUser = GV.WSclient.ODATAClient().QyEmployees.Where(x => x.No == obj.userNo).FirstOrDefault();
+                if (QyUser != null)
                 {
-                    if (employee != null)
+                    if (FnIsPasswordMatched(obj.password, QyUser.PortalPassword))
                     {
-                        if (FnIsPasswordMatched(obj.Password, employee.PortalPassword))
+                        GV.DimsController.SetCompanyDimensions(HttpContext);
+                        //
+                        AuthUser authUser = new();
+                        authUser.userNo = QyUser.No;
+                        authUser.FullName = QyUser.Full_Name;
+                        authUser.FirstName = QyUser.First_Name;
+                        authUser.MiddleName = QyUser.Middle_Name;
+                        authUser.LastName = QyUser.Last_Name;
+                        authUser.Email = QyUser.Company_E_Mail;
+                        authUser.Gender = QyUser.Gender;
+                        authUser.IsApprover = false;
+                        authUser.IsPortalSuperUser = true;
+                        authUser.branchCode = QyUser.Global_Dimension_1_Code;
+                        authUser.responsibilityCenter = QyUser.Responsibility_Center;
+                        //if no session token
+                        if (QyUser.PortalOTPDate.HasValue && QyUser.PortalOTPDate.Value.ToString() == DateTime.Now.ToString("yyyy-MM-dd") && QyUser.PortalOTPDevice == obj.sessionToken)
                         {
-                            GV.DimsController.SetCompanyDimensions(HttpContext);
-                            //
-                            AuthUser authUser = new();
-                            authUser.userNo = employee.No;
-                            var sessionToken = Guid.NewGuid().ToString();
-                            authUser.sessionToken = sessionToken;
-                            authUser.FullName = employee.Full_Name;
-                            authUser.FirstName = employee.First_Name;
-                            authUser.MiddleName = employee.Middle_Name;
-                            authUser.LastName = employee.Last_Name;
-                            authUser.Email = employee.Company_E_Mail;
-                            authUser.Gender = employee.Gender;
-                            authUser.IsApprover = false;
-                            authUser.IsPortalSuperUser = true;
-                            authUser.branchCode = employee.Global_Dimension_1_Code;
-                            authUser.responsibilityCenter = employee.Responsibility_Center;
-                            //if no session token
-                            if (employee.PortalOTPCode == "" || employee.PortalOTPDate != DateTime.Now)
-                            {
-                                try
-                                {
-                                    var retu = UpdateOTP(employee);
-                                }
-                                catch (Exception ex)
-                                {
-                                    throw new Exception(ex.Message);
-                                }
-                                authUser.IsMFAVerified = false;
-                                string authString = JsonSerializer.Serialize(authUser);
-                                HttpContext.Session.SetString("authUser", authString);
-                                return Ok(new { status = "success", msg = "OTP login required. OTP Code sent to " + MaskEmail(employee.Company_E_Mail), authUser });
-                            }
-                            else
-                            {
-                                authUser.IsMFAVerified = true;
-                                string authString = JsonSerializer.Serialize(authUser);
-                                HttpContext.Session.SetString("authUser", authString);
-                                return Ok(new { status = "success", msg = "Login successful.", authUser });
-                            }
+                            authUser.sessionToken = obj.sessionToken;
+                            authUser.IsMFAVerified = true;
+                            string authString = JsonSerializer.Serialize(authUser);
+                            HttpContext.Session.SetString("authUser", authString);
+                            return Ok(new { status = "success", msg = "Login successful.", authUser });
                         }
                         else
                         {
-                            throw new Exception("Invalid Password/Employee No");
+                            var sessionToken = Guid.NewGuid().ToString();
+                            var retu = UpdateOTP(QyUser, sessionToken);
+                            if (retu.ToLower() == "false")
+                            {
+                                throw new Exception(Config.ErrorGeneralFailure);
+                            }
+                            if (retu.ToLower() != "true")
+                            {
+                                throw new Exception(retu);
+                            }
+                            authUser.sessionToken = sessionToken;
+                            authUser.IsMFAVerified = false;
+                            string authString = JsonSerializer.Serialize(authUser);
+                            HttpContext.Session.SetString("authUser", authString);
+                            return Ok(new { status = "success", msg = "OTP login required. OTP Code sent to " + MaskEmail(QyUser.Company_E_Mail), authUser });
                         }
                     }
                     else
                     {
-                        throw new Exception("Invalid Password/Employee No");
+                        throw new Exception("Invalid Password/Staff No.");
                     }
                 }
                 else
                 {
-                    throw new Exception("Invalid Password/Employee No./In-Active Employee No.");
+                    throw new Exception("Invalid Password/Staff No.");
                 }
 
             }
@@ -92,7 +86,7 @@ namespace App.Server.Modules.HMIS.Controllers
             }
         }
         [HttpPost]
-        public IActionResult OTPLogin([FromBody] OTPLogin obj)
+        public IActionResult OTPLogin([FromBody] OTPLogin User)
         {
             try
             {
@@ -100,9 +94,9 @@ namespace App.Server.Modules.HMIS.Controllers
                 {
                     return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
                 }
-                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnMFALoginAsync(JsonSerializer.Serialize(obj)).Result;
-                var response = JsonNode.Parse(result.return_value);
-                if (response?["status"]?.ToString() == "success")
+                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnMFALoginAsync(JsonSerializer.Serialize(User)).Result;
+                var returnV = JsonNode.Parse(result.return_value);
+                if (returnV?["status"]?.ToString() == "success")
                 {
                     var sessionUser = HttpContext.Session.GetString("authUser");
                     if (sessionUser != null)
@@ -131,31 +125,32 @@ namespace App.Server.Modules.HMIS.Controllers
                 return BadRequest(GeneralController.ProcessException(ex));
             }
         }
-        //#pragma warning disable CS1998
+        ////#pragma warning disable CS1998
         [ApiExplorerSettings(IgnoreApi = true)]
-        public IActionResult UpdateOTP(QyEmployees QyUser)
+        public string UpdateOTP(QyEmployees user,string sessionToken)
         {
             try
             {
                 Random random = new Random();
                 var token = random.Next(100000, 999999);
                 var obj = new UpdateOTP();
-                obj.userNo = QyUser.No;
+                obj.userNo = user.No;
                 obj.OTPCode = token.ToString();
+                obj.sessionToken = sessionToken;
                 var result = GV.WSclient.CuStaffWebportal(HttpContext).FnUpdateOTPCodeAsync(JsonSerializer.Serialize(obj)).Result;
-                var response = JsonNode.Parse(result.return_value);
-                if (response?["status"]?.ToString() == "success")
+                var returnV = JsonNode.Parse(result.return_value);
+                if (returnV?["status"]?.ToString() == "success")
                 {
-                    return Ok(new { response = "success" });
+                    return "true";
                 }
                 else
                 {
-                    throw new Exception(Config.ErrorGeneralFailure);
+                    return "false";
                 }
             }
             catch (Exception ex)
             {
-                return BadRequest(GeneralController.ProcessException(ex));
+                return ex.Message;
             }
         }
         //
@@ -173,8 +168,8 @@ namespace App.Server.Modules.HMIS.Controllers
                     obj.userNo = authUserSession.userNo;
                     obj.OTPCode = token.ToString();
                     var result = GV.WSclient.CuStaffWebportal(HttpContext).FnUpdateOTPCodeAsync(JsonSerializer.Serialize(obj)).Result;
-                    var response = JsonNode.Parse(result.return_value);
-                    if (response?["status"]?.ToString() == "success")
+                    var returnV = JsonNode.Parse(result.return_value);
+                    if (returnV?["status"]?.ToString() == "success")
                     {
                         return Ok(new { response = "success" });
                     }
@@ -195,39 +190,32 @@ namespace App.Server.Modules.HMIS.Controllers
         }
         //
         [HttpPost]
-        public IActionResult ForgotPassword([FromBody] ForgotPassword obj)
+        public IActionResult ForgotPassword([FromBody] ForgotPassword Obj)
         {
             try
             {
-                if (obj.userNo == "")
+                if (Obj.userNo == "")
                 {
-                    throw new Exception("Staff no. field is required.");
+                    throw new Exception(Config.userNoFieldShemaName + " field is required.");
                 }
-                //var data = await GV.WSclient.ODATAClient(HttpContext, WS.Employee().WSName, $"$filter=No eq '{User.staffNo}'", false);
-                var employee = GV.WSclient.ODATAClient().QyEmployees.Where(x => x.No == obj.userNo).FirstOrDefault();
-                if (employee != null)
+                var QyUser = GV.WSclient.ODATAClient().QyEmployees.Where(x => x.No == Obj.userNo).FirstOrDefault();
+                if (QyUser != null)
                 {
-                    if (employee.Status == "Active")
+                    Random random = new Random();
+                    var token = random.Next(100000, 999999);
+                    Obj.resetToken = token.ToString();
+                    //update token
+                    var result = GV.WSclient.CuStaffWebportal(HttpContext).FnSavePasswordResetTokenAsync(JsonSerializer.Serialize(Obj)).Result;
+                    var returnV = JsonNode.Parse(result.return_value);
+                    if (returnV?["status"]?.ToString() == "success")
                     {
-                        Random random = new Random();
-                        var token = random.Next(100000, 999999);
-                        //update token
-                        var result = GV.WSclient.CuStaffWebportal(HttpContext).FnSavePasswordResetTokenAsync(JsonSerializer.Serialize(obj)).Result;
-                        var response = JsonNode.Parse(result.return_value);
-                        if (response?["status"]?.ToString() == "success")
+                        //send email
+                        string emailMessage = $"Dear {QyUser.First_Name},<br/>Use the code <b>{token}</b> to reset your portal password. Kindly note the code expires after 24 hours.";
+                        var receiver = QyUser.Company_E_Mail;
+                        var email = GV.WSclient.CuStaffWebportal(HttpContext).FnSendEmailAsync(Config.solutionName+" Reset Password Token", receiver, emailMessage, "").Result;
+                        if (email.return_value)
                         {
-                            //send email
-                            string emailMessage = $"Dear {employee.First_Name},<br/>Use the code <b>{token}</b> to reset your staff portal password. Kindly note the code expires after 24 hours.";
-                            var receiver = employee.Company_E_Mail;
-                            var email = GV.WSclient.CuStaffWebportal(HttpContext).FnSendEmailAsync("Staff Portal Reset Password Token", receiver, emailMessage, "").Result;
-                            if (email.return_value)
-                            {
-                                return Ok(new { response = "success", msg = "Password reset token sent to your email (" + MaskEmail(employee.Company_E_Mail) + ")" });
-                            }
-                            else
-                            {
-                                throw new Exception(Config.ErrorGeneralFailure);
-                            }
+                            return Ok(new { response = "success", msg = "Password reset token sent to your email (" + MaskEmail(QyUser.Company_E_Mail) + ")" });
                         }
                         else
                         {
@@ -236,12 +224,12 @@ namespace App.Server.Modules.HMIS.Controllers
                     }
                     else
                     {
-                        throw new Exception("Employee No. is In-Active");
+                        throw new Exception(Config.ErrorGeneralFailure);
                     }
                 }
                 else
                 {
-                    throw new Exception("Invalid Employee No");
+                    throw new Exception("Invalid "+Config.userNoFieldCaption);
                 }
 
             }
@@ -259,23 +247,23 @@ namespace App.Server.Modules.HMIS.Controllers
                 {
                     return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
                 }
-                if (obj.NewPassword != obj.ConfirmPassword)
+                if (obj.newPassword != obj.confirmPassword)
                 {
                     throw new Exception("New password and confirm password must match.");
                 }
-                var hashedPass = FnHashPassword(obj.NewPassword);
-                var employee = GV.WSclient.ODATAClient().QyEmployees.Where(x => x.No == obj.userNo).FirstOrDefault();
-                if (employee != null)
+                var hashedPass = FnHashPassword(obj.newPassword);
+                obj.newPassword = hashedPass;
+                var QyUser = GV.WSclient.ODATAClient().QyEmployees.Where(x => x.Company_E_Mail == obj.userNo).FirstOrDefault();
+                if (QyUser != null)
                 {
-                    if (employee.PortalPassword != "" && FnIsPasswordMatched(obj.NewPassword, employee.PortalPassword))
+                    if (QyUser.PortalPassword != "" && FnIsPasswordMatched(obj.newPassword, QyUser.PortalPassword))
                     {
                         throw new Exception("The new password cannot be the same as the last saved password.");
                     }
                 }
-                obj.NewPassword = hashedPass;
                 var result = GV.WSclient.CuStaffWebportal(HttpContext).FnResetPasswordAsync(JsonSerializer.Serialize(obj)).Result;
-                var response = JsonNode.Parse(result.return_value);
-                if (response?["status"]?.ToString() == "success")
+                var returnV = JsonNode.Parse(result.return_value);
+                if (returnV?["status"]?.ToString() == "success")
                 {
                     return Ok(new { response = "success" });
                 }
@@ -290,9 +278,9 @@ namespace App.Server.Modules.HMIS.Controllers
             }
         }
         //
-        [AuthenticateActionFilter]
+        //[AuthenticateActionFilter]
         [HttpPost]
-        public IActionResult ChangePassword([FromBody] ChangePassword obj)
+        public IActionResult ChangePassword([FromBody] ChangePassword User)
         {
             var authUserSession = GeneralController.SessionUser(HttpContext);
             try
@@ -301,28 +289,28 @@ namespace App.Server.Modules.HMIS.Controllers
                 {
                     return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
                 }
-                if (obj.NewPassword != obj.ConfirmPassword)
+                if (User.NewPassword != User.ConfirmPassword)
                 {
                     throw new Exception("New password and confirm password must match.");
                 }
 
                 //var empStr = await GV.WSclient.ODATAFilter(HttpContext, WS.Employee().WSName, $"$filter=(No eq '{GeneralController.SessionUser(HttpContext).userNo}')", false);
-                var employee = GV.WSclient.ODATAClient().QyEmployees.Where(obj => obj.No == authUserSession.userNo).FirstOrDefault();
-                if (employee != null)
+                var QyUser = GV.WSclient.ODATAClient().QyEmployees.Where(obj => obj.Company_E_Mail == authUserSession.Email).FirstOrDefault();
+                if (QyUser != null)
                 {
-                    if (!FnIsPasswordMatched(obj.currentPassword, employee.PortalPassword))
+                    if (!FnIsPasswordMatched(User.currentPassword, QyUser.PortalPassword))
                     {
                         throw new Exception("The current password is invalid.");
                     }
-                    if (employee != null && FnIsPasswordMatched(obj.NewPassword, employee.PortalPassword))
+                    if (QyUser != null && FnIsPasswordMatched(User.NewPassword, QyUser.PortalPassword))
                     {
                         throw new Exception("The new password cannot be the same as the current password.");
                     }
-                    var hashedPass = FnHashPassword(obj.NewPassword);
-                    obj.NewPassword = hashedPass;
-                    var result = GV.WSclient.CuStaffWebportal(HttpContext).FnChangePasswordAsync(JsonSerializer.Serialize(obj)).Result;
-                    var response = JsonNode.Parse(result.return_value);
-                    if (response?["status"]?.ToString() == "success")
+                    var hashedPass = FnHashPassword(User.NewPassword);
+                    User.hashedPassword = hashedPass;
+                    var result = GV.WSclient.CuStaffWebportal(HttpContext).FnChangePasswordAsync(JsonSerializer.Serialize(User)).Result;
+                    var returnV = JsonNode.Parse(result.return_value);
+                    if (returnV?["status"]?.ToString() == "success")
                     {
                         return Ok(new { response = "success" });
                     }
@@ -428,7 +416,6 @@ namespace App.Server.Modules.HMIS.Controllers
                 throw new ArgumentException("Invalid email format.");
             }
 
-            // Mask the local part (before the @)
             var localPart = parts[0];
             var domainPart = parts[1];
 

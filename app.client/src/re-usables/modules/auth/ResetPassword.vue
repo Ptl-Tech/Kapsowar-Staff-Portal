@@ -44,18 +44,16 @@
         data() {
             return {
                 form: {
-                    EmployeeNo: "",
+                    userNo: "",
                     NewPassword: "",
                     ConfirmPassword: "",
                     ResetTokenCode: "",
-                    NavCompany: "",
                 },
                 valErrors:[],
             }
         },
         mounted() {
-            this.form.EmployeeNo = this.$route.params.no;
-            this.form.NavCompany = this.$route.params.navCompany;
+            this.form.userNo = this.$route.params.no;
         },
         methods: {
             submitForm() {
@@ -83,8 +81,7 @@
                             }
                         }
                         else if (data && data.errors) {
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = String(data.errors);
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: String(data.errors) });
                         } 
                         else {
                             var authUser = data;
@@ -92,15 +89,13 @@
                                 localStorage.setItem("authUser",JSON.stringify(authUser.authUser));
                                 this.router.push('/auth/login');
                                 var msg = "Password reset successfully. Use the new password to login.";
-                                this.$root.FnNotification(msg, 'bg-green-500', false);
+                                this.$root.FnNotification({ type: "popup", theme: "green", message: msg });
                             }
                         }
                         this.$root.loader.isLoading = false;
-                        
                     }).catch((error) => {
                         this.$root.loader.isLoading = false;
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = String(error);
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: String(error) });
                     });
             },
             validatePassword() {
