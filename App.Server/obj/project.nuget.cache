@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yexZUK9zwIk=",
+  "dgSpecHash": "Bh2Odqml0Po=",
   "success": true,
   "projectFilePath": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\App.Server.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kiarie.alex\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.11\\microsoft.aspnetcore.spaproxy.8.0.11.nupkg.sha512",
+    "C:\\Users\\kiarie.alex\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\8.0.12\\microsoft.aspnetcore.spaproxy.8.0.12.nupkg.sha512",
     "C:\\Users\\kiarie.alex\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
     "C:\\Users\\kiarie.alex\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\kiarie.alex\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
@@ -46,6 +46,7 @@
     "C:\\Users\\kiarie.alex\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\kiarie.alex\\.nuget\\packages\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
     "C:\\Users\\kiarie.alex\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\kiarie.alex\\.nuget\\packages\\system.linq.dynamic.core\\1.5.1\\system.linq.dynamic.core.1.5.1.nupkg.sha512",
     "C:\\Users\\kiarie.alex\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",
     "C:\\Users\\kiarie.alex\\.nuget\\packages\\system.reflection.dispatchproxy\\4.7.1\\system.reflection.dispatchproxy.4.7.1.nupkg.sha512",
     "C:\\Users\\kiarie.alex\\.nuget\\packages\\system.reflection.primitives\\4.3.0\\system.reflection.primitives.4.3.0.nupkg.sha512",

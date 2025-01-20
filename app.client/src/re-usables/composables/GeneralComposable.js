@@ -4,7 +4,10 @@ export function useGeneralComposable() {
         return navDateObj.Day + "-" + navDateObj.Month + "-" + navDateObj.Year;
     }
     function cplFnNavDateObjToISODate(navDateObj) {
-        var date = new Date(navDateObj.Year, navDateObj.Month, navDateObj.Day).toISOString().split("T")[0];
+        var date = "";
+        if (navDateObj.Day != undefined) {
+            date = new Date(navDateObj.Year, navDateObj.Month, navDateObj.Day).toISOString().split("T")[0];
+        }
         return date;
     }
     return {

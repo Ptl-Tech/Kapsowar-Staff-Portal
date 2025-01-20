@@ -26,11 +26,11 @@ export function useListPageComposable() {
         //                break;
         //            case 'StaffAdvanceList':
         //            case 'staff-advanceApproval':
-        //                prefetch = () => { import('@/modules/ess/staff-advance/AdvanceForm.vue'); };
+        //                prefetch = () => { import('@/modules/staff-portal/imprest/ImprestForm.vue'); };
         //                break;
         //            case 'SurrenderList':
         //            case 'advance-surrenderApproval':
-        //                prefetch = () => { import('@/modules/ess/staff-advance-surrender/SurrenderForm.vue'); };
+        //                prefetch = () => { import('@/modules/staff-portal/imprest-surrender/SurrenderForm.vue'); };
         //                break;
         //            case 'TransportReqList':
         //            case 'transportApproval':

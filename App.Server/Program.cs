@@ -1,8 +1,11 @@
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
-
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.PropertyNamingPolicy = null; // Use the original property names
+                    options.JsonSerializerOptions.WriteIndented = true; // Format the JSON output for readability
+                });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 //builder.Services.AddEndpointsApiExplorer();
 //builder.Services.AddSwaggerGen();

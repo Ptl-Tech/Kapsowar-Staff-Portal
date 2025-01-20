@@ -18,6 +18,7 @@
     <PackageReference Include="Microsoft.OData.Edm" Version="8.2.3" />
     <PackageReference Include="Microsoft.Spatial" Version="8.2.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.5.1" />
     <PackageReference Include="System.ServiceModel.Duplex" Version="6.0.*" />
     <PackageReference Include="System.ServiceModel.Federation" Version="6.0.*" />
     <PackageReference Include="System.ServiceModel.Http" Version="6.0.*" />

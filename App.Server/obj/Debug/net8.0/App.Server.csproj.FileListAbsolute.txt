@@ -285,3 +285,4 @@ C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Debug\net8.0\sta
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Debug\net8.0\App.Server.csproj.Up2Date
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Debug\net8.0\App.Server.genruntimeconfig.cache
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Debug\net8.0\ref\App.Server.dll
+C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\bin\Debug\net8.0\System.Linq.Dynamic.Core.dll

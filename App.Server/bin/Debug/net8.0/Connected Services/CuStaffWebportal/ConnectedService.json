@@ -1,7 +1,7 @@
 {
   "ExtendedData": {
     "inputs": [
-      "http://DESKTOP-P80SI0S.redcross.or.ke:6022/Kapsowar-Live/WS/AIC%20Kapsowar%20Mission%20Hospital/Codeunit/CuStaffWebportal"
+      "http://desktop-p80si0s.redcross.or.ke:6022/Kapsowar-Live/WS/AIC Kapsowar Mission Hospital/Codeunit/CuStaffWebportal"
     ],
     "collectionTypes": [
       "System.Array",

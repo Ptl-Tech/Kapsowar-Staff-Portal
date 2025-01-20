@@ -31,21 +31,21 @@ namespace App.Server.Modules.HMIS.Controllers
                         //
                         AuthUser authUser = new();
                         authUser.userNo = QyUser.No;
-                        authUser.FullName = QyUser.Full_Name;
-                        authUser.FirstName = QyUser.First_Name;
-                        authUser.MiddleName = QyUser.Middle_Name;
-                        authUser.LastName = QyUser.Last_Name;
-                        authUser.Email = QyUser.Company_E_Mail;
-                        authUser.Gender = QyUser.Gender;
-                        authUser.IsApprover = false;
-                        authUser.IsPortalSuperUser = true;
+                        authUser.fullName = QyUser.Full_Name;
+                        authUser.firstName = QyUser.First_Name;
+                        authUser.middleName = QyUser.Middle_Name;
+                        authUser.lastName = QyUser.Last_Name;
+                        authUser.email = QyUser.Company_E_Mail;
+                        authUser.gender = QyUser.Gender;
+                        authUser.isApprover = false;
+                        authUser.isPortalSuperUser = true;
                         authUser.branchCode = QyUser.Global_Dimension_1_Code;
                         authUser.responsibilityCenter = QyUser.Responsibility_Center;
                         //if no session token
                         if (QyUser.PortalOTPDate.HasValue && QyUser.PortalOTPDate.Value.ToString() == DateTime.Now.ToString("yyyy-MM-dd") && QyUser.PortalOTPDevice == obj.sessionToken)
                         {
                             authUser.sessionToken = obj.sessionToken;
-                            authUser.IsMFAVerified = true;
+                            authUser.isMFAVerified = true;
                             string authString = JsonSerializer.Serialize(authUser);
                             HttpContext.Session.SetString("authUser", authString);
                             return Ok(new { status = "success", msg = "Login successful.", authUser });
@@ -63,7 +63,7 @@ namespace App.Server.Modules.HMIS.Controllers
                                 throw new Exception(retu);
                             }
                             authUser.sessionToken = sessionToken;
-                            authUser.IsMFAVerified = false;
+                            authUser.isMFAVerified = false;
                             string authString = JsonSerializer.Serialize(authUser);
                             HttpContext.Session.SetString("authUser", authString);
                             return Ok(new { status = "success", msg = "OTP login required. OTP Code sent to " + MaskEmail(QyUser.Company_E_Mail), authUser });
@@ -104,7 +104,7 @@ namespace App.Server.Modules.HMIS.Controllers
                         var authUserSession = JsonSerializer.Deserialize<AuthUser>(sessionUser);
                         if (authUserSession != null)
                         {
-                            authUserSession.IsMFAVerified = true;
+                            authUserSession.isMFAVerified = true;
                         }
                         string authString = JsonSerializer.Serialize(authUserSession);
                         HttpContext.Session.SetString("authUser", authString);
@@ -295,7 +295,7 @@ namespace App.Server.Modules.HMIS.Controllers
                 }
 
                 //var empStr = await GV.WSclient.ODATAFilter(HttpContext, WS.Employee().WSName, $"$filter=(No eq '{GeneralController.SessionUser(HttpContext).userNo}')", false);
-                var QyUser = GV.WSclient.ODATAClient().QyEmployees.Where(obj => obj.Company_E_Mail == authUserSession.Email).FirstOrDefault();
+                var QyUser = GV.WSclient.ODATAClient().QyEmployees.Where(obj => obj.Company_E_Mail == authUserSession.email).FirstOrDefault();
                 if (QyUser != null)
                 {
                     if (!FnIsPasswordMatched(User.currentPassword, QyUser.PortalPassword))

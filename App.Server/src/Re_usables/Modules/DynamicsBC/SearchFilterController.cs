@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Http.Extensions;
+﻿using App.Server.src.Re_usables.Modules.DynamicsBC;
+using Microsoft.AspNetCore.Http.Extensions;
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using System.Linq.Dynamic.Core;
 
-namespace App.Server.src.Re_usables.Modules.DynamicsBC
+namespace App.Server
 {
     public class SearchFilterController
     {
@@ -196,132 +198,131 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
             }
         }
 
-        //public List<object> FnSearchFilter(HttpContext MyHttpContext, List<object> baseResults, ClassProperties ClassProps)
-        //{
-        //    //
-        //    string fullUrl = MyHttpContext.Request.GetDisplayUrl();
-        //    //check if there is a search query in url
-        //    string query = "";
-        //    string anyQuery = "";
-        //    int maxTake = FnGetMaxTake(MyHttpContext);
-        //    List<object> result = new List<object>();
-        //    if (fullUrl.IndexOf("filter=") > 0)
-        //    {
-        //        int filterStart = fullUrl.IndexOf("filter=") + "filter=".Length;
-        //        int filterEnd = fullUrl.LastIndexOf("__filter");
-        //        string filterString = fullUrl.Substring(filterStart, filterEnd - filterStart);
-        //        //var searchQuery = fullUrl.Split("?filter=")[1];
-        //        var searchQuery = filterString;
+        public List<object> FnSearchFilter(HttpContext MyHttpContext, List<object> baseResults, ClassProperties ClassProps)
+        {
+            //
+            string fullUrl = MyHttpContext.Request.GetDisplayUrl();
+            //check if there is a search query in url
+            string query = "";
+            string anyQuery = "";
+            int maxTake = FnGetMaxTake(MyHttpContext);
+            List<object> result = new List<object>();
+            if (fullUrl.IndexOf("filter=") > 0)
+            {
+                int filterStart = fullUrl.IndexOf("filter=") + "filter=".Length;
+                int filterEnd = fullUrl.LastIndexOf("__filter");
+                string filterString = fullUrl.Substring(filterStart, filterEnd - filterStart);
+                //var searchQuery = fullUrl.Split("?filter=")[1];
+                var searchQuery = filterString;
 
-        //        List<string> fieldNames = new List<string>();
-        //        //when you only have one search group
-        //        if (searchQuery.IndexOf("&&") < 0)
-        //        {
-        //            //var searchParams = searchQuery.Split("___");
-        //            var searchCol = searchQuery.Split("___")[0];
-        //            var searchValue = searchQuery.Split("___")[1];
-        //            if (searchCol == "any")
-        //            {
-        //                fieldNames = GeneralController.GetModelFieldNames(ClassProps.WSInstance);
-        //                //
-        //                if (fieldNames != null)
-        //                {
-        //                    foreach (var fieldName in fieldNames)
-        //                    {
-        //                        if (query == "")
-        //                        {
-        //                            query = $"{fieldName}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
-        //                        }
-        //                        else
-        //                        {
-        //                            query = query + $" || {fieldName}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
-        //                        }
-        //                    }
-        //                }
-        //            }
-        //            else
-        //            {
-        //                query = $"{searchCol}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
-        //            }
-        //        }
-        //        //when you have multiple filters
-        //        else
-        //        {
-        //            var searchGroups = searchQuery.Split("&&");
-        //            string searchCol;
-        //            string searchValue;
+                List<string> fieldNames = new List<string>();
+                //when you only have one search group
+                if (searchQuery.IndexOf("&&") < 0)
+                {
+                    //var searchParams = searchQuery.Split("___");
+                    var searchCol = searchQuery.Split("___")[0];
+                    var searchValue = searchQuery.Split("___")[1];
+                    if (searchCol == "any")
+                    {
+                        fieldNames = GeneralController.GetModelFieldNames(ClassProps.WSInstance);
+                        //
+                        if (fieldNames != null)
+                        {
+                            foreach (var fieldName in fieldNames)
+                            {
+                                if (query == "")
+                                {
+                                    query = $"{fieldName}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
+                                }
+                                else
+                                {
+                                    query = query + $" || {fieldName}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
+                                }
+                            }
+                        }
+                    }
+                    else
+                    {
+                        query = $"{searchCol}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
+                    }
+                }
+                //when you have multiple filters
+                else
+                {
+                    var searchGroups = searchQuery.Split("&&");
+                    string searchCol;
+                    string searchValue;
 
-        //            foreach (var searchGroup in searchGroups)
-        //            {
-        //                searchCol = searchGroup.Split("___")[0];
-        //                searchValue = searchGroup.Split("___")[1];
-        //                if (searchCol != "any")
-        //                {
-        //                    if (query == "")
-        //                    {
-        //                        query = $"{searchCol}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
-        //                    }
-        //                    else
-        //                    {
-        //                        query = query + $" && {searchCol}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
-        //                    }
-        //                }
-        //                else
-        //                {
-        //                    fieldNames = GeneralController.GetModelFieldNames(ClassProps.WSInstance);
-        //                    if (fieldNames != null)
-        //                    {
-        //                        foreach (var fieldName in fieldNames)
-        //                        {
-        //                            if (anyQuery == "")
-        //                            {
-        //                                anyQuery = $"{fieldName}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
-        //                            }
-        //                            else
-        //                            {
-        //                                anyQuery = anyQuery + $" || {fieldName}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
-        //                            }
-        //                        }
-        //                    }
-        //                }
-        //            }
-        //            if (anyQuery != "")
-        //            {
-        //                if (query != "")
-        //                {
-        //                    query = query + " && (" + anyQuery + ")";
-        //                }
-        //                else
-        //                {
-        //                    query = anyQuery;
-        //                }
-        //            }
+                    foreach (var searchGroup in searchGroups)
+                    {
+                        searchCol = searchGroup.Split("___")[0];
+                        searchValue = searchGroup.Split("___")[1];
+                        if (searchCol != "any")
+                        {
+                            if (query == "")
+                            {
+                                query = $"{searchCol}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
+                            }
+                            else
+                            {
+                                query = query + $" && {searchCol}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
+                            }
+                        }
+                        else
+                        {
+                            fieldNames = GeneralController.GetModelFieldNames(ClassProps.WSInstance);
+                            if (fieldNames != null)
+                            {
+                                foreach (var fieldName in fieldNames)
+                                {
+                                    if (anyQuery == "")
+                                    {
+                                        anyQuery = $"{fieldName}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
+                                    }
+                                    else
+                                    {
+                                        anyQuery = anyQuery + $" || {fieldName}.ToString().ToLower().Contains(\"{searchValue.ToString().ToLower()}\")";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    if (anyQuery != "")
+                    {
+                        if (query != "")
+                        {
+                            query = query + " && (" + anyQuery + ")";
+                        }
+                        else
+                        {
+                            query = anyQuery;
+                        }
+                    }
 
-        //        }
-        //        if (fullUrl.IndexOf("order_by=") < 0)
-        //        {
-        //            result = baseResults.AsQueryable().Where(query).Take(maxTake).ToList();
-        //        }
-        //    }
-        //    if (fullUrl.IndexOf("order_by=") > 0)
-        //    {
-        //        int orderByStart = fullUrl.IndexOf("order_by=") + "order_by=".Length;
-        //        int orderByEnd = fullUrl.LastIndexOf("__order_by");
-        //        string orderByString = fullUrl.Substring(orderByStart, orderByEnd - orderByStart);
-        //        var orderCol = orderByString.Split("___")[0];
-        //        var orderValue = orderByString.Split("___")[1];
-        //        if (query != "")
-        //        {
-        //            result = baseResults.AsQueryable().Where(query).OrderBy(orderCol + " " + orderValue).Take(maxTake).ToList();
-        //        }
-        //        else
-        //        {
-        //            result = baseResults.AsQueryable().OrderBy(orderCol + " " + orderValue).Take(maxTake).ToList();
-        //        }
-        //    }
-        //    return result;
-        //}
-
+                }
+                if (fullUrl.IndexOf("order_by=") < 0)
+                {
+                    result = baseResults.AsQueryable().Where(query).Take(maxTake).ToList();
+                }
+            }
+            if (fullUrl.IndexOf("order_by=") > 0)
+            {
+                int orderByStart = fullUrl.IndexOf("order_by=") + "order_by=".Length;
+                int orderByEnd = fullUrl.LastIndexOf("__order_by");
+                string orderByString = fullUrl.Substring(orderByStart, orderByEnd - orderByStart);
+                var orderCol = orderByString.Split("___")[0];
+                var orderValue = orderByString.Split("___")[1];
+                if (query != "")
+                {
+                    result = baseResults.AsQueryable().Where(query).OrderBy(orderCol + " " + orderValue).Take(maxTake).ToList();
+                }
+                else
+                {
+                    result = baseResults.AsQueryable().OrderBy(orderCol + " " + orderValue).Take(maxTake).ToList();
+                }
+            }
+            return result;
+        }
         public static int FnGetMaxTake(HttpContext currentContext)
         {
             string fullUrl = currentContext.Request.GetDisplayUrl();
@@ -331,7 +332,7 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
                 int takeMaxStart = fullUrl.IndexOf("take_max=") + "take_max=".Length;
                 int takeMaxEnd = fullUrl.LastIndexOf("__take_max");
                 string takeMaxString = fullUrl.Substring(takeMaxStart, takeMaxEnd - takeMaxStart);
-                takeMax = int.Parse(takeMaxString);
+                takeMax = Int32.Parse(takeMaxString);
             }
             return takeMax;
         }

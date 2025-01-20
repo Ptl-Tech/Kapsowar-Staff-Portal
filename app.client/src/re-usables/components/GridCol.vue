@@ -1,5 +1,5 @@
 <template>
-    <div :class="[isBorder? 'border-r border-b p-1':'']">
+    <div :class="[isBorder? 'borderx-r borderx-b p-1':'']">
         <slot></slot>
     </div>
 </template>

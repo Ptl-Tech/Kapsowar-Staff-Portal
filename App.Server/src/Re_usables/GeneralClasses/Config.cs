@@ -2,16 +2,6 @@
 {
     public class Config
     {
-        //live env
-        public static readonly string LiveHostName = "DESKTOP-P80SI0S";
-        public static readonly string LiveNAVInstance = "Kapsowar-Live";
-        public static readonly string LiveCredentialType = "NavUserPassword";
-        public static readonly string LiveSoapBaseUrl = "http://desktop-p80si0s.redcross.or.ke:6022/";
-        public static readonly string LiveOdataBaseUrl = "http://desktop-p80si0s.redcross.or.ke:6021/";
-        public static readonly string LiveNavUsername = "ALEX";
-        public static readonly string LiveNavPassword = "Kenya@2024!";
-        public static readonly string LiveNAVCompany = "AIC Kapsowar Mission Hospital";
-        public static readonly string LiveCodeunit = "CuStaffWebportal";
         //Development env
         public static readonly string DevHostName = "DESKTOP-P80SI0S";
         public static readonly string DevNAVInstance = "Kapsowar-Live";
@@ -22,6 +12,16 @@
         public static readonly string DevNavPassword = "Kenya@2024!";
         public static readonly string DevNAVCompany = "AIC Kapsowar Mission Hospital";
         public static readonly string DevCodeunit = "CuStaffWebportal";
+        //live env
+        public static readonly string LiveHostName = "";
+        public static readonly string LiveNAVInstance = "BC140";
+        public static readonly string LiveCredentialType = "NavUserPassword";
+        public static readonly string LiveSoapBaseUrl = "http://WIN-6U0N5BV0KKH:5047/";
+        public static readonly string LiveOdataBaseUrl = "http://WIN-6U0N5BV0KKH:5048/";
+        public static readonly string LiveNavUsername = "Admin";
+        public static readonly string LiveNavPassword = "Admin@123";
+        public static readonly string LiveNAVCompany = "AIC Kapsowar Mission Hospital";
+        public static readonly string LiveCodeunit = "CuStaffWebportal";
         /**
          OTHER SETTINGS
          */

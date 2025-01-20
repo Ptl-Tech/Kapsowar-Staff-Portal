@@ -34,6 +34,19 @@ namespace CuStaffWebportal
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnSendEmail", ReplyAction="*")]
         System.Threading.Tasks.Task<CuStaffWebportal.FnSendEmail_Result> FnSendEmailAsync(CuStaffWebportal.FnSendEmail request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnLeaveApplication", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnLeaveApplication_Result> FnLeaveApplicationAsync(CuStaffWebportal.FnLeaveApplication request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnCancelDocumentApproval" +
+            "", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnCancelDocumentApproval_Result> FnCancelDocumentApprovalAsync(CuStaffWebportal.FnCancelDocumentApproval request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnGetStaffLeaveBalance", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnGetStaffLeaveBalance_Result> FnGetStaffLeaveBalanceAsync(CuStaffWebportal.FnGetStaffLeaveBalance request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnGetLeaveDates", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnGetLeaveDates_Result> FnGetLeaveDatesAsync(CuStaffWebportal.FnGetLeaveDates request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -288,6 +301,166 @@ namespace CuStaffWebportal
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnLeaveApplication", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnLeaveApplication
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnLeaveApplication()
+        {
+        }
+        
+        public FnLeaveApplication(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnLeaveApplication_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnLeaveApplication_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnLeaveApplication_Result()
+        {
+        }
+        
+        public FnLeaveApplication_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnCancelDocumentApproval", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnCancelDocumentApproval
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnCancelDocumentApproval()
+        {
+        }
+        
+        public FnCancelDocumentApproval(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnCancelDocumentApproval_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnCancelDocumentApproval_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnCancelDocumentApproval_Result()
+        {
+        }
+        
+        public FnCancelDocumentApproval_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnGetStaffLeaveBalance", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnGetStaffLeaveBalance
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnGetStaffLeaveBalance()
+        {
+        }
+        
+        public FnGetStaffLeaveBalance(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnGetStaffLeaveBalance_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnGetStaffLeaveBalance_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnGetStaffLeaveBalance_Result()
+        {
+        }
+        
+        public FnGetStaffLeaveBalance_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnGetLeaveDates", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnGetLeaveDates
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnGetLeaveDates()
+        {
+        }
+        
+        public FnGetLeaveDates(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnGetLeaveDates_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnGetLeaveDates_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnGetLeaveDates_Result()
+        {
+        }
+        
+        public FnGetLeaveDates_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     public interface CuStaffWebportal_PortChannel : CuStaffWebportal.CuStaffWebportal_Port, System.ServiceModel.IClientChannel
     {
@@ -417,6 +590,58 @@ namespace CuStaffWebportal
             inValue.emailMessage = emailMessage;
             inValue.ccRecipients = ccRecipients;
             return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnSendEmailAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnLeaveApplication_Result> CuStaffWebportal.CuStaffWebportal_Port.FnLeaveApplicationAsync(CuStaffWebportal.FnLeaveApplication request)
+        {
+            return base.Channel.FnLeaveApplicationAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnLeaveApplication_Result> FnLeaveApplicationAsync(string jString)
+        {
+            CuStaffWebportal.FnLeaveApplication inValue = new CuStaffWebportal.FnLeaveApplication();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnLeaveApplicationAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnCancelDocumentApproval_Result> CuStaffWebportal.CuStaffWebportal_Port.FnCancelDocumentApprovalAsync(CuStaffWebportal.FnCancelDocumentApproval request)
+        {
+            return base.Channel.FnCancelDocumentApprovalAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnCancelDocumentApproval_Result> FnCancelDocumentApprovalAsync(string jString)
+        {
+            CuStaffWebportal.FnCancelDocumentApproval inValue = new CuStaffWebportal.FnCancelDocumentApproval();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnCancelDocumentApprovalAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnGetStaffLeaveBalance_Result> CuStaffWebportal.CuStaffWebportal_Port.FnGetStaffLeaveBalanceAsync(CuStaffWebportal.FnGetStaffLeaveBalance request)
+        {
+            return base.Channel.FnGetStaffLeaveBalanceAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnGetStaffLeaveBalance_Result> FnGetStaffLeaveBalanceAsync(string jString)
+        {
+            CuStaffWebportal.FnGetStaffLeaveBalance inValue = new CuStaffWebportal.FnGetStaffLeaveBalance();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnGetStaffLeaveBalanceAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnGetLeaveDates_Result> CuStaffWebportal.CuStaffWebportal_Port.FnGetLeaveDatesAsync(CuStaffWebportal.FnGetLeaveDates request)
+        {
+            return base.Channel.FnGetLeaveDatesAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnGetLeaveDates_Result> FnGetLeaveDatesAsync(string jString)
+        {
+            CuStaffWebportal.FnGetLeaveDates inValue = new CuStaffWebportal.FnGetLeaveDates();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnGetLeaveDatesAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

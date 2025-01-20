@@ -39,7 +39,7 @@ namespace App.Server.Re_usables.GeneralClasses
             if (isExecute)
             {
                 var httpContext = context.HttpContext;
-                if (GeneralController.SessionUser(httpContext) != null && GeneralController.SessionUser(httpContext).IsApprover == false)
+                if (GeneralController.SessionUser(httpContext) != null && GeneralController.SessionUser(httpContext).isApprover == false)
                 {
                     throw new Exception("Oops! access denied. Only approvers can access this section.");
                 }

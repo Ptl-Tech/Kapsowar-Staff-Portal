@@ -1,6 +1,6 @@
-import ApprovalForm from '@/modules/ess/approval-entry/ApprovalForm.vue';
-import ApprovalActions from '@/modules/ess/approval-entry/ApprovalActions.vue';
-import ApproversList from '@/modules/ess/approval-entry/ApproversList.vue';
+import ApprovalForm from '@/modules/staff-portal/approval-entry/ApprovalForm.vue';
+import ApprovalActions from '@/modules/staff-portal/approval-entry/ApprovalActions.vue';
+import ApproversList from '@/modules/staff-portal/approval-entry/ApproversList.vue';
 
 const Apr = {}
 Apr.ApprovalForm = ApprovalForm;

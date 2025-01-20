@@ -1,0 +1,10 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:59712",
+"RedirectUrl": "",
+"LaunchCommand": "npm run dev",
+"WorkingDirectory": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\..\\app.client",
+"MaxTimeoutInSeconds": "120",
+"KeepRunning": "false"
+}
+}

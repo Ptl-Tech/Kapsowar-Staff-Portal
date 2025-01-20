@@ -28,19 +28,19 @@ namespace App.Server.Modules.HMIS.Models
     {
         [DisplayName("Staff No.")]
         public string userNo { get; set; } = "";
-        public string UserId { get; set; } = "";
-        public string FullName { get; set; } = "";
-        public string FirstName { get; set; } = "";
-        public string MiddleName { get; set; } = "";
-        public string LastName { get; set; } = "";
-        public string Gender { get; set; } = "";
-        public bool? IsMFAVerified { get; set; }
-        public string Email { get; set; } = "";
-        public string PhoneNumber { get; set; } = "";
-        public int PendingMyApproval { get; set; } = 0;
-        public bool IsApprover { get; set; }
+        public string userId { get; set; } = "";
+        public string fullName { get; set; } = "";
+        public string firstName { get; set; } = "";
+        public string middleName { get; set; } = "";
+        public string lastName { get; set; } = "";
+        public string gender { get; set; } = "";
+        public bool? isMFAVerified { get; set; }
+        public string email { get; set; } = "";
+        public string phoneNumber { get; set; } = "";
+        public int pendingMyApproval { get; set; } = 0;
+        public bool isApprover { get; set; }
         public string sessionToken { get; set; } = "";
-        public bool IsPortalSuperUser { get; set; }
+        public bool isPortalSuperUser { get; set; }
         public bool isAccountVerified { get; set; }
         public string branchCode { get; set; } = "";
         public string responsibilityCenter { get; set; } = "";

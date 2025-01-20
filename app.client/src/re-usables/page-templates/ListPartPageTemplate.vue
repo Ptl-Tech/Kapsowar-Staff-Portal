@@ -129,8 +129,8 @@
                     }).catch((error) => {
                         this.isFetchingData = false;
                         this.isLoadingMore = false;
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = this.appConfig.errors.dataFetchFailure;
+                        var msg = this.appConfig.errors.dataFetchFailure;
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                     });
             },
             FnOnOrderList(actionParams) {
@@ -337,16 +337,16 @@
                         })
                         .then(data => {
                             if (data && data.Error) {
-                                this.$root.errorModal.isShow = true;
-                                this.$root.errorModal.message = data.Error;
+                                var msg = data.Error;
+                                this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                             } else {
                                 this.records.splice(this.selectedRows[i], 1);
                                 this.$root.loader = { isLoading: false, message: '' };
                             }
                         }).catch((error) => {
                             this.$root.loader = { isLoading: false, message: '' };
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = this.appConfig.errors.dataDeletionFailure;
+                            var msg = this.appConfig.errors.dataDeletionFailure;
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         });
                 }
                 this.selectedRows = [];
@@ -368,16 +368,16 @@
                     })
                     .then(data => {
                         if (data && data.Error) {
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = data.Error;
+                            var msg = data.Error;
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         } else {
                             this.records.splice(this.selectedRows[i], 1);
                             this.$root.loader = { isLoading: false, message: '' };
                         }
                     }).catch((error) => {
                         this.$root.loader = { isLoading: false, message: '' };
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = this.appConfig.errors.dataDeletionFailure;
+                        var msg = this.appConfig.errors.dataDeletionFailure;
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                     });
             this.selectedRows = [];
             this.$root.FnNotification(deleteCount + " record(s) deleted successfully.", "bg-green-600", false);
