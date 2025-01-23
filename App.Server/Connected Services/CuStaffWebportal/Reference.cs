@@ -47,6 +47,12 @@ namespace CuStaffWebportal
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnGetLeaveDates", ReplyAction="*")]
         System.Threading.Tasks.Task<CuStaffWebportal.FnGetLeaveDates_Result> FnGetLeaveDatesAsync(CuStaffWebportal.FnGetLeaveDates request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnGeneratePayslip", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnGeneratePayslip_Result> FnGeneratePayslipAsync(CuStaffWebportal.FnGeneratePayslip request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnGenerateP9Report", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnGenerateP9Report_Result> FnGenerateP9ReportAsync(CuStaffWebportal.FnGenerateP9Report request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -461,6 +467,86 @@ namespace CuStaffWebportal
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnGeneratePayslip", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnGeneratePayslip
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnGeneratePayslip()
+        {
+        }
+        
+        public FnGeneratePayslip(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnGeneratePayslip_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnGeneratePayslip_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnGeneratePayslip_Result()
+        {
+        }
+        
+        public FnGeneratePayslip_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnGenerateP9Report", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnGenerateP9Report
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnGenerateP9Report()
+        {
+        }
+        
+        public FnGenerateP9Report(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnGenerateP9Report_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnGenerateP9Report_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnGenerateP9Report_Result()
+        {
+        }
+        
+        public FnGenerateP9Report_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     public interface CuStaffWebportal_PortChannel : CuStaffWebportal.CuStaffWebportal_Port, System.ServiceModel.IClientChannel
     {
@@ -642,6 +728,32 @@ namespace CuStaffWebportal
             CuStaffWebportal.FnGetLeaveDates inValue = new CuStaffWebportal.FnGetLeaveDates();
             inValue.jString = jString;
             return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnGetLeaveDatesAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnGeneratePayslip_Result> CuStaffWebportal.CuStaffWebportal_Port.FnGeneratePayslipAsync(CuStaffWebportal.FnGeneratePayslip request)
+        {
+            return base.Channel.FnGeneratePayslipAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnGeneratePayslip_Result> FnGeneratePayslipAsync(string jString)
+        {
+            CuStaffWebportal.FnGeneratePayslip inValue = new CuStaffWebportal.FnGeneratePayslip();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnGeneratePayslipAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnGenerateP9Report_Result> CuStaffWebportal.CuStaffWebportal_Port.FnGenerateP9ReportAsync(CuStaffWebportal.FnGenerateP9Report request)
+        {
+            return base.Channel.FnGenerateP9ReportAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnGenerateP9Report_Result> FnGenerateP9ReportAsync(string jString)
+        {
+            CuStaffWebportal.FnGenerateP9Report inValue = new CuStaffWebportal.FnGenerateP9Report();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnGenerateP9ReportAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

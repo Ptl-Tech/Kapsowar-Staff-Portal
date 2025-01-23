@@ -151,6 +151,11 @@
             this.FnFetchSetups();
             this.formMode = this.form.myAction;
         },
+        mounted() {
+            if (this.record.Days_Applied != undefined) {
+                this.form.noOfdays = this.record.Days_Applied;
+            }
+        },
         methods: {
             FnFetchSetups() {
                 this.$root.loader.isLoading = true;
@@ -168,7 +173,6 @@
                             this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         } else {
                             this.header = data.response.header;
-                            this.testPackages = data.response.testPackages;
                             if (this.form.myAction != "create") {
                                 var formData = data.response.formData;
                                 this.record = formData;
@@ -176,10 +180,10 @@
                                 this.form.leaveType = formData.Leave_Type;
                                 this.form.startDate = this.$root.cplFnNavDateObjToISODate(formData.Start_Date);
                                 this.form.endDate = this.$root.cplFnNavDateObjToISODate(formData.End_Date);
-                                this.form.noOfdays = parseInt(formData.Days_Applied);
                                 this.form.returnDate = this.$root.cplFnNavDateObjToISODate(formData.Return_to_Work_Date);
                                 this.form.reliever = formData.Reliever_No;
                                 this.form.comments = formData.Reson_for_Request;
+                                this.form.noOfdays = parseFloat(formData.Days_Applied);
                                 if (this.record.Status != "Open") {
                                     this.formMode = "view";
                                 }

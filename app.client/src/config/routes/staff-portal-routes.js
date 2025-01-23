@@ -84,14 +84,14 @@ export const supplierPortalRoutes = [
         //            { path: 'form/:action/:no', component: () => import('@/modules/staff-portal/leave-recall/RecallForm.vue'), },
         //        ]
         //    },
-        //    {
-        //        path: 'reports',
-        //        meta: { requiresAuth: true },
-        //        children: [
-        //            { path: 'payslip', component: () => import('@/modules/staff-portal/reports/Payslip.vue'), },
-        //            { path: 'p9', component: () => import('@/modules/staff-portal/reports/P9.vue') },
-        //        ]
-        //    },
+            {
+                path: 'reports',
+                meta: { requiresAuth: true },
+                children: [
+                    { path: 'payslip', component: () => import('@/modules/staff-portal/reports/Payslip.vue'), },
+                    { path: 'p9', component: () => import('@/modules/staff-portal/reports/P9.vue') },
+                ]
+            },
         //    /**
         //     * PROCUREMENT & STORES ROUTES
         //     */

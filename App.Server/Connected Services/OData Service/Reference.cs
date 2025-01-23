@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/19/2025 6:05:39 PM
+// Generation date: 1/23/2025 9:30:52 PM
 namespace NAV
 {
     /// <summary>
@@ -1247,6 +1247,23 @@ namespace NAV
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
         private global::Microsoft.OData.Client.DataServiceQuery<QyLeaveTypes> _QyLeaveTypes;
         /// <summary>
+        /// There are no comments for QyPayrollPeriods in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<QyPayrollPeriods> QyPayrollPeriods
+        {
+            get
+            {
+                if ((this._QyPayrollPeriods == null))
+                {
+                    this._QyPayrollPeriods = base.CreateQuery<QyPayrollPeriods>("QyPayrollPeriods");
+                }
+                return this._QyPayrollPeriods;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<QyPayrollPeriods> _QyPayrollPeriods;
+        /// <summary>
         /// There are no comments for ReceiptAndPaymentTypes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
@@ -2374,6 +2391,14 @@ namespace NAV
         public void AddToQyLeaveTypes(QyLeaveTypes qyLeaveTypes)
         {
             base.AddObject("QyLeaveTypes", qyLeaveTypes);
+        }
+        /// <summary>
+        /// There are no comments for QyPayrollPeriods in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public void AddToQyPayrollPeriods(QyPayrollPeriods qyPayrollPeriods)
+        {
+            base.AddObject("QyPayrollPeriods", qyPayrollPeriods);
         }
         /// <summary>
         /// There are no comments for ReceiptAndPaymentTypes in the schema.
@@ -4175,6 +4200,12 @@ namespace NAV
           <Annotation Term=""NAV.LabelId"" String=""Max_Carry_Forward_Days"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Attachment_Mandatory"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Attachment_Mandatory"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
           </Annotation>
         </Property>
         <Annotation Term=""NAV.LabelId"" String=""Leave_Types2"" />
@@ -15318,99 +15349,170 @@ namespace NAV
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
+        <Property Name=""Has_Attachment"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Has Attachment"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
         <Annotation Term=""NAV.LabelId"" String=""QyLeaveApplications"" />
         <Annotation Term=""NAV.IsReadOnly"" Bool=""true"" />
       </EntityType>
       <EntityType Name=""QyLeaveTypes"">
         <Key>
-          <PropertyRef Name=""Code"" />
+          <PropertyRef Name=""Date_Opened"" />
         </Key>
-        <Property Name=""Code"" Type=""Edm.String"" Nullable=""false"" MaxLength=""10"">
-          <Annotation Term=""NAV.LabelId"" String=""Code"" />
+        <Property Name=""Period_Month"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Period Month"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Period_Year"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Period Year"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Period_Name"" Type=""Edm.String"" MaxLength=""30"">
+          <Annotation Term=""NAV.LabelId"" String=""Period Name"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Date_Opened"" Type=""Edm.Date"" Nullable=""false"">
+          <Annotation Term=""NAV.LabelId"" String=""Date Opened"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
           <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
         </Property>
-        <Property Name=""Days"" Type=""Edm.Decimal"" Scale=""Variable"">
-          <Annotation Term=""NAV.LabelId"" String=""Days"" />
+        <Property Name=""Date_Closed"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Date Closed"" />
           <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/Real</EnumMember>
+            <EnumMember>NAV.NavType/Date</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
-        <Property Name=""Unlimited_Days"" Type=""Edm.Boolean"">
-          <Annotation Term=""NAV.LabelId"" String=""Unlimited Days"" />
+        <Property Name=""Closed"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Closed"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/Bool</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
-        <Property Name=""Gender"" Type=""Edm.String"" MaxLength=""4"">
-          <Annotation Term=""NAV.LabelId"" String=""Gender"" />
+        <Property Name=""Closed_By"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Closed By"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/String</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
-        <Property Name=""Balance"" Type=""Edm.String"" MaxLength=""4"">
-          <Annotation Term=""NAV.LabelId"" String=""Balance"" />
+        <Property Name=""Opened_By"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Opened By"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/String</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
-        <Property Name=""Max_Carry_Forward_Days"" Type=""Edm.Decimal"" Scale=""Variable"">
-          <Annotation Term=""NAV.LabelId"" String=""Max Carry Forward Days"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/Real</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""Inclusive_of_Non_Working_Days"" Type=""Edm.Boolean"">
-          <Annotation Term=""NAV.LabelId"" String=""Inclusive of Non Working Days"" />
+        <Property Name=""Allow_View_Payslip"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Allow View Payslip?"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/Bool</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
-        <Property Name=""Blocked"" Type=""Edm.Boolean"">
-          <Annotation Term=""NAV.LabelId"" String=""Blocked"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/Bool</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""Maximum_Days_To_be_Applied"" Type=""Edm.Decimal"" Scale=""Variable"">
-          <Annotation Term=""NAV.LabelId"" String=""Maximum Days To be Applied"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/Real</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""Deduct_from_Annual_Leave"" Type=""Edm.Boolean"">
-          <Annotation Term=""NAV.LabelId"" String=""Deduct from Annual Leave"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/Bool</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""Inclusive_of_Sunday"" Type=""Edm.Boolean"">
-          <Annotation Term=""NAV.LabelId"" String=""Inclusive of Sunday"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/Bool</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""Inclusive_of_Saturday"" Type=""Edm.Boolean"">
-          <Annotation Term=""NAV.LabelId"" String=""Inclusive of Saturday"" />
+        <Property Name=""Proration_Done"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Proration Done"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/Bool</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
         <Annotation Term=""NAV.LabelId"" String=""QyLeaveTypes"" />
+        <Annotation Term=""NAV.IsReadOnly"" Bool=""true"" />
+      </EntityType>
+      <EntityType Name=""QyPayrollPeriods"">
+        <Key>
+          <PropertyRef Name=""Date_Opened"" />
+        </Key>
+        <Property Name=""Period_Month"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Period Month"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Period_Year"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Period Year"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Period_Name"" Type=""Edm.String"" MaxLength=""30"">
+          <Annotation Term=""NAV.LabelId"" String=""Period Name"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Date_Opened"" Type=""Edm.Date"" Nullable=""false"">
+          <Annotation Term=""NAV.LabelId"" String=""Date Opened"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Date_Closed"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Date Closed"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Closed"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Closed"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Closed_By"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Closed By"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Opened_By"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Opened By"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Allow_View_Payslip"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Allow View Payslip?"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Proration_Done"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Proration Done"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Annotation Term=""NAV.LabelId"" String=""QyPayrollPeriods"" />
         <Annotation Term=""NAV.IsReadOnly"" Bool=""true"" />
       </EntityType>
       <EntityType Name=""ReceiptAndPaymentTypes"">
@@ -19459,6 +19561,7 @@ namespace NAV
         <NavigationProperty Name=""QyGeneralLedgerSetup"" Type=""Collection(NAV.QyGeneralLedgerSetup)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""QyLeaveApplications"" Type=""Collection(NAV.QyLeaveApplications)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""QyLeaveTypes"" Type=""Collection(NAV.QyLeaveTypes)"" ContainsTarget=""true"" />
+        <NavigationProperty Name=""QyPayrollPeriods"" Type=""Collection(NAV.QyPayrollPeriods)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""ReceiptAndPaymentTypes"" Type=""Collection(NAV.ReceiptAndPaymentTypes)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""Receipts"" Type=""Collection(NAV.Receipts)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""Record_Link"" Type=""Collection(NAV.Record_Link)"" ContainsTarget=""true"" />
@@ -19766,6 +19869,10 @@ namespace NAV
         <ReturnType Type=""Edm.String"" />
       </Action>
       <Action Name=""CuStaffWebportal_FnGetStaffLeaveBalance"">
+        <Parameter Name=""jString"" Type=""Edm.String"" />
+        <ReturnType Type=""Edm.String"" />
+      </Action>
+      <Action Name=""CuStaffWebportal_FnGetLeaveDates"">
         <Parameter Name=""jString"" Type=""Edm.String"" />
         <ReturnType Type=""Edm.String"" />
       </Action>
@@ -22695,6 +22802,7 @@ namespace NAV
         <ActionImport Name=""CuStaffWebportal_FnLeaveApplication"" Action=""NAV.CuStaffWebportal_FnLeaveApplication"" />
         <ActionImport Name=""CuStaffWebportal_FnCancelDocumentApproval"" Action=""NAV.CuStaffWebportal_FnCancelDocumentApproval"" />
         <ActionImport Name=""CuStaffWebportal_FnGetStaffLeaveBalance"" Action=""NAV.CuStaffWebportal_FnGetStaffLeaveBalance"" />
+        <ActionImport Name=""CuStaffWebportal_FnGetLeaveDates"" Action=""NAV.CuStaffWebportal_FnGetLeaveDates"" />
         <ActionImport Name=""RecruitmentPortal_HRJobAppInsert"" Action=""NAV.RecruitmentPortal_HRJobAppInsert"" />
         <ActionImport Name=""RecruitmentPortal_HRJobAppQualificationsInsert"" Action=""NAV.RecruitmentPortal_HRJobAppQualificationsInsert"" />
         <ActionImport Name=""RecruitmentPortal_HRJobAppRefereesInsert"" Action=""NAV.RecruitmentPortal_HRJobAppRefereesInsert"" />
@@ -24688,6 +24796,28 @@ namespace NAV
             </Record>
           </Annotation>
         </EntitySet>
+        <EntitySet Name=""QyPayrollPeriods"" EntityType=""NAV.QyPayrollPeriods"">
+          <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
+            <Record>
+              <PropertyValue Property=""Supported"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.DeleteRestrictions"">
+            <Record>
+              <PropertyValue Property=""Deletable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.InsertRestrictions"">
+            <Record>
+              <PropertyValue Property=""Insertable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.UpdateRestrictions"">
+            <Record>
+              <PropertyValue Property=""Updatable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+        </EntitySet>
         <EntitySet Name=""ReceiptAndPaymentTypes"" EntityType=""NAV.ReceiptAndPaymentTypes"">
           <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
             <Record>
@@ -25918,6 +26048,13 @@ namespace NAV
         public global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> CuStaffWebportal_FnGetStaffLeaveBalance(string jString)
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnGetStaffLeaveBalance", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString));
+        }
+        /// <summary>
+        /// There are no comments for CuStaffWebportal_FnGetLeaveDates in the schema.
+        /// </summary>
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> CuStaffWebportal_FnGetLeaveDates(string jString)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnGetLeaveDates", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString));
         }
         /// <summary>
         /// There are no comments for RecruitmentPortal_HRJobAppInsert in the schema.
@@ -36021,6 +36158,27 @@ namespace NAV
         private global::System.Nullable<decimal> _Max_Carry_Forward_Days;
         partial void OnMax_Carry_Forward_DaysChanging(global::System.Nullable<decimal> value);
         partial void OnMax_Carry_Forward_DaysChanged();
+        /// <summary>
+        /// There are no comments for Property Attachment_Mandatory in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Attachment_Mandatory
+        {
+            get
+            {
+                return this._Attachment_Mandatory;
+            }
+            set
+            {
+                this.OnAttachment_MandatoryChanging(value);
+                this._Attachment_Mandatory = value;
+                this.OnAttachment_MandatoryChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Attachment_Mandatory;
+        partial void OnAttachment_MandatoryChanging(global::System.Nullable<bool> value);
+        partial void OnAttachment_MandatoryChanged();
     }
     /// <summary>
     /// There are no comments for LookUp_ValuesSingle in the schema.
@@ -71088,6 +71246,27 @@ namespace NAV
         private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Posting_Date;
         partial void OnPosting_DateChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
         partial void OnPosting_DateChanged();
+        /// <summary>
+        /// There are no comments for Property Has_Attachment in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Has_Attachment
+        {
+            get
+            {
+                return this._Has_Attachment;
+            }
+            set
+            {
+                this.OnHas_AttachmentChanging(value);
+                this._Has_Attachment = value;
+                this.OnHas_AttachmentChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Has_Attachment;
+        partial void OnHas_AttachmentChanging(global::System.Nullable<bool> value);
+        partial void OnHas_AttachmentChanged();
     }
     /// <summary>
     /// There are no comments for QyLeaveTypesSingle in the schema.
@@ -71117,274 +71296,487 @@ namespace NAV
     /// There are no comments for QyLeaveTypes in the schema.
     /// </summary>
     /// <KeyProperties>
-    /// Code
+    /// Date_Opened
     /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("Code")]
+    [global::Microsoft.OData.Client.Key("Date_Opened")]
     public partial class QyLeaveTypes : global::Microsoft.OData.Client.BaseEntityType
     {
         /// <summary>
         /// Create a new QyLeaveTypes object.
         /// </summary>
-        /// <param name="code">Initial value of Code.</param>
+        /// <param name="date_Opened">Initial value of Date_Opened.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public static QyLeaveTypes CreateQyLeaveTypes(string code)
+        public static QyLeaveTypes CreateQyLeaveTypes(global::Microsoft.OData.Edm.Date date_Opened)
         {
             QyLeaveTypes qyLeaveTypes = new QyLeaveTypes();
-            qyLeaveTypes.Code = code;
+            qyLeaveTypes.Date_Opened = date_Opened;
             return qyLeaveTypes;
         }
         /// <summary>
-        /// There are no comments for Property Code in the schema.
+        /// There are no comments for Property Period_Month in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public string Code
+        public global::System.Nullable<int> Period_Month
         {
             get
             {
-                return this._Code;
+                return this._Period_Month;
             }
             set
             {
-                this.OnCodeChanging(value);
-                this._Code = value;
-                this.OnCodeChanged();
+                this.OnPeriod_MonthChanging(value);
+                this._Period_Month = value;
+                this.OnPeriod_MonthChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private string _Code;
-        partial void OnCodeChanging(string value);
-        partial void OnCodeChanged();
+        private global::System.Nullable<int> _Period_Month;
+        partial void OnPeriod_MonthChanging(global::System.Nullable<int> value);
+        partial void OnPeriod_MonthChanged();
         /// <summary>
-        /// There are no comments for Property Days in the schema.
+        /// There are no comments for Property Period_Year in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<decimal> Days
+        public global::System.Nullable<int> Period_Year
         {
             get
             {
-                return this._Days;
+                return this._Period_Year;
             }
             set
             {
-                this.OnDaysChanging(value);
-                this._Days = value;
-                this.OnDaysChanged();
+                this.OnPeriod_YearChanging(value);
+                this._Period_Year = value;
+                this.OnPeriod_YearChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<decimal> _Days;
-        partial void OnDaysChanging(global::System.Nullable<decimal> value);
-        partial void OnDaysChanged();
+        private global::System.Nullable<int> _Period_Year;
+        partial void OnPeriod_YearChanging(global::System.Nullable<int> value);
+        partial void OnPeriod_YearChanged();
         /// <summary>
-        /// There are no comments for Property Unlimited_Days in the schema.
+        /// There are no comments for Property Period_Name in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<bool> Unlimited_Days
+        public string Period_Name
         {
             get
             {
-                return this._Unlimited_Days;
+                return this._Period_Name;
             }
             set
             {
-                this.OnUnlimited_DaysChanging(value);
-                this._Unlimited_Days = value;
-                this.OnUnlimited_DaysChanged();
+                this.OnPeriod_NameChanging(value);
+                this._Period_Name = value;
+                this.OnPeriod_NameChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<bool> _Unlimited_Days;
-        partial void OnUnlimited_DaysChanging(global::System.Nullable<bool> value);
-        partial void OnUnlimited_DaysChanged();
+        private string _Period_Name;
+        partial void OnPeriod_NameChanging(string value);
+        partial void OnPeriod_NameChanged();
         /// <summary>
-        /// There are no comments for Property Gender in the schema.
+        /// There are no comments for Property Date_Opened in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public string Gender
+        public global::Microsoft.OData.Edm.Date Date_Opened
         {
             get
             {
-                return this._Gender;
+                return this._Date_Opened;
             }
             set
             {
-                this.OnGenderChanging(value);
-                this._Gender = value;
-                this.OnGenderChanged();
+                this.OnDate_OpenedChanging(value);
+                this._Date_Opened = value;
+                this.OnDate_OpenedChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private string _Gender;
-        partial void OnGenderChanging(string value);
-        partial void OnGenderChanged();
+        private global::Microsoft.OData.Edm.Date _Date_Opened;
+        partial void OnDate_OpenedChanging(global::Microsoft.OData.Edm.Date value);
+        partial void OnDate_OpenedChanged();
         /// <summary>
-        /// There are no comments for Property Balance in the schema.
+        /// There are no comments for Property Date_Closed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public string Balance
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Date_Closed
         {
             get
             {
-                return this._Balance;
+                return this._Date_Closed;
             }
             set
             {
-                this.OnBalanceChanging(value);
-                this._Balance = value;
-                this.OnBalanceChanged();
+                this.OnDate_ClosedChanging(value);
+                this._Date_Closed = value;
+                this.OnDate_ClosedChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private string _Balance;
-        partial void OnBalanceChanging(string value);
-        partial void OnBalanceChanged();
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Date_Closed;
+        partial void OnDate_ClosedChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnDate_ClosedChanged();
         /// <summary>
-        /// There are no comments for Property Max_Carry_Forward_Days in the schema.
+        /// There are no comments for Property Closed in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<decimal> Max_Carry_Forward_Days
+        public global::System.Nullable<bool> Closed
         {
             get
             {
-                return this._Max_Carry_Forward_Days;
+                return this._Closed;
             }
             set
             {
-                this.OnMax_Carry_Forward_DaysChanging(value);
-                this._Max_Carry_Forward_Days = value;
-                this.OnMax_Carry_Forward_DaysChanged();
+                this.OnClosedChanging(value);
+                this._Closed = value;
+                this.OnClosedChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<decimal> _Max_Carry_Forward_Days;
-        partial void OnMax_Carry_Forward_DaysChanging(global::System.Nullable<decimal> value);
-        partial void OnMax_Carry_Forward_DaysChanged();
+        private global::System.Nullable<bool> _Closed;
+        partial void OnClosedChanging(global::System.Nullable<bool> value);
+        partial void OnClosedChanged();
         /// <summary>
-        /// There are no comments for Property Inclusive_of_Non_Working_Days in the schema.
+        /// There are no comments for Property Closed_By in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<bool> Inclusive_of_Non_Working_Days
+        public string Closed_By
         {
             get
             {
-                return this._Inclusive_of_Non_Working_Days;
+                return this._Closed_By;
             }
             set
             {
-                this.OnInclusive_of_Non_Working_DaysChanging(value);
-                this._Inclusive_of_Non_Working_Days = value;
-                this.OnInclusive_of_Non_Working_DaysChanged();
+                this.OnClosed_ByChanging(value);
+                this._Closed_By = value;
+                this.OnClosed_ByChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<bool> _Inclusive_of_Non_Working_Days;
-        partial void OnInclusive_of_Non_Working_DaysChanging(global::System.Nullable<bool> value);
-        partial void OnInclusive_of_Non_Working_DaysChanged();
+        private string _Closed_By;
+        partial void OnClosed_ByChanging(string value);
+        partial void OnClosed_ByChanged();
         /// <summary>
-        /// There are no comments for Property Blocked in the schema.
+        /// There are no comments for Property Opened_By in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<bool> Blocked
+        public string Opened_By
         {
             get
             {
-                return this._Blocked;
+                return this._Opened_By;
             }
             set
             {
-                this.OnBlockedChanging(value);
-                this._Blocked = value;
-                this.OnBlockedChanged();
+                this.OnOpened_ByChanging(value);
+                this._Opened_By = value;
+                this.OnOpened_ByChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<bool> _Blocked;
-        partial void OnBlockedChanging(global::System.Nullable<bool> value);
-        partial void OnBlockedChanged();
+        private string _Opened_By;
+        partial void OnOpened_ByChanging(string value);
+        partial void OnOpened_ByChanged();
         /// <summary>
-        /// There are no comments for Property Maximum_Days_To_be_Applied in the schema.
+        /// There are no comments for Property Allow_View_Payslip in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<decimal> Maximum_Days_To_be_Applied
+        public global::System.Nullable<bool> Allow_View_Payslip
         {
             get
             {
-                return this._Maximum_Days_To_be_Applied;
+                return this._Allow_View_Payslip;
             }
             set
             {
-                this.OnMaximum_Days_To_be_AppliedChanging(value);
-                this._Maximum_Days_To_be_Applied = value;
-                this.OnMaximum_Days_To_be_AppliedChanged();
+                this.OnAllow_View_PayslipChanging(value);
+                this._Allow_View_Payslip = value;
+                this.OnAllow_View_PayslipChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<decimal> _Maximum_Days_To_be_Applied;
-        partial void OnMaximum_Days_To_be_AppliedChanging(global::System.Nullable<decimal> value);
-        partial void OnMaximum_Days_To_be_AppliedChanged();
+        private global::System.Nullable<bool> _Allow_View_Payslip;
+        partial void OnAllow_View_PayslipChanging(global::System.Nullable<bool> value);
+        partial void OnAllow_View_PayslipChanged();
         /// <summary>
-        /// There are no comments for Property Deduct_from_Annual_Leave in the schema.
+        /// There are no comments for Property Proration_Done in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<bool> Deduct_from_Annual_Leave
+        public global::System.Nullable<bool> Proration_Done
         {
             get
             {
-                return this._Deduct_from_Annual_Leave;
+                return this._Proration_Done;
             }
             set
             {
-                this.OnDeduct_from_Annual_LeaveChanging(value);
-                this._Deduct_from_Annual_Leave = value;
-                this.OnDeduct_from_Annual_LeaveChanged();
+                this.OnProration_DoneChanging(value);
+                this._Proration_Done = value;
+                this.OnProration_DoneChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<bool> _Deduct_from_Annual_Leave;
-        partial void OnDeduct_from_Annual_LeaveChanging(global::System.Nullable<bool> value);
-        partial void OnDeduct_from_Annual_LeaveChanged();
+        private global::System.Nullable<bool> _Proration_Done;
+        partial void OnProration_DoneChanging(global::System.Nullable<bool> value);
+        partial void OnProration_DoneChanged();
+    }
+    /// <summary>
+    /// There are no comments for QyPayrollPeriodsSingle in the schema.
+    /// </summary>
+    public partial class QyPayrollPeriodsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<QyPayrollPeriods>
+    {
         /// <summary>
-        /// There are no comments for Property Inclusive_of_Sunday in the schema.
+        /// Initialize a new QyPayrollPeriodsSingle object.
         /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<bool> Inclusive_of_Sunday
-        {
-            get
-            {
-                return this._Inclusive_of_Sunday;
-            }
-            set
-            {
-                this.OnInclusive_of_SundayChanging(value);
-                this._Inclusive_of_Sunday = value;
-                this.OnInclusive_of_SundayChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<bool> _Inclusive_of_Sunday;
-        partial void OnInclusive_of_SundayChanging(global::System.Nullable<bool> value);
-        partial void OnInclusive_of_SundayChanged();
+        public QyPayrollPeriodsSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
         /// <summary>
-        /// There are no comments for Property Inclusive_of_Saturday in the schema.
+        /// Initialize a new QyPayrollPeriodsSingle object.
+        /// </summary>
+        public QyPayrollPeriodsSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new QyPayrollPeriodsSingle object.
+        /// </summary>
+        public QyPayrollPeriodsSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<QyPayrollPeriods> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for QyPayrollPeriods in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Date_Opened
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Date_Opened")]
+    public partial class QyPayrollPeriods : global::Microsoft.OData.Client.BaseEntityType
+    {
+        /// <summary>
+        /// Create a new QyPayrollPeriods object.
+        /// </summary>
+        /// <param name="date_Opened">Initial value of Date_Opened.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public static QyPayrollPeriods CreateQyPayrollPeriods(global::Microsoft.OData.Edm.Date date_Opened)
+        {
+            QyPayrollPeriods qyPayrollPeriods = new QyPayrollPeriods();
+            qyPayrollPeriods.Date_Opened = date_Opened;
+            return qyPayrollPeriods;
+        }
+        /// <summary>
+        /// There are no comments for Property Period_Month in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<bool> Inclusive_of_Saturday
+        public global::System.Nullable<int> Period_Month
         {
             get
             {
-                return this._Inclusive_of_Saturday;
+                return this._Period_Month;
             }
             set
             {
-                this.OnInclusive_of_SaturdayChanging(value);
-                this._Inclusive_of_Saturday = value;
-                this.OnInclusive_of_SaturdayChanged();
+                this.OnPeriod_MonthChanging(value);
+                this._Period_Month = value;
+                this.OnPeriod_MonthChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<bool> _Inclusive_of_Saturday;
-        partial void OnInclusive_of_SaturdayChanging(global::System.Nullable<bool> value);
-        partial void OnInclusive_of_SaturdayChanged();
+        private global::System.Nullable<int> _Period_Month;
+        partial void OnPeriod_MonthChanging(global::System.Nullable<int> value);
+        partial void OnPeriod_MonthChanged();
+        /// <summary>
+        /// There are no comments for Property Period_Year in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Period_Year
+        {
+            get
+            {
+                return this._Period_Year;
+            }
+            set
+            {
+                this.OnPeriod_YearChanging(value);
+                this._Period_Year = value;
+                this.OnPeriod_YearChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Period_Year;
+        partial void OnPeriod_YearChanging(global::System.Nullable<int> value);
+        partial void OnPeriod_YearChanged();
+        /// <summary>
+        /// There are no comments for Property Period_Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Period_Name
+        {
+            get
+            {
+                return this._Period_Name;
+            }
+            set
+            {
+                this.OnPeriod_NameChanging(value);
+                this._Period_Name = value;
+                this.OnPeriod_NameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Period_Name;
+        partial void OnPeriod_NameChanging(string value);
+        partial void OnPeriod_NameChanged();
+        /// <summary>
+        /// There are no comments for Property Date_Opened in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Edm.Date Date_Opened
+        {
+            get
+            {
+                return this._Date_Opened;
+            }
+            set
+            {
+                this.OnDate_OpenedChanging(value);
+                this._Date_Opened = value;
+                this.OnDate_OpenedChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Edm.Date _Date_Opened;
+        partial void OnDate_OpenedChanging(global::Microsoft.OData.Edm.Date value);
+        partial void OnDate_OpenedChanged();
+        /// <summary>
+        /// There are no comments for Property Date_Closed in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Date_Closed
+        {
+            get
+            {
+                return this._Date_Closed;
+            }
+            set
+            {
+                this.OnDate_ClosedChanging(value);
+                this._Date_Closed = value;
+                this.OnDate_ClosedChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Date_Closed;
+        partial void OnDate_ClosedChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnDate_ClosedChanged();
+        /// <summary>
+        /// There are no comments for Property Closed in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Closed
+        {
+            get
+            {
+                return this._Closed;
+            }
+            set
+            {
+                this.OnClosedChanging(value);
+                this._Closed = value;
+                this.OnClosedChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Closed;
+        partial void OnClosedChanging(global::System.Nullable<bool> value);
+        partial void OnClosedChanged();
+        /// <summary>
+        /// There are no comments for Property Closed_By in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Closed_By
+        {
+            get
+            {
+                return this._Closed_By;
+            }
+            set
+            {
+                this.OnClosed_ByChanging(value);
+                this._Closed_By = value;
+                this.OnClosed_ByChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Closed_By;
+        partial void OnClosed_ByChanging(string value);
+        partial void OnClosed_ByChanged();
+        /// <summary>
+        /// There are no comments for Property Opened_By in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Opened_By
+        {
+            get
+            {
+                return this._Opened_By;
+            }
+            set
+            {
+                this.OnOpened_ByChanging(value);
+                this._Opened_By = value;
+                this.OnOpened_ByChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Opened_By;
+        partial void OnOpened_ByChanging(string value);
+        partial void OnOpened_ByChanged();
+        /// <summary>
+        /// There are no comments for Property Allow_View_Payslip in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Allow_View_Payslip
+        {
+            get
+            {
+                return this._Allow_View_Payslip;
+            }
+            set
+            {
+                this.OnAllow_View_PayslipChanging(value);
+                this._Allow_View_Payslip = value;
+                this.OnAllow_View_PayslipChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Allow_View_Payslip;
+        partial void OnAllow_View_PayslipChanging(global::System.Nullable<bool> value);
+        partial void OnAllow_View_PayslipChanged();
+        /// <summary>
+        /// There are no comments for Property Proration_Done in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Proration_Done
+        {
+            get
+            {
+                return this._Proration_Done;
+            }
+            set
+            {
+                this.OnProration_DoneChanging(value);
+                this._Proration_Done = value;
+                this.OnProration_DoneChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Proration_Done;
+        partial void OnProration_DoneChanging(global::System.Nullable<bool> value);
+        partial void OnProration_DoneChanged();
     }
     /// <summary>
     /// There are no comments for ReceiptAndPaymentTypesSingle in the schema.
@@ -85281,6 +85673,27 @@ namespace NAV
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyLeaveTypes> _QyLeaveTypes;
         /// <summary>
+        /// There are no comments for QyPayrollPeriods in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyPayrollPeriods> QyPayrollPeriods
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._QyPayrollPeriods == null))
+                {
+                    this._QyPayrollPeriods = Context.CreateQuery<global::NAV.QyPayrollPeriods>(GetPath("QyPayrollPeriods"));
+                }
+                return this._QyPayrollPeriods;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyPayrollPeriods> _QyPayrollPeriods;
+        /// <summary>
         /// There are no comments for ReceiptAndPaymentTypes in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
@@ -87569,6 +87982,27 @@ namespace NAV
         private global::System.Collections.ObjectModel.Collection<global::NAV.QyLeaveTypes> _QyLeaveTypes = new global::System.Collections.ObjectModel.Collection<global::NAV.QyLeaveTypes>();
         partial void OnQyLeaveTypesChanging(global::System.Collections.ObjectModel.Collection<global::NAV.QyLeaveTypes> value);
         partial void OnQyLeaveTypesChanged();
+        /// <summary>
+        /// There are no comments for Property QyPayrollPeriods in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.QyPayrollPeriods> QyPayrollPeriods
+        {
+            get
+            {
+                return this._QyPayrollPeriods;
+            }
+            set
+            {
+                this.OnQyPayrollPeriodsChanging(value);
+                this._QyPayrollPeriods = value;
+                this.OnQyPayrollPeriodsChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.QyPayrollPeriods> _QyPayrollPeriods = new global::System.Collections.ObjectModel.Collection<global::NAV.QyPayrollPeriods>();
+        partial void OnQyPayrollPeriodsChanging(global::System.Collections.ObjectModel.Collection<global::NAV.QyPayrollPeriods> value);
+        partial void OnQyPayrollPeriodsChanged();
         /// <summary>
         /// There are no comments for Property ReceiptAndPaymentTypes in the schema.
         /// </summary>
@@ -90154,15 +90588,38 @@ namespace NAV
         /// Get an entity of type global::NAV.QyLeaveTypes as global::NAV.QyLeaveTypesSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
-        /// <param name="code">The value of code</param>
+        /// <param name="date_Opened">The value of date_Opened</param>
         public static global::NAV.QyLeaveTypesSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyLeaveTypes> _source,
-            string code)
+            global::Microsoft.OData.Edm.Date date_Opened)
         {
             global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
             {
-                { "Code", code }
+                { "Date_Opened", date_Opened }
             };
             return new global::NAV.QyLeaveTypesSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.QyPayrollPeriods as global::NAV.QyPayrollPeriodsSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::NAV.QyPayrollPeriodsSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyPayrollPeriods> _source, global::System.Collections.Generic.IDictionary<string, object> keys)
+        {
+            return new global::NAV.QyPayrollPeriodsSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.QyPayrollPeriods as global::NAV.QyPayrollPeriodsSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="date_Opened">The value of date_Opened</param>
+        public static global::NAV.QyPayrollPeriodsSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyPayrollPeriods> _source,
+            global::Microsoft.OData.Edm.Date date_Opened)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Date_Opened", date_Opened }
+            };
+            return new global::NAV.QyPayrollPeriodsSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
         }
         /// <summary>
         /// Get an entity of type global::NAV.ReceiptAndPaymentTypes as global::NAV.ReceiptAndPaymentTypesSingle specified by key from an entity set

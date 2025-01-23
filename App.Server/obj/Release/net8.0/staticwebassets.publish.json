@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "baMRcOqQ26buTK7rtE716CqK163vVBryHYfAmpiRdqc=",
+  "Hash": "rv/A+iJ7wOStH5RNOaCuSlhBbVQmmrMEoUIC5mUQFv4=",
   "Source": "App.Server",
   "BasePath": "_content/App.Server",
   "Mode": "Default",
@@ -21,12 +21,12 @@
   "DiscoveryPatterns": [],
   "Assets": [
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ActionsPartComponents-VGkx_LOq.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ActionsPartComponents-f4UcyK9L.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/ActionsPartComponents-VGkx_LOq.js",
+      "RelativePath": "assets/ActionsPartComponents-f4UcyK9L.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -35,19 +35,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "a4z5fous7c",
-      "Integrity": "CvBtTufZ2wwcTAjaAswiTtg+Ncqdcd+xtJWR5xkUvrA=",
+      "Fingerprint": "wo9rupo39k",
+      "Integrity": "0ItbsQous18OO/asB+7odTT8/teonz3HkrISnZk5u7w=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ActionsPartComponents-VGkx_LOq.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ActionsPartComponents-f4UcyK9L.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ChangePassword-BdBZ-bE2.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ChangePassword-CkRGqL7r.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/ChangePassword-BdBZ-bE2.js",
+      "RelativePath": "assets/ChangePassword-CkRGqL7r.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -56,19 +56,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "vkl22d8rhq",
-      "Integrity": "QVC+lxpGv2nfY/ZKhhV8eu6CWtPTXjX4wV0ExAKeji4=",
+      "Fingerprint": "yzty4k5xu1",
+      "Integrity": "XrC3N8XCIkNXmcY4Uf4hyJASbSjEixwHFVVTH1NOCdQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ChangePassword-BdBZ-bE2.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ChangePassword-CkRGqL7r.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\DefaultDashboard-B3oKGo0w.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\DefaultDashboard-mF9Zuop6.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/DefaultDashboard-B3oKGo0w.js",
+      "RelativePath": "assets/DefaultDashboard-mF9Zuop6.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -77,19 +77,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "j1wtfmx9l8",
-      "Integrity": "ieGpS2ppTY/lp01/txpOH/UDZMBbkUbjoTjkfKnwPDs=",
+      "Fingerprint": "ju4bmoq8x2",
+      "Integrity": "tTwi+ThABmGo9SbbGUQs0wDk6jlsA7yvua7m/Ap/csM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\DefaultDashboard-B3oKGo0w.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\DefaultDashboard-mF9Zuop6.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FieldGroup-CT9AAVnY.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FieldGroup-CQCs2JWp.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/FieldGroup-CT9AAVnY.js",
+      "RelativePath": "assets/FieldGroup-CQCs2JWp.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -98,19 +98,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "4ceyv0fc83",
-      "Integrity": "FOyzsFHfRwhFKYC5WyXkZueY/c0Z8okJXIEhMzKSuH8=",
+      "Fingerprint": "yn9j6u9a9a",
+      "Integrity": "UjpiB1nLgt7LscSGDwYxp7oBpPEqKdCpmsF0Yg9e2Ss=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FieldGroup-CT9AAVnY.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FieldGroup-CQCs2JWp.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FilePreviewPageTemplate-C6Z9dwaz.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FilePreviewPageTemplate-_SoaGeJ4.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/FilePreviewPageTemplate-C6Z9dwaz.js",
+      "RelativePath": "assets/FilePreviewPageTemplate-_SoaGeJ4.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -119,19 +119,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "51692lapxe",
-      "Integrity": "N+PyclUBH22PtCzJRWz0hXceycIQEg6O2TWRfg3FoFw=",
+      "Fingerprint": "rx1pe05add",
+      "Integrity": "D3RjWJrzUxUkJA8tT80QkKnMS3/9phvOxdlOsYqtK4o=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FilePreviewPageTemplate-C6Z9dwaz.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FilePreviewPageTemplate-_SoaGeJ4.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FiltersBar-Dv0aVGWh.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FiltersBar-CHrMw5wN.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/FiltersBar-Dv0aVGWh.js",
+      "RelativePath": "assets/FiltersBar-CHrMw5wN.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -140,19 +140,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dw563rmt1u",
-      "Integrity": "XTLi1XdJ+Nc8ZwHm970RuGAenTGm0T8YW9WD/mfX3pc=",
+      "Fingerprint": "tcfxo11x1x",
+      "Integrity": "AyjMB91EhRjr94u/75vZtZdoZQfBUKWAXNTMOVWjzPw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FiltersBar-Dv0aVGWh.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FiltersBar-CHrMw5wN.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ForgotPassword-CxlmNhKB.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ForgotPassword-Dpit9nnV.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/ForgotPassword-CxlmNhKB.js",
+      "RelativePath": "assets/ForgotPassword-Dpit9nnV.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -161,19 +161,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "dksafhppcm",
-      "Integrity": "HdLdoaAxK6k/488svwiteILOM9/scF6ufUehNxXZqV0=",
+      "Fingerprint": "iu46djf0dp",
+      "Integrity": "CqeOeqoFztReUa0Iq322VnjjSjWWYUVW483cfulQbFE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ForgotPassword-CxlmNhKB.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ForgotPassword-Dpit9nnV.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageActionsBar-Bg3iKRSB.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageActionsBar-BslLuKwC.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/FormPageActionsBar-Bg3iKRSB.js",
+      "RelativePath": "assets/FormPageActionsBar-BslLuKwC.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -182,19 +182,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "sr3attahmz",
-      "Integrity": "mOI9gwT/96l5mysWsojLTNACottrURvJRgRrcGQw+M4=",
+      "Fingerprint": "2l08bqug23",
+      "Integrity": "CtjVXVvjj5Tc72dBwrvS3o2IMztIaImvj4A1QE5ovdM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageActionsBar-Bg3iKRSB.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageActionsBar-BslLuKwC.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComponents-BeY9p-w7.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComponents-DdcqIz62.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/FormPageComponents-BeY9p-w7.js",
+      "RelativePath": "assets/FormPageComponents-DdcqIz62.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -203,11 +203,32 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "y2gwdtivrz",
-      "Integrity": "lkWn8YU3XcP6riyqgiqFuDWzBtOtbMUmJoBuiaQTQbs=",
+      "Fingerprint": "h9w2o3f5zz",
+      "Integrity": "1UORgspP3j5SbrEI0Cbg0kDdMJVy0twQGwSs2nDqyCs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComponents-BeY9p-w7.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComponents-DdcqIz62.js"
+    },
+    {
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComposable-BEXCimv_.js",
+      "SourceId": "app.client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
+      "BasePath": "/",
+      "RelativePath": "assets/FormPageComposable-BEXCimv_.js",
+      "AssetKind": "Publish",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8se5k8xldb",
+      "Integrity": "6CHxe/xmUC/at4SkVx4MWALl3HTErJkq/gdVilKa184=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComposable-BEXCimv_.js"
     },
     {
       "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComposable-Dq6w0Bee.css",
@@ -231,12 +252,12 @@
       "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComposable-Dq6w0Bee.css"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComposable-t2OIfNVI.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\GridCol-BZkfuT6J.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/FormPageComposable-t2OIfNVI.js",
+      "RelativePath": "assets/GridCol-BZkfuT6J.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -245,19 +266,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pfnwi9cnjd",
-      "Integrity": "pdRnoDBzJjkkRPdIgZjNitKRPsH0PxlcIcniAo6o/vs=",
+      "Fingerprint": "964ko9e8zw",
+      "Integrity": "3/EiCquCuZrRWN6bVZgy3D56FMdUgA7oKTyAOeZzuVA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComposable-t2OIfNVI.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\GridCol-BZkfuT6J.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\GridCol-DDmi0dpE.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Guest-CGtkTe2X.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/GridCol-DDmi0dpE.js",
+      "RelativePath": "assets/Guest-CGtkTe2X.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -266,19 +287,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "tgrpefspp0",
-      "Integrity": "sz7kBrZLtYywwsLlbcGJ0NHoyP6WC89mUwDW5TboT1A=",
+      "Fingerprint": "fjm7be7w3d",
+      "Integrity": "28C8N2FTDbMJBrFH6Hmhre43AhA9/9Xxcjxf7a1bBA8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\GridCol-DDmi0dpE.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Guest-CGtkTe2X.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Guest-CdWYfBt_.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\index-C-qqrciJ.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/Guest-CdWYfBt_.js",
+      "RelativePath": "assets/index-C-qqrciJ.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -287,19 +308,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "id24b4l0dj",
-      "Integrity": "BrA89OmgN4kVdNCGbKRlspsUcS4Q5eVsE5N7VDSFJJk=",
+      "Fingerprint": "va6d9tafv7",
+      "Integrity": "J/7rGPMDAVFmEzQ63v/9tUMjx2BlpQ0KJNGfBvnLyk4=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Guest-CdWYfBt_.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\index-C-qqrciJ.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\index-DfCzbJh3.css",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\index-Dn5PQuz0.css",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/index-DfCzbJh3.css",
+      "RelativePath": "assets/index-Dn5PQuz0.css",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -308,19 +329,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "cma6srp97d",
-      "Integrity": "vMy69vuoU77JVnDK29K2OmRGvtm9OAE/JBnfN0deSVc=",
+      "Fingerprint": "ijzxni0v9v",
+      "Integrity": "LvGz7Y+yBSArwdcCsUCz1U+FzyNNdQ0+a+M6pRahCJg=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\index-DfCzbJh3.css"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\index-Dn5PQuz0.css"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\index-Dv18xaIa.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderActions-CGf-Hb3b.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/index-Dv18xaIa.js",
+      "RelativePath": "assets/LeaveHeaderActions-CGf-Hb3b.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -329,53 +350,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "7rmq1h6yyc",
-      "Integrity": "s1pyFtpaiAQkdtfW51pDkpg71SiuBT9xvg+YSy6W82g=",
+      "Fingerprint": "vg31gn1a2g",
+      "Integrity": "MdzQ/RHcHify1zFsDq6quBOvYFqL+imTjfuXPNIfOyk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\index-Dv18xaIa.js"
-    },
-    {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderActions--FiQDv4E.js",
-      "SourceId": "app.client",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
-      "BasePath": "/",
-      "RelativePath": "assets/LeaveHeaderActions--FiQDv4E.js",
-      "AssetKind": "Publish",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "6d8i810dga",
-      "Integrity": "2uZFPKZljOFInpcd5mEcc6shmVJ2x5Sh0pB9IMPGflk=",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderActions--FiQDv4E.js"
-    },
-    {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderForm-BtvtVEAa.js",
-      "SourceId": "app.client",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
-      "BasePath": "/",
-      "RelativePath": "assets/LeaveHeaderForm-BtvtVEAa.js",
-      "AssetKind": "Publish",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "blbwbiee49",
-      "Integrity": "USqNN/zn732orN8u0XZm/TToaa8fwZ9Wm/+Gu9urQL8=",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderForm-BtvtVEAa.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderActions-CGf-Hb3b.js"
     },
     {
       "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderForm-CKPMHMhE.css",
@@ -399,12 +378,12 @@
       "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderForm-CKPMHMhE.css"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderList-Cgpb7dLO.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderForm-exxnBk25.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/LeaveHeaderList-Cgpb7dLO.js",
+      "RelativePath": "assets/LeaveHeaderForm-exxnBk25.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -413,19 +392,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "izwc2b1icb",
-      "Integrity": "/g8ZBoyaCLZrXzZKDyj7JaqhuQwtjIHNrdeaAkaFi3o=",
+      "Fingerprint": "kakrntr0xe",
+      "Integrity": "fFpVJTamQXppAQEKIKL0ZSNOdqGsUaNVhfdQd4Ih7Kw=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderList-Cgpb7dLO.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderForm-exxnBk25.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ListPageActionsBar-DE1bCYyf.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderList-DwtvDe73.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/ListPageActionsBar-DE1bCYyf.js",
+      "RelativePath": "assets/LeaveHeaderList-DwtvDe73.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -434,19 +413,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "t0bwoqxlwx",
-      "Integrity": "zQ9TKL9vDTAKM7w3C88jqKoZ57wSiF9fx86p1gIKoWI=",
+      "Fingerprint": "xxy529soo4",
+      "Integrity": "2/n04B0NDjGFXnRU/RDL3pdmlC9tLKRwF+sobXWtc+Y=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ListPageActionsBar-DE1bCYyf.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderList-DwtvDe73.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ListPageComponents-DFZOGzMK.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ListPageActionsBar-pe_CJ_qy.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/ListPageComponents-DFZOGzMK.js",
+      "RelativePath": "assets/ListPageActionsBar-pe_CJ_qy.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -455,19 +434,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3s2mvr55bn",
-      "Integrity": "be1MRaWrwWCdZ77KAKwN12Dj9aBdKXqBfTDmRbPg0hI=",
+      "Fingerprint": "p07ydp5svr",
+      "Integrity": "CdmEsnI3rOgaaV4mLX7W218GBDu9J4vNWthxX15knR0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ListPageComponents-DFZOGzMK.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ListPageActionsBar-pe_CJ_qy.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Login-ulvQ26_U.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ListPageComponents-BVXAP1LQ.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/Login-ulvQ26_U.js",
+      "RelativePath": "assets/ListPageComponents-BVXAP1LQ.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -476,19 +455,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "obxq8azqq0",
-      "Integrity": "zLTJXSafCP37zN217pd5+z7fl4htCWgVBgQVkuywLDc=",
+      "Fingerprint": "b4e2jcktsl",
+      "Integrity": "BSktWirL1o7V+lSlP4GUYkazkjGzV+bhNYyPz5RMjT8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Login-ulvQ26_U.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ListPageComponents-BVXAP1LQ.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderActions-DklI998q.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Loader-CfviD370.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/NotificationHeaderActions-DklI998q.js",
+      "RelativePath": "assets/Loader-CfviD370.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -497,19 +476,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "nnx2lslyqv",
-      "Integrity": "4wstfIV1Nb83DsLgroC1kzLUdvGmXf5dM55kVKuBMis=",
+      "Fingerprint": "yl561woj75",
+      "Integrity": "5sLVTEAGRVsYj49Dc7VzqVgnr6p4/kwcntfi50bFRwI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderActions-DklI998q.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Loader-CfviD370.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderForm-CMnnZZbG.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Login-CRZqVPkI.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/NotificationHeaderForm-CMnnZZbG.js",
+      "RelativePath": "assets/Login-CRZqVPkI.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -518,19 +497,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3e3yaqmvca",
-      "Integrity": "VahpAy2rdAOyd8Gqylx92z+vVA+TYYwWOTF1qRu+y8U=",
+      "Fingerprint": "6xquj9xyoa",
+      "Integrity": "NtXNz7Un5NPWoSixdqyaoXWZa3ugczQx9tRXg1oa0Fo=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderForm-CMnnZZbG.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Login-CRZqVPkI.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderList-CkKXNDVH.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderActions-nVMGidBo.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/NotificationHeaderList-CkKXNDVH.js",
+      "RelativePath": "assets/NotificationHeaderActions-nVMGidBo.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -539,19 +518,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "kfeb9te3dt",
-      "Integrity": "MAVOX5HCakKfvNGFT2UkDCLBy463e/KDxdfkQZZIr6Y=",
+      "Fingerprint": "tckwm7uln0",
+      "Integrity": "DaE7n3+CQyxwo/Y6XkShWos7+t3hXa9Pr1zCFwHg7Q0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderList-CkKXNDVH.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderActions-nVMGidBo.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationModal-CvJJz6HR.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderForm-_hdSS-2I.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/NotificationModal-CvJJz6HR.js",
+      "RelativePath": "assets/NotificationHeaderForm-_hdSS-2I.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -560,19 +539,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "3ziu26dt5f",
-      "Integrity": "j+W63zSHEnhkc2YVxSs8JkQW0+zmE3cu2SPdCD7L9Rc=",
+      "Fingerprint": "dntaahfzh9",
+      "Integrity": "Z20pyrxgHmio7gvt8E01dEfOSLGUbK4SQQWDi/oz7/k=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationModal-CvJJz6HR.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderForm-_hdSS-2I.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationPopup-1mQ73QLj.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderList-D49je9qV.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/NotificationPopup-1mQ73QLj.js",
+      "RelativePath": "assets/NotificationHeaderList-D49je9qV.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -581,19 +560,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8rdj30d3zu",
-      "Integrity": "nMD7kGZYH139lgggbKRThGTr9YkHmnl6UaC/3xRhRYc=",
+      "Fingerprint": "0lrocqigm4",
+      "Integrity": "pPUSJZrLA6hhZWsKdly1T+U9wtNe81mmr4BefdCOm78=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationPopup-1mQ73QLj.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderList-D49je9qV.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\OTPLogin-BkCbaqFo.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationModal-CBXW2_1N.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/OTPLogin-BkCbaqFo.js",
+      "RelativePath": "assets/NotificationModal-CBXW2_1N.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -602,19 +581,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "0k9gfu35p9",
-      "Integrity": "oFRT/wPbmhb+mvXvEOX0+638fCAGDGu+8SpO2XYn8ek=",
+      "Fingerprint": "swef8eo1c5",
+      "Integrity": "xEZ7JZVi1peQ9e2WPqXsopixOfzZa7VX3AH/RUclXS8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\OTPLogin-BkCbaqFo.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationModal-CBXW2_1N.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\PencilIcon-Ghg3o3x8.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationPopup-DN7IzDP4.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/PencilIcon-Ghg3o3x8.js",
+      "RelativePath": "assets/NotificationPopup-DN7IzDP4.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -623,19 +602,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "5rlgd3gkv8",
-      "Integrity": "3xSqUTxXFj72T8vr5fTqKUxJD6O0rdGrFqlFL8ARr/U=",
+      "Fingerprint": "da4xe5mq4g",
+      "Integrity": "9XUF5Enry9Qt1zGn2SFpwvw2rDMt95fNQZUAKPz/f70=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\PencilIcon-Ghg3o3x8.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationPopup-DN7IzDP4.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Profile-DbjrHFf9.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\OTPLogin-BRhks3o3.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/Profile-DbjrHFf9.js",
+      "RelativePath": "assets/OTPLogin-BRhks3o3.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -644,19 +623,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rzocjuujl2",
-      "Integrity": "h9S+DFTxnhswKrBFDUKPVBDWQo1gP/fhClgmNjJjcms=",
+      "Fingerprint": "i0sit3a533",
+      "Integrity": "rphur5hBal+dHtNeRWTs6h8ICn1LUVH4A/ITBXPLcGA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Profile-DbjrHFf9.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\OTPLogin-BRhks3o3.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Register-DH2G5GLd.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\P9-RrezukHo.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/Register-DH2G5GLd.js",
+      "RelativePath": "assets/P9-RrezukHo.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -665,19 +644,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ceeocrgkgh",
-      "Integrity": "HMlp4ys24GTGyAU2cRiWfJDenfZnt3TmAJ4ZdvCnGlw=",
+      "Fingerprint": "w38zgfz8go",
+      "Integrity": "zO+D3xW5Yh44Bs5jDDKgwWkQOEj/M+c7nH0m984GO5g=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Register-DH2G5GLd.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\P9-RrezukHo.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ResetPassword-BuB_S9jW.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Payslip-BEUcbzCu.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/ResetPassword-BuB_S9jW.js",
+      "RelativePath": "assets/Payslip-BEUcbzCu.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -686,19 +665,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ii4qqe1g2e",
-      "Integrity": "Wvtud4MhcpNJHqe2JtRNXWUg6IRs+xVzTY19lCzTMrs=",
+      "Fingerprint": "x7bxm3hy5h",
+      "Integrity": "DQmZE2PD56YSCT5vSvsQ5pb4yMLQ+KSGD450DeOdwic=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ResetPassword-BuB_S9jW.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Payslip-BEUcbzCu.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WButton-DGhxyih3.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\PencilIcon-B5I9RE8M.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/WButton-DGhxyih3.js",
+      "RelativePath": "assets/PencilIcon-B5I9RE8M.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -707,19 +686,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "wx4iko3sdf",
-      "Integrity": "hA0SoEyhsnYNSjBW1AFX797qdDggEUEAB6NW9GKs+aw=",
+      "Fingerprint": "ftbbdku0no",
+      "Integrity": "bRLrrgnAYMPj6sYGeI5wLx7rND1jerE+49mMDrhqrFY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WButton-DGhxyih3.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\PencilIcon-B5I9RE8M.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WCheckbox-CXwFglAy.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Profile-_XnWqv4N.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/WCheckbox-CXwFglAy.js",
+      "RelativePath": "assets/Profile-_XnWqv4N.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -728,19 +707,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pzwl792yyz",
-      "Integrity": "RWXzOiDbL1tKivfAZ+5gw7Ou/6c85C4ek0xrKyYuYMM=",
+      "Fingerprint": "e2eurgrn9f",
+      "Integrity": "tk23vlfXYZsN01DPU4OL8iqKYW6KbW8Z9uyRLvMh4hM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WCheckbox-CXwFglAy.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Profile-_XnWqv4N.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WInput-Bhp9qjyy.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Register-D0oYoGQJ.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/WInput-Bhp9qjyy.js",
+      "RelativePath": "assets/Register-D0oYoGQJ.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -749,19 +728,19 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c7ppfxsxe6",
-      "Integrity": "KCF8/6VwnaC5iiXVpASEAMe7LvjI9aN5mZfyoLCXNbs=",
+      "Fingerprint": "9a3k7rm6qb",
+      "Integrity": "Xx+oKcXz8B2OoVBTSDGr4TfjdYLHiKrEnYg90t0+oKk=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WInput-Bhp9qjyy.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Register-D0oYoGQJ.js"
     },
     {
-      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WSelect-Ywhn5awj.js",
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ResetPassword-BQvITNP6.js",
       "SourceId": "app.client",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
       "BasePath": "/",
-      "RelativePath": "assets/WSelect-Ywhn5awj.js",
+      "RelativePath": "assets/ResetPassword-BQvITNP6.js",
       "AssetKind": "Publish",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -770,11 +749,95 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "ajy5nierps",
-      "Integrity": "6iJi/ZPzOlPUGDsRJIbjSoKEhQo270j2zy3e6tPW0/A=",
+      "Fingerprint": "35gwqnujsr",
+      "Integrity": "t8/QxmJYbztOYz2HCOayItK/6Gmli0QMCMEctHoK7SQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WSelect-Ywhn5awj.js"
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ResetPassword-BQvITNP6.js"
+    },
+    {
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WButton-4fwIoo6b.js",
+      "SourceId": "app.client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
+      "BasePath": "/",
+      "RelativePath": "assets/WButton-4fwIoo6b.js",
+      "AssetKind": "Publish",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dwjoc2x6n8",
+      "Integrity": "QyE4Psd/Yjfsme1UO07jAjFoyn/MagT4QzX5e1QCoxg=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WButton-4fwIoo6b.js"
+    },
+    {
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WCheckbox-ClJRWL1h.js",
+      "SourceId": "app.client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
+      "BasePath": "/",
+      "RelativePath": "assets/WCheckbox-ClJRWL1h.js",
+      "AssetKind": "Publish",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p8msmkr2x1",
+      "Integrity": "Z8rqIgik1+ma24aOUhIXy88HTPQlGeG2k87rVZiutko=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WCheckbox-ClJRWL1h.js"
+    },
+    {
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WInput-BZrnGTEX.js",
+      "SourceId": "app.client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
+      "BasePath": "/",
+      "RelativePath": "assets/WInput-BZrnGTEX.js",
+      "AssetKind": "Publish",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k7fa6ptqov",
+      "Integrity": "gIV24ubP/wdLaerRsDbJY/xOAie1UH8T1wVwaldEBP8=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WInput-BZrnGTEX.js"
+    },
+    {
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WSelect-r6UoUbHG.js",
+      "SourceId": "app.client",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\",
+      "BasePath": "/",
+      "RelativePath": "assets/WSelect-r6UoUbHG.js",
+      "AssetKind": "Publish",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2pgjpfxm5u",
+      "Integrity": "RsA1tMhgKYRV2xymguHXaBAc3dtVdnKtN4rF83jShmk=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WSelect-r6UoUbHG.js"
     },
     {
       "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\favicon.ico",
@@ -938,8 +1001,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "8imcibcm33",
-      "Integrity": "EGWnKzQQ0gqtkqTcKOU/KpaD4nJW+32UhjGHprrIsts=",
+      "Fingerprint": "3naqjwdf55",
+      "Integrity": "X7sALSMAZ1ZGtKEajq1N5EdpOV1EUyMih2tU5igQQvM=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\index.html"
@@ -947,8 +1010,8 @@
   ],
   "Endpoints": [
     {
-      "Route": "assets/ActionsPartComponents-VGkx_LOq.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ActionsPartComponents-VGkx_LOq.js",
+      "Route": "assets/ActionsPartComponents-f4UcyK9L.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ActionsPartComponents-f4UcyK9L.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -965,11 +1028,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"CvBtTufZ2wwcTAjaAswiTtg+Ncqdcd+xtJWR5xkUvrA=\""
+          "Value": "\"0ItbsQous18OO/asB+7odTT8/teonz3HkrISnZk5u7w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -979,13 +1042,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-CvBtTufZ2wwcTAjaAswiTtg+Ncqdcd+xtJWR5xkUvrA="
+          "Value": "sha256-0ItbsQous18OO/asB+7odTT8/teonz3HkrISnZk5u7w="
         }
       ]
     },
     {
-      "Route": "assets/ChangePassword-BdBZ-bE2.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ChangePassword-BdBZ-bE2.js",
+      "Route": "assets/ChangePassword-CkRGqL7r.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ChangePassword-CkRGqL7r.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -994,7 +1057,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3387"
+          "Value": "3416"
         },
         {
           "Name": "Content-Type",
@@ -1002,11 +1065,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QVC+lxpGv2nfY/ZKhhV8eu6CWtPTXjX4wV0ExAKeji4=\""
+          "Value": "\"XrC3N8XCIkNXmcY4Uf4hyJASbSjEixwHFVVTH1NOCdQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1016,13 +1079,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QVC+lxpGv2nfY/ZKhhV8eu6CWtPTXjX4wV0ExAKeji4="
+          "Value": "sha256-XrC3N8XCIkNXmcY4Uf4hyJASbSjEixwHFVVTH1NOCdQ="
         }
       ]
     },
     {
-      "Route": "assets/DefaultDashboard-B3oKGo0w.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\DefaultDashboard-B3oKGo0w.js",
+      "Route": "assets/DefaultDashboard-mF9Zuop6.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\DefaultDashboard-mF9Zuop6.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1031,7 +1094,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "170"
+          "Value": "15618"
         },
         {
           "Name": "Content-Type",
@@ -1039,11 +1102,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ieGpS2ppTY/lp01/txpOH/UDZMBbkUbjoTjkfKnwPDs=\""
+          "Value": "\"tTwi+ThABmGo9SbbGUQs0wDk6jlsA7yvua7m/Ap/csM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1053,13 +1116,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ieGpS2ppTY/lp01/txpOH/UDZMBbkUbjoTjkfKnwPDs="
+          "Value": "sha256-tTwi+ThABmGo9SbbGUQs0wDk6jlsA7yvua7m/Ap/csM="
         }
       ]
     },
     {
-      "Route": "assets/FieldGroup-CT9AAVnY.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FieldGroup-CT9AAVnY.js",
+      "Route": "assets/FieldGroup-CQCs2JWp.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FieldGroup-CQCs2JWp.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1068,7 +1131,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1869"
+          "Value": "1714"
         },
         {
           "Name": "Content-Type",
@@ -1076,11 +1139,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"FOyzsFHfRwhFKYC5WyXkZueY/c0Z8okJXIEhMzKSuH8=\""
+          "Value": "\"UjpiB1nLgt7LscSGDwYxp7oBpPEqKdCpmsF0Yg9e2Ss=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1090,13 +1153,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-FOyzsFHfRwhFKYC5WyXkZueY/c0Z8okJXIEhMzKSuH8="
+          "Value": "sha256-UjpiB1nLgt7LscSGDwYxp7oBpPEqKdCpmsF0Yg9e2Ss="
         }
       ]
     },
     {
-      "Route": "assets/FilePreviewPageTemplate-C6Z9dwaz.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FilePreviewPageTemplate-C6Z9dwaz.js",
+      "Route": "assets/FilePreviewPageTemplate-_SoaGeJ4.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FilePreviewPageTemplate-_SoaGeJ4.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1113,11 +1176,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"N+PyclUBH22PtCzJRWz0hXceycIQEg6O2TWRfg3FoFw=\""
+          "Value": "\"D3RjWJrzUxUkJA8tT80QkKnMS3/9phvOxdlOsYqtK4o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1127,13 +1190,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-N+PyclUBH22PtCzJRWz0hXceycIQEg6O2TWRfg3FoFw="
+          "Value": "sha256-D3RjWJrzUxUkJA8tT80QkKnMS3/9phvOxdlOsYqtK4o="
         }
       ]
     },
     {
-      "Route": "assets/FiltersBar-Dv0aVGWh.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FiltersBar-Dv0aVGWh.js",
+      "Route": "assets/FiltersBar-CHrMw5wN.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FiltersBar-CHrMw5wN.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1150,11 +1213,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"XTLi1XdJ+Nc8ZwHm970RuGAenTGm0T8YW9WD/mfX3pc=\""
+          "Value": "\"AyjMB91EhRjr94u/75vZtZdoZQfBUKWAXNTMOVWjzPw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1164,13 +1227,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-XTLi1XdJ+Nc8ZwHm970RuGAenTGm0T8YW9WD/mfX3pc="
+          "Value": "sha256-AyjMB91EhRjr94u/75vZtZdoZQfBUKWAXNTMOVWjzPw="
         }
       ]
     },
     {
-      "Route": "assets/ForgotPassword-CxlmNhKB.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ForgotPassword-CxlmNhKB.js",
+      "Route": "assets/ForgotPassword-Dpit9nnV.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ForgotPassword-Dpit9nnV.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1179,7 +1242,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2238"
+          "Value": "2267"
         },
         {
           "Name": "Content-Type",
@@ -1187,11 +1250,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HdLdoaAxK6k/488svwiteILOM9/scF6ufUehNxXZqV0=\""
+          "Value": "\"CqeOeqoFztReUa0Iq322VnjjSjWWYUVW483cfulQbFE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1201,13 +1264,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HdLdoaAxK6k/488svwiteILOM9/scF6ufUehNxXZqV0="
+          "Value": "sha256-CqeOeqoFztReUa0Iq322VnjjSjWWYUVW483cfulQbFE="
         }
       ]
     },
     {
-      "Route": "assets/FormPageActionsBar-Bg3iKRSB.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageActionsBar-Bg3iKRSB.js",
+      "Route": "assets/FormPageActionsBar-BslLuKwC.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageActionsBar-BslLuKwC.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1224,11 +1287,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"mOI9gwT/96l5mysWsojLTNACottrURvJRgRrcGQw+M4=\""
+          "Value": "\"CtjVXVvjj5Tc72dBwrvS3o2IMztIaImvj4A1QE5ovdM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1238,13 +1301,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-mOI9gwT/96l5mysWsojLTNACottrURvJRgRrcGQw+M4="
+          "Value": "sha256-CtjVXVvjj5Tc72dBwrvS3o2IMztIaImvj4A1QE5ovdM="
         }
       ]
     },
     {
-      "Route": "assets/FormPageComponents-BeY9p-w7.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComponents-BeY9p-w7.js",
+      "Route": "assets/FormPageComponents-DdcqIz62.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComponents-DdcqIz62.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1261,11 +1324,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"lkWn8YU3XcP6riyqgiqFuDWzBtOtbMUmJoBuiaQTQbs=\""
+          "Value": "\"1UORgspP3j5SbrEI0Cbg0kDdMJVy0twQGwSs2nDqyCs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1275,7 +1338,44 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-lkWn8YU3XcP6riyqgiqFuDWzBtOtbMUmJoBuiaQTQbs="
+          "Value": "sha256-1UORgspP3j5SbrEI0Cbg0kDdMJVy0twQGwSs2nDqyCs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/FormPageComposable-BEXCimv_.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComposable-BEXCimv_.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53029"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6CHxe/xmUC/at4SkVx4MWALl3HTErJkq/gdVilKa184=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6CHxe/xmUC/at4SkVx4MWALl3HTErJkq/gdVilKa184="
         }
       ]
     },
@@ -1302,7 +1402,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1317,45 +1417,8 @@
       ]
     },
     {
-      "Route": "assets/FormPageComposable-t2OIfNVI.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\FormPageComposable-t2OIfNVI.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "53029"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"pdRnoDBzJjkkRPdIgZjNitKRPsH0PxlcIcniAo6o/vs=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-pdRnoDBzJjkkRPdIgZjNitKRPsH0PxlcIcniAo6o/vs="
-        }
-      ]
-    },
-    {
-      "Route": "assets/GridCol-DDmi0dpE.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\GridCol-DDmi0dpE.js",
+      "Route": "assets/GridCol-BZkfuT6J.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\GridCol-BZkfuT6J.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1372,11 +1435,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"sz7kBrZLtYywwsLlbcGJ0NHoyP6WC89mUwDW5TboT1A=\""
+          "Value": "\"3/EiCquCuZrRWN6bVZgy3D56FMdUgA7oKTyAOeZzuVA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1386,13 +1449,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-sz7kBrZLtYywwsLlbcGJ0NHoyP6WC89mUwDW5TboT1A="
+          "Value": "sha256-3/EiCquCuZrRWN6bVZgy3D56FMdUgA7oKTyAOeZzuVA="
         }
       ]
     },
     {
-      "Route": "assets/Guest-CdWYfBt_.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Guest-CdWYfBt_.js",
+      "Route": "assets/Guest-CGtkTe2X.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Guest-CGtkTe2X.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1409,11 +1472,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BrA89OmgN4kVdNCGbKRlspsUcS4Q5eVsE5N7VDSFJJk=\""
+          "Value": "\"28C8N2FTDbMJBrFH6Hmhre43AhA9/9Xxcjxf7a1bBA8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1423,13 +1486,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BrA89OmgN4kVdNCGbKRlspsUcS4Q5eVsE5N7VDSFJJk="
+          "Value": "sha256-28C8N2FTDbMJBrFH6Hmhre43AhA9/9Xxcjxf7a1bBA8="
         }
       ]
     },
     {
-      "Route": "assets/index-DfCzbJh3.css",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\index-DfCzbJh3.css",
+      "Route": "assets/index-C-qqrciJ.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\index-C-qqrciJ.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1438,7 +1501,44 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29889"
+          "Value": "162000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J/7rGPMDAVFmEzQ63v/9tUMjx2BlpQ0KJNGfBvnLyk4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J/7rGPMDAVFmEzQ63v/9tUMjx2BlpQ0KJNGfBvnLyk4="
+        }
+      ]
+    },
+    {
+      "Route": "assets/index-Dn5PQuz0.css",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\index-Dn5PQuz0.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30541"
         },
         {
           "Name": "Content-Type",
@@ -1446,11 +1546,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"vMy69vuoU77JVnDK29K2OmRGvtm9OAE/JBnfN0deSVc=\""
+          "Value": "\"LvGz7Y+yBSArwdcCsUCz1U+FzyNNdQ0+a+M6pRahCJg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1460,13 +1560,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-vMy69vuoU77JVnDK29K2OmRGvtm9OAE/JBnfN0deSVc="
+          "Value": "sha256-LvGz7Y+yBSArwdcCsUCz1U+FzyNNdQ0+a+M6pRahCJg="
         }
       ]
     },
     {
-      "Route": "assets/index-Dv18xaIa.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\index-Dv18xaIa.js",
+      "Route": "assets/LeaveHeaderActions-CGf-Hb3b.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderActions-CGf-Hb3b.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1475,7 +1575,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "161048"
+          "Value": "4409"
         },
         {
           "Name": "Content-Type",
@@ -1483,11 +1583,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"s1pyFtpaiAQkdtfW51pDkpg71SiuBT9xvg+YSy6W82g=\""
+          "Value": "\"MdzQ/RHcHify1zFsDq6quBOvYFqL+imTjfuXPNIfOyk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1497,81 +1597,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-s1pyFtpaiAQkdtfW51pDkpg71SiuBT9xvg+YSy6W82g="
-        }
-      ]
-    },
-    {
-      "Route": "assets/LeaveHeaderActions--FiQDv4E.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderActions--FiQDv4E.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "4353"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"2uZFPKZljOFInpcd5mEcc6shmVJ2x5Sh0pB9IMPGflk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-2uZFPKZljOFInpcd5mEcc6shmVJ2x5Sh0pB9IMPGflk="
-        }
-      ]
-    },
-    {
-      "Route": "assets/LeaveHeaderForm-BtvtVEAa.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderForm-BtvtVEAa.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "15346"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"USqNN/zn732orN8u0XZm/TToaa8fwZ9Wm/+Gu9urQL8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-USqNN/zn732orN8u0XZm/TToaa8fwZ9Wm/+Gu9urQL8="
+          "Value": "sha256-MdzQ/RHcHify1zFsDq6quBOvYFqL+imTjfuXPNIfOyk="
         }
       ]
     },
@@ -1598,7 +1624,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1613,8 +1639,45 @@
       ]
     },
     {
-      "Route": "assets/LeaveHeaderList-Cgpb7dLO.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderList-Cgpb7dLO.js",
+      "Route": "assets/LeaveHeaderForm-exxnBk25.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderForm-exxnBk25.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15424"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fFpVJTamQXppAQEKIKL0ZSNOdqGsUaNVhfdQd4Ih7Kw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fFpVJTamQXppAQEKIKL0ZSNOdqGsUaNVhfdQd4Ih7Kw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/LeaveHeaderList-DwtvDe73.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\LeaveHeaderList-DwtvDe73.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1631,11 +1694,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"/g8ZBoyaCLZrXzZKDyj7JaqhuQwtjIHNrdeaAkaFi3o=\""
+          "Value": "\"2/n04B0NDjGFXnRU/RDL3pdmlC9tLKRwF+sobXWtc+Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1645,13 +1708,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-/g8ZBoyaCLZrXzZKDyj7JaqhuQwtjIHNrdeaAkaFi3o="
+          "Value": "sha256-2/n04B0NDjGFXnRU/RDL3pdmlC9tLKRwF+sobXWtc+Y="
         }
       ]
     },
     {
-      "Route": "assets/ListPageActionsBar-DE1bCYyf.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ListPageActionsBar-DE1bCYyf.js",
+      "Route": "assets/ListPageActionsBar-pe_CJ_qy.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ListPageActionsBar-pe_CJ_qy.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1668,11 +1731,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zQ9TKL9vDTAKM7w3C88jqKoZ57wSiF9fx86p1gIKoWI=\""
+          "Value": "\"CdmEsnI3rOgaaV4mLX7W218GBDu9J4vNWthxX15knR0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1682,13 +1745,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zQ9TKL9vDTAKM7w3C88jqKoZ57wSiF9fx86p1gIKoWI="
+          "Value": "sha256-CdmEsnI3rOgaaV4mLX7W218GBDu9J4vNWthxX15knR0="
         }
       ]
     },
     {
-      "Route": "assets/ListPageComponents-DFZOGzMK.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ListPageComponents-DFZOGzMK.js",
+      "Route": "assets/ListPageComponents-BVXAP1LQ.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ListPageComponents-BVXAP1LQ.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1705,11 +1768,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"be1MRaWrwWCdZ77KAKwN12Dj9aBdKXqBfTDmRbPg0hI=\""
+          "Value": "\"BSktWirL1o7V+lSlP4GUYkazkjGzV+bhNYyPz5RMjT8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1719,13 +1782,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-be1MRaWrwWCdZ77KAKwN12Dj9aBdKXqBfTDmRbPg0hI="
+          "Value": "sha256-BSktWirL1o7V+lSlP4GUYkazkjGzV+bhNYyPz5RMjT8="
         }
       ]
     },
     {
-      "Route": "assets/Login-ulvQ26_U.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Login-ulvQ26_U.js",
+      "Route": "assets/Loader-CfviD370.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Loader-CfviD370.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1734,7 +1797,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3080"
+          "Value": "267"
         },
         {
           "Name": "Content-Type",
@@ -1742,11 +1805,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"zLTJXSafCP37zN217pd5+z7fl4htCWgVBgQVkuywLDc=\""
+          "Value": "\"5sLVTEAGRVsYj49Dc7VzqVgnr6p4/kwcntfi50bFRwI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1756,13 +1819,50 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-zLTJXSafCP37zN217pd5+z7fl4htCWgVBgQVkuywLDc="
+          "Value": "sha256-5sLVTEAGRVsYj49Dc7VzqVgnr6p4/kwcntfi50bFRwI="
         }
       ]
     },
     {
-      "Route": "assets/NotificationHeaderActions-DklI998q.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderActions-DklI998q.js",
+      "Route": "assets/Login-CRZqVPkI.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Login-CRZqVPkI.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3109"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NtXNz7Un5NPWoSixdqyaoXWZa3ugczQx9tRXg1oa0Fo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NtXNz7Un5NPWoSixdqyaoXWZa3ugczQx9tRXg1oa0Fo="
+        }
+      ]
+    },
+    {
+      "Route": "assets/NotificationHeaderActions-nVMGidBo.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderActions-nVMGidBo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1779,11 +1879,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4wstfIV1Nb83DsLgroC1kzLUdvGmXf5dM55kVKuBMis=\""
+          "Value": "\"DaE7n3+CQyxwo/Y6XkShWos7+t3hXa9Pr1zCFwHg7Q0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1793,13 +1893,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4wstfIV1Nb83DsLgroC1kzLUdvGmXf5dM55kVKuBMis="
+          "Value": "sha256-DaE7n3+CQyxwo/Y6XkShWos7+t3hXa9Pr1zCFwHg7Q0="
         }
       ]
     },
     {
-      "Route": "assets/NotificationHeaderForm-CMnnZZbG.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderForm-CMnnZZbG.js",
+      "Route": "assets/NotificationHeaderForm-_hdSS-2I.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderForm-_hdSS-2I.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1808,7 +1908,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3865"
+          "Value": "3894"
         },
         {
           "Name": "Content-Type",
@@ -1816,11 +1916,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"VahpAy2rdAOyd8Gqylx92z+vVA+TYYwWOTF1qRu+y8U=\""
+          "Value": "\"Z20pyrxgHmio7gvt8E01dEfOSLGUbK4SQQWDi/oz7/k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1830,13 +1930,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-VahpAy2rdAOyd8Gqylx92z+vVA+TYYwWOTF1qRu+y8U="
+          "Value": "sha256-Z20pyrxgHmio7gvt8E01dEfOSLGUbK4SQQWDi/oz7/k="
         }
       ]
     },
     {
-      "Route": "assets/NotificationHeaderList-CkKXNDVH.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderList-CkKXNDVH.js",
+      "Route": "assets/NotificationHeaderList-D49je9qV.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationHeaderList-D49je9qV.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1853,11 +1953,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"MAVOX5HCakKfvNGFT2UkDCLBy463e/KDxdfkQZZIr6Y=\""
+          "Value": "\"pPUSJZrLA6hhZWsKdly1T+U9wtNe81mmr4BefdCOm78=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1867,13 +1967,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-MAVOX5HCakKfvNGFT2UkDCLBy463e/KDxdfkQZZIr6Y="
+          "Value": "sha256-pPUSJZrLA6hhZWsKdly1T+U9wtNe81mmr4BefdCOm78="
         }
       ]
     },
     {
-      "Route": "assets/NotificationModal-CvJJz6HR.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationModal-CvJJz6HR.js",
+      "Route": "assets/NotificationModal-CBXW2_1N.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationModal-CBXW2_1N.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1890,11 +1990,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j+W63zSHEnhkc2YVxSs8JkQW0+zmE3cu2SPdCD7L9Rc=\""
+          "Value": "\"xEZ7JZVi1peQ9e2WPqXsopixOfzZa7VX3AH/RUclXS8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1904,13 +2004,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j+W63zSHEnhkc2YVxSs8JkQW0+zmE3cu2SPdCD7L9Rc="
+          "Value": "sha256-xEZ7JZVi1peQ9e2WPqXsopixOfzZa7VX3AH/RUclXS8="
         }
       ]
     },
     {
-      "Route": "assets/NotificationPopup-1mQ73QLj.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationPopup-1mQ73QLj.js",
+      "Route": "assets/NotificationPopup-DN7IzDP4.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\NotificationPopup-DN7IzDP4.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1927,11 +2027,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"nMD7kGZYH139lgggbKRThGTr9YkHmnl6UaC/3xRhRYc=\""
+          "Value": "\"9XUF5Enry9Qt1zGn2SFpwvw2rDMt95fNQZUAKPz/f70=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1941,13 +2041,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-nMD7kGZYH139lgggbKRThGTr9YkHmnl6UaC/3xRhRYc="
+          "Value": "sha256-9XUF5Enry9Qt1zGn2SFpwvw2rDMt95fNQZUAKPz/f70="
         }
       ]
     },
     {
-      "Route": "assets/OTPLogin-BkCbaqFo.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\OTPLogin-BkCbaqFo.js",
+      "Route": "assets/OTPLogin-BRhks3o3.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\OTPLogin-BRhks3o3.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1956,7 +2056,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2983"
+          "Value": "3012"
         },
         {
           "Name": "Content-Type",
@@ -1964,11 +2064,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"oFRT/wPbmhb+mvXvEOX0+638fCAGDGu+8SpO2XYn8ek=\""
+          "Value": "\"rphur5hBal+dHtNeRWTs6h8ICn1LUVH4A/ITBXPLcGA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1978,13 +2078,87 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-oFRT/wPbmhb+mvXvEOX0+638fCAGDGu+8SpO2XYn8ek="
+          "Value": "sha256-rphur5hBal+dHtNeRWTs6h8ICn1LUVH4A/ITBXPLcGA="
         }
       ]
     },
     {
-      "Route": "assets/PencilIcon-Ghg3o3x8.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\PencilIcon-Ghg3o3x8.js",
+      "Route": "assets/P9-RrezukHo.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\P9-RrezukHo.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2942"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zO+D3xW5Yh44Bs5jDDKgwWkQOEj/M+c7nH0m984GO5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zO+D3xW5Yh44Bs5jDDKgwWkQOEj/M+c7nH0m984GO5g="
+        }
+      ]
+    },
+    {
+      "Route": "assets/Payslip-BEUcbzCu.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Payslip-BEUcbzCu.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4137"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DQmZE2PD56YSCT5vSvsQ5pb4yMLQ+KSGD450DeOdwic=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DQmZE2PD56YSCT5vSvsQ5pb4yMLQ+KSGD450DeOdwic="
+        }
+      ]
+    },
+    {
+      "Route": "assets/PencilIcon-B5I9RE8M.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\PencilIcon-B5I9RE8M.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2001,11 +2175,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"3xSqUTxXFj72T8vr5fTqKUxJD6O0rdGrFqlFL8ARr/U=\""
+          "Value": "\"bRLrrgnAYMPj6sYGeI5wLx7rND1jerE+49mMDrhqrFY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2015,13 +2189,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-3xSqUTxXFj72T8vr5fTqKUxJD6O0rdGrFqlFL8ARr/U="
+          "Value": "sha256-bRLrrgnAYMPj6sYGeI5wLx7rND1jerE+49mMDrhqrFY="
         }
       ]
     },
     {
-      "Route": "assets/Profile-DbjrHFf9.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Profile-DbjrHFf9.js",
+      "Route": "assets/Profile-_XnWqv4N.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Profile-_XnWqv4N.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2030,7 +2204,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2987"
+          "Value": "3016"
         },
         {
           "Name": "Content-Type",
@@ -2038,11 +2212,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"h9S+DFTxnhswKrBFDUKPVBDWQo1gP/fhClgmNjJjcms=\""
+          "Value": "\"tk23vlfXYZsN01DPU4OL8iqKYW6KbW8Z9uyRLvMh4hM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2052,13 +2226,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-h9S+DFTxnhswKrBFDUKPVBDWQo1gP/fhClgmNjJjcms="
+          "Value": "sha256-tk23vlfXYZsN01DPU4OL8iqKYW6KbW8Z9uyRLvMh4hM="
         }
       ]
     },
     {
-      "Route": "assets/Register-DH2G5GLd.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Register-DH2G5GLd.js",
+      "Route": "assets/Register-D0oYoGQJ.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\Register-D0oYoGQJ.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2067,7 +2241,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3966"
+          "Value": "3995"
         },
         {
           "Name": "Content-Type",
@@ -2075,11 +2249,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"HMlp4ys24GTGyAU2cRiWfJDenfZnt3TmAJ4ZdvCnGlw=\""
+          "Value": "\"Xx+oKcXz8B2OoVBTSDGr4TfjdYLHiKrEnYg90t0+oKk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2089,13 +2263,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-HMlp4ys24GTGyAU2cRiWfJDenfZnt3TmAJ4ZdvCnGlw="
+          "Value": "sha256-Xx+oKcXz8B2OoVBTSDGr4TfjdYLHiKrEnYg90t0+oKk="
         }
       ]
     },
     {
-      "Route": "assets/ResetPassword-BuB_S9jW.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ResetPassword-BuB_S9jW.js",
+      "Route": "assets/ResetPassword-BQvITNP6.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\ResetPassword-BQvITNP6.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2104,7 +2278,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3635"
+          "Value": "3664"
         },
         {
           "Name": "Content-Type",
@@ -2112,11 +2286,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Wvtud4MhcpNJHqe2JtRNXWUg6IRs+xVzTY19lCzTMrs=\""
+          "Value": "\"t8/QxmJYbztOYz2HCOayItK/6Gmli0QMCMEctHoK7SQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2126,13 +2300,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Wvtud4MhcpNJHqe2JtRNXWUg6IRs+xVzTY19lCzTMrs="
+          "Value": "sha256-t8/QxmJYbztOYz2HCOayItK/6Gmli0QMCMEctHoK7SQ="
         }
       ]
     },
     {
-      "Route": "assets/WButton-DGhxyih3.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WButton-DGhxyih3.js",
+      "Route": "assets/WButton-4fwIoo6b.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WButton-4fwIoo6b.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2149,11 +2323,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hA0SoEyhsnYNSjBW1AFX797qdDggEUEAB6NW9GKs+aw=\""
+          "Value": "\"QyE4Psd/Yjfsme1UO07jAjFoyn/MagT4QzX5e1QCoxg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2163,13 +2337,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hA0SoEyhsnYNSjBW1AFX797qdDggEUEAB6NW9GKs+aw="
+          "Value": "sha256-QyE4Psd/Yjfsme1UO07jAjFoyn/MagT4QzX5e1QCoxg="
         }
       ]
     },
     {
-      "Route": "assets/WCheckbox-CXwFglAy.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WCheckbox-CXwFglAy.js",
+      "Route": "assets/WCheckbox-ClJRWL1h.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WCheckbox-ClJRWL1h.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2186,11 +2360,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RWXzOiDbL1tKivfAZ+5gw7Ou/6c85C4ek0xrKyYuYMM=\""
+          "Value": "\"Z8rqIgik1+ma24aOUhIXy88HTPQlGeG2k87rVZiutko=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2200,13 +2374,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RWXzOiDbL1tKivfAZ+5gw7Ou/6c85C4ek0xrKyYuYMM="
+          "Value": "sha256-Z8rqIgik1+ma24aOUhIXy88HTPQlGeG2k87rVZiutko="
         }
       ]
     },
     {
-      "Route": "assets/WInput-Bhp9qjyy.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WInput-Bhp9qjyy.js",
+      "Route": "assets/WInput-BZrnGTEX.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WInput-BZrnGTEX.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2223,11 +2397,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"KCF8/6VwnaC5iiXVpASEAMe7LvjI9aN5mZfyoLCXNbs=\""
+          "Value": "\"gIV24ubP/wdLaerRsDbJY/xOAie1UH8T1wVwaldEBP8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2237,13 +2411,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-KCF8/6VwnaC5iiXVpASEAMe7LvjI9aN5mZfyoLCXNbs="
+          "Value": "sha256-gIV24ubP/wdLaerRsDbJY/xOAie1UH8T1wVwaldEBP8="
         }
       ]
     },
     {
-      "Route": "assets/WSelect-Ywhn5awj.js",
-      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WSelect-Ywhn5awj.js",
+      "Route": "assets/WSelect-r6UoUbHG.js",
+      "AssetFile": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\dist\\assets\\WSelect-r6UoUbHG.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2260,11 +2434,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6iJi/ZPzOlPUGDsRJIbjSoKEhQo270j2zy3e6tPW0/A=\""
+          "Value": "\"RsA1tMhgKYRV2xymguHXaBAc3dtVdnKtN4rF83jShmk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2274,7 +2448,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6iJi/ZPzOlPUGDsRJIbjSoKEhQo270j2zy3e6tPW0/A="
+          "Value": "sha256-RsA1tMhgKYRV2xymguHXaBAc3dtVdnKtN4rF83jShmk="
         }
       ]
     },
@@ -2556,11 +2730,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"EGWnKzQQ0gqtkqTcKOU/KpaD4nJW+32UhjGHprrIsts=\""
+          "Value": "\"X7sALSMAZ1ZGtKEajq1N5EdpOV1EUyMih2tU5igQQvM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 20 Jan 2025 20:26:25 GMT"
+          "Value": "Thu, 23 Jan 2025 19:46:02 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2570,7 +2744,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-EGWnKzQQ0gqtkqTcKOU/KpaD4nJW+32UhjGHprrIsts="
+          "Value": "sha256-X7sALSMAZ1ZGtKEajq1N5EdpOV1EUyMih2tU5igQQvM="
         }
       ]
     }

@@ -1,7 +1,7 @@
 <template>
     <div>
         <Sidebar>
-            <sidebar-link to="/dashboard" :active="this.$route.path == '/dashboard'?true:false" :isLast="true" class="border-b border-gray-500"><Squares2X2Icon class="iconSmall" /> Dashboard</sidebar-link>
+            <sidebar-link to="/ess/dashboard" :active="this.$route.path == '/dashboard'?true:false" :isLast="true" class="border-b border-gray-500"><Squares2X2Icon class="iconSmall" /> Dashboard</sidebar-link>
             <!---->
             <SidebarDropdown :active="this.$route.path.includes('/ess/approval-entry')? true:false">
                 <template #caption>
@@ -22,7 +22,7 @@
                 </template>
                 <template #content>
                     <sidebar-link to="/ess/leave-application/list?status=Open" :active="($route.name == 'leaveList' || $route.name == 'leaveForm')?true:false" :sidebarDropdown="true">Leave Applications</sidebar-link>
-                    <sidebar-link to="/ess/leave-recall/list?status=Open" :active="this.$route.path.includes('/ess/leave-recall') || $route.path.includes('/ess/leave-recall/form')?true:false" :sidebarDropdown="true">Leave Recalls</sidebar-link>
+                    <!--<sidebar-link to="/ess/leave-recall/list?status=Open" :active="this.$route.path.includes('/ess/leave-recall') || $route.path.includes('/ess/leave-recall/form')?true:false" :sidebarDropdown="true">Leave Recalls</sidebar-link>-->
                     <sidebar-link to="/ess/reports/payslip" :active="this.$route.fullPath == '/ess/reports/payslip'?true:false" :sidebarDropdown="true" :isLast="false">Payslip</sidebar-link>
                     <sidebar-link to="/ess/reports/p9" :active="decodeURI(this.$route.fullPath) == '/ess/reports/p9'" :sidebarDropdown="true" :isLast="true">P9</sidebar-link>
                 </template>

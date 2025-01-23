@@ -75,7 +75,7 @@
                             res = data.response;
                             if (action == "save") {
                                 msg = "saved successfully.";
-                                this.$router.go(-1);
+                                this.$router.push(this.pageProps.formRoute + '/edit?recId=' + res.recId);
                             }
                             this.$root.FnNotification({ type: "popup", theme: "green", message: msg });
                         }
