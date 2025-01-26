@@ -42,26 +42,71 @@ export const supplierPortalRoutes = [
             //        { path: 'line/form/:lineAction/:no/:lineNo', component: () => import('@/modules/staff-portal/staff-claim/ClaimLineForm.vue'), },
             //    ]
             //},
-            ////staff-advance
-            //{
-            //    path: 'imprest',
-            //    meta: { requiresAuth: true },
-            //    children: [
-            //        { path: 'list', name: "ImprestHeaderList", component: () => import('@/modules/staff-portal/imprest/ImprestHeaderList.vue'), },
-            //        { path: 'form/:action/:no', component: () => import('@/modules/staff-portal/imprest/ImprestHeaderForm.vue') },
-            //        { path: 'line/form/:lineAction/:no/:lineNo', component: () => import('@/modules/staff-portal/imprest/ImprestLineForm.vue'), },
-            //    ]
-            //},
-            ////imprest-surrender
-            //{
-            //    path: 'imprest-surrender',
-            //    meta: { requiresAuth: true },
-            //    children: [
-            //        { path: 'list', name: "SurrenderHeaderList", component: () => import('@/modules/staff-portal/imprest-surrender/SurrenderHeaderList.vue'), },
-            //        { path: 'form/:action/:no', component: () => import('@/modules/staff-portal/imprest-surrender/SurrenderHeaderForm.vue'), },
-            //        { path: 'line/form/:lineAction/:no/:lineNo', component: () => import('@/modules/staff-portal/imprest-surrender/SurrenderLineForm.vue'), },
-            //    ]
-            //},
+            //
+            {
+                path: 'imprest-request',
+                meta: { requiresAuth: true },
+                children: [
+                    {
+                        path: 'header',
+                        meta: { requiresAuth: true },
+                        children: [
+                            { path: 'list', name: "ImprestHeaderList", component: () => import('@/modules/staff-portal/imprest-request/header/ImprestHeaderList.vue') },
+                            { path: 'form/:action', component: () => import('@/modules/staff-portal/imprest-request/header/ImprestHeaderForm.vue') },
+                        ]
+                    },
+                    {
+                        path: 'line',
+                        meta: { requiresAuth: true },
+                        children: [
+                            { path: 'list', name: "ImprestLineList", component: () => import('@/modules/staff-portal/imprest-request/line/ImprestLineList.vue') },
+                            { path: 'form/:action', component: () => import('@/modules/staff-portal/imprest-request/line/ImprestLineForm.vue') },
+                        ]
+                    },
+                ]
+            },
+            //
+            {
+                path: 'imprest-surrender',
+                meta: { requiresAuth: true },
+                children: [
+                    {
+                        path: 'header',
+                        children: [
+                            { path: 'list', name: "ImprestSurrenderHeaderList", component: () => import('@/modules/staff-portal/imprest-surrender/header/ImprestSurrenderHeaderList.vue') },
+                            { path: 'form/:action', component: () => import('@/modules/staff-portal/imprest-surrender/header/ImprestSurrenderHeaderForm.vue') },
+                        ]
+                    },
+                    {
+                        path: 'line',
+                        children: [
+                            { path: 'list', name: "ImprestSurrenderLineList", component: () => import('@/modules/staff-portal/imprest-surrender/line/ImprestSurrenderLineList.vue') },
+                            { path: 'form/:action', component: () => import('@/modules/staff-portal/imprest-surrender/line/ImprestSurrenderLineForm.vue') },
+                        ]
+                    },
+                ]
+            },
+            //
+            {
+                path: 'staff-claim',
+                meta: { requiresAuth: true },
+                children: [
+                    {
+                        path: 'header',
+                        children: [
+                            { path: 'list', name: "StaffClaimHeaderList", component: () => import('@/modules/staff-portal/staff-claim/header/StaffClaimHeaderList.vue') },
+                            { path: 'form/:action', component: () => import('@/modules/staff-portal/staff-claim/header/StaffClaimHeaderForm.vue') },
+                        ]
+                    },
+                    {
+                        path: 'line',
+                        children: [
+                            { path: 'list', name: "StaffClaimLineList", component: () => import('@/modules/staff-portal/staff-claim/line/StaffClaimLineList.vue') },
+                            { path: 'form/:action', component: () => import('@/modules/staff-portal/staff-claim/line/StaffClaimLineForm.vue') },
+                        ]
+                    },
+                ]
+            },
             /**
              * HR ROUTES
              */

@@ -2,7 +2,7 @@
     <div>
         <div class="overlay relative sm:fixed z-30 sm:z-40">
             <div class="modal w-full sm:w-3/4 h-auto topx-96 sm:topx-64 left-1/2 rounded-lg overflow-auto">
-                <div class="text-center bg-theme-1 rounded-t-md capitalize flex items-center justify-between">
+                <div class="text-center bg-theme-2 rounded-t-md capitalize flex items-center justify-between">
                     <span></span>
                     <span>{{title}}</span>
                     <button class="text-right px-1 text-white font-bold" @click="$router.go(-1)" title="Go back"><span class="flex items-center"><ArrowLeftIcon class="h-4 w-4" /><span class="hidden sm:flex ml-1 text-xs">Back</span></span></button>

@@ -1,9 +1,9 @@
 import { ref } from 'vue'
 export function useGeneralComposable() {
-    function cplFnNavDateObjToString(navDateObj) {
+    function xFnNavDateObjToString(navDateObj) {
         return navDateObj.Day + "-" + navDateObj.Month + "-" + navDateObj.Year;
     }
-    function cplFnNavDateObjToISODate(navDateObj) {
+    function xFnNavDateObjToISODate(navDateObj) {
         var date = "";
         if (navDateObj.Day != undefined) {
             date = new Date(navDateObj.Year, navDateObj.Month, navDateObj.Day).toISOString().split("T")[0];
@@ -38,6 +38,6 @@ export function useGeneralComposable() {
             });
     }
     return {
-        cplFnNavDateObjToString, cplFnNavDateObjToISODate, xFnDownloadDocumentAttachment
+        xFnNavDateObjToString, xFnNavDateObjToISODate, xFnDownloadDocumentAttachment
     };
 }

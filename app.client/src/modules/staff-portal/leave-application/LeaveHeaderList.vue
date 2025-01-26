@@ -13,9 +13,9 @@
             <WTd :linkTo="pageProps.formRoute+'/edit?recId='+record[pageProps.keys.recKey]">{{record[pageProps.keys.recKey]}}</WTd>
             <WTd>{{record.Leave_Type}}</WTd>
             <WTd>{{record.Days_Applied}}</WTd>
-            <WTd>{{$root.cplFnNavDateObjToString(record.Start_Date)}}</WTd>
-            <WTd>{{$root.cplFnNavDateObjToString(record.End_Date)}}</WTd>
-            <WTd>{{$root.cplFnNavDateObjToString(record.Return_to_Work_Date)}}</WTd>
+            <WTd>{{$root.xFnNavDateObjToString(record.Start_Date)}}</WTd>
+            <WTd>{{$root.xFnNavDateObjToString(record.End_Date)}}</WTd>
+            <WTd>{{$root.xFnNavDateObjToString(record.Return_to_Work_Date)}}</WTd>
             <WTd>
                 <EllipsisMenu :docNo="record[pageProps.keys.recKey]">
                     <Actions :record="record" :pageProps="pageProps" />

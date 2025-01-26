@@ -17,9 +17,14 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
             string content = "[";
             switch (NavCompany)
             {
-                case "CHIROMO HOSPITAL GROUP":
-                case "TEST":
-                    content = content + "{\"DimNo\":1,\"DimCode\":\"BRANCH\",\"DimCaption\":\"Branch Code\"" + "}";
+                case "AIC Kapsowar Mission Hospital":
+                    content = content + "{\"DimNo\":1,\"DimCode\":\"DEPARTMENT\",\"DimCaption\":\"Department\"" + "},";
+                    content = content + "{\"DimNo\":2,\"DimCode\":\"BRANCH\",\"DimCaption\":\"Branch\"" + "}";
+                    break;
+                case "KAPSOWAR MTC LIVE":
+                    content = content + "{\"DimNo\":1,\"DimCode\":\"CAMPUS\",\"DimCaption\":\"Campus\"" + "},";
+                    content = content + "{\"DimNo\":2,\"DimCode\":\"DEPARTMENT\",\"DimCaption\":\"Department\"" + "},";
+                    content = content + "{\"DimNo\":3,\"DimCode\":\"SECTION\",\"DimCaption\":\"Section\"" + "}";
                     break;
             }
             content = content + "]";
@@ -136,15 +141,39 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
             var dimNos = "";
             var dimNosMandatory = "";
             var NavCompany = GV.GenController.GetNavCompany(context);
-            //staff-claim
-            if (docType == GeneralController.DocumentTypes.VisitorHeader.GetDisplayName())
+            //imprest-header
+            if (docType == GeneralController.DocumentTypes.ImprestRequestHeader.GetDisplayName())
             {
                 switch (NavCompany)
                 {
-                    case "CHIROMO HOSPITAL GROUP":
-                    case "TEST":
-                        dimNos = "1";
-                        dimNosMandatory = "1";
+                    case "AIC Kapsowar Mission Hospital":
+                    case "KAPSOWAR MTC LIVE":
+                        dimNos = "1,2";
+                        dimNosMandatory = "1,2";
+                        break;
+                }
+            }
+            //imprest-surrender
+            else if (docType == GeneralController.DocumentTypes.ImprestSurrenderHeader.GetDisplayName())
+            {
+                switch (NavCompany)
+                {
+                    case "AIC Kapsowar Mission Hospital":
+                    case "KAPSOWAR MTC LIVE":
+                        dimNos = "1,2";
+                        dimNosMandatory = "1,2";
+                        break;
+                }
+            }
+            //imprest-surrender
+            else if (docType == GeneralController.DocumentTypes.StaffClaimHeader.GetDisplayName())
+            {
+                switch (NavCompany)
+                {
+                    case "AIC Kapsowar Mission Hospital":
+                    case "KAPSOWAR MTC LIVE":
+                        dimNos = "1,2";
+                        dimNosMandatory = "1,2";
                         break;
                 }
             }
@@ -165,7 +194,7 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
                 .Where(obj => obj.GlobalDimensionNo == int.Parse(dimNo))
                 .Where(obj => obj.DimensionValueType == "Standard")
                 .Where(obj => obj.Blocked == false)
-                .Where(obj => obj.Code.Contains(qString)).ToList().ToString();
+                .Where(obj => obj.Code.Contains(qString)).ToList();
             dynamic response = new ExpandoObject();
             response.response = dims;
             return Ok(response);

@@ -1,7 +1,7 @@
 <template>
     <div>
         <!--Admin Services-->
-        <h4 class="font-semibold text-sm text-gray-500">Admin & General Services:</h4>
+        <!--<h4 class="font-semibold text-sm text-gray-500">Admin & General Services:</h4>
         <grid class="sm:!grid-cols-2 lg:!grid-cols-5">
             <grid-col>
                 <Tile class="bg-red-500" :showLoader="isLoading">
@@ -30,7 +30,7 @@
                     </template>
                 </Tile>
             </grid-col>
-        </grid>
+        </grid>-->
         <!--Finance Services-->
         <h4 class="font-semibold text-sm py-0.5 text-gray-500">Finance Services:</h4>
         <grid class="sm:!grid-cols-2 lg:!grid-cols-5">
@@ -41,14 +41,14 @@
                         <CurrencyDollarIcon class="h-6 w-6" />
                     </template>
                     <template #label>
-                        <router-link to="/ess/staff-claim/list?status=Open" class="underline">Staff Claims</router-link>
+                        <router-link to="/ess/staff-claim/header/list?status=Pending" class="underline">Staff Claims</router-link>
                     </template>
                     <template #value>
                         <div class="flex gap-1 items-center">
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Open</span>
                                 <span class="underline">
-                                    <router-link to="/ess/staff-claim/list?status=Open">{{record.openStaffClaims}}</router-link>
+                                    <router-link to="/ess/staff-claim/list?status=Pending">{{record.openStaffClaims}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
@@ -62,7 +62,7 @@
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Approved</span>
                                 <span class="underline">
-                                    <router-link to="/ess/staff-claim/list?status=Released">{{record.approvedStaffClaims}}</router-link>
+                                    <router-link to="/ess/staff-claim/list?status=Approved">{{record.approvedStaffClaims}}</router-link>
                                 </span>
                             </span>
                         </div>
@@ -76,28 +76,28 @@
                         <BanknotesIcon class="h-6 w-6" />
                     </template>
                     <template #label>
-                        <router-link to="/ess/staff-advance/list?status=Open" class="underline">Imprest Requests</router-link>
+                        <router-link to="/ess/imprest-request/header/list?status=Pending" class="underline">Imprest Requests</router-link>
                     </template>
                     <template #value>
                         <div class="flex gap-1 items-center">
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Open</span>
                                 <span class="underline">
-                                    <router-link to="/ess/staff-advance/list?status=Open">{{record.openAdvanceRequests}}</router-link>
+                                    <router-link to="/ess/imprest-request/header/list?status=Pending">{{record.openAdvanceRequests}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Pending</span>
                                 <span class="underline">
-                                    <router-link to="/ess/staff-advance/list?status=Pending Approval">{{record.pendingAdvanceRequests}}</router-link>
+                                    <router-link to="/ess/imprest-request/header/list?status=Pending Approval">{{record.pendingAdvanceRequests}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Approved</span>
                                 <span class="underline">
-                                    <router-link to="/ess/staff-advance/list?status=Released">{{record.approvedAdvanceRequests}}</router-link>
+                                    <router-link to="/ess/imprest-request/header/list?status=Approved">{{record.approvedAdvanceRequests}}</router-link>
                                 </span>
                             </span>
                         </div>
@@ -111,28 +111,28 @@
                         <ReceiptRefundIcon class="h-6 w-6" />
                     </template>
                     <template #label>
-                        <router-link to="/ess/staff-advance-surrender/list?status=Open" class="underline">Imprest Surrenders</router-link>
+                        <router-link to="/ess/imprest-surrender/header/list?status=Pending" class="underline">Imprest Surrenders</router-link>
                     </template>
                     <template #value>
                         <div class="flex gap-1 items-center">
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Open</span>
                                 <span class="underline">
-                                    <router-link to="/ess/staff-advance-surrender/list?status=Open">{{record.openAdvanceSurrenders}}</router-link>
+                                    <router-link to="/ess/imprest-surrender/header/list?status=Pending">{{record.openAdvanceSurrenders}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Pending</span>
                                 <span class="underline">
-                                    <router-link to="/ess/staff-advance-surrender/list?status=Pending Approval">{{record.pendingAdvanceSurrenders}}</router-link>
+                                    <router-link to="/ess/imprest-surrender/header/list?status=Pending Approval">{{record.pendingAdvanceSurrenders}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Approved</span>
                                 <span class="underline">
-                                    <router-link to="/ess/staff-advance-surrender/list?status=Released">{{record.approvedAdvanceSurrenders}}</router-link>
+                                    <router-link to="/ess/imprest-surrender/header/list?status=Approved">{{record.approvedAdvanceSurrenders}}</router-link>
                                 </span>
                             </span>
                         </div>
@@ -150,28 +150,28 @@
                         <CalendarDaysIcon class="h-6 w-6" />
                     </template>
                     <template #label>
-                        <router-link to="/ess/leave/list?status=Open" class="underline">Leave Applications</router-link>
+                        <router-link to="/ess/leave-application/list?status=Open" class="underline">Leave Applications</router-link>
                     </template>
                     <template #value>
                         <div class="flex gap-1 items-center">
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Open</span>
                                 <span class="underline">
-                                    <router-link to="/ess/leave/list?status=Open">{{record.openLeaves}}</router-link>
+                                    <router-link to="/ess/leave-application/list?status=Open">{{record.openLeaves}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Pending</span>
                                 <span class="underline">
-                                    <router-link to="/ess/leave/list?status=Approval Pending">{{record.pendingLeaves}}</router-link>
+                                    <router-link to="/ess/leave-application/list?status=Pending Approval">{{record.pendingLeaves}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Approved</span>
                                 <span class="underline">
-                                    <router-link to="/ess/leave/list?status=Approved">{{record.approvedLeaves}}</router-link>
+                                    <router-link to="/ess/leave-application/list?status=Released">{{record.approvedLeaves}}</router-link>
                                 </span>
                             </span>
                         </div>
@@ -365,7 +365,7 @@
             }
         },
         mounted() {
-            //this.$root.FnGetDimensionsSetup();
+            this.$root.FnGetDimensionsSetup();
         },
         methods: {
             FnFetchSetups() {

@@ -53,6 +53,35 @@ namespace CuStaffWebportal
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnGenerateP9Report", ReplyAction="*")]
         System.Threading.Tasks.Task<CuStaffWebportal.FnGenerateP9Report_Result> FnGenerateP9ReportAsync(CuStaffWebportal.FnGenerateP9Report request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnImprestRequestHeader", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnImprestRequestHeader_Result> FnImprestRequestHeaderAsync(CuStaffWebportal.FnImprestRequestHeader request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnImprestRequestLine", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnImprestRequestLine_Result> FnImprestRequestLineAsync(CuStaffWebportal.FnImprestRequestLine request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnImprestRequestReport", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnImprestRequestReport_Result> FnImprestRequestReportAsync(CuStaffWebportal.FnImprestRequestReport request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnImprestSurrenderHeader" +
+            "", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnImprestSurrenderHeader_Result> FnImprestSurrenderHeaderAsync(CuStaffWebportal.FnImprestSurrenderHeader request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnImprestSurrenderLine", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnImprestSurrenderLine_Result> FnImprestSurrenderLineAsync(CuStaffWebportal.FnImprestSurrenderLine request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnImprestSurrenderReport" +
+            "", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnImprestSurrenderReport_Result> FnImprestSurrenderReportAsync(CuStaffWebportal.FnImprestSurrenderReport request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnStaffClaimHeader", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnStaffClaimHeader_Result> FnStaffClaimHeaderAsync(CuStaffWebportal.FnStaffClaimHeader request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnStaffClaimLine", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnStaffClaimLine_Result> FnStaffClaimLineAsync(CuStaffWebportal.FnStaffClaimLine request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnStaffClaimReport", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnStaffClaimReport_Result> FnStaffClaimReportAsync(CuStaffWebportal.FnStaffClaimReport request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -547,6 +576,366 @@ namespace CuStaffWebportal
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnImprestRequestHeader", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnImprestRequestHeader
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnImprestRequestHeader()
+        {
+        }
+        
+        public FnImprestRequestHeader(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnImprestRequestHeader_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnImprestRequestHeader_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnImprestRequestHeader_Result()
+        {
+        }
+        
+        public FnImprestRequestHeader_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnImprestRequestLine", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnImprestRequestLine
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnImprestRequestLine()
+        {
+        }
+        
+        public FnImprestRequestLine(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnImprestRequestLine_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnImprestRequestLine_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnImprestRequestLine_Result()
+        {
+        }
+        
+        public FnImprestRequestLine_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnImprestRequestReport", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnImprestRequestReport
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnImprestRequestReport()
+        {
+        }
+        
+        public FnImprestRequestReport(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnImprestRequestReport_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnImprestRequestReport_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnImprestRequestReport_Result()
+        {
+        }
+        
+        public FnImprestRequestReport_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnImprestSurrenderHeader", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnImprestSurrenderHeader
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnImprestSurrenderHeader()
+        {
+        }
+        
+        public FnImprestSurrenderHeader(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnImprestSurrenderHeader_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnImprestSurrenderHeader_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnImprestSurrenderHeader_Result()
+        {
+        }
+        
+        public FnImprestSurrenderHeader_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnImprestSurrenderLine", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnImprestSurrenderLine
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnImprestSurrenderLine()
+        {
+        }
+        
+        public FnImprestSurrenderLine(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnImprestSurrenderLine_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnImprestSurrenderLine_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnImprestSurrenderLine_Result()
+        {
+        }
+        
+        public FnImprestSurrenderLine_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnImprestSurrenderReport", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnImprestSurrenderReport
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnImprestSurrenderReport()
+        {
+        }
+        
+        public FnImprestSurrenderReport(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnImprestSurrenderReport_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnImprestSurrenderReport_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnImprestSurrenderReport_Result()
+        {
+        }
+        
+        public FnImprestSurrenderReport_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnStaffClaimHeader", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnStaffClaimHeader
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnStaffClaimHeader()
+        {
+        }
+        
+        public FnStaffClaimHeader(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnStaffClaimHeader_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnStaffClaimHeader_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnStaffClaimHeader_Result()
+        {
+        }
+        
+        public FnStaffClaimHeader_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnStaffClaimLine", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnStaffClaimLine
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnStaffClaimLine()
+        {
+        }
+        
+        public FnStaffClaimLine(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnStaffClaimLine_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnStaffClaimLine_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnStaffClaimLine_Result()
+        {
+        }
+        
+        public FnStaffClaimLine_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnStaffClaimReport", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnStaffClaimReport
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnStaffClaimReport()
+        {
+        }
+        
+        public FnStaffClaimReport(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnStaffClaimReport_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnStaffClaimReport_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnStaffClaimReport_Result()
+        {
+        }
+        
+        public FnStaffClaimReport_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     public interface CuStaffWebportal_PortChannel : CuStaffWebportal.CuStaffWebportal_Port, System.ServiceModel.IClientChannel
     {
@@ -754,6 +1143,123 @@ namespace CuStaffWebportal
             CuStaffWebportal.FnGenerateP9Report inValue = new CuStaffWebportal.FnGenerateP9Report();
             inValue.jString = jString;
             return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnGenerateP9ReportAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnImprestRequestHeader_Result> CuStaffWebportal.CuStaffWebportal_Port.FnImprestRequestHeaderAsync(CuStaffWebportal.FnImprestRequestHeader request)
+        {
+            return base.Channel.FnImprestRequestHeaderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnImprestRequestHeader_Result> FnImprestRequestHeaderAsync(string jString)
+        {
+            CuStaffWebportal.FnImprestRequestHeader inValue = new CuStaffWebportal.FnImprestRequestHeader();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnImprestRequestHeaderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnImprestRequestLine_Result> CuStaffWebportal.CuStaffWebportal_Port.FnImprestRequestLineAsync(CuStaffWebportal.FnImprestRequestLine request)
+        {
+            return base.Channel.FnImprestRequestLineAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnImprestRequestLine_Result> FnImprestRequestLineAsync(string jString)
+        {
+            CuStaffWebportal.FnImprestRequestLine inValue = new CuStaffWebportal.FnImprestRequestLine();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnImprestRequestLineAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnImprestRequestReport_Result> CuStaffWebportal.CuStaffWebportal_Port.FnImprestRequestReportAsync(CuStaffWebportal.FnImprestRequestReport request)
+        {
+            return base.Channel.FnImprestRequestReportAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnImprestRequestReport_Result> FnImprestRequestReportAsync(string jString)
+        {
+            CuStaffWebportal.FnImprestRequestReport inValue = new CuStaffWebportal.FnImprestRequestReport();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnImprestRequestReportAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnImprestSurrenderHeader_Result> CuStaffWebportal.CuStaffWebportal_Port.FnImprestSurrenderHeaderAsync(CuStaffWebportal.FnImprestSurrenderHeader request)
+        {
+            return base.Channel.FnImprestSurrenderHeaderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnImprestSurrenderHeader_Result> FnImprestSurrenderHeaderAsync(string jString)
+        {
+            CuStaffWebportal.FnImprestSurrenderHeader inValue = new CuStaffWebportal.FnImprestSurrenderHeader();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnImprestSurrenderHeaderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnImprestSurrenderLine_Result> CuStaffWebportal.CuStaffWebportal_Port.FnImprestSurrenderLineAsync(CuStaffWebportal.FnImprestSurrenderLine request)
+        {
+            return base.Channel.FnImprestSurrenderLineAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnImprestSurrenderLine_Result> FnImprestSurrenderLineAsync(string jString)
+        {
+            CuStaffWebportal.FnImprestSurrenderLine inValue = new CuStaffWebportal.FnImprestSurrenderLine();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnImprestSurrenderLineAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnImprestSurrenderReport_Result> CuStaffWebportal.CuStaffWebportal_Port.FnImprestSurrenderReportAsync(CuStaffWebportal.FnImprestSurrenderReport request)
+        {
+            return base.Channel.FnImprestSurrenderReportAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnImprestSurrenderReport_Result> FnImprestSurrenderReportAsync(string jString)
+        {
+            CuStaffWebportal.FnImprestSurrenderReport inValue = new CuStaffWebportal.FnImprestSurrenderReport();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnImprestSurrenderReportAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnStaffClaimHeader_Result> CuStaffWebportal.CuStaffWebportal_Port.FnStaffClaimHeaderAsync(CuStaffWebportal.FnStaffClaimHeader request)
+        {
+            return base.Channel.FnStaffClaimHeaderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnStaffClaimHeader_Result> FnStaffClaimHeaderAsync(string jString)
+        {
+            CuStaffWebportal.FnStaffClaimHeader inValue = new CuStaffWebportal.FnStaffClaimHeader();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnStaffClaimHeaderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnStaffClaimLine_Result> CuStaffWebportal.CuStaffWebportal_Port.FnStaffClaimLineAsync(CuStaffWebportal.FnStaffClaimLine request)
+        {
+            return base.Channel.FnStaffClaimLineAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnStaffClaimLine_Result> FnStaffClaimLineAsync(string jString)
+        {
+            CuStaffWebportal.FnStaffClaimLine inValue = new CuStaffWebportal.FnStaffClaimLine();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnStaffClaimLineAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnStaffClaimReport_Result> CuStaffWebportal.CuStaffWebportal_Port.FnStaffClaimReportAsync(CuStaffWebportal.FnStaffClaimReport request)
+        {
+            return base.Channel.FnStaffClaimReportAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnStaffClaimReport_Result> FnStaffClaimReportAsync(string jString)
+        {
+            CuStaffWebportal.FnStaffClaimReport inValue = new CuStaffWebportal.FnStaffClaimReport();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnStaffClaimReportAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

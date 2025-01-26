@@ -37,10 +37,15 @@ namespace App.Server.Modules.HMIS.Controllers
                         authUser.lastName = QyUser.Last_Name;
                         authUser.email = QyUser.Company_E_Mail;
                         authUser.gender = QyUser.Gender;
-                        authUser.isApprover = false;
+                        authUser.isApprover = true;
                         authUser.isPortalSuperUser = true;
                         authUser.branchCode = QyUser.Global_Dimension_1_Code;
                         authUser.responsibilityCenter = QyUser.Responsibility_Center;
+                        var QyUserSetup = GV.WSclient.ODATAClient().QyUserSetup.Where(x => x.Employee_No == obj.userNo).FirstOrDefault();
+                        if (QyUserSetup != null) {
+                            authUser.myUserId = QyUserSetup.User_ID;
+                            authUser.customerNo = QyUserSetup.Staff_Travel_Account;
+                        }
                         //if no session token
                         if (QyUser.PortalOTPDate.HasValue && QyUser.PortalOTPDate.Value.ToString() == DateTime.Now.ToString("yyyy-MM-dd") && QyUser.PortalOTPDevice == obj.sessionToken)
                         {

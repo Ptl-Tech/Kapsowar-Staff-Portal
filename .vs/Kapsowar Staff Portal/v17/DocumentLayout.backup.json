@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\app.server.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\header\\staffclaimheaderactions.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\staff-claim\\header\\staffclaimheaderactions.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\header\\staffclaimheaderlist.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\staff-claim\\header\\staffclaimheaderlist.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\re_usables\\modules\\dynamicsbc\\dimensionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\re_usables\\modules\\dynamicsbc\\dimensionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\dashboards\\defaultdashboard.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\dashboards\\defaultdashboard.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -15,32 +31,36 @@
       "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\profiles\\superuserprofile.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\config\\routes\\staff-portal-routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\config\\routes\\staff-portal-routes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\line\\staffclaimlineform.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\staff-claim\\line\\staffclaimlineform.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\reports\\payslip.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\reports\\payslip.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\re_usables\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\re_usables\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\controllers\\staffclaimheadercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\controllers\\staffclaimheadercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\reports\\p9.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\reports\\p9.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\models\\staffclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\models\\staffclaim.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\controllers\\staffclaimlinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\controllers\\staffclaimlinecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\leave-application\\leaveheaderactions.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\leave-application\\leaveheaderactions.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\line\\staffclaimlinelist.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\staff-claim\\line\\staffclaimlinelist.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\controllers\\leaveapplicationheadercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\controllers\\leaveapplicationheadercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\header\\staffclaimheaderform.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{806B5BF3-380C-4286-9DF0-16AF0397D21F}|app.client\\app.client.esproj|solutionrelative:app.client\\src\\modules\\staff-portal\\staff-claim\\header\\staffclaimheaderform.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|c:\\work\\other\\ptl\\kapsowar\\kapsowar staff portal\\app.server\\src\\modules\\staffportal\\models\\imprest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{25B73979-366B-478D-8CED-92791D5D152F}|App.Server\\App.Server.csproj|solutionrelative:app.server\\src\\modules\\staffportal\\models\\imprest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,129 +70,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LeaveApplicationHeaderController.cs",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\LeaveApplicationHeaderController.cs",
-              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\LeaveApplicationHeaderController.cs",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\LeaveApplicationHeaderController.cs",
-              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\LeaveApplicationHeaderController.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAYwFAAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T14:38:25.253Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ReportsController.cs",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\ReportsController.cs",
-              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\ReportsController.cs",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\ReportsController.cs",
-              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\ReportsController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBQAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T18:20:39.652Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SuperUserProfile.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\profiles\\SuperUserProfile.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\profiles\\SuperUserProfile.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\profiles\\SuperUserProfile.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\profiles\\SuperUserProfile.vue",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAAAMAAAAjAAAAAAAAAA==",
+              "Title": "StaffClaimHeaderList.vue",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\header\\StaffClaimHeaderList.vue",
+              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\staff-claim\\header\\StaffClaimHeaderList.vue",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\header\\StaffClaimHeaderList.vue",
+              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\staff-claim\\header\\StaffClaimHeaderList.vue",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-23T19:40:08.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "staff-portal-routes.js",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\config\\routes\\staff-portal-routes.js",
-              "RelativeDocumentMoniker": "app.client\\src\\config\\routes\\staff-portal-routes.js",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\config\\routes\\staff-portal-routes.js",
-              "RelativeToolTip": "app.client\\src\\config\\routes\\staff-portal-routes.js",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-01-23T19:39:36.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DefaultDashboard.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\dashboards\\DefaultDashboard.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\dashboards\\DefaultDashboard.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\dashboards\\DefaultDashboard.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\dashboards\\DefaultDashboard.vue",
-              "ViewState": "AgIAAEYBAAAAAAAAAAAswEkBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-23T19:36:18.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "P9.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\reports\\P9.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\reports\\P9.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\reports\\P9.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\reports\\P9.vue",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-23T19:31:06.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LeaveHeaderActions.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\leave-application\\LeaveHeaderActions.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\leave-application\\LeaveHeaderActions.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\leave-application\\LeaveHeaderActions.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\leave-application\\LeaveHeaderActions.vue",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-23T19:03:55.876Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Payslip.vue",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\reports\\Payslip.vue",
-              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\reports\\Payslip.vue",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\reports\\Payslip.vue",
-              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\reports\\Payslip.vue",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAHYAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
-              "WhenOpened": "2025-01-23T19:02:46.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Report.cs",
-              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Models\\Report.cs",
-              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Models\\Report.cs",
-              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Models\\Report.cs",
-              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Models\\Report.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBEAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T18:58:19.559Z",
+              "WhenOpened": "2025-01-26T18:15:15.554Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
@@ -183,9 +94,182 @@
               "RelativeDocumentMoniker": "App.Server\\App.Server.csproj",
               "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\App.Server.csproj",
               "RelativeToolTip": "App.Server\\App.Server.csproj",
-              "ViewState": "AgIAABMAAAAAAAAAAAAAAB0AAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAB8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-23T18:57:02.94Z",
+              "WhenOpened": "2025-01-26T19:17:25.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StaffClaimHeaderActions.vue",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\header\\StaffClaimHeaderActions.vue",
+              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\staff-claim\\header\\StaffClaimHeaderActions.vue",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\header\\StaffClaimHeaderActions.vue",
+              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\staff-claim\\header\\StaffClaimHeaderActions.vue",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAAANcAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-01-26T19:16:40.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ReportsController.cs",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\ReportsController.cs",
+              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\ReportsController.cs",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\ReportsController.cs",
+              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\ReportsController.cs",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAuwKYAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T19:15:04.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SuperUserProfile.vue",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\profiles\\SuperUserProfile.vue",
+              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\profiles\\SuperUserProfile.vue",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\profiles\\SuperUserProfile.vue",
+              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\profiles\\SuperUserProfile.vue",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABcAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-01-26T19:11:58.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DefaultDashboard.vue",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\dashboards\\DefaultDashboard.vue",
+              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\dashboards\\DefaultDashboard.vue",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\dashboards\\DefaultDashboard.vue",
+              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\dashboards\\DefaultDashboard.vue",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAJ0AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-01-26T19:07:08.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "App.Server\\src\\Re_usables\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "App.Server\\src\\Re_usables\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwCoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T19:04:45.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StaffClaimLineForm.vue",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\line\\StaffClaimLineForm.vue",
+              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\staff-claim\\line\\StaffClaimLineForm.vue",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\line\\StaffClaimLineForm.vue",
+              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\staff-claim\\line\\StaffClaimLineForm.vue",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAcwHIAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-01-26T18:41:59.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "StaffClaimLineList.vue",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\line\\StaffClaimLineList.vue",
+              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\staff-claim\\line\\StaffClaimLineList.vue",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\line\\StaffClaimLineList.vue",
+              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\staff-claim\\line\\StaffClaimLineList.vue",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-01-26T18:38:50.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DimensionsController.cs",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\Modules\\DynamicsBC\\DimensionsController.cs",
+              "RelativeDocumentMoniker": "App.Server\\src\\Re_usables\\Modules\\DynamicsBC\\DimensionsController.cs",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Re_usables\\Modules\\DynamicsBC\\DimensionsController.cs",
+              "RelativeToolTip": "App.Server\\src\\Re_usables\\Modules\\DynamicsBC\\DimensionsController.cs",
+              "ViewState": "AgIAAJIAAAAAAAAAAAAUwLIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T18:29:18.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StaffClaimHeaderForm.vue",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\header\\StaffClaimHeaderForm.vue",
+              "RelativeDocumentMoniker": "app.client\\src\\modules\\staff-portal\\staff-claim\\header\\StaffClaimHeaderForm.vue",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\src\\modules\\staff-portal\\staff-claim\\header\\StaffClaimHeaderForm.vue",
+              "RelativeToolTip": "app.client\\src\\modules\\staff-portal\\staff-claim\\header\\StaffClaimHeaderForm.vue",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-01-26T18:23:32.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "StaffClaimLineController.cs",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\StaffClaimLineController.cs",
+              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\StaffClaimLineController.cs",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\StaffClaimLineController.cs",
+              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\StaffClaimLineController.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAYwEsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T18:19:32.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Imprest.cs",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Models\\Imprest.cs",
+              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Models\\Imprest.cs",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Models\\Imprest.cs",
+              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Models\\Imprest.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAA9wDUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T18:17:32.177Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StaffClaim.cs",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Models\\StaffClaim.cs",
+              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Models\\StaffClaim.cs",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Models\\StaffClaim.cs",
+              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Models\\StaffClaim.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAlwA8AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T18:16:42.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StaffClaimHeaderController.cs",
+              "DocumentMoniker": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\StaffClaimHeaderController.cs",
+              "RelativeDocumentMoniker": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\StaffClaimHeaderController.cs",
+              "ToolTip": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\App.Server\\src\\Modules\\StaffPortal\\Controllers\\StaffClaimHeaderController.cs",
+              "RelativeToolTip": "App.Server\\src\\Modules\\StaffPortal\\Controllers\\StaffClaimHeaderController.cs",
+              "ViewState": "AgIAAFYAAAAAAAAAAAAgwGYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T18:15:37.497Z",
               "EditorCaption": ""
             }
           ]

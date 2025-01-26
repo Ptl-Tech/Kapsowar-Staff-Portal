@@ -55,8 +55,8 @@
     export default {
         setup() {
             const router = useRouter();
-            const { cplFnNavDateObjToString, cplFnNavDateObjToISODate } = useGeneralComposable();
-            return { router, cplFnNavDateObjToString, cplFnNavDateObjToISODate };
+            const { xFnNavDateObjToString, xFnNavDateObjToISODate } = useGeneralComposable();
+            return { router, xFnNavDateObjToString, xFnNavDateObjToISODate };
         },
         props: {
             layoutProps: { Default: [] }

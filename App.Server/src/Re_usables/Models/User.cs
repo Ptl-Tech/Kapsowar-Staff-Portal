@@ -45,6 +45,8 @@ namespace App.Server.Modules.HMIS.Models
         public string branchCode { get; set; } = "";
         public string responsibilityCenter { get; set; } = "";
         public bool isLecturer { get; set; }
+        public string myUserId { get; set; } = "";
+        public string customerNo { get; set; } = "";
     }
     public class ResetPassword
     {

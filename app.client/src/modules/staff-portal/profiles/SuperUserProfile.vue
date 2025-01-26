@@ -3,18 +3,18 @@
         <Sidebar>
             <sidebar-link to="/ess/dashboard" :active="this.$route.path == '/dashboard'?true:false" :isLast="true" class="border-b border-gray-500"><Squares2X2Icon class="iconSmall" /> Dashboard</sidebar-link>
             <!---->
-            <SidebarDropdown :active="this.$route.path.includes('/ess/approval-entry')? true:false">
+            <!--<SidebarDropdown :active="this.$route.path.includes('/ess/approval-entry')? true:false">
                 <template #caption>
-                    <DocumentCheckIcon class="iconSmall" /> Approval Entries
+                    <DocumentCheckIcon class="iconSmall" /> Approval Entries-->
                     <!--<label class="bg-red-500 rounded-full !px-1 font-normal">{{$root.authUser.PendingMyApproval}}</label>-->
-                    <label class="bg-red-500 rounded-full !px-1 font-normal">0</label>
+                    <!--<label class="bg-red-500 rounded-full !px-1 font-normal">0</label>
                 </template>
                 <template #content>
                     <sidebar-link to="/ess/approval-entry/list?status=Open&docType=staff-claim" :active="this.$route.fullPath.includes('/ess/approval-entry/list?status=Open') || this.$route.fullPath.includes('/ess/approval-entry/Open')?true:false" :sidebarDropdown="true">Pending My Approval <label class="bg-white rounded-full !px-1 text-red-500 font-normal">{{$root.authUser.PendingMyApproval}}</label></sidebar-link>
                     <sidebar-link to="/ess/approval-entry/list?status=Approved&docType=staff-claim" :active="decodeURI(this.$route.fullPath).includes('/ess/approval-entry/list?status=Approved') || this.$route.fullPath.includes('/ess/approval-entry/Approved')?true:false" :sidebarDropdown="true">Approved Documents</sidebar-link>
                     <sidebar-link to="/ess/approval-entry/list?status=Rejected&docType=staff-claim" :active="this.$route.fullPath.includes('/ess/approval-entry/list?status=Rejected') || this.$route.fullPath.includes('/ess/approval-entry/Rejected')?true:false" :sidebarDropdown="true" isLast="true">Rejected Documents</sidebar-link>
                 </template>
-            </SidebarDropdown>
+            </SidebarDropdown>-->
             <!---->
             <SidebarDropdown :active="true" :isLast="false">
                 <template #caption>
@@ -33,9 +33,9 @@
                     <DocumentCheckIcon class="iconSmall" /> Finance Services
                 </template>
                 <template #content>
-                    <sidebar-link to="/ess/staff-advance/list?status=Open" :active="this.$route.path.includes('/ess/staff-advance') || $route.path.includes('/ess/staff-advance/form')?true:false" :sidebarDropdown="true" :isLast="false">Imprests</sidebar-link>
-                    <sidebar-link to="/ess/staff-advance-surrender/list?status=Open" :active="this.$route.path.includes('/ess/staff-advance-surrender')|| $route.path.includes('/ess/staff-advance-surrender/form')?true:false" :sidebarDropdown="true" :isLast="false">Imprest Surrenders</sidebar-link>
-                    <sidebar-link to="/ess/staff-claim/list?status=Open" :active="this.$route.path.includes('/ess/staff-claim') || $route.path.includes('/ess/staff-claim/form')?true:false" :sidebarDropdown="true" :isLast="true">Staff Claims</sidebar-link>
+                    <sidebar-link to="/ess/imprest-request/header/list?status=Pending" :active="this.$route.path.includes('/ess/imprest-request/')?true:false" :sidebarDropdown="true" :isLast="false">Imprests</sidebar-link>
+                    <sidebar-link to="/ess/imprest-surrender/header/list?status=Pending" :active="this.$route.path.includes('/ess/imprest-surrender')?true:false" :sidebarDropdown="true" :isLast="false">Imprest Surrenders</sidebar-link>
+                    <sidebar-link to="/ess/staff-claim/header/list?status=Pending" :active="this.$route.path.includes('/ess/staff-claim')?true:false" :sidebarDropdown="true" :isLast="true">Staff Claims</sidebar-link>
                 </template>
             </SidebarDropdown>
             <!---->

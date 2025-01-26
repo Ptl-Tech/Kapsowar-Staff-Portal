@@ -20,4 +20,25 @@ namespace App.Server.src.Modules.ESS.Models
         //[MinLength(4)]
         public int year { get; set; }
     }
+    public class ImprestReport
+    {
+        public string? staffNo { get; set; } = "";
+        public string? docNo { get; set; } = "";
+        [Required]
+        public string No { get; set; } = "";
+    }
+    public class ImprestSurrenderReport
+    {
+        public string? staffNo { get; set; } = "";
+        public string? docNo { get; set; } = "";
+        [Required]
+        public string No { get; set; } = "";
+    }
+    public class StaffClaimReport
+    {
+        public string? staffNo { get; set; } = "";
+        public string? docNo { get; set; } = "";
+        [Required]
+        public string No { get; set; } = "";
+    }
 }

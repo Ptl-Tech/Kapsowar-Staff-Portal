@@ -188,7 +188,10 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
             }
             return msg != null? msg:"";
         }
-        public enum DocumentTypes { VisitorHeader };
+        public enum DocumentTypes { ImprestRequestHeader,ImprestRequestLine,
+            ImprestSurrenderHeader,ImprestSurrenderLine,
+            StaffClaimHeader,StaffClaimLine 
+        };
 
     }
 }

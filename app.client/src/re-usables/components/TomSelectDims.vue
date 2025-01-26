@@ -22,6 +22,9 @@
 				if (this.record["Shortcut_Dimension_" + this.dimNo + "_Code"]) {
 					this.initValue2 = this.record["Shortcut_Dimension_"+this.dimNo+"_Code"];
 				}
+                else if (this.record["Global_Dimension_" + this.dimNo + "_Code"]) {
+                    this.initValue2 = this.record["Global_Dimension_" + this.dimNo + "_Code"];
+                }
 			}
 			else if(this.initValue != ""){
 				this.initValue2 = this.initValue;

@@ -9,7 +9,7 @@
                 </grid-col>
                 <grid-col>
                     <field-group label="Leave Type" :showMandatory="false" :valErrors="valErrors.leaveType">
-                        <TomSelectFetch v-if="cplIsFormLoaded" tsId="leaveTypes" v-model="form.leaveType" :cProps="{valueField:'Code',labelField:'Code',searchField:['Code'],recordField:'Leave_Type',webservice:'QyLeaveTypes'}" :filter="record.Status != 'Released'? ``:`Code eq '${record.LeaveType}'`" :record="record" :formMode="formMode" @change="FnOnLeaveTypeChange()" />
+                        <TomSelectFetch v-if="xIsFormLoaded" tsId="leaveTypes" v-model="form.leaveType" :cProps="{valueField:'Code',labelField:'Code',searchField:['Code'],recordField:'Leave_Type',webservice:'QyLeaveTypes'}" :filter="record.Status != 'Released'? ``:`Code eq '${record.LeaveType}'`" :record="record" :formMode="formMode" @change="FnOnLeaveTypeChange()" />
                     </field-group>
                 </grid-col>
                 <grid-col>
@@ -61,7 +61,7 @@
                 </grid-col>
                 <grid-col>
                     <field-group label="Reliever" :showMandatory="false" :valErrors="valErrors.reliever">
-                        <TomSelectFetch v-if="cplIsFormLoaded" tsId="reliever" v-model="form.reliever" :cProps="{valueField:'No',labelField:'Full_Name',searchField:['No'],recordField:'Reliever_No',webservice:'QyEmployees'}" :filter="record.Status != 'Released'? ``:`No eq '${record.Reliever_No}'`" :record="record" :formMode="formMode"/>
+                        <TomSelectFetch v-if="xIsFormLoaded" tsId="reliever" v-model="form.reliever" :cProps="{valueField:'No',labelField:'Full_Name',searchField:['No'],recordField:'Reliever_No',webservice:'QyEmployees'}" :filter="record.Status != 'Released'? ``:`No eq '${record.Reliever_No}'`" :record="record" :formMode="formMode"/>
                     </field-group>
                 </grid-col>
                 <grid-col>
@@ -106,8 +106,8 @@
         components: { Actions, ...W, ModalPageTemplate, TomSelectFetch },
         emits: ["closeModal"],
         setup() {
-            const { router, cplIsFormLoaded, cplOnAfterFormLoaded } = useFormComposable();
-            return { router, cplIsFormLoaded, cplOnAfterFormLoaded };
+            const { router, xIsFormLoaded, xOnAfterFormLoaded } = useFormComposable();
+            return { router, xIsFormLoaded, xOnAfterFormLoaded };
         },
         data() {
             return {
@@ -178,9 +178,9 @@
                                 this.record = formData;
                                 this.form.recId = formData[this.pageProps.keys.recKey];
                                 this.form.leaveType = formData.Leave_Type;
-                                this.form.startDate = this.$root.cplFnNavDateObjToISODate(formData.Start_Date);
-                                this.form.endDate = this.$root.cplFnNavDateObjToISODate(formData.End_Date);
-                                this.form.returnDate = this.$root.cplFnNavDateObjToISODate(formData.Return_to_Work_Date);
+                                this.form.startDate = this.$root.xFnNavDateObjToISODate(formData.Start_Date);
+                                this.form.endDate = this.$root.xFnNavDateObjToISODate(formData.End_Date);
+                                this.form.returnDate = this.$root.xFnNavDateObjToISODate(formData.Return_to_Work_Date);
                                 this.form.reliever = formData.Reliever_No;
                                 this.form.comments = formData.Reson_for_Request;
                                 this.form.noOfdays = parseFloat(formData.Days_Applied);
@@ -189,7 +189,7 @@
                                 }
                             }
                         }
-                        this.cplOnAfterFormLoaded();
+                        this.xOnAfterFormLoaded();
                         this.$root.loader.isLoading = false;
                     }).catch((error) => {
                         var msg = this.appConfig.errors.dataFetchFailure;

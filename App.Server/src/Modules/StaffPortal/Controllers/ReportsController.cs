@@ -101,6 +101,95 @@ namespace App.Server.src.Modules.ESS.Controllers
             }
 
         }
+        [HttpPost]
+        public IActionResult ImprestRequestReport([FromBody] ImprestReport obj)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
+                }
+                obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
+                obj.docNo = obj.No;
+                //
+                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnImprestRequestReportAsync(JsonSerializer.Serialize(obj)).Result;
+                if (result.return_value != "")
+                {
+                    return Ok(new { response = result.return_value });
+                }
+                else
+                {
+                    throw new Exception(Config.ErrorGeneralFailure);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(GeneralController.ProcessException(ex));
+            }
+
+        }
+        //
+        [HttpPost]
+        public IActionResult ImprestSurrenderReport([FromBody] ImprestSurrenderReport obj)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
+                }
+                obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
+                obj.docNo = obj.No;
+                //
+                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnImprestSurrenderReportAsync(JsonSerializer.Serialize(obj)).Result;
+                if (result.return_value != "")
+                {
+                    return Ok(new { response = result.return_value });
+                }
+                else
+                {
+                    throw new Exception(Config.ErrorGeneralFailure);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(GeneralController.ProcessException(ex));
+            }
+
+        }
+        //
+        [HttpPost]
+        public IActionResult StaffClaimReport([FromBody] StaffClaimReport obj)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
+                }
+                obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
+                obj.docNo = obj.No;
+                //
+                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnStaffClaimReportAsync(JsonSerializer.Serialize(obj)).Result;
+                if (result.return_value != "")
+                {
+                    return Ok(new { response = result.return_value });
+                }
+                else
+                {
+                    throw new Exception(Config.ErrorGeneralFailure);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(GeneralController.ProcessException(ex));
+            }
+
+        }
 
     }
 

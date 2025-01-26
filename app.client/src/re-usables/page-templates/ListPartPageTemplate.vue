@@ -33,7 +33,7 @@
                                 </WTd>
                                 <slot :name="`tbody-${index-1}`"></slot>
                             </WTr>
-                             <slot name="totalsRow"></slot>
+                             <slot name="summaryRow"></slot>
                         </tbody>
                     </table>
                     <!---->

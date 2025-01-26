@@ -15,7 +15,7 @@
         <div class="!top-40">
             <FiltersBar v-if="filterProps.isFilter" :pageProps="pageProps" @FnOnChangeFilters="FnOnChangeFilters($event)" @FnOnResetFilters="FnOnResetFilters()" @FnOnCloseFilterBar="FnOnCloseFilterBar()" />
             <!---->
-            <div v-if="pageProps.isLinkTabs" class="pb-1 overflow-x-auto scrollbar pl-1">
+            <div class="pb-1 overflow-x-auto scrollbar pl-1">
                 <slot name="navigationTabs"></slot>
             </div>
             <!---->
