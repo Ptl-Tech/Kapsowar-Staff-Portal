@@ -44,8 +44,8 @@
                     <DocumentCheckIcon class="iconSmall" /> Procurement & Stores
                 </template>
                 <template #content>
-                    <sidebar-link to="/ess/purchase-request/list?status=Open" :active="this.$route.path.includes('/ess/purchase-request')?true:false" :sidebarDropdown="true" :isLast="false">Purchase Requests</sidebar-link>
-                    <sidebar-link to="/ess/store-request/list?status=Open" :active="this.$route.path.includes('/ess/store-request')?true:false" :sidebarDropdown="true" :isLast="true">Store Requests</sidebar-link>
+                    <sidebar-link to="/ess/purchase-request/header/list?status=Open" :active="this.$route.path.includes('/ess/purchase-request')?true:false" :sidebarDropdown="true" :isLast="false">Purchase Requests</sidebar-link>
+                    <sidebar-link to="/ess/store-request/header/list?status=Open" :active="this.$route.path.includes('/ess/store-request')?true:false" :sidebarDropdown="true" :isLast="true">Store Requests</sidebar-link>
                 </template>
             </SidebarDropdown>
             <!---->

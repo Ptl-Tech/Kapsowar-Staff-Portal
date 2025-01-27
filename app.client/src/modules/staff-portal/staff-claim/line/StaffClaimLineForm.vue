@@ -55,7 +55,7 @@
         data() {
             return {
                 pageProps: {
-                    title: 'Imprest Line Form',
+                    title: 'Staff Claim Line Form',
                     pageType: "form",
                     keys: { recKey: 'Line_No', parentKey: 'No' },
                     controller: 'StaffClaimLine',

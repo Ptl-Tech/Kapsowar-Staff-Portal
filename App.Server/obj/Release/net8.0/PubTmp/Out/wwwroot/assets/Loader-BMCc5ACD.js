@@ -1,1 +1,0 @@
-import{_ as e,o,c as s}from"./index-BWGeHmgk.js";const t="/images/loader-circle-sm.gif",r={props:{isShow:{default:!1}}},c={id:"loader",src:t,style:{height:"10px",width:"10px"}};function a(i,n,p,_,d,l){return o(),s("img",c)}const m=e(r,[["render",a]]);export{m as L};

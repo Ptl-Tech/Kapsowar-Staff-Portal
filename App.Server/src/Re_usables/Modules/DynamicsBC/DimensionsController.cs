@@ -177,6 +177,30 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
                         break;
                 }
             }
+            //Purchase request
+            else if (docType == GeneralController.DocumentTypes.PurchaseRequestHeader.GetDisplayName())
+            {
+                switch (NavCompany)
+                {
+                    case "AIC Kapsowar Mission Hospital":
+                    case "KAPSOWAR MTC LIVE":
+                        dimNos = "1,2";
+                        dimNosMandatory = "1,2";
+                        break;
+                }
+            }
+            //Store request
+            else if (docType == GeneralController.DocumentTypes.StoreRequestHeader.GetDisplayName())
+            {
+                switch (NavCompany)
+                {
+                    case "AIC Kapsowar Mission Hospital":
+                    case "KAPSOWAR MTC LIVE":
+                        dimNos = "1,2";
+                        dimNosMandatory = "1,2";
+                        break;
+                }
+            }
             //default
             else
             {

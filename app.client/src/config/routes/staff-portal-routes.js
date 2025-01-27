@@ -121,14 +121,14 @@ export const supplierPortalRoutes = [
                 ]
             },
             //
-        //    {
-        //        path: 'leave-recall',
-        //        meta: { requiresAuth: true },
-        //        children: [
-        //            { path: 'list', name: "LeaveRecallList", component: () => import('@/modules/staff-portal/leave-recall/RecallList.vue'), },
-        //            { path: 'form/:action/:no', component: () => import('@/modules/staff-portal/leave-recall/RecallForm.vue'), },
-        //        ]
-        //    },
+            //    {
+            //        path: 'leave-recall',
+            //        meta: { requiresAuth: true },
+            //        children: [
+            //            { path: 'list', name: "LeaveRecallList", component: () => import('@/modules/staff-portal/leave-recall/RecallList.vue'), },
+            //            { path: 'form/:action/:no', component: () => import('@/modules/staff-portal/leave-recall/RecallForm.vue'), },
+            //        ]
+            //    },
             {
                 path: 'reports',
                 meta: { requiresAuth: true },
@@ -137,39 +137,51 @@ export const supplierPortalRoutes = [
                     { path: 'p9', component: () => import('@/modules/staff-portal/reports/P9.vue') },
                 ]
             },
-        //    /**
-        //     * PROCUREMENT & STORES ROUTES
-        //     */
-        //    {
-        //        path: 'purchase-request',
-        //        meta: { requiresAuth: true },
-        //        children: [
-        //            { path: 'list', name: "PurchaseReqList", component: () => import('@/modules/staff-portal/purchase-request/PurchaseRequestList.vue'), },
-        //            { path: 'form/:action/:no', component: () => import('@/modules/staff-portal/purchase-request/PurchaseRequestForm.vue') },
-        //            { path: 'line/form/:action/:no/:lineNo', component: () => import('@/modules/staff-portal/purchase-request/PurchaseRequestLineForm.vue') },
-        //        ]
-        //    },
-        //    {
-        //        path: 'store-request',
-        //        meta: { requiresAuth: true },
-        //        children: [
-        //            { path: 'list', name: "StoreReqList", component: () => import('@/modules/staff-portal/store-request/StoreRequestHeaderList.vue'), },
-        //            { path: 'form/:action/:no', component: () => import('@/modules/staff-portal/store-request/StoreRequestHeaderForm.vue') },
-        //            { path: 'line/form/:action/:no/:lineNo', component: () => import('@/modules/staff-portal/store-request/StoreRequestLineForm.vue') },
-        //        ]
-        //    },
-        //    /**
-        //     * TRANSPORT ROUTES
-        //     */
-        //    {
-        //        path: 'transport-request',
-        //        meta: { requiresAuth: true },
-        //        children: [
-        //            { path: 'list', name: "TransportReqList", component: () => import('@/modules/staff-portal/transport-request/TransportList.vue'), },
-        //            { path: 'form/:action/:no', component: () => import('@/modules/staff-portal/transport-request/TransportForm.vue') },
-        //            { path: 'log/form/:action/:no/:lineNo', component: () => import('@/modules/staff-portal/transport-request/LogLineForm.vue') },
-        //        ]
-        //    },
+            /**
+             * PROCUREMENT & STORES ROUTES
+             */
+            //
+            {
+                path: 'purchase-request',
+                meta: { requiresAuth: true },
+                children: [
+                    {
+                        path: 'header',
+                        children: [
+                            { path: 'list', name: "PurchaseRequestHeaderList", component: () => import('@/modules/staff-portal/purchase-request/header/PurchaseRequestHeaderList.vue') },
+                            { path: 'form/:action', component: () => import('@/modules/staff-portal/purchase-request/header/PurchaseRequestHeaderForm.vue') },
+                        ]
+                    },
+                    {
+                        path: 'line',
+                        children: [
+                            { path: 'list', name: "PurchaseRequestLineList", component: () => import('@/modules/staff-portal/purchase-request/line/PurchaseRequestLineList.vue') },
+                            { path: 'form/:action', component: () => import('@/modules/staff-portal/purchase-request/line/PurchaseRequestLineForm.vue') },
+                        ]
+                    },
+                ]
+            },
+            {
+                path: 'store-request',
+                meta: { requiresAuth: true },
+                children: [
+                    {
+                        path: 'header',
+                        children: [
+                            { path: 'list', name: "StoreRequestHeaderList", component: () => import('@/modules/staff-portal/store-request/header/StoreRequestHeaderList.vue') },
+                            { path: 'form/:action', component: () => import('@/modules/staff-portal/store-request/header/StoreRequestHeaderForm.vue') },
+                        ]
+                    },
+                    {
+                        path: 'line',
+                        children: [
+                            { path: 'list', name: "StoreRequestLineList", component: () => import('@/modules/staff-portal/store-request/line/StoreRequestLineList.vue') },
+                            { path: 'form/:action', component: () => import('@/modules/staff-portal/store-request/line/StoreRequestLineForm.vue') },
+                        ]
+                    },
+                ]
+            },
+
         ]
     }
 ]

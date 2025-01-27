@@ -190,7 +190,9 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
         }
         public enum DocumentTypes { ImprestRequestHeader,ImprestRequestLine,
             ImprestSurrenderHeader,ImprestSurrenderLine,
-            StaffClaimHeader,StaffClaimLine 
+            StaffClaimHeader,StaffClaimLine,
+            PurchaseRequestHeader, PurchaseRequestLine,
+            StoreRequestHeader, StoreRequestLine
         };
 
     }

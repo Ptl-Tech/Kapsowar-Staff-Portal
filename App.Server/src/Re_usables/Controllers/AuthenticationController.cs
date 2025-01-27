@@ -41,6 +41,10 @@ namespace App.Server.Modules.HMIS.Controllers
                         authUser.isPortalSuperUser = true;
                         authUser.branchCode = QyUser.Global_Dimension_1_Code;
                         authUser.responsibilityCenter = QyUser.Responsibility_Center;
+                        //if(authUser.responsibilityCenter == "")
+                        //{
+                        //    throw new Exception("Staff responsibility center not set in Employee card.");
+                        //}
                         var QyUserSetup = GV.WSclient.ODATAClient().QyUserSetup.Where(x => x.Employee_No == obj.userNo).FirstOrDefault();
                         if (QyUserSetup != null) {
                             authUser.myUserId = QyUserSetup.User_ID;
