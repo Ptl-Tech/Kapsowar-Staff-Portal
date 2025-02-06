@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 1/27/2025 10:15:05 PM
+// Generation date: 2/2/2025 2:37:39 PM
 namespace NAV
 {
     /// <summary>
@@ -260,6 +260,108 @@ namespace NAV
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
         private global::Microsoft.OData.Client.DataServiceQuery<LookUp_Values> _LookUp_Values;
+        /// <summary>
+        /// There are no comments for PgAllStudentsList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<PgAllStudentsList> PgAllStudentsList
+        {
+            get
+            {
+                if ((this._PgAllStudentsList == null))
+                {
+                    this._PgAllStudentsList = base.CreateQuery<PgAllStudentsList>("PgAllStudentsList");
+                }
+                return this._PgAllStudentsList;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<PgAllStudentsList> _PgAllStudentsList;
+        /// <summary>
+        /// There are no comments for PgLecturersList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<PgLecturersList> PgLecturersList
+        {
+            get
+            {
+                if ((this._PgLecturersList == null))
+                {
+                    this._PgLecturersList = base.CreateQuery<PgLecturersList>("PgLecturersList");
+                }
+                return this._PgLecturersList;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<PgLecturersList> _PgLecturersList;
+        /// <summary>
+        /// There are no comments for PgLecturerUnitsDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<PgLecturerUnitsDetails> PgLecturerUnitsDetails
+        {
+            get
+            {
+                if ((this._PgLecturerUnitsDetails == null))
+                {
+                    this._PgLecturerUnitsDetails = base.CreateQuery<PgLecturerUnitsDetails>("PgLecturerUnitsDetails");
+                }
+                return this._PgLecturerUnitsDetails;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<PgLecturerUnitsDetails> _PgLecturerUnitsDetails;
+        /// <summary>
+        /// There are no comments for PgProgrammesList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<PgProgrammesList> PgProgrammesList
+        {
+            get
+            {
+                if ((this._PgProgrammesList == null))
+                {
+                    this._PgProgrammesList = base.CreateQuery<PgProgrammesList>("PgProgrammesList");
+                }
+                return this._PgProgrammesList;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<PgProgrammesList> _PgProgrammesList;
+        /// <summary>
+        /// There are no comments for PgSemestersSetup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<PgSemestersSetup> PgSemestersSetup
+        {
+            get
+            {
+                if ((this._PgSemestersSetup == null))
+                {
+                    this._PgSemestersSetup = base.CreateQuery<PgSemestersSetup>("PgSemestersSetup");
+                }
+                return this._PgSemestersSetup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<PgSemestersSetup> _PgSemestersSetup;
+        /// <summary>
+        /// There are no comments for PgStudentUnits in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<PgStudentUnits> PgStudentUnits
+        {
+            get
+            {
+                if ((this._PgStudentUnits == null))
+                {
+                    this._PgStudentUnits = base.CreateQuery<PgStudentUnits>("PgStudentUnits");
+                }
+                return this._PgStudentUnits;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<PgStudentUnits> _PgStudentUnits;
         /// <summary>
         /// There are no comments for RegApplications in the schema.
         /// </summary>
@@ -2218,6 +2320,54 @@ namespace NAV
             base.AddObject("LookUp_Values", lookUp_Values);
         }
         /// <summary>
+        /// There are no comments for PgAllStudentsList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public void AddToPgAllStudentsList(PgAllStudentsList pgAllStudentsList)
+        {
+            base.AddObject("PgAllStudentsList", pgAllStudentsList);
+        }
+        /// <summary>
+        /// There are no comments for PgLecturersList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public void AddToPgLecturersList(PgLecturersList pgLecturersList)
+        {
+            base.AddObject("PgLecturersList", pgLecturersList);
+        }
+        /// <summary>
+        /// There are no comments for PgLecturerUnitsDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public void AddToPgLecturerUnitsDetails(PgLecturerUnitsDetails pgLecturerUnitsDetails)
+        {
+            base.AddObject("PgLecturerUnitsDetails", pgLecturerUnitsDetails);
+        }
+        /// <summary>
+        /// There are no comments for PgProgrammesList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public void AddToPgProgrammesList(PgProgrammesList pgProgrammesList)
+        {
+            base.AddObject("PgProgrammesList", pgProgrammesList);
+        }
+        /// <summary>
+        /// There are no comments for PgSemestersSetup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public void AddToPgSemestersSetup(PgSemestersSetup pgSemestersSetup)
+        {
+            base.AddObject("PgSemestersSetup", pgSemestersSetup);
+        }
+        /// <summary>
+        /// There are no comments for PgStudentUnits in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public void AddToPgStudentUnits(PgStudentUnits pgStudentUnits)
+        {
+            base.AddObject("PgStudentUnits", pgStudentUnits);
+        }
+        /// <summary>
         /// There are no comments for RegApplications in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
@@ -3726,6 +3876,8 @@ namespace NAV
             <EnumMember>NAV.NavType/Binary</EnumMember>
           </Annotation>
         </Property>
+        <NavigationProperty Name=""Default_Semester_Link"" Type=""Collection(NAV.PgSemestersSetup)"" ContainsTarget=""true"" />
+        <NavigationProperty Name=""Default_Exam_Semester_Link"" Type=""Collection(NAV.PgSemestersSetup)"" ContainsTarget=""true"" />
         <Annotation Term=""NAV.LabelId"" String=""General_SetUp"" />
       </EntityType>
       <EntityType Name=""Hostel_List"">
@@ -4676,6 +4828,794 @@ namespace NAV
         </Property>
         <Annotation Term=""NAV.LabelId"" String=""LookUp_Values"" />
       </EntityType>
+      <EntityType Name=""PgAllStudentsList"">
+        <Key>
+          <PropertyRef Name=""No"" />
+        </Key>
+        <Property Name=""No"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""No"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Name"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Name"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Balance"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""Balance"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Address"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Address"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Address_2"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""Town"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Phone_No"" Type=""Edm.String"" MaxLength=""30"">
+          <Annotation Term=""NAV.LabelId"" String=""Phone_No"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Gender"" Type=""Edm.String"">
+          <Annotation Term=""NAV.LabelId"" String=""Gender"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Global_Dimension_1_Code"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Global_Dimension_1_Code"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Status"" Type=""Edm.String"">
+          <Annotation Term=""NAV.LabelId"" String=""Status"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Intake_Code"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Intake_Code"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""County_Code"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""County_Code"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""ID_No"" Type=""Edm.String"" MaxLength=""30"">
+          <Annotation Term=""NAV.LabelId"" String=""ID_No"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""E_Mail"" Type=""Edm.String"" MaxLength=""80"">
+          <Annotation Term=""NAV.LabelId"" String=""E_Mail"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Global_Dimension_1_Filter"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Global_Dimension_1_Filter"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Global_Dimension_2_Filter"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Global_Dimension_2_Filter"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Currency_Filter"" Type=""Edm.String"" MaxLength=""10"">
+          <Annotation Term=""NAV.LabelId"" String=""Currency_Filter"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Annotation Term=""NAV.LabelId"" String=""PgAllStudentsList"" />
+        <Annotation Term=""NAV.IsReadOnly"" Bool=""true"" />
+      </EntityType>
+      <EntityType Name=""PgLecturersList"">
+        <Key>
+          <PropertyRef Name=""No"" />
+        </Key>
+        <Property Name=""No"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""No"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Title"" Type=""Edm.String"">
+          <Annotation Term=""NAV.LabelId"" String=""Title"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Full_Name"" Type=""Edm.String"" MaxLength=""80"">
+          <Annotation Term=""NAV.LabelId"" String=""Full_Name"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Gender"" Type=""Edm.String"">
+          <Annotation Term=""NAV.LabelId"" String=""Gender"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Global_Dimension_1_Code"" Type=""Edm.String"" MaxLength=""30"">
+          <Annotation Term=""NAV.LabelId"" String=""Global_Dimension_1_Code"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Date_of_Joining_the_Company"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Date_of_Joining_the_Company"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Leave_Balance"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""Leave Balance"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Payroll_Posting_Group"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Payroll_Posting_Group"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Status"" Type=""Edm.String"">
+          <Annotation Term=""NAV.LabelId"" String=""Status"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Home_Phone_Number"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Home_Phone_Number"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Annotation Term=""NAV.LabelId"" String=""PgLecturersList"" />
+        <Annotation Term=""NAV.IsReadOnly"" Bool=""true"" />
+      </EntityType>
+      <EntityType Name=""PgLecturerUnitsDetails"">
+        <Key>
+          <PropertyRef Name=""Programme"" />
+          <PropertyRef Name=""Stage"" />
+          <PropertyRef Name=""Unit"" />
+          <PropertyRef Name=""Lecturer"" />
+          <PropertyRef Name=""Line_No"" />
+        </Key>
+        <Property Name=""Programme"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Programme"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Stage"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Stage"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Unit"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Unit"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Lecturer"" Type=""Edm.String"" Nullable=""false"" MaxLength=""30"">
+          <Annotation Term=""NAV.LabelId"" String=""Lecturer"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Line_No"" Type=""Edm.Int32"" Nullable=""false"">
+          <Annotation Term=""NAV.LabelId"" String=""Line_No"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Semester"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Semester"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Unit_Name"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Unit_Name"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Campus_Code"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Campus Code"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Intake"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Intake"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Class"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""Class"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""No_Of_Hours"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""No_Of_Hours"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""No_Of_Hours_Contracted"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""No_Of_Hours_Contracted"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Available_From"" Type=""Edm.String"">
+          <Annotation Term=""NAV.LabelId"" String=""Available_From"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Available_To"" Type=""Edm.String"">
+          <Annotation Term=""NAV.LabelId"" String=""Available_To"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Assigned"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Assigned"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <NavigationProperty Name=""Programme_Link"" Type=""Collection(NAV.PgProgrammesList)"" ContainsTarget=""true"" />
+        <NavigationProperty Name=""Semester_Link"" Type=""Collection(NAV.PgSemestersSetup)"" ContainsTarget=""true"" />
+        <Annotation Term=""NAV.LabelId"" String=""PgLecturerUnitsDetails"" />
+      </EntityType>
+      <EntityType Name=""PgProgrammesList"">
+        <Key>
+          <PropertyRef Name=""Code"" />
+        </Key>
+        <Property Name=""Code"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Code"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Description"" Type=""Edm.String"" MaxLength=""200"">
+          <Annotation Term=""NAV.LabelId"" String=""Description"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Category"" Type=""Edm.String"">
+          <Annotation Term=""NAV.LabelId"" String=""Category"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""School_Code"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""School_Code"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Date_created"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Date_created"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Department_Code"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Department_Code"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Branch_Filter"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Branch_Filter"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Exam_Category"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Exam_Category"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Minimum_Grade"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Minimum_Grade"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Graduation_Units"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Graduation_Units"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Student_Registered"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Student_Registered"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Registered"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Registered"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Paid"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Paid"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""School_Fee_Percentage"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""School_Fee_Percentage"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Stage_Filter"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Stage_Filter"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Semester_Filter"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Semester_Filter"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Date_Filter"" Type=""Edm.String"">
+          <Annotation Term=""NAV.LabelId"" String=""Date_Filter"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Status"" Type=""Edm.String"">
+          <Annotation Term=""NAV.LabelId"" String=""Status"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Intake_Filter"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Intake_Filter"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Session_Filter"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Session_Filter"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Register_For_Filter"" Type=""Edm.String"">
+          <Annotation Term=""NAV.LabelId"" String=""Register_For_Filter"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <NavigationProperty Name=""Semester_Filter_Link"" Type=""Collection(NAV.PgSemestersSetup)"" ContainsTarget=""true"" />
+        <Annotation Term=""NAV.LabelId"" String=""PgProgrammesList"" />
+      </EntityType>
+      <EntityType Name=""PgSemestersSetup"">
+        <Key>
+          <PropertyRef Name=""Code"" />
+        </Key>
+        <Property Name=""Code"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Code"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Description"" Type=""Edm.String"" MaxLength=""150"">
+          <Annotation Term=""NAV.LabelId"" String=""Description"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Remarks"" Type=""Edm.String"" MaxLength=""150"">
+          <Annotation Term=""NAV.LabelId"" String=""Remarks"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Current_Semester"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Current Series"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Registration_Start_Date"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Registration_Start_Date"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Registration_End_Date"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Registration_End_Date"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Deferral_Start_Date"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Deferral_Start_Date"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Deferral_End_Date"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Deferral_End_Date"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Intake_Semester"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Intake_Semester"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Lock_TimeTable_Generation"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Lock_TimeTable_Generation"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Remarking_Series"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Remarking_Series"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Remark_Start_Date"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Remark_Start_Date"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Remark_End_Date"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Remark_End_Date"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Release_Results"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Release_Results"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Allow_Online_Registration"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Allow_Online_Registration"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Allow_Nav_Registration"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Allow_Nav_Registration"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Released_Results"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Released_Results"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Exam_Semester"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Exam_Semester"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Annotation Term=""NAV.LabelId"" String=""PgSemestersSetup"" />
+      </EntityType>
+      <EntityType Name=""PgStudentUnits"">
+        <Key>
+          <PropertyRef Name=""Programme"" />
+          <PropertyRef Name=""Stage"" />
+          <PropertyRef Name=""Unit"" />
+          <PropertyRef Name=""Semester"" />
+          <PropertyRef Name=""Reg_Transacton_ID"" />
+          <PropertyRef Name=""Student_No"" />
+          <PropertyRef Name=""ENo"" />
+          <PropertyRef Name=""Register_for"" />
+        </Key>
+        <Property Name=""Programme"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Programme"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Stage"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Stage"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Unit"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Unit"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Semester"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Exam Series"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Reg_Transacton_ID"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Reg_Transacton_ID"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Student_No"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Student_No"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""ENo"" Type=""Edm.Int32"" Nullable=""false"">
+          <Annotation Term=""NAV.LabelId"" String=""ENo"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Register_for"" Type=""Edm.String"" Nullable=""false"">
+          <Annotation Term=""NAV.LabelId"" String=""Register_for"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Desc"" Type=""Edm.String"">
+          <Annotation Term=""NAV.LabelId"" String=""Description"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Deffered_Unit"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Deffered_Unit"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Exam_Iregularity"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Exam_Iregularity"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Stopped"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Stopped"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Result_Status"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Result_Status"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Oral_Score"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""Oral_Score"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Project_Score"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""Project_Score"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Exam_Score"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""Exam_Score"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Total_Score"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""Total_Score"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Defer_Taken"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Defer_Taken"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Supp_Taken"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Resit Taken"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""No_Show"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""No_Show"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Failed"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Failed"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Taken"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Taken"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Cohort"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Cohort"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Exams_Center"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""Exams_Center"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Exam_No"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Exam_No"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Script_Order"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Script_Order"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Pass_Status"" Type=""Edm.String"" MaxLength=""10"">
+          <Annotation Term=""NAV.LabelId"" String=""Pass_Status"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Remarking_Count"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Remarking_Count"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Request_For_Remark"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Request_For_Remark"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Final_Score"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""Final_Score"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Exam_Count"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Exam_Count"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Released"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Released"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Results_Count"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Results_Count"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Exam_Series_Filter"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Exam_Series_Filter"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Ass_Total_Marks_Count"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Ass_Total_Marks_Count"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""CAT_Total_Marks_Count"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""CAT_Total_Marks_Count"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Exam_Marks_Count"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Exam_Marks_Count"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+        </Property>
+        <Property Name=""Release_Results_Sem"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Release_Results_Sem"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+        </Property>
+        <NavigationProperty Name=""Semester_Link"" Type=""Collection(NAV.PgSemestersSetup)"" ContainsTarget=""true"" />
+        <Annotation Term=""NAV.LabelId"" String=""PgStudentUnits"" />
+      </EntityType>
       <EntityType Name=""RegApplications"">
         <Key>
           <PropertyRef Name=""Admission_No"" />
@@ -4771,6 +5711,7 @@ namespace NAV
             <EnumMember>NAV.NavType/Bool</EnumMember>
           </Annotation>
         </Property>
+        <NavigationProperty Name=""Semester_Admitted_To_Link"" Type=""Collection(NAV.PgSemestersSetup)"" ContainsTarget=""true"" />
         <Annotation Term=""NAV.LabelId"" String=""RegApplications"" />
       </EntityType>
       <EntityType Name=""Room_Spaces"">
@@ -15586,13 +16527,6 @@ namespace NAV
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
-        <Property Name=""Account_Type"" Type=""Edm.String"" MaxLength=""4"">
-          <Annotation Term=""NAV.LabelId"" String=""Account Type"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/String</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
         <Property Name=""Blocked"" Type=""Edm.Boolean"">
           <Annotation Term=""NAV.LabelId"" String=""Blocked"" />
           <Annotation Term=""NAV.NavType"">
@@ -15604,6 +16538,13 @@ namespace NAV
           <Annotation Term=""NAV.LabelId"" String=""Direct Posting"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Account_Type"" Type=""Edm.String"" MaxLength=""4"">
+          <Annotation Term=""NAV.LabelId"" String=""Account Type"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
@@ -17508,74 +18449,95 @@ namespace NAV
       </EntityType>
       <EntityType Name=""QyLeaveTypes"">
         <Key>
-          <PropertyRef Name=""Date_Opened"" />
+          <PropertyRef Name=""Code"" />
         </Key>
-        <Property Name=""Period_Month"" Type=""Edm.Int32"">
-          <Annotation Term=""NAV.LabelId"" String=""Period Month"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/Int</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""Period_Year"" Type=""Edm.Int32"">
-          <Annotation Term=""NAV.LabelId"" String=""Period Year"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/Int</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""Period_Name"" Type=""Edm.String"" MaxLength=""30"">
-          <Annotation Term=""NAV.LabelId"" String=""Period Name"" />
+        <Property Name=""Code"" Type=""Edm.String"" Nullable=""false"" MaxLength=""10"">
+          <Annotation Term=""NAV.LabelId"" String=""Code"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/String</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""Date_Opened"" Type=""Edm.Date"" Nullable=""false"">
-          <Annotation Term=""NAV.LabelId"" String=""Date Opened"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/Date</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
           <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
         </Property>
-        <Property Name=""Date_Closed"" Type=""Edm.Date"">
-          <Annotation Term=""NAV.LabelId"" String=""Date Closed"" />
+        <Property Name=""Days"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""Days"" />
           <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/Date</EnumMember>
+            <EnumMember>NAV.NavType/Real</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
-        <Property Name=""Closed"" Type=""Edm.Boolean"">
-          <Annotation Term=""NAV.LabelId"" String=""Closed"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/Bool</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""Closed_By"" Type=""Edm.String"" MaxLength=""100"">
-          <Annotation Term=""NAV.LabelId"" String=""Closed By"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/String</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""Opened_By"" Type=""Edm.String"" MaxLength=""100"">
-          <Annotation Term=""NAV.LabelId"" String=""Opened By"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/String</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""Allow_View_Payslip"" Type=""Edm.Boolean"">
-          <Annotation Term=""NAV.LabelId"" String=""Allow View Payslip?"" />
+        <Property Name=""Unlimited_Days"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Unlimited Days"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/Bool</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
-        <Property Name=""Proration_Done"" Type=""Edm.Boolean"">
-          <Annotation Term=""NAV.LabelId"" String=""Proration Done"" />
+        <Property Name=""Gender"" Type=""Edm.String"" MaxLength=""4"">
+          <Annotation Term=""NAV.LabelId"" String=""Gender"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Balance"" Type=""Edm.String"" MaxLength=""4"">
+          <Annotation Term=""NAV.LabelId"" String=""Balance"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Max_Carry_Forward_Days"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""Max Carry Forward Days"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Inclusive_of_Non_Working_Days"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Inclusive of Non Working Days"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Blocked"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Blocked"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Maximum_Days_To_be_Applied"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""Maximum Days To be Applied"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Deduct_from_Annual_Leave"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Deduct from Annual Leave"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Inclusive_of_Sunday"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Inclusive of Sunday"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Inclusive_of_Saturday"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Inclusive of Saturday"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Attachment_Mandatory"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Attachment Mandatory"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/Bool</EnumMember>
           </Annotation>
@@ -20459,13 +21421,6 @@ namespace NAV
         </Property>
         <Property Name=""Purchasing_Code"" Type=""Edm.String"" MaxLength=""10"">
           <Annotation Term=""NAV.LabelId"" String=""Purchasing Code"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/String</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""Product_Group_Code"" Type=""Edm.String"" MaxLength=""10"">
-          <Annotation Term=""NAV.LabelId"" String=""Product Group Code"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/String</EnumMember>
           </Annotation>
@@ -26917,6 +27872,12 @@ namespace NAV
         <NavigationProperty Name=""JobRequirements"" Type=""Collection(NAV.JobRequirements)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""Leave_Types2"" Type=""Collection(NAV.Leave_Types2)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""LookUp_Values"" Type=""Collection(NAV.LookUp_Values)"" ContainsTarget=""true"" />
+        <NavigationProperty Name=""PgAllStudentsList"" Type=""Collection(NAV.PgAllStudentsList)"" ContainsTarget=""true"" />
+        <NavigationProperty Name=""PgLecturersList"" Type=""Collection(NAV.PgLecturersList)"" ContainsTarget=""true"" />
+        <NavigationProperty Name=""PgLecturerUnitsDetails"" Type=""Collection(NAV.PgLecturerUnitsDetails)"" ContainsTarget=""true"" />
+        <NavigationProperty Name=""PgProgrammesList"" Type=""Collection(NAV.PgProgrammesList)"" ContainsTarget=""true"" />
+        <NavigationProperty Name=""PgSemestersSetup"" Type=""Collection(NAV.PgSemestersSetup)"" ContainsTarget=""true"" />
+        <NavigationProperty Name=""PgStudentUnits"" Type=""Collection(NAV.PgStudentUnits)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""RegApplications"" Type=""Collection(NAV.RegApplications)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""Room_Spaces"" Type=""Collection(NAV.Room_Spaces)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""Staff_Claims"" Type=""Collection(NAV.Staff_Claims)"" ContainsTarget=""true"" />
@@ -31015,6 +31976,138 @@ namespace NAV
           </Annotation>
         </EntitySet>
         <EntitySet Name=""LookUp_Values"" EntityType=""NAV.LookUp_Values"">
+          <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
+            <Record>
+              <PropertyValue Property=""Supported"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.DeleteRestrictions"">
+            <Record>
+              <PropertyValue Property=""Deletable"" Bool=""true"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.InsertRestrictions"">
+            <Record>
+              <PropertyValue Property=""Insertable"" Bool=""true"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.UpdateRestrictions"">
+            <Record>
+              <PropertyValue Property=""Updatable"" Bool=""true"" />
+            </Record>
+          </Annotation>
+        </EntitySet>
+        <EntitySet Name=""PgAllStudentsList"" EntityType=""NAV.PgAllStudentsList"">
+          <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
+            <Record>
+              <PropertyValue Property=""Supported"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.DeleteRestrictions"">
+            <Record>
+              <PropertyValue Property=""Deletable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.InsertRestrictions"">
+            <Record>
+              <PropertyValue Property=""Insertable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.UpdateRestrictions"">
+            <Record>
+              <PropertyValue Property=""Updatable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+        </EntitySet>
+        <EntitySet Name=""PgLecturersList"" EntityType=""NAV.PgLecturersList"">
+          <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
+            <Record>
+              <PropertyValue Property=""Supported"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.DeleteRestrictions"">
+            <Record>
+              <PropertyValue Property=""Deletable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.InsertRestrictions"">
+            <Record>
+              <PropertyValue Property=""Insertable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.UpdateRestrictions"">
+            <Record>
+              <PropertyValue Property=""Updatable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+        </EntitySet>
+        <EntitySet Name=""PgLecturerUnitsDetails"" EntityType=""NAV.PgLecturerUnitsDetails"">
+          <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
+            <Record>
+              <PropertyValue Property=""Supported"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.DeleteRestrictions"">
+            <Record>
+              <PropertyValue Property=""Deletable"" Bool=""true"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.InsertRestrictions"">
+            <Record>
+              <PropertyValue Property=""Insertable"" Bool=""true"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.UpdateRestrictions"">
+            <Record>
+              <PropertyValue Property=""Updatable"" Bool=""true"" />
+            </Record>
+          </Annotation>
+        </EntitySet>
+        <EntitySet Name=""PgProgrammesList"" EntityType=""NAV.PgProgrammesList"">
+          <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
+            <Record>
+              <PropertyValue Property=""Supported"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.DeleteRestrictions"">
+            <Record>
+              <PropertyValue Property=""Deletable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.InsertRestrictions"">
+            <Record>
+              <PropertyValue Property=""Insertable"" Bool=""true"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.UpdateRestrictions"">
+            <Record>
+              <PropertyValue Property=""Updatable"" Bool=""true"" />
+            </Record>
+          </Annotation>
+        </EntitySet>
+        <EntitySet Name=""PgSemestersSetup"" EntityType=""NAV.PgSemestersSetup"">
+          <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
+            <Record>
+              <PropertyValue Property=""Supported"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.DeleteRestrictions"">
+            <Record>
+              <PropertyValue Property=""Deletable"" Bool=""true"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.InsertRestrictions"">
+            <Record>
+              <PropertyValue Property=""Insertable"" Bool=""true"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.UpdateRestrictions"">
+            <Record>
+              <PropertyValue Property=""Updatable"" Bool=""true"" />
+            </Record>
+          </Annotation>
+        </EntitySet>
+        <EntitySet Name=""PgStudentUnits"" EntityType=""NAV.PgStudentUnits"">
           <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
             <Record>
               <PropertyValue Property=""Supported"" Bool=""false"" />
@@ -39762,6 +40855,48 @@ namespace NAV
         public General_SetUpSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<General_SetUp> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for Default_Semester_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> Default_Semester_Link
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Default_Semester_Link == null))
+                {
+                    this._Default_Semester_Link = Context.CreateQuery<global::NAV.PgSemestersSetup>(GetPath("Default_Semester_Link"));
+                }
+                return this._Default_Semester_Link;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> _Default_Semester_Link;
+        /// <summary>
+        /// There are no comments for Default_Exam_Semester_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> Default_Exam_Semester_Link
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Default_Exam_Semester_Link == null))
+                {
+                    this._Default_Exam_Semester_Link = Context.CreateQuery<global::NAV.PgSemestersSetup>(GetPath("Default_Exam_Semester_Link"));
+                }
+                return this._Default_Exam_Semester_Link;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> _Default_Exam_Semester_Link;
     }
     /// <summary>
     /// There are no comments for General_SetUp in the schema.
@@ -40707,6 +41842,48 @@ namespace NAV
         private global::Microsoft.OData.Client.DataServiceStreamLink _Logo;
         partial void OnLogoChanging(global::Microsoft.OData.Client.DataServiceStreamLink value);
         partial void OnLogoChanged();
+        /// <summary>
+        /// There are no comments for Property Default_Semester_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> Default_Semester_Link
+        {
+            get
+            {
+                return this._Default_Semester_Link;
+            }
+            set
+            {
+                this.OnDefault_Semester_LinkChanging(value);
+                this._Default_Semester_Link = value;
+                this.OnDefault_Semester_LinkChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> _Default_Semester_Link = new global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup>();
+        partial void OnDefault_Semester_LinkChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> value);
+        partial void OnDefault_Semester_LinkChanged();
+        /// <summary>
+        /// There are no comments for Property Default_Exam_Semester_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> Default_Exam_Semester_Link
+        {
+            get
+            {
+                return this._Default_Exam_Semester_Link;
+            }
+            set
+            {
+                this.OnDefault_Exam_Semester_LinkChanging(value);
+                this._Default_Exam_Semester_Link = value;
+                this.OnDefault_Exam_Semester_LinkChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> _Default_Exam_Semester_Link = new global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup>();
+        partial void OnDefault_Exam_Semester_LinkChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> value);
+        partial void OnDefault_Exam_Semester_LinkChanged();
     }
     /// <summary>
     /// There are no comments for Hostel_ListSingle in the schema.
@@ -44343,6 +45520,2962 @@ namespace NAV
         partial void OnQualification_Type_CodeChanged();
     }
     /// <summary>
+    /// There are no comments for PgAllStudentsListSingle in the schema.
+    /// </summary>
+    public partial class PgAllStudentsListSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PgAllStudentsList>
+    {
+        /// <summary>
+        /// Initialize a new PgAllStudentsListSingle object.
+        /// </summary>
+        public PgAllStudentsListSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new PgAllStudentsListSingle object.
+        /// </summary>
+        public PgAllStudentsListSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new PgAllStudentsListSingle object.
+        /// </summary>
+        public PgAllStudentsListSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PgAllStudentsList> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for PgAllStudentsList in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// No
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("No")]
+    public partial class PgAllStudentsList : global::Microsoft.OData.Client.BaseEntityType
+    {
+        /// <summary>
+        /// Create a new PgAllStudentsList object.
+        /// </summary>
+        /// <param name="no">Initial value of No.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public static PgAllStudentsList CreatePgAllStudentsList(string no)
+        {
+            PgAllStudentsList pgAllStudentsList = new PgAllStudentsList();
+            pgAllStudentsList.No = no;
+            return pgAllStudentsList;
+        }
+        /// <summary>
+        /// There are no comments for Property No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string No
+        {
+            get
+            {
+                return this._No;
+            }
+            set
+            {
+                this.OnNoChanging(value);
+                this._No = value;
+                this.OnNoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _No;
+        partial void OnNoChanging(string value);
+        partial void OnNoChanged();
+        /// <summary>
+        /// There are no comments for Property Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Name
+        {
+            get
+            {
+                return this._Name;
+            }
+            set
+            {
+                this.OnNameChanging(value);
+                this._Name = value;
+                this.OnNameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Name;
+        partial void OnNameChanging(string value);
+        partial void OnNameChanged();
+        /// <summary>
+        /// There are no comments for Property Balance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<decimal> Balance
+        {
+            get
+            {
+                return this._Balance;
+            }
+            set
+            {
+                this.OnBalanceChanging(value);
+                this._Balance = value;
+                this.OnBalanceChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<decimal> _Balance;
+        partial void OnBalanceChanging(global::System.Nullable<decimal> value);
+        partial void OnBalanceChanged();
+        /// <summary>
+        /// There are no comments for Property Address in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Address
+        {
+            get
+            {
+                return this._Address;
+            }
+            set
+            {
+                this.OnAddressChanging(value);
+                this._Address = value;
+                this.OnAddressChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Address;
+        partial void OnAddressChanging(string value);
+        partial void OnAddressChanged();
+        /// <summary>
+        /// There are no comments for Property Address_2 in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Address_2
+        {
+            get
+            {
+                return this._Address_2;
+            }
+            set
+            {
+                this.OnAddress_2Changing(value);
+                this._Address_2 = value;
+                this.OnAddress_2Changed();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Address_2;
+        partial void OnAddress_2Changing(string value);
+        partial void OnAddress_2Changed();
+        /// <summary>
+        /// There are no comments for Property Phone_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Phone_No
+        {
+            get
+            {
+                return this._Phone_No;
+            }
+            set
+            {
+                this.OnPhone_NoChanging(value);
+                this._Phone_No = value;
+                this.OnPhone_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Phone_No;
+        partial void OnPhone_NoChanging(string value);
+        partial void OnPhone_NoChanged();
+        /// <summary>
+        /// There are no comments for Property Gender in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Gender
+        {
+            get
+            {
+                return this._Gender;
+            }
+            set
+            {
+                this.OnGenderChanging(value);
+                this._Gender = value;
+                this.OnGenderChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Gender;
+        partial void OnGenderChanging(string value);
+        partial void OnGenderChanged();
+        /// <summary>
+        /// There are no comments for Property Global_Dimension_1_Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Global_Dimension_1_Code
+        {
+            get
+            {
+                return this._Global_Dimension_1_Code;
+            }
+            set
+            {
+                this.OnGlobal_Dimension_1_CodeChanging(value);
+                this._Global_Dimension_1_Code = value;
+                this.OnGlobal_Dimension_1_CodeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Global_Dimension_1_Code;
+        partial void OnGlobal_Dimension_1_CodeChanging(string value);
+        partial void OnGlobal_Dimension_1_CodeChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Intake_Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Intake_Code
+        {
+            get
+            {
+                return this._Intake_Code;
+            }
+            set
+            {
+                this.OnIntake_CodeChanging(value);
+                this._Intake_Code = value;
+                this.OnIntake_CodeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Intake_Code;
+        partial void OnIntake_CodeChanging(string value);
+        partial void OnIntake_CodeChanged();
+        /// <summary>
+        /// There are no comments for Property County_Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string County_Code
+        {
+            get
+            {
+                return this._County_Code;
+            }
+            set
+            {
+                this.OnCounty_CodeChanging(value);
+                this._County_Code = value;
+                this.OnCounty_CodeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _County_Code;
+        partial void OnCounty_CodeChanging(string value);
+        partial void OnCounty_CodeChanged();
+        /// <summary>
+        /// There are no comments for Property ID_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string ID_No
+        {
+            get
+            {
+                return this._ID_No;
+            }
+            set
+            {
+                this.OnID_NoChanging(value);
+                this._ID_No = value;
+                this.OnID_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _ID_No;
+        partial void OnID_NoChanging(string value);
+        partial void OnID_NoChanged();
+        /// <summary>
+        /// There are no comments for Property E_Mail in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string E_Mail
+        {
+            get
+            {
+                return this._E_Mail;
+            }
+            set
+            {
+                this.OnE_MailChanging(value);
+                this._E_Mail = value;
+                this.OnE_MailChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _E_Mail;
+        partial void OnE_MailChanging(string value);
+        partial void OnE_MailChanged();
+        /// <summary>
+        /// There are no comments for Property Global_Dimension_1_Filter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Global_Dimension_1_Filter
+        {
+            get
+            {
+                return this._Global_Dimension_1_Filter;
+            }
+            set
+            {
+                this.OnGlobal_Dimension_1_FilterChanging(value);
+                this._Global_Dimension_1_Filter = value;
+                this.OnGlobal_Dimension_1_FilterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Global_Dimension_1_Filter;
+        partial void OnGlobal_Dimension_1_FilterChanging(string value);
+        partial void OnGlobal_Dimension_1_FilterChanged();
+        /// <summary>
+        /// There are no comments for Property Global_Dimension_2_Filter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Global_Dimension_2_Filter
+        {
+            get
+            {
+                return this._Global_Dimension_2_Filter;
+            }
+            set
+            {
+                this.OnGlobal_Dimension_2_FilterChanging(value);
+                this._Global_Dimension_2_Filter = value;
+                this.OnGlobal_Dimension_2_FilterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Global_Dimension_2_Filter;
+        partial void OnGlobal_Dimension_2_FilterChanging(string value);
+        partial void OnGlobal_Dimension_2_FilterChanged();
+        /// <summary>
+        /// There are no comments for Property Currency_Filter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Currency_Filter
+        {
+            get
+            {
+                return this._Currency_Filter;
+            }
+            set
+            {
+                this.OnCurrency_FilterChanging(value);
+                this._Currency_Filter = value;
+                this.OnCurrency_FilterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Currency_Filter;
+        partial void OnCurrency_FilterChanging(string value);
+        partial void OnCurrency_FilterChanged();
+    }
+    /// <summary>
+    /// There are no comments for PgLecturersListSingle in the schema.
+    /// </summary>
+    public partial class PgLecturersListSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PgLecturersList>
+    {
+        /// <summary>
+        /// Initialize a new PgLecturersListSingle object.
+        /// </summary>
+        public PgLecturersListSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new PgLecturersListSingle object.
+        /// </summary>
+        public PgLecturersListSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new PgLecturersListSingle object.
+        /// </summary>
+        public PgLecturersListSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PgLecturersList> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for PgLecturersList in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// No
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("No")]
+    public partial class PgLecturersList : global::Microsoft.OData.Client.BaseEntityType
+    {
+        /// <summary>
+        /// Create a new PgLecturersList object.
+        /// </summary>
+        /// <param name="no">Initial value of No.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public static PgLecturersList CreatePgLecturersList(string no)
+        {
+            PgLecturersList pgLecturersList = new PgLecturersList();
+            pgLecturersList.No = no;
+            return pgLecturersList;
+        }
+        /// <summary>
+        /// There are no comments for Property No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string No
+        {
+            get
+            {
+                return this._No;
+            }
+            set
+            {
+                this.OnNoChanging(value);
+                this._No = value;
+                this.OnNoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _No;
+        partial void OnNoChanging(string value);
+        partial void OnNoChanged();
+        /// <summary>
+        /// There are no comments for Property Title in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Title
+        {
+            get
+            {
+                return this._Title;
+            }
+            set
+            {
+                this.OnTitleChanging(value);
+                this._Title = value;
+                this.OnTitleChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Title;
+        partial void OnTitleChanging(string value);
+        partial void OnTitleChanged();
+        /// <summary>
+        /// There are no comments for Property Full_Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Full_Name
+        {
+            get
+            {
+                return this._Full_Name;
+            }
+            set
+            {
+                this.OnFull_NameChanging(value);
+                this._Full_Name = value;
+                this.OnFull_NameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Full_Name;
+        partial void OnFull_NameChanging(string value);
+        partial void OnFull_NameChanged();
+        /// <summary>
+        /// There are no comments for Property Gender in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Gender
+        {
+            get
+            {
+                return this._Gender;
+            }
+            set
+            {
+                this.OnGenderChanging(value);
+                this._Gender = value;
+                this.OnGenderChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Gender;
+        partial void OnGenderChanging(string value);
+        partial void OnGenderChanged();
+        /// <summary>
+        /// There are no comments for Property Global_Dimension_1_Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Global_Dimension_1_Code
+        {
+            get
+            {
+                return this._Global_Dimension_1_Code;
+            }
+            set
+            {
+                this.OnGlobal_Dimension_1_CodeChanging(value);
+                this._Global_Dimension_1_Code = value;
+                this.OnGlobal_Dimension_1_CodeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Global_Dimension_1_Code;
+        partial void OnGlobal_Dimension_1_CodeChanging(string value);
+        partial void OnGlobal_Dimension_1_CodeChanged();
+        /// <summary>
+        /// There are no comments for Property Date_of_Joining_the_Company in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Date_of_Joining_the_Company
+        {
+            get
+            {
+                return this._Date_of_Joining_the_Company;
+            }
+            set
+            {
+                this.OnDate_of_Joining_the_CompanyChanging(value);
+                this._Date_of_Joining_the_Company = value;
+                this.OnDate_of_Joining_the_CompanyChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Date_of_Joining_the_Company;
+        partial void OnDate_of_Joining_the_CompanyChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnDate_of_Joining_the_CompanyChanged();
+        /// <summary>
+        /// There are no comments for Property Leave_Balance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<decimal> Leave_Balance
+        {
+            get
+            {
+                return this._Leave_Balance;
+            }
+            set
+            {
+                this.OnLeave_BalanceChanging(value);
+                this._Leave_Balance = value;
+                this.OnLeave_BalanceChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<decimal> _Leave_Balance;
+        partial void OnLeave_BalanceChanging(global::System.Nullable<decimal> value);
+        partial void OnLeave_BalanceChanged();
+        /// <summary>
+        /// There are no comments for Property Payroll_Posting_Group in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Payroll_Posting_Group
+        {
+            get
+            {
+                return this._Payroll_Posting_Group;
+            }
+            set
+            {
+                this.OnPayroll_Posting_GroupChanging(value);
+                this._Payroll_Posting_Group = value;
+                this.OnPayroll_Posting_GroupChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Payroll_Posting_Group;
+        partial void OnPayroll_Posting_GroupChanging(string value);
+        partial void OnPayroll_Posting_GroupChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Home_Phone_Number in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Home_Phone_Number
+        {
+            get
+            {
+                return this._Home_Phone_Number;
+            }
+            set
+            {
+                this.OnHome_Phone_NumberChanging(value);
+                this._Home_Phone_Number = value;
+                this.OnHome_Phone_NumberChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Home_Phone_Number;
+        partial void OnHome_Phone_NumberChanging(string value);
+        partial void OnHome_Phone_NumberChanged();
+    }
+    /// <summary>
+    /// There are no comments for PgLecturerUnitsDetailsSingle in the schema.
+    /// </summary>
+    public partial class PgLecturerUnitsDetailsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PgLecturerUnitsDetails>
+    {
+        /// <summary>
+        /// Initialize a new PgLecturerUnitsDetailsSingle object.
+        /// </summary>
+        public PgLecturerUnitsDetailsSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new PgLecturerUnitsDetailsSingle object.
+        /// </summary>
+        public PgLecturerUnitsDetailsSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new PgLecturerUnitsDetailsSingle object.
+        /// </summary>
+        public PgLecturerUnitsDetailsSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PgLecturerUnitsDetails> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Programme_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgProgrammesList> Programme_Link
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Programme_Link == null))
+                {
+                    this._Programme_Link = Context.CreateQuery<global::NAV.PgProgrammesList>(GetPath("Programme_Link"));
+                }
+                return this._Programme_Link;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgProgrammesList> _Programme_Link;
+        /// <summary>
+        /// There are no comments for Semester_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> Semester_Link
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Semester_Link == null))
+                {
+                    this._Semester_Link = Context.CreateQuery<global::NAV.PgSemestersSetup>(GetPath("Semester_Link"));
+                }
+                return this._Semester_Link;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> _Semester_Link;
+    }
+    /// <summary>
+    /// There are no comments for PgLecturerUnitsDetails in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Programme
+    /// Stage
+    /// Unit
+    /// Lecturer
+    /// Line_No
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Programme", "Stage", "Unit", "Lecturer", "Line_No")]
+    public partial class PgLecturerUnitsDetails : global::Microsoft.OData.Client.BaseEntityType
+    {
+        /// <summary>
+        /// Create a new PgLecturerUnitsDetails object.
+        /// </summary>
+        /// <param name="programme">Initial value of Programme.</param>
+        /// <param name="stage">Initial value of Stage.</param>
+        /// <param name="unit">Initial value of Unit.</param>
+        /// <param name="lecturer">Initial value of Lecturer.</param>
+        /// <param name="line_No">Initial value of Line_No.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public static PgLecturerUnitsDetails CreatePgLecturerUnitsDetails(string programme, string stage, string unit, string lecturer, int line_No)
+        {
+            PgLecturerUnitsDetails pgLecturerUnitsDetails = new PgLecturerUnitsDetails();
+            pgLecturerUnitsDetails.Programme = programme;
+            pgLecturerUnitsDetails.Stage = stage;
+            pgLecturerUnitsDetails.Unit = unit;
+            pgLecturerUnitsDetails.Lecturer = lecturer;
+            pgLecturerUnitsDetails.Line_No = line_No;
+            return pgLecturerUnitsDetails;
+        }
+        /// <summary>
+        /// There are no comments for Property Programme in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Programme
+        {
+            get
+            {
+                return this._Programme;
+            }
+            set
+            {
+                this.OnProgrammeChanging(value);
+                this._Programme = value;
+                this.OnProgrammeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Programme;
+        partial void OnProgrammeChanging(string value);
+        partial void OnProgrammeChanged();
+        /// <summary>
+        /// There are no comments for Property Stage in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Stage
+        {
+            get
+            {
+                return this._Stage;
+            }
+            set
+            {
+                this.OnStageChanging(value);
+                this._Stage = value;
+                this.OnStageChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Stage;
+        partial void OnStageChanging(string value);
+        partial void OnStageChanged();
+        /// <summary>
+        /// There are no comments for Property Unit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Unit
+        {
+            get
+            {
+                return this._Unit;
+            }
+            set
+            {
+                this.OnUnitChanging(value);
+                this._Unit = value;
+                this.OnUnitChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Unit;
+        partial void OnUnitChanging(string value);
+        partial void OnUnitChanged();
+        /// <summary>
+        /// There are no comments for Property Lecturer in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Lecturer
+        {
+            get
+            {
+                return this._Lecturer;
+            }
+            set
+            {
+                this.OnLecturerChanging(value);
+                this._Lecturer = value;
+                this.OnLecturerChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Lecturer;
+        partial void OnLecturerChanging(string value);
+        partial void OnLecturerChanged();
+        /// <summary>
+        /// There are no comments for Property Line_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public int Line_No
+        {
+            get
+            {
+                return this._Line_No;
+            }
+            set
+            {
+                this.OnLine_NoChanging(value);
+                this._Line_No = value;
+                this.OnLine_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private int _Line_No;
+        partial void OnLine_NoChanging(int value);
+        partial void OnLine_NoChanged();
+        /// <summary>
+        /// There are no comments for Property Semester in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Semester
+        {
+            get
+            {
+                return this._Semester;
+            }
+            set
+            {
+                this.OnSemesterChanging(value);
+                this._Semester = value;
+                this.OnSemesterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Semester;
+        partial void OnSemesterChanging(string value);
+        partial void OnSemesterChanged();
+        /// <summary>
+        /// There are no comments for Property Unit_Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Unit_Name
+        {
+            get
+            {
+                return this._Unit_Name;
+            }
+            set
+            {
+                this.OnUnit_NameChanging(value);
+                this._Unit_Name = value;
+                this.OnUnit_NameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Unit_Name;
+        partial void OnUnit_NameChanging(string value);
+        partial void OnUnit_NameChanged();
+        /// <summary>
+        /// There are no comments for Property Campus_Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Campus_Code
+        {
+            get
+            {
+                return this._Campus_Code;
+            }
+            set
+            {
+                this.OnCampus_CodeChanging(value);
+                this._Campus_Code = value;
+                this.OnCampus_CodeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Campus_Code;
+        partial void OnCampus_CodeChanging(string value);
+        partial void OnCampus_CodeChanged();
+        /// <summary>
+        /// There are no comments for Property Intake in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Intake
+        {
+            get
+            {
+                return this._Intake;
+            }
+            set
+            {
+                this.OnIntakeChanging(value);
+                this._Intake = value;
+                this.OnIntakeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Intake;
+        partial void OnIntakeChanging(string value);
+        partial void OnIntakeChanged();
+        /// <summary>
+        /// There are no comments for Property Class in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Class
+        {
+            get
+            {
+                return this._Class;
+            }
+            set
+            {
+                this.OnClassChanging(value);
+                this._Class = value;
+                this.OnClassChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Class;
+        partial void OnClassChanging(string value);
+        partial void OnClassChanged();
+        /// <summary>
+        /// There are no comments for Property No_Of_Hours in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<decimal> No_Of_Hours
+        {
+            get
+            {
+                return this._No_Of_Hours;
+            }
+            set
+            {
+                this.OnNo_Of_HoursChanging(value);
+                this._No_Of_Hours = value;
+                this.OnNo_Of_HoursChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<decimal> _No_Of_Hours;
+        partial void OnNo_Of_HoursChanging(global::System.Nullable<decimal> value);
+        partial void OnNo_Of_HoursChanged();
+        /// <summary>
+        /// There are no comments for Property No_Of_Hours_Contracted in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<decimal> No_Of_Hours_Contracted
+        {
+            get
+            {
+                return this._No_Of_Hours_Contracted;
+            }
+            set
+            {
+                this.OnNo_Of_Hours_ContractedChanging(value);
+                this._No_Of_Hours_Contracted = value;
+                this.OnNo_Of_Hours_ContractedChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<decimal> _No_Of_Hours_Contracted;
+        partial void OnNo_Of_Hours_ContractedChanging(global::System.Nullable<decimal> value);
+        partial void OnNo_Of_Hours_ContractedChanged();
+        /// <summary>
+        /// There are no comments for Property Available_From in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Available_From
+        {
+            get
+            {
+                return this._Available_From;
+            }
+            set
+            {
+                this.OnAvailable_FromChanging(value);
+                this._Available_From = value;
+                this.OnAvailable_FromChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Available_From;
+        partial void OnAvailable_FromChanging(string value);
+        partial void OnAvailable_FromChanged();
+        /// <summary>
+        /// There are no comments for Property Available_To in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Available_To
+        {
+            get
+            {
+                return this._Available_To;
+            }
+            set
+            {
+                this.OnAvailable_ToChanging(value);
+                this._Available_To = value;
+                this.OnAvailable_ToChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Available_To;
+        partial void OnAvailable_ToChanging(string value);
+        partial void OnAvailable_ToChanged();
+        /// <summary>
+        /// There are no comments for Property Assigned in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Assigned
+        {
+            get
+            {
+                return this._Assigned;
+            }
+            set
+            {
+                this.OnAssignedChanging(value);
+                this._Assigned = value;
+                this.OnAssignedChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Assigned;
+        partial void OnAssignedChanging(global::System.Nullable<bool> value);
+        partial void OnAssignedChanged();
+        /// <summary>
+        /// There are no comments for Property Programme_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgProgrammesList> Programme_Link
+        {
+            get
+            {
+                return this._Programme_Link;
+            }
+            set
+            {
+                this.OnProgramme_LinkChanging(value);
+                this._Programme_Link = value;
+                this.OnProgramme_LinkChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgProgrammesList> _Programme_Link = new global::System.Collections.ObjectModel.Collection<global::NAV.PgProgrammesList>();
+        partial void OnProgramme_LinkChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgProgrammesList> value);
+        partial void OnProgramme_LinkChanged();
+        /// <summary>
+        /// There are no comments for Property Semester_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> Semester_Link
+        {
+            get
+            {
+                return this._Semester_Link;
+            }
+            set
+            {
+                this.OnSemester_LinkChanging(value);
+                this._Semester_Link = value;
+                this.OnSemester_LinkChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> _Semester_Link = new global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup>();
+        partial void OnSemester_LinkChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> value);
+        partial void OnSemester_LinkChanged();
+    }
+    /// <summary>
+    /// There are no comments for PgProgrammesListSingle in the schema.
+    /// </summary>
+    public partial class PgProgrammesListSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PgProgrammesList>
+    {
+        /// <summary>
+        /// Initialize a new PgProgrammesListSingle object.
+        /// </summary>
+        public PgProgrammesListSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new PgProgrammesListSingle object.
+        /// </summary>
+        public PgProgrammesListSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new PgProgrammesListSingle object.
+        /// </summary>
+        public PgProgrammesListSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PgProgrammesList> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Semester_Filter_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> Semester_Filter_Link
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Semester_Filter_Link == null))
+                {
+                    this._Semester_Filter_Link = Context.CreateQuery<global::NAV.PgSemestersSetup>(GetPath("Semester_Filter_Link"));
+                }
+                return this._Semester_Filter_Link;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> _Semester_Filter_Link;
+    }
+    /// <summary>
+    /// There are no comments for PgProgrammesList in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Code
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Code")]
+    public partial class PgProgrammesList : global::Microsoft.OData.Client.BaseEntityType
+    {
+        /// <summary>
+        /// Create a new PgProgrammesList object.
+        /// </summary>
+        /// <param name="code">Initial value of Code.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public static PgProgrammesList CreatePgProgrammesList(string code)
+        {
+            PgProgrammesList pgProgrammesList = new PgProgrammesList();
+            pgProgrammesList.Code = code;
+            return pgProgrammesList;
+        }
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this._Description = value;
+                this.OnDescriptionChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for Property Category in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Category
+        {
+            get
+            {
+                return this._Category;
+            }
+            set
+            {
+                this.OnCategoryChanging(value);
+                this._Category = value;
+                this.OnCategoryChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Category;
+        partial void OnCategoryChanging(string value);
+        partial void OnCategoryChanged();
+        /// <summary>
+        /// There are no comments for Property School_Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string School_Code
+        {
+            get
+            {
+                return this._School_Code;
+            }
+            set
+            {
+                this.OnSchool_CodeChanging(value);
+                this._School_Code = value;
+                this.OnSchool_CodeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _School_Code;
+        partial void OnSchool_CodeChanging(string value);
+        partial void OnSchool_CodeChanged();
+        /// <summary>
+        /// There are no comments for Property Date_created in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Date_created
+        {
+            get
+            {
+                return this._Date_created;
+            }
+            set
+            {
+                this.OnDate_createdChanging(value);
+                this._Date_created = value;
+                this.OnDate_createdChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Date_created;
+        partial void OnDate_createdChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnDate_createdChanged();
+        /// <summary>
+        /// There are no comments for Property Department_Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Department_Code
+        {
+            get
+            {
+                return this._Department_Code;
+            }
+            set
+            {
+                this.OnDepartment_CodeChanging(value);
+                this._Department_Code = value;
+                this.OnDepartment_CodeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Department_Code;
+        partial void OnDepartment_CodeChanging(string value);
+        partial void OnDepartment_CodeChanged();
+        /// <summary>
+        /// There are no comments for Property Branch_Filter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Branch_Filter
+        {
+            get
+            {
+                return this._Branch_Filter;
+            }
+            set
+            {
+                this.OnBranch_FilterChanging(value);
+                this._Branch_Filter = value;
+                this.OnBranch_FilterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Branch_Filter;
+        partial void OnBranch_FilterChanging(string value);
+        partial void OnBranch_FilterChanged();
+        /// <summary>
+        /// There are no comments for Property Exam_Category in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Exam_Category
+        {
+            get
+            {
+                return this._Exam_Category;
+            }
+            set
+            {
+                this.OnExam_CategoryChanging(value);
+                this._Exam_Category = value;
+                this.OnExam_CategoryChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Exam_Category;
+        partial void OnExam_CategoryChanging(string value);
+        partial void OnExam_CategoryChanged();
+        /// <summary>
+        /// There are no comments for Property Minimum_Grade in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Minimum_Grade
+        {
+            get
+            {
+                return this._Minimum_Grade;
+            }
+            set
+            {
+                this.OnMinimum_GradeChanging(value);
+                this._Minimum_Grade = value;
+                this.OnMinimum_GradeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Minimum_Grade;
+        partial void OnMinimum_GradeChanging(string value);
+        partial void OnMinimum_GradeChanged();
+        /// <summary>
+        /// There are no comments for Property Graduation_Units in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Graduation_Units
+        {
+            get
+            {
+                return this._Graduation_Units;
+            }
+            set
+            {
+                this.OnGraduation_UnitsChanging(value);
+                this._Graduation_Units = value;
+                this.OnGraduation_UnitsChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Graduation_Units;
+        partial void OnGraduation_UnitsChanging(global::System.Nullable<int> value);
+        partial void OnGraduation_UnitsChanged();
+        /// <summary>
+        /// There are no comments for Property Student_Registered in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Student_Registered
+        {
+            get
+            {
+                return this._Student_Registered;
+            }
+            set
+            {
+                this.OnStudent_RegisteredChanging(value);
+                this._Student_Registered = value;
+                this.OnStudent_RegisteredChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Student_Registered;
+        partial void OnStudent_RegisteredChanging(global::System.Nullable<int> value);
+        partial void OnStudent_RegisteredChanged();
+        /// <summary>
+        /// There are no comments for Property Registered in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Registered
+        {
+            get
+            {
+                return this._Registered;
+            }
+            set
+            {
+                this.OnRegisteredChanging(value);
+                this._Registered = value;
+                this.OnRegisteredChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Registered;
+        partial void OnRegisteredChanging(global::System.Nullable<int> value);
+        partial void OnRegisteredChanged();
+        /// <summary>
+        /// There are no comments for Property Paid in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Paid
+        {
+            get
+            {
+                return this._Paid;
+            }
+            set
+            {
+                this.OnPaidChanging(value);
+                this._Paid = value;
+                this.OnPaidChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Paid;
+        partial void OnPaidChanging(global::System.Nullable<int> value);
+        partial void OnPaidChanged();
+        /// <summary>
+        /// There are no comments for Property School_Fee_Percentage in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<decimal> School_Fee_Percentage
+        {
+            get
+            {
+                return this._School_Fee_Percentage;
+            }
+            set
+            {
+                this.OnSchool_Fee_PercentageChanging(value);
+                this._School_Fee_Percentage = value;
+                this.OnSchool_Fee_PercentageChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<decimal> _School_Fee_Percentage;
+        partial void OnSchool_Fee_PercentageChanging(global::System.Nullable<decimal> value);
+        partial void OnSchool_Fee_PercentageChanged();
+        /// <summary>
+        /// There are no comments for Property Stage_Filter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Stage_Filter
+        {
+            get
+            {
+                return this._Stage_Filter;
+            }
+            set
+            {
+                this.OnStage_FilterChanging(value);
+                this._Stage_Filter = value;
+                this.OnStage_FilterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Stage_Filter;
+        partial void OnStage_FilterChanging(string value);
+        partial void OnStage_FilterChanged();
+        /// <summary>
+        /// There are no comments for Property Semester_Filter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Semester_Filter
+        {
+            get
+            {
+                return this._Semester_Filter;
+            }
+            set
+            {
+                this.OnSemester_FilterChanging(value);
+                this._Semester_Filter = value;
+                this.OnSemester_FilterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Semester_Filter;
+        partial void OnSemester_FilterChanging(string value);
+        partial void OnSemester_FilterChanged();
+        /// <summary>
+        /// There are no comments for Property Date_Filter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Date_Filter
+        {
+            get
+            {
+                return this._Date_Filter;
+            }
+            set
+            {
+                this.OnDate_FilterChanging(value);
+                this._Date_Filter = value;
+                this.OnDate_FilterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Date_Filter;
+        partial void OnDate_FilterChanging(string value);
+        partial void OnDate_FilterChanged();
+        /// <summary>
+        /// There are no comments for Property Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Status
+        {
+            get
+            {
+                return this._Status;
+            }
+            set
+            {
+                this.OnStatusChanging(value);
+                this._Status = value;
+                this.OnStatusChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Status;
+        partial void OnStatusChanging(string value);
+        partial void OnStatusChanged();
+        /// <summary>
+        /// There are no comments for Property Intake_Filter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Intake_Filter
+        {
+            get
+            {
+                return this._Intake_Filter;
+            }
+            set
+            {
+                this.OnIntake_FilterChanging(value);
+                this._Intake_Filter = value;
+                this.OnIntake_FilterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Intake_Filter;
+        partial void OnIntake_FilterChanging(string value);
+        partial void OnIntake_FilterChanged();
+        /// <summary>
+        /// There are no comments for Property Session_Filter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Session_Filter
+        {
+            get
+            {
+                return this._Session_Filter;
+            }
+            set
+            {
+                this.OnSession_FilterChanging(value);
+                this._Session_Filter = value;
+                this.OnSession_FilterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Session_Filter;
+        partial void OnSession_FilterChanging(string value);
+        partial void OnSession_FilterChanged();
+        /// <summary>
+        /// There are no comments for Property Register_For_Filter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Register_For_Filter
+        {
+            get
+            {
+                return this._Register_For_Filter;
+            }
+            set
+            {
+                this.OnRegister_For_FilterChanging(value);
+                this._Register_For_Filter = value;
+                this.OnRegister_For_FilterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Register_For_Filter;
+        partial void OnRegister_For_FilterChanging(string value);
+        partial void OnRegister_For_FilterChanged();
+        /// <summary>
+        /// There are no comments for Property Semester_Filter_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> Semester_Filter_Link
+        {
+            get
+            {
+                return this._Semester_Filter_Link;
+            }
+            set
+            {
+                this.OnSemester_Filter_LinkChanging(value);
+                this._Semester_Filter_Link = value;
+                this.OnSemester_Filter_LinkChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> _Semester_Filter_Link = new global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup>();
+        partial void OnSemester_Filter_LinkChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> value);
+        partial void OnSemester_Filter_LinkChanged();
+    }
+    /// <summary>
+    /// There are no comments for PgSemestersSetupSingle in the schema.
+    /// </summary>
+    public partial class PgSemestersSetupSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PgSemestersSetup>
+    {
+        /// <summary>
+        /// Initialize a new PgSemestersSetupSingle object.
+        /// </summary>
+        public PgSemestersSetupSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new PgSemestersSetupSingle object.
+        /// </summary>
+        public PgSemestersSetupSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new PgSemestersSetupSingle object.
+        /// </summary>
+        public PgSemestersSetupSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PgSemestersSetup> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for PgSemestersSetup in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Code
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Code")]
+    public partial class PgSemestersSetup : global::Microsoft.OData.Client.BaseEntityType
+    {
+        /// <summary>
+        /// Create a new PgSemestersSetup object.
+        /// </summary>
+        /// <param name="code">Initial value of Code.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public static PgSemestersSetup CreatePgSemestersSetup(string code)
+        {
+            PgSemestersSetup pgSemestersSetup = new PgSemestersSetup();
+            pgSemestersSetup.Code = code;
+            return pgSemestersSetup;
+        }
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
+        /// There are no comments for Property Description in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Description
+        {
+            get
+            {
+                return this._Description;
+            }
+            set
+            {
+                this.OnDescriptionChanging(value);
+                this._Description = value;
+                this.OnDescriptionChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Description;
+        partial void OnDescriptionChanging(string value);
+        partial void OnDescriptionChanged();
+        /// <summary>
+        /// There are no comments for Property Remarks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Remarks
+        {
+            get
+            {
+                return this._Remarks;
+            }
+            set
+            {
+                this.OnRemarksChanging(value);
+                this._Remarks = value;
+                this.OnRemarksChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Remarks;
+        partial void OnRemarksChanging(string value);
+        partial void OnRemarksChanged();
+        /// <summary>
+        /// There are no comments for Property Current_Semester in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Current_Semester
+        {
+            get
+            {
+                return this._Current_Semester;
+            }
+            set
+            {
+                this.OnCurrent_SemesterChanging(value);
+                this._Current_Semester = value;
+                this.OnCurrent_SemesterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Current_Semester;
+        partial void OnCurrent_SemesterChanging(global::System.Nullable<bool> value);
+        partial void OnCurrent_SemesterChanged();
+        /// <summary>
+        /// There are no comments for Property Registration_Start_Date in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Registration_Start_Date
+        {
+            get
+            {
+                return this._Registration_Start_Date;
+            }
+            set
+            {
+                this.OnRegistration_Start_DateChanging(value);
+                this._Registration_Start_Date = value;
+                this.OnRegistration_Start_DateChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Registration_Start_Date;
+        partial void OnRegistration_Start_DateChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnRegistration_Start_DateChanged();
+        /// <summary>
+        /// There are no comments for Property Registration_End_Date in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Registration_End_Date
+        {
+            get
+            {
+                return this._Registration_End_Date;
+            }
+            set
+            {
+                this.OnRegistration_End_DateChanging(value);
+                this._Registration_End_Date = value;
+                this.OnRegistration_End_DateChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Registration_End_Date;
+        partial void OnRegistration_End_DateChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnRegistration_End_DateChanged();
+        /// <summary>
+        /// There are no comments for Property Deferral_Start_Date in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Deferral_Start_Date
+        {
+            get
+            {
+                return this._Deferral_Start_Date;
+            }
+            set
+            {
+                this.OnDeferral_Start_DateChanging(value);
+                this._Deferral_Start_Date = value;
+                this.OnDeferral_Start_DateChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Deferral_Start_Date;
+        partial void OnDeferral_Start_DateChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnDeferral_Start_DateChanged();
+        /// <summary>
+        /// There are no comments for Property Deferral_End_Date in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Deferral_End_Date
+        {
+            get
+            {
+                return this._Deferral_End_Date;
+            }
+            set
+            {
+                this.OnDeferral_End_DateChanging(value);
+                this._Deferral_End_Date = value;
+                this.OnDeferral_End_DateChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Deferral_End_Date;
+        partial void OnDeferral_End_DateChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnDeferral_End_DateChanged();
+        /// <summary>
+        /// There are no comments for Property Intake_Semester in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Intake_Semester
+        {
+            get
+            {
+                return this._Intake_Semester;
+            }
+            set
+            {
+                this.OnIntake_SemesterChanging(value);
+                this._Intake_Semester = value;
+                this.OnIntake_SemesterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Intake_Semester;
+        partial void OnIntake_SemesterChanging(global::System.Nullable<bool> value);
+        partial void OnIntake_SemesterChanged();
+        /// <summary>
+        /// There are no comments for Property Lock_TimeTable_Generation in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Lock_TimeTable_Generation
+        {
+            get
+            {
+                return this._Lock_TimeTable_Generation;
+            }
+            set
+            {
+                this.OnLock_TimeTable_GenerationChanging(value);
+                this._Lock_TimeTable_Generation = value;
+                this.OnLock_TimeTable_GenerationChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Lock_TimeTable_Generation;
+        partial void OnLock_TimeTable_GenerationChanging(global::System.Nullable<bool> value);
+        partial void OnLock_TimeTable_GenerationChanged();
+        /// <summary>
+        /// There are no comments for Property Remarking_Series in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Remarking_Series
+        {
+            get
+            {
+                return this._Remarking_Series;
+            }
+            set
+            {
+                this.OnRemarking_SeriesChanging(value);
+                this._Remarking_Series = value;
+                this.OnRemarking_SeriesChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Remarking_Series;
+        partial void OnRemarking_SeriesChanging(global::System.Nullable<bool> value);
+        partial void OnRemarking_SeriesChanged();
+        /// <summary>
+        /// There are no comments for Property Remark_Start_Date in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Remark_Start_Date
+        {
+            get
+            {
+                return this._Remark_Start_Date;
+            }
+            set
+            {
+                this.OnRemark_Start_DateChanging(value);
+                this._Remark_Start_Date = value;
+                this.OnRemark_Start_DateChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Remark_Start_Date;
+        partial void OnRemark_Start_DateChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnRemark_Start_DateChanged();
+        /// <summary>
+        /// There are no comments for Property Remark_End_Date in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Remark_End_Date
+        {
+            get
+            {
+                return this._Remark_End_Date;
+            }
+            set
+            {
+                this.OnRemark_End_DateChanging(value);
+                this._Remark_End_Date = value;
+                this.OnRemark_End_DateChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Remark_End_Date;
+        partial void OnRemark_End_DateChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnRemark_End_DateChanged();
+        /// <summary>
+        /// There are no comments for Property Release_Results in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Release_Results
+        {
+            get
+            {
+                return this._Release_Results;
+            }
+            set
+            {
+                this.OnRelease_ResultsChanging(value);
+                this._Release_Results = value;
+                this.OnRelease_ResultsChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Release_Results;
+        partial void OnRelease_ResultsChanging(global::System.Nullable<bool> value);
+        partial void OnRelease_ResultsChanged();
+        /// <summary>
+        /// There are no comments for Property Allow_Online_Registration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Allow_Online_Registration
+        {
+            get
+            {
+                return this._Allow_Online_Registration;
+            }
+            set
+            {
+                this.OnAllow_Online_RegistrationChanging(value);
+                this._Allow_Online_Registration = value;
+                this.OnAllow_Online_RegistrationChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Allow_Online_Registration;
+        partial void OnAllow_Online_RegistrationChanging(global::System.Nullable<bool> value);
+        partial void OnAllow_Online_RegistrationChanged();
+        /// <summary>
+        /// There are no comments for Property Allow_Nav_Registration in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Allow_Nav_Registration
+        {
+            get
+            {
+                return this._Allow_Nav_Registration;
+            }
+            set
+            {
+                this.OnAllow_Nav_RegistrationChanging(value);
+                this._Allow_Nav_Registration = value;
+                this.OnAllow_Nav_RegistrationChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Allow_Nav_Registration;
+        partial void OnAllow_Nav_RegistrationChanging(global::System.Nullable<bool> value);
+        partial void OnAllow_Nav_RegistrationChanged();
+        /// <summary>
+        /// There are no comments for Property Released_Results in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Released_Results
+        {
+            get
+            {
+                return this._Released_Results;
+            }
+            set
+            {
+                this.OnReleased_ResultsChanging(value);
+                this._Released_Results = value;
+                this.OnReleased_ResultsChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Released_Results;
+        partial void OnReleased_ResultsChanging(global::System.Nullable<bool> value);
+        partial void OnReleased_ResultsChanged();
+        /// <summary>
+        /// There are no comments for Property Exam_Semester in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Exam_Semester
+        {
+            get
+            {
+                return this._Exam_Semester;
+            }
+            set
+            {
+                this.OnExam_SemesterChanging(value);
+                this._Exam_Semester = value;
+                this.OnExam_SemesterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Exam_Semester;
+        partial void OnExam_SemesterChanging(global::System.Nullable<bool> value);
+        partial void OnExam_SemesterChanged();
+    }
+    /// <summary>
+    /// There are no comments for PgStudentUnitsSingle in the schema.
+    /// </summary>
+    public partial class PgStudentUnitsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<PgStudentUnits>
+    {
+        /// <summary>
+        /// Initialize a new PgStudentUnitsSingle object.
+        /// </summary>
+        public PgStudentUnitsSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new PgStudentUnitsSingle object.
+        /// </summary>
+        public PgStudentUnitsSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new PgStudentUnitsSingle object.
+        /// </summary>
+        public PgStudentUnitsSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<PgStudentUnits> query)
+            : base(query) {}
+
+        /// <summary>
+        /// There are no comments for Semester_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> Semester_Link
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Semester_Link == null))
+                {
+                    this._Semester_Link = Context.CreateQuery<global::NAV.PgSemestersSetup>(GetPath("Semester_Link"));
+                }
+                return this._Semester_Link;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> _Semester_Link;
+    }
+    /// <summary>
+    /// There are no comments for PgStudentUnits in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Programme
+    /// Stage
+    /// Unit
+    /// Semester
+    /// Reg_Transacton_ID
+    /// Student_No
+    /// ENo
+    /// Register_for
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Programme", "Stage", "Unit", "Semester", "Reg_Transacton_ID", "Student_No", "ENo", "Register_for")]
+    public partial class PgStudentUnits : global::Microsoft.OData.Client.BaseEntityType
+    {
+        /// <summary>
+        /// Create a new PgStudentUnits object.
+        /// </summary>
+        /// <param name="programme">Initial value of Programme.</param>
+        /// <param name="stage">Initial value of Stage.</param>
+        /// <param name="unit">Initial value of Unit.</param>
+        /// <param name="semester">Initial value of Semester.</param>
+        /// <param name="reg_Transacton_ID">Initial value of Reg_Transacton_ID.</param>
+        /// <param name="student_No">Initial value of Student_No.</param>
+        /// <param name="eNo">Initial value of ENo.</param>
+        /// <param name="register_for">Initial value of Register_for.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public static PgStudentUnits CreatePgStudentUnits(string programme, 
+                    string stage, 
+                    string unit, 
+                    string semester, 
+                    string reg_Transacton_ID, 
+                    string student_No, 
+                    int eNo, 
+                    string register_for)
+        {
+            PgStudentUnits pgStudentUnits = new PgStudentUnits();
+            pgStudentUnits.Programme = programme;
+            pgStudentUnits.Stage = stage;
+            pgStudentUnits.Unit = unit;
+            pgStudentUnits.Semester = semester;
+            pgStudentUnits.Reg_Transacton_ID = reg_Transacton_ID;
+            pgStudentUnits.Student_No = student_No;
+            pgStudentUnits.ENo = eNo;
+            pgStudentUnits.Register_for = register_for;
+            return pgStudentUnits;
+        }
+        /// <summary>
+        /// There are no comments for Property Programme in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Programme
+        {
+            get
+            {
+                return this._Programme;
+            }
+            set
+            {
+                this.OnProgrammeChanging(value);
+                this._Programme = value;
+                this.OnProgrammeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Programme;
+        partial void OnProgrammeChanging(string value);
+        partial void OnProgrammeChanged();
+        /// <summary>
+        /// There are no comments for Property Stage in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Stage
+        {
+            get
+            {
+                return this._Stage;
+            }
+            set
+            {
+                this.OnStageChanging(value);
+                this._Stage = value;
+                this.OnStageChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Stage;
+        partial void OnStageChanging(string value);
+        partial void OnStageChanged();
+        /// <summary>
+        /// There are no comments for Property Unit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Unit
+        {
+            get
+            {
+                return this._Unit;
+            }
+            set
+            {
+                this.OnUnitChanging(value);
+                this._Unit = value;
+                this.OnUnitChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Unit;
+        partial void OnUnitChanging(string value);
+        partial void OnUnitChanged();
+        /// <summary>
+        /// There are no comments for Property Semester in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Semester
+        {
+            get
+            {
+                return this._Semester;
+            }
+            set
+            {
+                this.OnSemesterChanging(value);
+                this._Semester = value;
+                this.OnSemesterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Semester;
+        partial void OnSemesterChanging(string value);
+        partial void OnSemesterChanged();
+        /// <summary>
+        /// There are no comments for Property Reg_Transacton_ID in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Reg_Transacton_ID
+        {
+            get
+            {
+                return this._Reg_Transacton_ID;
+            }
+            set
+            {
+                this.OnReg_Transacton_IDChanging(value);
+                this._Reg_Transacton_ID = value;
+                this.OnReg_Transacton_IDChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Reg_Transacton_ID;
+        partial void OnReg_Transacton_IDChanging(string value);
+        partial void OnReg_Transacton_IDChanged();
+        /// <summary>
+        /// There are no comments for Property Student_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Student_No
+        {
+            get
+            {
+                return this._Student_No;
+            }
+            set
+            {
+                this.OnStudent_NoChanging(value);
+                this._Student_No = value;
+                this.OnStudent_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Student_No;
+        partial void OnStudent_NoChanging(string value);
+        partial void OnStudent_NoChanged();
+        /// <summary>
+        /// There are no comments for Property ENo in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public int ENo
+        {
+            get
+            {
+                return this._ENo;
+            }
+            set
+            {
+                this.OnENoChanging(value);
+                this._ENo = value;
+                this.OnENoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private int _ENo;
+        partial void OnENoChanging(int value);
+        partial void OnENoChanged();
+        /// <summary>
+        /// There are no comments for Property Register_for in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Register_for
+        {
+            get
+            {
+                return this._Register_for;
+            }
+            set
+            {
+                this.OnRegister_forChanging(value);
+                this._Register_for = value;
+                this.OnRegister_forChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Register_for;
+        partial void OnRegister_forChanging(string value);
+        partial void OnRegister_forChanged();
+        /// <summary>
+        /// There are no comments for Property Desc in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Desc
+        {
+            get
+            {
+                return this._Desc;
+            }
+            set
+            {
+                this.OnDescChanging(value);
+                this._Desc = value;
+                this.OnDescChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Desc;
+        partial void OnDescChanging(string value);
+        partial void OnDescChanged();
+        /// <summary>
+        /// There are no comments for Property Deffered_Unit in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Deffered_Unit
+        {
+            get
+            {
+                return this._Deffered_Unit;
+            }
+            set
+            {
+                this.OnDeffered_UnitChanging(value);
+                this._Deffered_Unit = value;
+                this.OnDeffered_UnitChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Deffered_Unit;
+        partial void OnDeffered_UnitChanging(global::System.Nullable<bool> value);
+        partial void OnDeffered_UnitChanged();
+        /// <summary>
+        /// There are no comments for Property Exam_Iregularity in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Exam_Iregularity
+        {
+            get
+            {
+                return this._Exam_Iregularity;
+            }
+            set
+            {
+                this.OnExam_IregularityChanging(value);
+                this._Exam_Iregularity = value;
+                this.OnExam_IregularityChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Exam_Iregularity;
+        partial void OnExam_IregularityChanging(global::System.Nullable<bool> value);
+        partial void OnExam_IregularityChanged();
+        /// <summary>
+        /// There are no comments for Property Stopped in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Stopped
+        {
+            get
+            {
+                return this._Stopped;
+            }
+            set
+            {
+                this.OnStoppedChanging(value);
+                this._Stopped = value;
+                this.OnStoppedChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Stopped;
+        partial void OnStoppedChanging(global::System.Nullable<bool> value);
+        partial void OnStoppedChanged();
+        /// <summary>
+        /// There are no comments for Property Result_Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Result_Status
+        {
+            get
+            {
+                return this._Result_Status;
+            }
+            set
+            {
+                this.OnResult_StatusChanging(value);
+                this._Result_Status = value;
+                this.OnResult_StatusChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Result_Status;
+        partial void OnResult_StatusChanging(string value);
+        partial void OnResult_StatusChanged();
+        /// <summary>
+        /// There are no comments for Property Oral_Score in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<decimal> Oral_Score
+        {
+            get
+            {
+                return this._Oral_Score;
+            }
+            set
+            {
+                this.OnOral_ScoreChanging(value);
+                this._Oral_Score = value;
+                this.OnOral_ScoreChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<decimal> _Oral_Score;
+        partial void OnOral_ScoreChanging(global::System.Nullable<decimal> value);
+        partial void OnOral_ScoreChanged();
+        /// <summary>
+        /// There are no comments for Property Project_Score in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<decimal> Project_Score
+        {
+            get
+            {
+                return this._Project_Score;
+            }
+            set
+            {
+                this.OnProject_ScoreChanging(value);
+                this._Project_Score = value;
+                this.OnProject_ScoreChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<decimal> _Project_Score;
+        partial void OnProject_ScoreChanging(global::System.Nullable<decimal> value);
+        partial void OnProject_ScoreChanged();
+        /// <summary>
+        /// There are no comments for Property Exam_Score in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<decimal> Exam_Score
+        {
+            get
+            {
+                return this._Exam_Score;
+            }
+            set
+            {
+                this.OnExam_ScoreChanging(value);
+                this._Exam_Score = value;
+                this.OnExam_ScoreChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<decimal> _Exam_Score;
+        partial void OnExam_ScoreChanging(global::System.Nullable<decimal> value);
+        partial void OnExam_ScoreChanged();
+        /// <summary>
+        /// There are no comments for Property Total_Score in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<decimal> Total_Score
+        {
+            get
+            {
+                return this._Total_Score;
+            }
+            set
+            {
+                this.OnTotal_ScoreChanging(value);
+                this._Total_Score = value;
+                this.OnTotal_ScoreChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<decimal> _Total_Score;
+        partial void OnTotal_ScoreChanging(global::System.Nullable<decimal> value);
+        partial void OnTotal_ScoreChanged();
+        /// <summary>
+        /// There are no comments for Property Defer_Taken in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Defer_Taken
+        {
+            get
+            {
+                return this._Defer_Taken;
+            }
+            set
+            {
+                this.OnDefer_TakenChanging(value);
+                this._Defer_Taken = value;
+                this.OnDefer_TakenChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Defer_Taken;
+        partial void OnDefer_TakenChanging(global::System.Nullable<bool> value);
+        partial void OnDefer_TakenChanged();
+        /// <summary>
+        /// There are no comments for Property Supp_Taken in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Supp_Taken
+        {
+            get
+            {
+                return this._Supp_Taken;
+            }
+            set
+            {
+                this.OnSupp_TakenChanging(value);
+                this._Supp_Taken = value;
+                this.OnSupp_TakenChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Supp_Taken;
+        partial void OnSupp_TakenChanging(global::System.Nullable<bool> value);
+        partial void OnSupp_TakenChanged();
+        /// <summary>
+        /// There are no comments for Property No_Show in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> No_Show
+        {
+            get
+            {
+                return this._No_Show;
+            }
+            set
+            {
+                this.OnNo_ShowChanging(value);
+                this._No_Show = value;
+                this.OnNo_ShowChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _No_Show;
+        partial void OnNo_ShowChanging(global::System.Nullable<bool> value);
+        partial void OnNo_ShowChanged();
+        /// <summary>
+        /// There are no comments for Property Failed in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Failed
+        {
+            get
+            {
+                return this._Failed;
+            }
+            set
+            {
+                this.OnFailedChanging(value);
+                this._Failed = value;
+                this.OnFailedChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Failed;
+        partial void OnFailedChanging(global::System.Nullable<bool> value);
+        partial void OnFailedChanged();
+        /// <summary>
+        /// There are no comments for Property Taken in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Taken
+        {
+            get
+            {
+                return this._Taken;
+            }
+            set
+            {
+                this.OnTakenChanging(value);
+                this._Taken = value;
+                this.OnTakenChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Taken;
+        partial void OnTakenChanging(global::System.Nullable<bool> value);
+        partial void OnTakenChanged();
+        /// <summary>
+        /// There are no comments for Property Cohort in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Cohort
+        {
+            get
+            {
+                return this._Cohort;
+            }
+            set
+            {
+                this.OnCohortChanging(value);
+                this._Cohort = value;
+                this.OnCohortChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Cohort;
+        partial void OnCohortChanging(string value);
+        partial void OnCohortChanged();
+        /// <summary>
+        /// There are no comments for Property Exams_Center in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Exams_Center
+        {
+            get
+            {
+                return this._Exams_Center;
+            }
+            set
+            {
+                this.OnExams_CenterChanging(value);
+                this._Exams_Center = value;
+                this.OnExams_CenterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Exams_Center;
+        partial void OnExams_CenterChanging(string value);
+        partial void OnExams_CenterChanged();
+        /// <summary>
+        /// There are no comments for Property Exam_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Exam_No
+        {
+            get
+            {
+                return this._Exam_No;
+            }
+            set
+            {
+                this.OnExam_NoChanging(value);
+                this._Exam_No = value;
+                this.OnExam_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Exam_No;
+        partial void OnExam_NoChanging(global::System.Nullable<int> value);
+        partial void OnExam_NoChanged();
+        /// <summary>
+        /// There are no comments for Property Script_Order in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Script_Order
+        {
+            get
+            {
+                return this._Script_Order;
+            }
+            set
+            {
+                this.OnScript_OrderChanging(value);
+                this._Script_Order = value;
+                this.OnScript_OrderChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Script_Order;
+        partial void OnScript_OrderChanging(global::System.Nullable<int> value);
+        partial void OnScript_OrderChanged();
+        /// <summary>
+        /// There are no comments for Property Pass_Status in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Pass_Status
+        {
+            get
+            {
+                return this._Pass_Status;
+            }
+            set
+            {
+                this.OnPass_StatusChanging(value);
+                this._Pass_Status = value;
+                this.OnPass_StatusChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Pass_Status;
+        partial void OnPass_StatusChanging(string value);
+        partial void OnPass_StatusChanged();
+        /// <summary>
+        /// There are no comments for Property Remarking_Count in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Remarking_Count
+        {
+            get
+            {
+                return this._Remarking_Count;
+            }
+            set
+            {
+                this.OnRemarking_CountChanging(value);
+                this._Remarking_Count = value;
+                this.OnRemarking_CountChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Remarking_Count;
+        partial void OnRemarking_CountChanging(global::System.Nullable<int> value);
+        partial void OnRemarking_CountChanged();
+        /// <summary>
+        /// There are no comments for Property Request_For_Remark in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Request_For_Remark
+        {
+            get
+            {
+                return this._Request_For_Remark;
+            }
+            set
+            {
+                this.OnRequest_For_RemarkChanging(value);
+                this._Request_For_Remark = value;
+                this.OnRequest_For_RemarkChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Request_For_Remark;
+        partial void OnRequest_For_RemarkChanging(global::System.Nullable<bool> value);
+        partial void OnRequest_For_RemarkChanged();
+        /// <summary>
+        /// There are no comments for Property Final_Score in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<decimal> Final_Score
+        {
+            get
+            {
+                return this._Final_Score;
+            }
+            set
+            {
+                this.OnFinal_ScoreChanging(value);
+                this._Final_Score = value;
+                this.OnFinal_ScoreChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<decimal> _Final_Score;
+        partial void OnFinal_ScoreChanging(global::System.Nullable<decimal> value);
+        partial void OnFinal_ScoreChanged();
+        /// <summary>
+        /// There are no comments for Property Exam_Count in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Exam_Count
+        {
+            get
+            {
+                return this._Exam_Count;
+            }
+            set
+            {
+                this.OnExam_CountChanging(value);
+                this._Exam_Count = value;
+                this.OnExam_CountChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Exam_Count;
+        partial void OnExam_CountChanging(global::System.Nullable<int> value);
+        partial void OnExam_CountChanged();
+        /// <summary>
+        /// There are no comments for Property Released in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Released
+        {
+            get
+            {
+                return this._Released;
+            }
+            set
+            {
+                this.OnReleasedChanging(value);
+                this._Released = value;
+                this.OnReleasedChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Released;
+        partial void OnReleasedChanging(global::System.Nullable<bool> value);
+        partial void OnReleasedChanged();
+        /// <summary>
+        /// There are no comments for Property Results_Count in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Results_Count
+        {
+            get
+            {
+                return this._Results_Count;
+            }
+            set
+            {
+                this.OnResults_CountChanging(value);
+                this._Results_Count = value;
+                this.OnResults_CountChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Results_Count;
+        partial void OnResults_CountChanging(global::System.Nullable<int> value);
+        partial void OnResults_CountChanged();
+        /// <summary>
+        /// There are no comments for Property Exam_Series_Filter in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Exam_Series_Filter
+        {
+            get
+            {
+                return this._Exam_Series_Filter;
+            }
+            set
+            {
+                this.OnExam_Series_FilterChanging(value);
+                this._Exam_Series_Filter = value;
+                this.OnExam_Series_FilterChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Exam_Series_Filter;
+        partial void OnExam_Series_FilterChanging(string value);
+        partial void OnExam_Series_FilterChanged();
+        /// <summary>
+        /// There are no comments for Property Ass_Total_Marks_Count in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Ass_Total_Marks_Count
+        {
+            get
+            {
+                return this._Ass_Total_Marks_Count;
+            }
+            set
+            {
+                this.OnAss_Total_Marks_CountChanging(value);
+                this._Ass_Total_Marks_Count = value;
+                this.OnAss_Total_Marks_CountChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Ass_Total_Marks_Count;
+        partial void OnAss_Total_Marks_CountChanging(global::System.Nullable<int> value);
+        partial void OnAss_Total_Marks_CountChanged();
+        /// <summary>
+        /// There are no comments for Property CAT_Total_Marks_Count in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> CAT_Total_Marks_Count
+        {
+            get
+            {
+                return this._CAT_Total_Marks_Count;
+            }
+            set
+            {
+                this.OnCAT_Total_Marks_CountChanging(value);
+                this._CAT_Total_Marks_Count = value;
+                this.OnCAT_Total_Marks_CountChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _CAT_Total_Marks_Count;
+        partial void OnCAT_Total_Marks_CountChanging(global::System.Nullable<int> value);
+        partial void OnCAT_Total_Marks_CountChanged();
+        /// <summary>
+        /// There are no comments for Property Exam_Marks_Count in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Exam_Marks_Count
+        {
+            get
+            {
+                return this._Exam_Marks_Count;
+            }
+            set
+            {
+                this.OnExam_Marks_CountChanging(value);
+                this._Exam_Marks_Count = value;
+                this.OnExam_Marks_CountChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Exam_Marks_Count;
+        partial void OnExam_Marks_CountChanging(global::System.Nullable<int> value);
+        partial void OnExam_Marks_CountChanged();
+        /// <summary>
+        /// There are no comments for Property Release_Results_Sem in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Release_Results_Sem
+        {
+            get
+            {
+                return this._Release_Results_Sem;
+            }
+            set
+            {
+                this.OnRelease_Results_SemChanging(value);
+                this._Release_Results_Sem = value;
+                this.OnRelease_Results_SemChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Release_Results_Sem;
+        partial void OnRelease_Results_SemChanging(global::System.Nullable<bool> value);
+        partial void OnRelease_Results_SemChanged();
+        /// <summary>
+        /// There are no comments for Property Semester_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> Semester_Link
+        {
+            get
+            {
+                return this._Semester_Link;
+            }
+            set
+            {
+                this.OnSemester_LinkChanging(value);
+                this._Semester_Link = value;
+                this.OnSemester_LinkChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> _Semester_Link = new global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup>();
+        partial void OnSemester_LinkChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> value);
+        partial void OnSemester_LinkChanged();
+    }
+    /// <summary>
     /// There are no comments for RegApplicationsSingle in the schema.
     /// </summary>
     public partial class RegApplicationsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<RegApplications>
@@ -44365,6 +48498,27 @@ namespace NAV
         public RegApplicationsSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<RegApplications> query)
             : base(query) {}
 
+        /// <summary>
+        /// There are no comments for Semester_Admitted_To_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> Semester_Admitted_To_Link
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._Semester_Admitted_To_Link == null))
+                {
+                    this._Semester_Admitted_To_Link = Context.CreateQuery<global::NAV.PgSemestersSetup>(GetPath("Semester_Admitted_To_Link"));
+                }
+                return this._Semester_Admitted_To_Link;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> _Semester_Admitted_To_Link;
     }
     /// <summary>
     /// There are no comments for RegApplications in the schema.
@@ -44701,6 +48855,27 @@ namespace NAV
         private global::System.Nullable<bool> _Open_Sequence_Two;
         partial void OnOpen_Sequence_TwoChanging(global::System.Nullable<bool> value);
         partial void OnOpen_Sequence_TwoChanged();
+        /// <summary>
+        /// There are no comments for Property Semester_Admitted_To_Link in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> Semester_Admitted_To_Link
+        {
+            get
+            {
+                return this._Semester_Admitted_To_Link;
+            }
+            set
+            {
+                this.OnSemester_Admitted_To_LinkChanging(value);
+                this._Semester_Admitted_To_Link = value;
+                this.OnSemester_Admitted_To_LinkChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> _Semester_Admitted_To_Link = new global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup>();
+        partial void OnSemester_Admitted_To_LinkChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> value);
+        partial void OnSemester_Admitted_To_LinkChanged();
     }
     /// <summary>
     /// There are no comments for Room_SpacesSingle in the schema.
@@ -78713,27 +82888,6 @@ namespace NAV
         partial void OnSearch_NameChanging(string value);
         partial void OnSearch_NameChanged();
         /// <summary>
-        /// There are no comments for Property Account_Type in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public string Account_Type
-        {
-            get
-            {
-                return this._Account_Type;
-            }
-            set
-            {
-                this.OnAccount_TypeChanging(value);
-                this._Account_Type = value;
-                this.OnAccount_TypeChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private string _Account_Type;
-        partial void OnAccount_TypeChanging(string value);
-        partial void OnAccount_TypeChanged();
-        /// <summary>
         /// There are no comments for Property Blocked in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
@@ -78775,6 +82929,27 @@ namespace NAV
         private global::System.Nullable<bool> _Direct_Posting;
         partial void OnDirect_PostingChanging(global::System.Nullable<bool> value);
         partial void OnDirect_PostingChanged();
+        /// <summary>
+        /// There are no comments for Property Account_Type in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Account_Type
+        {
+            get
+            {
+                return this._Account_Type;
+            }
+            set
+            {
+                this.OnAccount_TypeChanging(value);
+                this._Account_Type = value;
+                this.OnAccount_TypeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Account_Type;
+        partial void OnAccount_TypeChanging(string value);
+        partial void OnAccount_TypeChanged();
     }
     /// <summary>
     /// There are no comments for QyImprestHeadersSingle in the schema.
@@ -84590,232 +88765,295 @@ namespace NAV
     /// There are no comments for QyLeaveTypes in the schema.
     /// </summary>
     /// <KeyProperties>
-    /// Date_Opened
+    /// Code
     /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("Date_Opened")]
+    [global::Microsoft.OData.Client.Key("Code")]
     public partial class QyLeaveTypes : global::Microsoft.OData.Client.BaseEntityType
     {
         /// <summary>
         /// Create a new QyLeaveTypes object.
         /// </summary>
-        /// <param name="date_Opened">Initial value of Date_Opened.</param>
+        /// <param name="code">Initial value of Code.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public static QyLeaveTypes CreateQyLeaveTypes(global::Microsoft.OData.Edm.Date date_Opened)
+        public static QyLeaveTypes CreateQyLeaveTypes(string code)
         {
             QyLeaveTypes qyLeaveTypes = new QyLeaveTypes();
-            qyLeaveTypes.Date_Opened = date_Opened;
+            qyLeaveTypes.Code = code;
             return qyLeaveTypes;
         }
         /// <summary>
-        /// There are no comments for Property Period_Month in the schema.
+        /// There are no comments for Property Code in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<int> Period_Month
+        public string Code
         {
             get
             {
-                return this._Period_Month;
+                return this._Code;
             }
             set
             {
-                this.OnPeriod_MonthChanging(value);
-                this._Period_Month = value;
-                this.OnPeriod_MonthChanged();
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<int> _Period_Month;
-        partial void OnPeriod_MonthChanging(global::System.Nullable<int> value);
-        partial void OnPeriod_MonthChanged();
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
         /// <summary>
-        /// There are no comments for Property Period_Year in the schema.
+        /// There are no comments for Property Days in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<int> Period_Year
+        public global::System.Nullable<decimal> Days
         {
             get
             {
-                return this._Period_Year;
+                return this._Days;
             }
             set
             {
-                this.OnPeriod_YearChanging(value);
-                this._Period_Year = value;
-                this.OnPeriod_YearChanged();
+                this.OnDaysChanging(value);
+                this._Days = value;
+                this.OnDaysChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<int> _Period_Year;
-        partial void OnPeriod_YearChanging(global::System.Nullable<int> value);
-        partial void OnPeriod_YearChanged();
+        private global::System.Nullable<decimal> _Days;
+        partial void OnDaysChanging(global::System.Nullable<decimal> value);
+        partial void OnDaysChanged();
         /// <summary>
-        /// There are no comments for Property Period_Name in the schema.
+        /// There are no comments for Property Unlimited_Days in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public string Period_Name
+        public global::System.Nullable<bool> Unlimited_Days
         {
             get
             {
-                return this._Period_Name;
+                return this._Unlimited_Days;
             }
             set
             {
-                this.OnPeriod_NameChanging(value);
-                this._Period_Name = value;
-                this.OnPeriod_NameChanged();
+                this.OnUnlimited_DaysChanging(value);
+                this._Unlimited_Days = value;
+                this.OnUnlimited_DaysChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private string _Period_Name;
-        partial void OnPeriod_NameChanging(string value);
-        partial void OnPeriod_NameChanged();
+        private global::System.Nullable<bool> _Unlimited_Days;
+        partial void OnUnlimited_DaysChanging(global::System.Nullable<bool> value);
+        partial void OnUnlimited_DaysChanged();
         /// <summary>
-        /// There are no comments for Property Date_Opened in the schema.
+        /// There are no comments for Property Gender in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::Microsoft.OData.Edm.Date Date_Opened
+        public string Gender
         {
             get
             {
-                return this._Date_Opened;
+                return this._Gender;
             }
             set
             {
-                this.OnDate_OpenedChanging(value);
-                this._Date_Opened = value;
-                this.OnDate_OpenedChanged();
+                this.OnGenderChanging(value);
+                this._Gender = value;
+                this.OnGenderChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::Microsoft.OData.Edm.Date _Date_Opened;
-        partial void OnDate_OpenedChanging(global::Microsoft.OData.Edm.Date value);
-        partial void OnDate_OpenedChanged();
+        private string _Gender;
+        partial void OnGenderChanging(string value);
+        partial void OnGenderChanged();
         /// <summary>
-        /// There are no comments for Property Date_Closed in the schema.
+        /// There are no comments for Property Balance in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Date_Closed
+        public string Balance
         {
             get
             {
-                return this._Date_Closed;
+                return this._Balance;
             }
             set
             {
-                this.OnDate_ClosedChanging(value);
-                this._Date_Closed = value;
-                this.OnDate_ClosedChanged();
+                this.OnBalanceChanging(value);
+                this._Balance = value;
+                this.OnBalanceChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Date_Closed;
-        partial void OnDate_ClosedChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
-        partial void OnDate_ClosedChanged();
+        private string _Balance;
+        partial void OnBalanceChanging(string value);
+        partial void OnBalanceChanged();
         /// <summary>
-        /// There are no comments for Property Closed in the schema.
+        /// There are no comments for Property Max_Carry_Forward_Days in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<bool> Closed
+        public global::System.Nullable<decimal> Max_Carry_Forward_Days
         {
             get
             {
-                return this._Closed;
+                return this._Max_Carry_Forward_Days;
             }
             set
             {
-                this.OnClosedChanging(value);
-                this._Closed = value;
-                this.OnClosedChanged();
+                this.OnMax_Carry_Forward_DaysChanging(value);
+                this._Max_Carry_Forward_Days = value;
+                this.OnMax_Carry_Forward_DaysChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<bool> _Closed;
-        partial void OnClosedChanging(global::System.Nullable<bool> value);
-        partial void OnClosedChanged();
+        private global::System.Nullable<decimal> _Max_Carry_Forward_Days;
+        partial void OnMax_Carry_Forward_DaysChanging(global::System.Nullable<decimal> value);
+        partial void OnMax_Carry_Forward_DaysChanged();
         /// <summary>
-        /// There are no comments for Property Closed_By in the schema.
+        /// There are no comments for Property Inclusive_of_Non_Working_Days in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public string Closed_By
+        public global::System.Nullable<bool> Inclusive_of_Non_Working_Days
         {
             get
             {
-                return this._Closed_By;
+                return this._Inclusive_of_Non_Working_Days;
             }
             set
             {
-                this.OnClosed_ByChanging(value);
-                this._Closed_By = value;
-                this.OnClosed_ByChanged();
+                this.OnInclusive_of_Non_Working_DaysChanging(value);
+                this._Inclusive_of_Non_Working_Days = value;
+                this.OnInclusive_of_Non_Working_DaysChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private string _Closed_By;
-        partial void OnClosed_ByChanging(string value);
-        partial void OnClosed_ByChanged();
+        private global::System.Nullable<bool> _Inclusive_of_Non_Working_Days;
+        partial void OnInclusive_of_Non_Working_DaysChanging(global::System.Nullable<bool> value);
+        partial void OnInclusive_of_Non_Working_DaysChanged();
         /// <summary>
-        /// There are no comments for Property Opened_By in the schema.
+        /// There are no comments for Property Blocked in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public string Opened_By
+        public global::System.Nullable<bool> Blocked
         {
             get
             {
-                return this._Opened_By;
+                return this._Blocked;
             }
             set
             {
-                this.OnOpened_ByChanging(value);
-                this._Opened_By = value;
-                this.OnOpened_ByChanged();
+                this.OnBlockedChanging(value);
+                this._Blocked = value;
+                this.OnBlockedChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private string _Opened_By;
-        partial void OnOpened_ByChanging(string value);
-        partial void OnOpened_ByChanged();
+        private global::System.Nullable<bool> _Blocked;
+        partial void OnBlockedChanging(global::System.Nullable<bool> value);
+        partial void OnBlockedChanged();
         /// <summary>
-        /// There are no comments for Property Allow_View_Payslip in the schema.
+        /// There are no comments for Property Maximum_Days_To_be_Applied in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<bool> Allow_View_Payslip
+        public global::System.Nullable<decimal> Maximum_Days_To_be_Applied
         {
             get
             {
-                return this._Allow_View_Payslip;
+                return this._Maximum_Days_To_be_Applied;
             }
             set
             {
-                this.OnAllow_View_PayslipChanging(value);
-                this._Allow_View_Payslip = value;
-                this.OnAllow_View_PayslipChanged();
+                this.OnMaximum_Days_To_be_AppliedChanging(value);
+                this._Maximum_Days_To_be_Applied = value;
+                this.OnMaximum_Days_To_be_AppliedChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<bool> _Allow_View_Payslip;
-        partial void OnAllow_View_PayslipChanging(global::System.Nullable<bool> value);
-        partial void OnAllow_View_PayslipChanged();
+        private global::System.Nullable<decimal> _Maximum_Days_To_be_Applied;
+        partial void OnMaximum_Days_To_be_AppliedChanging(global::System.Nullable<decimal> value);
+        partial void OnMaximum_Days_To_be_AppliedChanged();
         /// <summary>
-        /// There are no comments for Property Proration_Done in the schema.
+        /// There are no comments for Property Deduct_from_Annual_Leave in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public global::System.Nullable<bool> Proration_Done
+        public global::System.Nullable<bool> Deduct_from_Annual_Leave
         {
             get
             {
-                return this._Proration_Done;
+                return this._Deduct_from_Annual_Leave;
             }
             set
             {
-                this.OnProration_DoneChanging(value);
-                this._Proration_Done = value;
-                this.OnProration_DoneChanged();
+                this.OnDeduct_from_Annual_LeaveChanging(value);
+                this._Deduct_from_Annual_Leave = value;
+                this.OnDeduct_from_Annual_LeaveChanged();
             }
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private global::System.Nullable<bool> _Proration_Done;
-        partial void OnProration_DoneChanging(global::System.Nullable<bool> value);
-        partial void OnProration_DoneChanged();
+        private global::System.Nullable<bool> _Deduct_from_Annual_Leave;
+        partial void OnDeduct_from_Annual_LeaveChanging(global::System.Nullable<bool> value);
+        partial void OnDeduct_from_Annual_LeaveChanged();
+        /// <summary>
+        /// There are no comments for Property Inclusive_of_Sunday in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Inclusive_of_Sunday
+        {
+            get
+            {
+                return this._Inclusive_of_Sunday;
+            }
+            set
+            {
+                this.OnInclusive_of_SundayChanging(value);
+                this._Inclusive_of_Sunday = value;
+                this.OnInclusive_of_SundayChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Inclusive_of_Sunday;
+        partial void OnInclusive_of_SundayChanging(global::System.Nullable<bool> value);
+        partial void OnInclusive_of_SundayChanged();
+        /// <summary>
+        /// There are no comments for Property Inclusive_of_Saturday in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Inclusive_of_Saturday
+        {
+            get
+            {
+                return this._Inclusive_of_Saturday;
+            }
+            set
+            {
+                this.OnInclusive_of_SaturdayChanging(value);
+                this._Inclusive_of_Saturday = value;
+                this.OnInclusive_of_SaturdayChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Inclusive_of_Saturday;
+        partial void OnInclusive_of_SaturdayChanging(global::System.Nullable<bool> value);
+        partial void OnInclusive_of_SaturdayChanged();
+        /// <summary>
+        /// There are no comments for Property Attachment_Mandatory in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Attachment_Mandatory
+        {
+            get
+            {
+                return this._Attachment_Mandatory;
+            }
+            set
+            {
+                this.OnAttachment_MandatoryChanging(value);
+                this._Attachment_Mandatory = value;
+                this.OnAttachment_MandatoryChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Attachment_Mandatory;
+        partial void OnAttachment_MandatoryChanging(global::System.Nullable<bool> value);
+        partial void OnAttachment_MandatoryChanged();
     }
     /// <summary>
     /// There are no comments for QyLocationsSingle in the schema.
@@ -93558,27 +97796,6 @@ namespace NAV
         private string _Purchasing_Code;
         partial void OnPurchasing_CodeChanging(string value);
         partial void OnPurchasing_CodeChanged();
-        /// <summary>
-        /// There are no comments for Property Product_Group_Code in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public string Product_Group_Code
-        {
-            get
-            {
-                return this._Product_Group_Code;
-            }
-            set
-            {
-                this.OnProduct_Group_CodeChanging(value);
-                this._Product_Group_Code = value;
-                this.OnProduct_Group_CodeChanged();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private string _Product_Group_Code;
-        partial void OnProduct_Group_CodeChanging(string value);
-        partial void OnProduct_Group_CodeChanged();
         /// <summary>
         /// There are no comments for Property Special_Order in the schema.
         /// </summary>
@@ -113739,6 +117956,132 @@ namespace NAV
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.LookUp_Values> _LookUp_Values;
         /// <summary>
+        /// There are no comments for PgAllStudentsList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgAllStudentsList> PgAllStudentsList
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PgAllStudentsList == null))
+                {
+                    this._PgAllStudentsList = Context.CreateQuery<global::NAV.PgAllStudentsList>(GetPath("PgAllStudentsList"));
+                }
+                return this._PgAllStudentsList;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgAllStudentsList> _PgAllStudentsList;
+        /// <summary>
+        /// There are no comments for PgLecturersList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgLecturersList> PgLecturersList
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PgLecturersList == null))
+                {
+                    this._PgLecturersList = Context.CreateQuery<global::NAV.PgLecturersList>(GetPath("PgLecturersList"));
+                }
+                return this._PgLecturersList;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgLecturersList> _PgLecturersList;
+        /// <summary>
+        /// There are no comments for PgLecturerUnitsDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgLecturerUnitsDetails> PgLecturerUnitsDetails
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PgLecturerUnitsDetails == null))
+                {
+                    this._PgLecturerUnitsDetails = Context.CreateQuery<global::NAV.PgLecturerUnitsDetails>(GetPath("PgLecturerUnitsDetails"));
+                }
+                return this._PgLecturerUnitsDetails;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgLecturerUnitsDetails> _PgLecturerUnitsDetails;
+        /// <summary>
+        /// There are no comments for PgProgrammesList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgProgrammesList> PgProgrammesList
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PgProgrammesList == null))
+                {
+                    this._PgProgrammesList = Context.CreateQuery<global::NAV.PgProgrammesList>(GetPath("PgProgrammesList"));
+                }
+                return this._PgProgrammesList;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgProgrammesList> _PgProgrammesList;
+        /// <summary>
+        /// There are no comments for PgSemestersSetup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> PgSemestersSetup
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PgSemestersSetup == null))
+                {
+                    this._PgSemestersSetup = Context.CreateQuery<global::NAV.PgSemestersSetup>(GetPath("PgSemestersSetup"));
+                }
+                return this._PgSemestersSetup;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> _PgSemestersSetup;
+        /// <summary>
+        /// There are no comments for PgStudentUnits in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgStudentUnits> PgStudentUnits
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._PgStudentUnits == null))
+                {
+                    this._PgStudentUnits = Context.CreateQuery<global::NAV.PgStudentUnits>(GetPath("PgStudentUnits"));
+                }
+                return this._PgStudentUnits;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgStudentUnits> _PgStudentUnits;
+        /// <summary>
         /// There are no comments for RegApplications in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
@@ -116406,6 +120749,132 @@ namespace NAV
         partial void OnLookUp_ValuesChanging(global::System.Collections.ObjectModel.Collection<global::NAV.LookUp_Values> value);
         partial void OnLookUp_ValuesChanged();
         /// <summary>
+        /// There are no comments for Property PgAllStudentsList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgAllStudentsList> PgAllStudentsList
+        {
+            get
+            {
+                return this._PgAllStudentsList;
+            }
+            set
+            {
+                this.OnPgAllStudentsListChanging(value);
+                this._PgAllStudentsList = value;
+                this.OnPgAllStudentsListChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgAllStudentsList> _PgAllStudentsList = new global::System.Collections.ObjectModel.Collection<global::NAV.PgAllStudentsList>();
+        partial void OnPgAllStudentsListChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgAllStudentsList> value);
+        partial void OnPgAllStudentsListChanged();
+        /// <summary>
+        /// There are no comments for Property PgLecturersList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgLecturersList> PgLecturersList
+        {
+            get
+            {
+                return this._PgLecturersList;
+            }
+            set
+            {
+                this.OnPgLecturersListChanging(value);
+                this._PgLecturersList = value;
+                this.OnPgLecturersListChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgLecturersList> _PgLecturersList = new global::System.Collections.ObjectModel.Collection<global::NAV.PgLecturersList>();
+        partial void OnPgLecturersListChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgLecturersList> value);
+        partial void OnPgLecturersListChanged();
+        /// <summary>
+        /// There are no comments for Property PgLecturerUnitsDetails in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgLecturerUnitsDetails> PgLecturerUnitsDetails
+        {
+            get
+            {
+                return this._PgLecturerUnitsDetails;
+            }
+            set
+            {
+                this.OnPgLecturerUnitsDetailsChanging(value);
+                this._PgLecturerUnitsDetails = value;
+                this.OnPgLecturerUnitsDetailsChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgLecturerUnitsDetails> _PgLecturerUnitsDetails = new global::System.Collections.ObjectModel.Collection<global::NAV.PgLecturerUnitsDetails>();
+        partial void OnPgLecturerUnitsDetailsChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgLecturerUnitsDetails> value);
+        partial void OnPgLecturerUnitsDetailsChanged();
+        /// <summary>
+        /// There are no comments for Property PgProgrammesList in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgProgrammesList> PgProgrammesList
+        {
+            get
+            {
+                return this._PgProgrammesList;
+            }
+            set
+            {
+                this.OnPgProgrammesListChanging(value);
+                this._PgProgrammesList = value;
+                this.OnPgProgrammesListChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgProgrammesList> _PgProgrammesList = new global::System.Collections.ObjectModel.Collection<global::NAV.PgProgrammesList>();
+        partial void OnPgProgrammesListChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgProgrammesList> value);
+        partial void OnPgProgrammesListChanged();
+        /// <summary>
+        /// There are no comments for Property PgSemestersSetup in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> PgSemestersSetup
+        {
+            get
+            {
+                return this._PgSemestersSetup;
+            }
+            set
+            {
+                this.OnPgSemestersSetupChanging(value);
+                this._PgSemestersSetup = value;
+                this.OnPgSemestersSetupChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> _PgSemestersSetup = new global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup>();
+        partial void OnPgSemestersSetupChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgSemestersSetup> value);
+        partial void OnPgSemestersSetupChanged();
+        /// <summary>
+        /// There are no comments for Property PgStudentUnits in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.PgStudentUnits> PgStudentUnits
+        {
+            get
+            {
+                return this._PgStudentUnits;
+            }
+            set
+            {
+                this.OnPgStudentUnitsChanging(value);
+                this._PgStudentUnits = value;
+                this.OnPgStudentUnitsChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.PgStudentUnits> _PgStudentUnits = new global::System.Collections.ObjectModel.Collection<global::NAV.PgStudentUnits>();
+        partial void OnPgStudentUnitsChanging(global::System.Collections.ObjectModel.Collection<global::NAV.PgStudentUnits> value);
+        partial void OnPgStudentUnitsChanged();
+        /// <summary>
         /// There are no comments for Property RegApplications in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
@@ -119065,6 +123534,177 @@ namespace NAV
             return new global::NAV.LookUp_ValuesSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
         }
         /// <summary>
+        /// Get an entity of type global::NAV.PgAllStudentsList as global::NAV.PgAllStudentsListSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::NAV.PgAllStudentsListSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgAllStudentsList> _source, global::System.Collections.Generic.IDictionary<string, object> keys)
+        {
+            return new global::NAV.PgAllStudentsListSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.PgAllStudentsList as global::NAV.PgAllStudentsListSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="no">The value of no</param>
+        public static global::NAV.PgAllStudentsListSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgAllStudentsList> _source,
+            string no)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "No", no }
+            };
+            return new global::NAV.PgAllStudentsListSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.PgLecturersList as global::NAV.PgLecturersListSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::NAV.PgLecturersListSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgLecturersList> _source, global::System.Collections.Generic.IDictionary<string, object> keys)
+        {
+            return new global::NAV.PgLecturersListSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.PgLecturersList as global::NAV.PgLecturersListSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="no">The value of no</param>
+        public static global::NAV.PgLecturersListSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgLecturersList> _source,
+            string no)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "No", no }
+            };
+            return new global::NAV.PgLecturersListSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.PgLecturerUnitsDetails as global::NAV.PgLecturerUnitsDetailsSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::NAV.PgLecturerUnitsDetailsSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgLecturerUnitsDetails> _source, global::System.Collections.Generic.IDictionary<string, object> keys)
+        {
+            return new global::NAV.PgLecturerUnitsDetailsSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.PgLecturerUnitsDetails as global::NAV.PgLecturerUnitsDetailsSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="programme">The value of programme</param>
+        /// <param name="stage">The value of stage</param>
+        /// <param name="unit">The value of unit</param>
+        /// <param name="lecturer">The value of lecturer</param>
+        /// <param name="line_No">The value of line_No</param>
+        public static global::NAV.PgLecturerUnitsDetailsSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgLecturerUnitsDetails> _source,
+            string programme, 
+            string stage, 
+            string unit, 
+            string lecturer, 
+            int line_No)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Programme", programme }, 
+                { "Stage", stage }, 
+                { "Unit", unit }, 
+                { "Lecturer", lecturer }, 
+                { "Line_No", line_No }
+            };
+            return new global::NAV.PgLecturerUnitsDetailsSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.PgProgrammesList as global::NAV.PgProgrammesListSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::NAV.PgProgrammesListSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgProgrammesList> _source, global::System.Collections.Generic.IDictionary<string, object> keys)
+        {
+            return new global::NAV.PgProgrammesListSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.PgProgrammesList as global::NAV.PgProgrammesListSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="code">The value of code</param>
+        public static global::NAV.PgProgrammesListSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgProgrammesList> _source,
+            string code)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Code", code }
+            };
+            return new global::NAV.PgProgrammesListSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.PgSemestersSetup as global::NAV.PgSemestersSetupSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::NAV.PgSemestersSetupSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> _source, global::System.Collections.Generic.IDictionary<string, object> keys)
+        {
+            return new global::NAV.PgSemestersSetupSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.PgSemestersSetup as global::NAV.PgSemestersSetupSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="code">The value of code</param>
+        public static global::NAV.PgSemestersSetupSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgSemestersSetup> _source,
+            string code)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Code", code }
+            };
+            return new global::NAV.PgSemestersSetupSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.PgStudentUnits as global::NAV.PgStudentUnitsSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::NAV.PgStudentUnitsSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgStudentUnits> _source, global::System.Collections.Generic.IDictionary<string, object> keys)
+        {
+            return new global::NAV.PgStudentUnitsSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.PgStudentUnits as global::NAV.PgStudentUnitsSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="programme">The value of programme</param>
+        /// <param name="stage">The value of stage</param>
+        /// <param name="unit">The value of unit</param>
+        /// <param name="semester">The value of semester</param>
+        /// <param name="reg_Transacton_ID">The value of reg_Transacton_ID</param>
+        /// <param name="student_No">The value of student_No</param>
+        /// <param name="eNo">The value of eNo</param>
+        /// <param name="register_for">The value of register_for</param>
+        public static global::NAV.PgStudentUnitsSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.PgStudentUnits> _source,
+            string programme, 
+            string stage, 
+            string unit, 
+            string semester, 
+            string reg_Transacton_ID, 
+            string student_No, 
+            int eNo, 
+            string register_for)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Programme", programme }, 
+                { "Stage", stage }, 
+                { "Unit", unit }, 
+                { "Semester", semester }, 
+                { "Reg_Transacton_ID", reg_Transacton_ID }, 
+                { "Student_No", student_No }, 
+                { "ENo", eNo }, 
+                { "Register_for", register_for }
+            };
+            return new global::NAV.PgStudentUnitsSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
         /// Get an entity of type global::NAV.RegApplications as global::NAV.RegApplicationsSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -120789,13 +125429,13 @@ namespace NAV
         /// Get an entity of type global::NAV.QyLeaveTypes as global::NAV.QyLeaveTypesSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
-        /// <param name="date_Opened">The value of date_Opened</param>
+        /// <param name="code">The value of code</param>
         public static global::NAV.QyLeaveTypesSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyLeaveTypes> _source,
-            global::Microsoft.OData.Edm.Date date_Opened)
+            string code)
         {
             global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
             {
-                { "Date_Opened", date_Opened }
+                { "Code", code }
             };
             return new global::NAV.QyLeaveTypesSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
         }

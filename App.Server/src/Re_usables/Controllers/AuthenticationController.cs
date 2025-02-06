@@ -75,7 +75,7 @@ namespace App.Server.Modules.HMIS.Controllers
                             authUser.isMFAVerified = false;
                             string authString = JsonSerializer.Serialize(authUser);
                             HttpContext.Session.SetString("authUser", authString);
-                            return Ok(new { status = "success", msg = "OTP login required. OTP Code sent to " + MaskEmail(QyUser.Company_E_Mail), authUser });
+                            return Ok(new { status = "success", msg = "OTP login required. OTP Code sent to your phone number or email.",authUser });
                         }
                     }
                     else

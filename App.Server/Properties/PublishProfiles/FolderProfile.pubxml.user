@@ -5,7 +5,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 <Project>
   <PropertyGroup>
     <_PublishTargetUrl>C:\Work\Other\ptl\Kapsowar\Publishes\StaffPortal</_PublishTargetUrl>
-    <History>True|2025-01-27T20:29:33.0796270Z||;True|2025-01-26T22:21:21.4710235+03:00||;True|2025-01-23T22:46:03.5982061+03:00||;True|2025-01-20T23:26:26.8986993+03:00||;True|2025-01-20T20:23:39.3182918+03:00||;False|2025-01-20T20:16:02.1761805+03:00||;False|2025-01-20T20:11:32.3989829+03:00||;</History>
+    <History>True|2025-02-06T19:37:22.5450286Z||;True|2025-02-06T22:13:58.1538309+03:00||;True|2025-01-27T23:29:33.0796270+03:00||;True|2025-01-26T22:21:21.4710235+03:00||;True|2025-01-23T22:46:03.5982061+03:00||;True|2025-01-20T23:26:26.8986993+03:00||;True|2025-01-20T20:23:39.3182918+03:00||;False|2025-01-20T20:16:02.1761805+03:00||;False|2025-01-20T20:11:32.3989829+03:00||;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>

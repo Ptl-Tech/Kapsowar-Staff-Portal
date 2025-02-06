@@ -121,6 +121,10 @@ namespace App.Server
             try
             {
                 initiateService();
+                if(companyName != "")
+                {
+                    navCompany = companyName;
+                }
                 //string odataURL = odataBaseUrl + navInstance + "/{OdataV}/Company('" + companyName == "" ? navCompany : companyName + "')/";
                 string odataURL = $"{odataBaseUrl}{navInstance}/ODataV4/Company('{navCompany}')/";
                 Uri uri = new Uri(odataURL);

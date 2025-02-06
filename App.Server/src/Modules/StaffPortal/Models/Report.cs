@@ -41,4 +41,20 @@ namespace App.Server.src.Modules.ESS.Models
         [Required]
         public string No { get; set; } = "";
     }
+    //
+    public class PurchaseRequestReport
+    {
+        public string? staffNo { get; set; } = "";
+        public string? docNo { get; set; } = "";
+        [Required]
+        public string No { get; set; } = "";
+    }
+    //
+    public class StoreRequestReport
+    {
+        public string? staffNo { get; set; } = "";
+        public string? docNo { get; set; } = "";
+        [Required]
+        public string No { get; set; } = "";
+    }
 }

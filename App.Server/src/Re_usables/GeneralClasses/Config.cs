@@ -11,6 +11,7 @@
         public static readonly string DevNavUsername = "ALEX";
         public static readonly string DevNavPassword = "Kenya@2024!";
         public static readonly string DevNAVCompany = "AIC Kapsowar Mission Hospital";
+        public static readonly string DevNAVCompany2 = "KAPSOWAR MTC LIVE";
         public static readonly string DevCodeunit = "CuStaffWebportal";
         //live env
         public static readonly string LiveHostName = "";
@@ -21,6 +22,7 @@
         public static readonly string LiveNavUsername = "Admin";
         public static readonly string LiveNavPassword = "Admin@123";
         public static readonly string LiveNAVCompany = "AIC Kapsowar Mission Hospital";
+        public static readonly string LiveNAVCompany2 = "KAPSOWAR MTC LIVE";
         public static readonly string LiveCodeunit = "CuStaffWebportal";
         /**
          OTHER SETTINGS

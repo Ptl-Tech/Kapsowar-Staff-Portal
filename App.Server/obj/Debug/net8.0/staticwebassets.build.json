@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "Y/4xhy/t1wkcVAkyGhcVEcX7PwIYMn6wkG83C9BcYU0=",
+  "Hash": "hC1xbHnBrhsgl4j2bUsqwmOO/faY0jyEAP6x4AyKJU0=",
   "Source": "App.Server",
   "BasePath": "_content/App.Server",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Work\\Other\\ptl\\Kapsowar\\Kapsowar Staff Portal\\app.client\\app.client.esproj",
+      "Version": 2,
+      "Source": "app.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": [],
   "Endpoints": []

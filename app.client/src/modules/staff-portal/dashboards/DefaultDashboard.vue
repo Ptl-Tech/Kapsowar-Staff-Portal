@@ -289,10 +289,10 @@
             </grid-col>
         </grid>
         <!--Transport Services-->
-        <h4 class="font-semibold text-sm py-0.5 text-gray-500">Transport & Logistics Services:</h4>
-        <grid class="sm:!grid-cols-2 lg:!grid-cols-5">
+        <!--<h4 class="font-semibold text-sm py-0.5 text-gray-500">Transport & Logistics Services:</h4>
+        <grid class="sm:!grid-cols-2 lg:!grid-cols-5">-->
             <!---->
-            <grid-col>
+            <!--<grid-col>
                 <Tile class="bg-indigo-500" :showLoader="isLoading">
                     <template #icon>
                         <TruckIcon class="h-6 w-6" />
@@ -326,7 +326,8 @@
                     </template>
                 </Tile>
             </grid-col>
-        </grid>
+        </grid>-->
+    
     </div>
 </template>
 <script>

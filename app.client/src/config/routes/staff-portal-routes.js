@@ -181,6 +181,33 @@ export const supplierPortalRoutes = [
                     },
                 ]
             },
+            {
+                path: 'academics',
+                meta: { requiresAuth: true },
+                children: [
+                    {
+                        path: 'students-list',
+                        children: [
+                            { path: 'list', name: "studentsList", component: () => import('@/modules/staff-portal/academics/student-list/StudentList.vue') },
+                            { path: 'form/:action',name:"studentsForm", component: () => import('@/modules/staff-portal/academics/student-list/StudentForm.vue') },
+                        ]
+                    },
+                    {
+                        path: 'lecturer-list',
+                        children: [
+                            { path: 'list', name: "lecturerList", component: () => import('@/modules/staff-portal/academics/lecturer-list/LecturerList.vue') },
+                            { path: 'form/:action', name: "lecturerForm", component: () => import('@/modules/staff-portal/academics/lecturer-list/LecturerForm.vue') },
+                        ]
+                    },
+                    {
+                        path: 'programme',
+                        children: [
+                            { path: 'list', name: "programmeList", component: () => import('@/modules/staff-portal/academics/programme-list/ProgrammeList.vue') },
+                            { path: 'form/:action', name: "programmeForm", component: () => import('@/modules/staff-portal/academics/programme-list/ProgrammeForm.vue') },
+                        ]
+                    },
+                ]
+            },
 
         ]
     }

@@ -212,7 +212,7 @@
                     });
             },
             OnDownloadReport() {
-                var url = this.appConfig.baseApiRoute + "Reports/StaffClaimReport";
+                var url = this.appConfig.baseApiRoute + "Reports/PurchaseRequestReport";
                 this.$root.loader.isLoading = true;
                 const requestOptions = {
                     method: "POST",
@@ -235,7 +235,7 @@
 
                             var a = document.createElement("a");
                             a.href = "data:pdf;base64," + data.response;
-                            a.download = "Imprest-" + "-" + this.record.No + ".pdf";
+                            a.download = "Store-" + "-" + this.record.No + ".pdf";
                             a.click();
                         }
                         this.$root.loader.isLoading = false;
