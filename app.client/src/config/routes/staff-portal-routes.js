@@ -206,6 +206,10 @@ export const supplierPortalRoutes = [
                             { path: 'form/:action', name: "programmeForm", component: () => import('@/modules/staff-portal/academics/programme-list/ProgrammeForm.vue') },
                         ]
                     },
+                    //
+                    { path: 'lecturer-unit/list', name: "lecturerUnitList", component: () => import('@/modules/staff-portal/academics/lecturer-unit/LecturerUnitList.vue') },
+                    { path: 'lecturer-unit/form/:action', name: "lecturerUnitForm", component: () => import('@/modules/staff-portal/academics/lecturer-unit/LecturerUnitForm.vue') },
+
                 ]
             },
 

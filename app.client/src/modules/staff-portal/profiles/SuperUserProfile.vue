@@ -66,10 +66,7 @@
                     <DocumentCheckIcon class="iconSmall" /> Lecturer Section
                 </template>
                 <template #content>
-                    <sidebar-link to="/ess/purchase-request/header/list?status=Open" :active="this.$route.path.includes('/ess/purchase-request')?true:false" :sidebarDropdown="true" :isLast="false">Students List</sidebar-link>
-                    <sidebar-link to="/ess/store-request/header/list?status=Open" :active="this.$route.path.includes('/ess/store-request')?true:false" :sidebarDropdown="true" :isLast="true">Lecturers List</sidebar-link>
-                    <sidebar-link to="/ess/store-request/header/list?status=Open" :active="this.$route.path.includes('/ess/store-request')?true:false" :sidebarDropdown="true" :isLast="true">Programmes List</sidebar-link>
-                    <sidebar-link to="/ess/store-request/header/list?status=Open" :active="this.$route.path.includes('/ess/store-request')?true:false" :sidebarDropdown="true" :isLast="true">Reports</sidebar-link>
+                    <sidebar-link :to="{name:'lecturerUnitForm',params:{action:'edit'}}" :active="this.$route.name == 'lecturerUnitForm'?true:false" :sidebarDropdown="true" :isLast="false">Lecturer Assigned Units</sidebar-link>
                 </template>
             </SidebarDropdown>
             <!---->
