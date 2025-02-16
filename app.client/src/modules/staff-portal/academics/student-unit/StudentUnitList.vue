@@ -5,7 +5,9 @@
                 <WTh>Student No</WTh>
                 <WTh>Full Names</WTh>
                 <WTh v-if="!isTheoryPractical">CAT Marks</WTh>
+                <WTh v-if="!isTheoryPractical">CAT Score</WTh>
                 <WTh v-if="!isTheoryPractical">Exam Marks</WTh>
+                <WTh v-if="!isTheoryPractical">Exam Score</WTh>
                 <WTh v-if="isTheoryPractical">Theory Marks</WTh>
                 <WTh v-if="isTheoryPractical">Weighted Theory</WTh>
                 <WTh v-if="isTheoryPractical">Practical Marks</WTh>
@@ -18,9 +20,11 @@
                 <WTd v-if="!isTheoryPractical">
                     <WInput type="number" required="true" v-model="records[index].Q2" :formMode="formMode" class="max-w-20" @input="FnValidateMarks(index)" />
                 </WTd>
+                <WTd v-if="!isTheoryPractical">{{records[index].Q4}}</WTd>
                 <WTd v-if="!isTheoryPractical">
                     <WInput type="number" required="true" v-model="records[index].Q1" :formMode="formMode" class="max-w-20" @input="FnValidateMarks(index)" />
                 </WTd>
+                <WTd v-if="!isTheoryPractical">{{records[index].Q3}}</WTd>
                 <WTd v-if="isTheoryPractical">
                     <WInput type="number" required="true" v-model="records[index].Q1" :formMode="formMode" class="max-w-20" @input="FnValidateMarks(index)" />
                 </WTd>
@@ -29,7 +33,7 @@
                     <WInput type="number" required="true" v-model="records[index].Q2" :formMode="formMode" class="max-w-20" @input="FnValidateMarks(index)" />
                 </WTd>
                 <WTd v-if="isTheoryPractical">{{records[index].Q4}}</WTd>
-                <WTd>{{records[index].Initial_Score}}</WTd>
+                <WTd>{{records[index].Total_Score}}</WTd>
             </template>
             <template #listMoreActions>
                 <Actions :records="records" :pageProps="pageProps" />
@@ -57,6 +61,12 @@
                     //formRoute: "/ess/imprest-request/line/form",
                     //listRoute: "/ess/imprest-request/line/list",
                     filter: this.$route.query,
+                    unitData: {
+                        programme: "",
+                        stage: "",
+                        semester: "",
+                        unit: "",
+                    }
                 },
                 actionsProps: { isNew: false, isNewCaption: "New Request", isEdit: true, isDelete: false, isFilter: true, isExport: true,moreActions:true },
                 header: {},
@@ -64,14 +74,20 @@
                 isTheoryPractical: null,
                 formMode: "edit",
                 examsSetup: [],
+               
             }
         },
         created() {
-            if (this.$route.query.programme == 'CPOTT' || this.$route.$query.programme == 'DPOTT') {
+            if (this.$route.query.programme == 'CPOTT' || this.$route.query.programme == 'DPOTT') {
                 this.isTheoryPractical = true;
             } else {
                 this.isTheoryPractical = false;
             }
+            //
+            this.pageProps.unitData.programme = this.$route.query.programme;
+            this.pageProps.unitData.stage = this.$route.query.stage;
+            this.pageProps.unitData.semester = this.$route.query.semester;
+            this.pageProps.unitData.unit = this.$route.query.unit;
         },
         methods: {
             OnFetchData(response) {
@@ -101,9 +117,24 @@
                     }
                     //
                     if (this.$route.query.programme == "KRCHN") {
-                        this.records[recordIndex].Q4 = Math.round((this.records[recordIndex].Q2 * 0.5))
+                        this.records[recordIndex].Q3 = Math.round((this.records[recordIndex].Q1 * 0.7))
+                        this.records[recordIndex].Q4 = Math.round((this.records[recordIndex].Q2 * 0.3))
                     }
-                    this.records[recordIndex].Initial_Score = this.records[recordIndex].Q3 + this.records[recordIndex].Q4;
+                    this.records[recordIndex].Total_Score = parseFloat(this.records[recordIndex].Q3) + parseFloat(this.records[recordIndex].Q4);
+                } else {
+                    if (this.records[recordIndex].Q1 > 100) {
+                        var msg = "Invalid Marks";
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
+                        this.records[recordIndex].Q1 = 0;
+                    }
+                    if (this.records[recordIndex].Q2 > 100) {
+                        var msg = "Invalid Marks";
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
+                        this.records[recordIndex].Q2 = 0;
+                    }
+                    this.records[recordIndex].Q3 = Math.round((this.records[recordIndex].Q1 * 0.7))
+                    this.records[recordIndex].Q4 = Math.round((this.records[recordIndex].Q2 * 0.3))
+                    this.records[recordIndex].Total_Score = parseFloat(this.records[recordIndex].Q3) + parseFloat(this.records[recordIndex].Q4);
                 }
             }
         },

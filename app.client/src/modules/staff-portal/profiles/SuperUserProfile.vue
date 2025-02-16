@@ -1,7 +1,7 @@
 <template>
     <div>
         <Sidebar>
-            <sidebar-link to="/ess/dashboard" :active="this.$route.path == '/dashboard'?true:false" :isLast="true" class="border-b border-gray-500"><Squares2X2Icon class="iconSmall" /> Dashboard</sidebar-link>
+            <sidebar-link to="/ess/dashboard" :active="this.$route.name == 'dashboard'?true:false" :isLast="true" class="border-b border-gray-500"><Squares2X2Icon class="iconSmall" /> Dashboard</sidebar-link>
             <!---->
             <!--<SidebarDropdown :active="this.$route.path.includes('/ess/approval-entry')? true:false">
     <template #caption>
@@ -18,7 +18,7 @@
             <!---->
             <SidebarDropdown :active="true" :isLast="false">
                 <template #caption>
-                    <DocumentCheckIcon class="iconSmall" /> HR & Payroll Services
+                    <UserGroupIcon class="iconSmall" /> HR & Payroll Services
                 </template>
                 <template #content>
                     <sidebar-link to="/ess/leave-application/list?status=Open" :active="($route.name == 'leaveList' || $route.name == 'leaveForm')?true:false" :sidebarDropdown="true">Leave Applications</sidebar-link>
@@ -30,7 +30,7 @@
             <!---->
             <SidebarDropdown :active="true">
                 <template #caption>
-                    <DocumentCheckIcon class="iconSmall" /> Finance Services
+                    <CurrencyDollarIcon class="iconSmall" /> Finance Services
                 </template>
                 <template #content>
                     <sidebar-link to="/ess/imprest-request/header/list?status=Pending" :active="this.$route.path.includes('/ess/imprest-request/')?true:false" :sidebarDropdown="true" :isLast="false">Imprests</sidebar-link>
@@ -49,21 +49,21 @@
                 </template>
             </SidebarDropdown>
             <!---->
-            <SidebarDropdown :active="true">
+            <SidebarDropdown :active="true" v-if="$root.authUser.isHOD">
                 <template #caption>
-                    <DocumentCheckIcon class="iconSmall" /> Academics (DepartmentCode)
+                    <BookOpenIcon class="iconSmall" /> Academics ({{$root.authUser.departmentCode}})
                 </template>
                 <template #content>
                     <sidebar-link :to="{name:'studentsList',query:{status:'Current'}}" :active="$route.name == 'studentsList'?true:false" :sidebarDropdown="true" :isLast="false">Students List</sidebar-link>
                     <sidebar-link :to="{name:'lecturerList',query:{status:'Active'}}" :active="$route.name == 'lecturerList'?true:false" :sidebarDropdown="true" :isLast="false">Lecturers List</sidebar-link>
                     <sidebar-link :to="{name:'programmeList',query:{category:'All'}}" :active="$route.name == 'programmeList'?true:false" :sidebarDropdown="true" :isLast="false">Programmes List</sidebar-link>
-                    <sidebar-link to="/ess/store-request/header/list?status=Open" :active="this.$route.path.includes('/ess/store-request')?true:false" :sidebarDropdown="true" :isLast="true">Reports</sidebar-link>
+                    <!--<sidebar-link to="/ess/store-request/header/list?status=Open" :active="this.$route.path.includes('/ess/store-request')?true:false" :sidebarDropdown="true" :isLast="true">Reports</sidebar-link>-->
                 </template>
             </SidebarDropdown>
             <!---->
-            <SidebarDropdown :active="true">
+            <SidebarDropdown :active="true" v-if="$root.authUser.isLecturer">
                 <template #caption>
-                    <DocumentCheckIcon class="iconSmall" /> Lecturer Section
+                    <ArrowsPointingInIcon class="iconSmall" /> Lecturer Section
                 </template>
                 <template #content>
                     <sidebar-link :to="{name:'lecturerUnitForm',params:{action:'edit'}}" :active="this.$route.name == 'lecturerUnitForm'?true:false" :sidebarDropdown="true" :isLast="true">Lecturer Assigned Units</sidebar-link>
@@ -101,13 +101,13 @@
     import {
         UserGroupIcon, Squares2X2Icon, ArrowPathRoundedSquareIcon, DocumentTextIcon, DocumentPlusIcon, DocumentArrowDownIcon, CircleStackIcon,
         DocumentCheckIcon, DocumentChartBarIcon, CalendarDaysIcon, ClockIcon, CurrencyDollarIcon, ArrowsPointingInIcon, ClipboardDocumentCheckIcon, UserPlusIcon,
-        GiftTopIcon, ArrowUturnDownIcon, TruckIcon, ReceiptRefundIcon, BanknotesIcon, AdjustmentsVerticalIcon
+        GiftTopIcon, ArrowUturnDownIcon,BookOpenIcon, TruckIcon, ReceiptRefundIcon, BanknotesIcon, AdjustmentsVerticalIcon
     } from '@heroicons/vue/24/outline'
     export default {
         components: {
             Sidebar, SidebarMenu, Squares2X2Icon, CircleStackIcon, DocumentPlusIcon, DocumentTextIcon, DocumentArrowDownIcon, ArrowPathRoundedSquareIcon, DocumentCheckIcon, SidebarLink, SidebarDropdown, UserGroupIcon, CurrencyDollarIcon, ArrowsPointingInIcon,
             ClipboardDocumentCheckIcon, UserPlusIcon, GiftTopIcon, ArrowUturnDownIcon, TruckIcon, AdjustmentsVerticalIcon,
-            ReceiptRefundIcon, BanknotesIcon, DocumentChartBarIcon, CalendarDaysIcon, SidebarHeading, ClockIcon
+            ReceiptRefundIcon, BanknotesIcon, BookOpenIcon, DocumentChartBarIcon, CalendarDaysIcon, SidebarHeading, ClockIcon
         },
     }
 </script>

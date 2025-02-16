@@ -1,15 +1,14 @@
-﻿using App.Server.Re_usables.GeneralClasses;
+﻿using App.Server.src.Re_usables.ActionFilters;
 using App.Server.src.Re_usables.Modules.DynamicsBC;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Extensions;
 using NAV;
 using System.Dynamic;
 
-//using System.Linq;
-
 namespace App.Server.src.Modules.ESS.Controllers
 {
     [AuthenticateActionFilter]
+    [HODActionFilter]
     public class LecturersController : ControllerBase
     {
         [HttpGet]

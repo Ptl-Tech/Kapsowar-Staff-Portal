@@ -1,4 +1,4 @@
-﻿using App.Server.Re_usables.GeneralClasses;
+﻿using App.Server.src.Re_usables.ActionFilters;
 using App.Server.src.Re_usables.Modules.DynamicsBC;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Extensions;
@@ -10,6 +10,7 @@ using System.Dynamic;
 namespace App.Server.src.Modules.ESS.Controllers
 {
     [AuthenticateActionFilter]
+    [HODActionFilter]
     public class ProgrammesController : ControllerBase
     {
         [HttpGet]
@@ -20,6 +21,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 dynamic response = new ExpandoObject();
 
                 var baseQuery = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).PgProgrammesList
+                    //.Where(x => x.Department_Code == GeneralController.SessionUser(HttpContext).departmentCode)
                     .AsQueryable();
                 if (category != "All")
                 {

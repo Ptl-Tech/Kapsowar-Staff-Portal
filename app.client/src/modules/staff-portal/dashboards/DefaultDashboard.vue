@@ -2,35 +2,116 @@
     <div>
         <!--Admin Services-->
         <!--<h4 class="font-semibold text-sm text-gray-500">Admin & General Services:</h4>
-        <grid class="sm:!grid-cols-2 lg:!grid-cols-5">
+    <grid class="sm:!grid-cols-2 lg:!grid-cols-5">
+        <grid-col>
+            <Tile class="bg-red-500" :showLoader="isLoading">
+                <template #icon>
+                    <DocumentCheckIcon class="h-6 w-6" />
+                </template>
+                <template #label>
+                    <router-link to="/ess/approval-entry/list?status=Open&docType=advance" class="underline">Approval Entries</router-link>
+                </template>
+                <template #value>
+                    <div class="flex gap-1 items-center">
+                        <span class="text-xs flex flex-col items-center">
+                            <span class="">Open</span>
+                            <span class="underline">
+                                <router-link to="/ess/approval-entry/list?status=Open&docType=advance">{{$root.authUser.PendingMyApproval}}</router-link>
+                            </span>
+                        </span>
+                        <span class="border-r h-6"></span>
+                        <span class="text-xs flex flex-col items-center">
+                            <span class="">Approved</span>
+                            <span class="underline">
+                                <router-link to="/ess/approval-entry/list?status=Approved&docType=advance">{{record.approvedDocumentsHR + record.approvedDocuments}}</router-link>
+                            </span>
+                        </span>
+                    </div>
+                </template>
+            </Tile>
+        </grid-col>
+    </grid>-->
+        <!--Finance Services-->
+        <h4 v-if="$root.authUser.isHOD" class="font-semibold text-sm py-0.5 text-gray-500">Academic HOD Services:</h4>
+        <grid v-if="$root.authUser.isHOD" class="sm:!grid-cols-2 lg:!grid-cols-5">
+            <!---->
             <grid-col>
-                <Tile class="bg-red-500" :showLoader="isLoading">
+                <Tile class="bg-blue-500" :showLoader="isLoading">
                     <template #icon>
-                        <DocumentCheckIcon class="h-6 w-6" />
+                        <UserGroupIcon class="h-6 w-6" />
                     </template>
                     <template #label>
-                        <router-link to="/ess/approval-entry/list?status=Open&docType=advance" class="underline">Approval Entries</router-link>
+                        <router-link :to="{name:'studentsList',query:{status:'Current'}}" class="underline">Students List</router-link>
                     </template>
                     <template #value>
                         <div class="flex gap-1 items-center">
                             <span class="text-xs flex flex-col items-center">
-                                <span class="">Open</span>
+                                <span class="">Current</span>
                                 <span class="underline">
-                                    <router-link to="/ess/approval-entry/list?status=Open&docType=advance">{{$root.authUser.PendingMyApproval}}</router-link>
+                                    <router-link :to="{name:'studentsList',query:{status:'Current'}}">{{record.studentsCountCurrent}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
-                                <span class="">Approved</span>
+                                <span class="">Registration</span>
                                 <span class="underline">
-                                    <router-link to="/ess/approval-entry/list?status=Approved&docType=advance">{{record.approvedDocumentsHR + record.approvedDocuments}}</router-link>
+                                    <router-link :to="{name:'studentsList',query:{status:'Registration'}}">{{record.studentsCountRegistration}}</router-link>
                                 </span>
                             </span>
                         </div>
                     </template>
                 </Tile>
             </grid-col>
-        </grid>-->
+            <!---->
+            <grid-col>
+                <Tile class="bg-green-500" :showLoader="isLoading">
+                    <template #icon>
+                        <UserCircleIcon class="h-6 w-6" />
+                    </template>
+                    <template #label>
+                        <router-link :to="{name:'lecturerList',query:{status:'Active'}}" class="underline">Lecturers List</router-link>
+                    </template>
+                    <template #value>
+                        <div class="flex gap-1 items-center">
+                            <span class="text-xs flex flex-col items-center">
+                                <span class="">Active</span>
+                                <span class="underline">
+                                    <router-link :to="{name:'lecturerList',query:{status:'Active'}}">{{record.lecturersCountActive}}</router-link>
+                                </span>
+                            </span>
+                            <span class="border-r h-6"></span>
+                            <span class="text-xs flex flex-col items-center">
+                                <span class="">Inactive</span>
+                                <span class="underline">
+                                    <router-link :to="{name:'lecturerList',query:{status:'Active'}}">{{record.lecturersCountInactive}}</router-link>
+                                </span>
+                            </span>
+                        </div>
+                    </template>
+                </Tile>
+            </grid-col>
+            <!---->
+            <grid-col>
+                <Tile class="bg-orange-500" :showLoader="isLoading">
+                    <template #icon>
+                        <NumberedListIcon class="h-6 w-6" />
+                    </template>
+                    <template #label>
+                        <router-link :to="{name:'programmeList',query:{category:'All'}}" class="underline">Programmes List</router-link>
+                    </template>
+                    <template #value>
+                        <div class="flex gap-1 items-center">
+                            <span class="text-xs flex flex-col items-center">
+                                <span class="">All</span>
+                                <span class="underline">
+                                    <router-link :to="{name:'programmeList',query:{category:'All'}}">{{record.programmesCountAll}}</router-link>
+                                </span>
+                            </span>
+                        </div>
+                    </template>
+                </Tile>
+            </grid-col>
+        </grid>
         <!--Finance Services-->
         <h4 class="font-semibold text-sm py-0.5 text-gray-500">Finance Services:</h4>
         <grid class="sm:!grid-cols-2 lg:!grid-cols-5">
@@ -48,21 +129,21 @@
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Open</span>
                                 <span class="underline">
-                                    <router-link to="/ess/staff-claim/list?status=Pending">{{record.openStaffClaims}}</router-link>
+                                    <router-link to="/ess/staff-claim/header/list?status=Pending">{{record.staffClaimsOpen}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Pending</span>
                                 <span class="underline">
-                                    <router-link to="/ess/staff-claim/list?status=Pending Approval">{{record.pendingStaffClaims}}</router-link>
+                                    <router-link to="/ess/staff-claim/header/list?status=Pending Approval">{{record.staffClaimsPending}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Approved</span>
                                 <span class="underline">
-                                    <router-link to="/ess/staff-claim/list?status=Approved">{{record.approvedStaffClaims}}</router-link>
+                                    <router-link to="/ess/staff-claim/header/list?status=Approved">{{record.staffClaimsApproved}}</router-link>
                                 </span>
                             </span>
                         </div>
@@ -83,21 +164,21 @@
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Open</span>
                                 <span class="underline">
-                                    <router-link to="/ess/imprest-request/header/list?status=Pending">{{record.openAdvanceRequests}}</router-link>
+                                    <router-link to="/ess/imprest-request/header/list?status=Pending">{{record.imprestsOpen}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Pending</span>
                                 <span class="underline">
-                                    <router-link to="/ess/imprest-request/header/list?status=Pending Approval">{{record.pendingAdvanceRequests}}</router-link>
+                                    <router-link to="/ess/imprest-request/header/list?status=Pending Approval">{{record.imprestsPending}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Approved</span>
                                 <span class="underline">
-                                    <router-link to="/ess/imprest-request/header/list?status=Approved">{{record.approvedAdvanceRequests}}</router-link>
+                                    <router-link to="/ess/imprest-request/header/list?status=Approved">{{record.imprestsApproved}}</router-link>
                                 </span>
                             </span>
                         </div>
@@ -118,21 +199,21 @@
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Open</span>
                                 <span class="underline">
-                                    <router-link to="/ess/imprest-surrender/header/list?status=Pending">{{record.openAdvanceSurrenders}}</router-link>
+                                    <router-link to="/ess/imprest-surrender/header/list?status=Pending">{{record.imprestSurrendersOpen}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Pending</span>
                                 <span class="underline">
-                                    <router-link to="/ess/imprest-surrender/header/list?status=Pending Approval">{{record.pendingAdvanceSurrenders}}</router-link>
+                                    <router-link to="/ess/imprest-surrender/header/list?status=Pending Approval">{{record.imprestSurrendersPending}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Approved</span>
                                 <span class="underline">
-                                    <router-link to="/ess/imprest-surrender/header/list?status=Approved">{{record.approvedAdvanceSurrenders}}</router-link>
+                                    <router-link to="/ess/imprest-surrender/header/list?status=Approved">{{record.imprestSurrendersApproved}}</router-link>
                                 </span>
                             </span>
                         </div>
@@ -157,56 +238,21 @@
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Open</span>
                                 <span class="underline">
-                                    <router-link to="/ess/leave-application/list?status=Open">{{record.openLeaves}}</router-link>
+                                    <router-link to="/ess/leave-application/list?status=Open">{{record.leavesOpen}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Pending</span>
                                 <span class="underline">
-                                    <router-link to="/ess/leave-application/list?status=Pending Approval">{{record.pendingLeaves}}</router-link>
+                                    <router-link to="/ess/leave-application/list?status=Pending Approval">{{record.leavesPending}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Approved</span>
                                 <span class="underline">
-                                    <router-link to="/ess/leave-application/list?status=Released">{{record.approvedLeaves}}</router-link>
-                                </span>
-                            </span>
-                        </div>
-                    </template>
-                </Tile>
-            </grid-col>
-            <!---->
-            <grid-col>
-                <Tile class="bg-rose-500" :showLoader="isLoading">
-                    <template #icon>
-                        <ArrowUturnDownIcon class="h-6 w-6" />
-                    </template>
-                    <template #label>
-                        <router-link to="/ess/leave-recall/list?status=Open" class="underline">Leave Recalls</router-link>
-                    </template>
-                    <template #value>
-                        <div class="flex gap-1 items-center">
-                            <span class="text-xs flex flex-col items-center">
-                                <span class="">Open</span>
-                                <span class="underline">
-                                    <router-link to="/ess/leave-recall/list?status=Open">{{record.openLeaveRecalls}}</router-link>
-                                </span>
-                            </span>
-                            <span class="border-r h-6"></span>
-                            <span class="text-xs flex flex-col items-center">
-                                <span class="">Pending</span>
-                                <span class="underline">
-                                    <router-link to="/ess/leave-recall/list?status=Approval Pending">{{record.pendingLeaveRecalls}}</router-link>
-                                </span>
-                            </span>
-                            <span class="border-r h-6"></span>
-                            <span class="text-xs flex flex-col items-center">
-                                <span class="">Approved</span>
-                                <span class="underline">
-                                    <router-link to="/ess/leave-recall/list?status=Approved">{{record.approvedLeaveRecalls}}</router-link>
+                                    <router-link to="/ess/leave-application/list?status=Released">{{record.leavesApproved}}</router-link>
                                 </span>
                             </span>
                         </div>
@@ -224,28 +270,28 @@
                         <ArrowPathRoundedSquareIcon class="h-6 w-6" />
                     </template>
                     <template #label>
-                        <router-link to="/ess/purchase-request/list?status=Open" class="underline">Purchase Requests</router-link>
+                        <router-link to="/ess/purchase-request/header/list?status=Open" class="underline">Purchase Requests</router-link>
                     </template>
                     <template #value>
                         <div class="flex gap-1 items-center">
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Open</span>
                                 <span class="underline">
-                                    <router-link to="/ess/purchase-request/list?status=Open">{{record.openPurchaseRequests}}</router-link>
+                                    <router-link to="/ess/purchase-request/header/list?status=Open">{{record.purchaseReqsOpen}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Pending</span>
                                 <span class="underline">
-                                    <router-link to="/ess/purchase-request/list?status=Pending Approval">{{record.pendingPurchaseRequests}}</router-link>
+                                    <router-link to="/ess/purchase-request/header/list?status=Pending Approval">{{record.purchaseReqsPending}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Approved</span>
                                 <span class="underline">
-                                    <router-link to="/ess/purchase-request/list?status=Released">{{record.approvedPurchaseRequests}}</router-link>
+                                    <router-link to="/ess/purchase-request/header/list?status=Released">{{record.purchaseReqsApproved}}</router-link>
                                 </span>
                             </span>
                         </div>
@@ -259,28 +305,28 @@
                         <CircleStackIcon class="h-6 w-6" />
                     </template>
                     <template #label>
-                        <router-link to="/ess/store-request/list?status=Open" class="underline">Store Requests</router-link>
+                        <router-link to="/ess/store-request/header/list?status=Open" class="underline">Store Requests</router-link>
                     </template>
                     <template #value>
                         <div class="flex gap-1 items-center">
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Open</span>
                                 <span class="underline">
-                                    <router-link to="/ess/store-request/list?status=Open">{{record.openStoreRequests}}</router-link>
+                                    <router-link to="/ess/store-request/header/list?status=Open">{{record.storeReqsOpen}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Pending</span>
                                 <span class="underline">
-                                    <router-link to="/ess/store-request/list?status=Pending Approval">{{record.pendingStoreRequests}}</router-link>
+                                    <router-link to="/ess/store-request/header/list?status=Pending Approval">{{record.storeReqsPending}}</router-link>
                                 </span>
                             </span>
                             <span class="border-r h-6"></span>
                             <span class="text-xs flex flex-col items-center">
                                 <span class="">Approved</span>
                                 <span class="underline">
-                                    <router-link to="/ess/store-request/list?status=Released">{{record.approvedStoreRequests}}</router-link>
+                                    <router-link to="/ess/store-request/header/list?status=Released">{{record.storeReqsApproved}}</router-link>
                                 </span>
                             </span>
                         </div>
@@ -290,64 +336,64 @@
         </grid>
         <!--Transport Services-->
         <!--<h4 class="font-semibold text-sm py-0.5 text-gray-500">Transport & Logistics Services:</h4>
-        <grid class="sm:!grid-cols-2 lg:!grid-cols-5">-->
-            <!---->
-            <!--<grid-col>
-                <Tile class="bg-indigo-500" :showLoader="isLoading">
-                    <template #icon>
-                        <TruckIcon class="h-6 w-6" />
-                    </template>
-                    <template #label>
-                        <router-link to="/ess/transport-request/list?status=Open" class="underline">Transport Requests</router-link>
-                    </template>
-                    <template #value>
-                        <div class="flex gap-1 items-center">
-                            <span class="text-xs flex flex-col items-center">
-                                <span class="">Open</span>
-                                <span class="underline">
-                                    <router-link to="/ess/transport-request/list?status=Open">{{record.openTransportRequests}}</router-link>
-                                </span>
+    <grid class="sm:!grid-cols-2 lg:!grid-cols-5">-->
+        <!---->
+        <!--<grid-col>
+            <Tile class="bg-indigo-500" :showLoader="isLoading">
+                <template #icon>
+                    <TruckIcon class="h-6 w-6" />
+                </template>
+                <template #label>
+                    <router-link to="/ess/transport-request/list?status=Open" class="underline">Transport Requests</router-link>
+                </template>
+                <template #value>
+                    <div class="flex gap-1 items-center">
+                        <span class="text-xs flex flex-col items-center">
+                            <span class="">Open</span>
+                            <span class="underline">
+                                <router-link to="/ess/transport-request/list?status=Open">{{record.openTransportRequests}}</router-link>
                             </span>
-                            <span class="border-r h-6"></span>
-                            <span class="text-xs flex flex-col items-center">
-                                <span class="">Pending</span>
-                                <span class="underline">
-                                    <router-link to="/ess/transport-request/list?status=Pending Approval">{{record.pendingTransportRequests}}</router-link>
-                                </span>
+                        </span>
+                        <span class="border-r h-6"></span>
+                        <span class="text-xs flex flex-col items-center">
+                            <span class="">Pending</span>
+                            <span class="underline">
+                                <router-link to="/ess/transport-request/list?status=Pending Approval">{{record.pendingTransportRequests}}</router-link>
                             </span>
-                            <span class="border-r h-6"></span>
-                            <span class="text-xs flex flex-col items-center">
-                                <span class="">Approved</span>
-                                <span class="underline">
-                                    <router-link to="/ess/transport-request/list?status=Released">{{record.approvedTransportRequests}}</router-link>
-                                </span>
+                        </span>
+                        <span class="border-r h-6"></span>
+                        <span class="text-xs flex flex-col items-center">
+                            <span class="">Approved</span>
+                            <span class="underline">
+                                <router-link to="/ess/transport-request/list?status=Released">{{record.approvedTransportRequests}}</router-link>
                             </span>
-                        </div>
-                    </template>
-                </Tile>
-            </grid-col>
-        </grid>-->
-    
+                        </span>
+                    </div>
+                </template>
+            </Tile>
+        </grid-col>
+    </grid>-->
+
     </div>
 </template>
 <script>
     import Tile from '@/re-usables/components/Tile.vue';
     import Grid from '@/re-usables/components/Grid.vue';
     import GridCol from '@/re-usables/components/GridCol.vue';
-    import { DocumentCheckIcon, UserPlusIcon,DocumentTextIcon,DocumentChartBarIcon,DocumentPlusIcon,DocumentArrowDownIcon,FaceSmileIcon,ArrowPathRoundedSquareIcon,CircleStackIcon, CalendarDaysIcon, ClockIcon, CurrencyDollarIcon, ArrowsPointingInIcon, ClipboardDocumentCheckIcon, ArrowUturnDownIcon, TruckIcon, ReceiptRefundIcon, BanknotesIcon } from '@heroicons/vue/24/outline'
+    import { DocumentCheckIcon, UserPlusIcon,NumberedListIcon,DocumentTextIcon,DocumentChartBarIcon,DocumentPlusIcon,DocumentArrowDownIcon,FaceSmileIcon,ArrowPathRoundedSquareIcon,CircleStackIcon, CalendarDaysIcon, ClockIcon, CurrencyDollarIcon, ArrowsPointingInIcon, ClipboardDocumentCheckIcon, ArrowUturnDownIcon, TruckIcon, ReceiptRefundIcon, BanknotesIcon,UserGroupIcon,UserCircleIcon } from '@heroicons/vue/24/outline'
     export default {
         components: {
             Tile, Grid, GridCol, UserPlusIcon, DocumentTextIcon, DocumentChartBarIcon, DocumentPlusIcon, DocumentArrowDownIcon, FaceSmileIcon,ArrowPathRoundedSquareIcon,
            DocumentCheckIcon, CurrencyDollarIcon, ArrowsPointingInIcon,CircleStackIcon,
-            ClipboardDocumentCheckIcon, ArrowUturnDownIcon, TruckIcon,
-            ReceiptRefundIcon, BanknotesIcon, CalendarDaysIcon,ClockIcon
+            ClipboardDocumentCheckIcon, ArrowUturnDownIcon, TruckIcon, UserCircleIcon,
+            ReceiptRefundIcon, BanknotesIcon, CalendarDaysIcon, ClockIcon, UserGroupIcon, NumberedListIcon
         },
         data() {
             return {
                 pageProps: {
                     title: 'Dashboard Form',
                     pageType: "form",
-                    controller: 'General',
+                    controller: 'ESS_General',
                     formRoute: "/ess/dashboard",
                 },
                 record: {},
@@ -358,7 +404,7 @@
         },
         created() {
             this.$root.title = "Dashboard"
-            //this.FnFetchSetups();
+            this.FnFetchSetups();
             var isWelcomed = localStorage.getItem("isWelcomed");
             if (isWelcomed == undefined || isWelcomed == null) {
                 var msg = "Hi " + this.$root.authUser.firstName + ", welcome to Kapsowar staff Portal";
@@ -380,13 +426,13 @@
                     })
                     .then(data => {
                         if (data && data.errors) {
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = this.appConfig.errors.dataFetchFailure;
+                            var msg = this.appConfig.errors.dataFetchFailure;
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         } else {
-                            this.record = data.response.dashboard;
-                            if (data.response.dashboard != undefined) {
+                            this.record = data.response;
+                            if (data.response != undefined) {
                                 localStorage.setItem("isWelcomed", JSON.stringify(true));
-                                var authUser = localStorage.getItem("authUser");
+                                /*var authUser = localStorage.getItem("authUser");
                                 if (authUser != null && authUser != "undefined") {
                                     var authUser2 = JSON.parse(authUser);
                                     authUser2.PendingMyApproval = this.record.pendingMyApprovalHR + this.record.pendingMyApproval + this.record.pendingMyApprovalEmployee;
@@ -394,13 +440,13 @@
                                     localStorage.setItem("authUser", JSON.stringify(authUser2));
                                     this.$root.authUser.PendingMyApproval = authUser2.PendingMyApproval;
                                     this.$root.authUser.newNotifications = authUser2.newNotifications;
-                                }
+                                }*/
                             }
                         }
                         this.isLoading = false;
                     }).catch((error) => {
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = this.appConfig.errors.dataFetchFailure;
+                        var msg = this.appConfig.errors.dataFetchFailure;
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         this.isLoading = false;
                     });
             },

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/14/2025 4:56:55 PM
+// Generation date: 2/16/2025 9:22:07 PM
 namespace NAV
 {
     /// <summary>
@@ -9658,6 +9658,13 @@ namespace NAV
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
+        <Property Name=""HOD"" Type=""Edm.String"" MaxLength=""30"">
+          <Annotation Term=""NAV.LabelId"" String=""HOD"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
         <Annotation Term=""NAV.LabelId"" String=""Dimension_Value"" />
         <Annotation Term=""NAV.IsReadOnly"" Bool=""true"" />
       </EntityType>
@@ -14911,6 +14918,13 @@ namespace NAV
           <Annotation Term=""NAV.LabelId"" String=""Last Modified Date Time"" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/DateTime</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""HOD"" Type=""Edm.String"" MaxLength=""30"">
+          <Annotation Term=""NAV.LabelId"" String=""HOD"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
@@ -28664,6 +28678,24 @@ namespace NAV
         <Parameter Name=""sessionToken"" Type=""Edm.String"" />
         <ReturnType Type=""Edm.String"" />
       </Action>
+      <Action Name=""CuStaffWebportal_FnSubmitMarks"">
+        <Parameter Name=""jString"" Type=""Edm.String"" />
+        <Parameter Name=""staffNo"" Type=""Edm.String"" />
+        <Parameter Name=""sessionToken"" Type=""Edm.String"" />
+        <ReturnType Type=""Edm.String"" />
+      </Action>
+      <Action Name=""CuStaffWebportal_FnClassListReport"">
+        <Parameter Name=""jString"" Type=""Edm.String"" />
+        <ReturnType Type=""Edm.String"" />
+      </Action>
+      <Action Name=""CuStaffWebportal_FnClassAttendanceReport"">
+        <Parameter Name=""jString"" Type=""Edm.String"" />
+        <ReturnType Type=""Edm.String"" />
+      </Action>
+      <Action Name=""CuStaffWebportal_FnMarksheetReport"">
+        <Parameter Name=""jString"" Type=""Edm.String"" />
+        <ReturnType Type=""Edm.String"" />
+      </Action>
       <Action Name=""RecruitmentPortal_HRJobAppInsert"">
         <Parameter Name=""applicantType"" Type=""Edm.Int32"" />
         <Parameter Name=""requisitionNo"" Type=""Edm.String"" />
@@ -31609,6 +31641,10 @@ namespace NAV
         <ActionImport Name=""CuStaffWebportal_FnStoreRequestLine"" Action=""NAV.CuStaffWebportal_FnStoreRequestLine"" />
         <ActionImport Name=""CuStaffWebportal_FnStoreRequestReport"" Action=""NAV.CuStaffWebportal_FnStoreRequestReport"" />
         <ActionImport Name=""CuStaffWebportal_FnMarksEntry"" Action=""NAV.CuStaffWebportal_FnMarksEntry"" />
+        <ActionImport Name=""CuStaffWebportal_FnSubmitMarks"" Action=""NAV.CuStaffWebportal_FnSubmitMarks"" />
+        <ActionImport Name=""CuStaffWebportal_FnClassListReport"" Action=""NAV.CuStaffWebportal_FnClassListReport"" />
+        <ActionImport Name=""CuStaffWebportal_FnClassAttendanceReport"" Action=""NAV.CuStaffWebportal_FnClassAttendanceReport"" />
+        <ActionImport Name=""CuStaffWebportal_FnMarksheetReport"" Action=""NAV.CuStaffWebportal_FnMarksheetReport"" />
         <ActionImport Name=""RecruitmentPortal_HRJobAppInsert"" Action=""NAV.RecruitmentPortal_HRJobAppInsert"" />
         <ActionImport Name=""RecruitmentPortal_HRJobAppQualificationsInsert"" Action=""NAV.RecruitmentPortal_HRJobAppQualificationsInsert"" />
         <ActionImport Name=""RecruitmentPortal_HRJobAppRefereesInsert"" Action=""NAV.RecruitmentPortal_HRJobAppRefereesInsert"" />
@@ -35539,6 +35575,36 @@ namespace NAV
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnMarksEntry", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString),
                     new global::Microsoft.OData.Client.BodyOperationParameter("staffNo", staffNo),
                     new global::Microsoft.OData.Client.BodyOperationParameter("sessionToken", sessionToken));
+        }
+        /// <summary>
+        /// There are no comments for CuStaffWebportal_FnSubmitMarks in the schema.
+        /// </summary>
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> CuStaffWebportal_FnSubmitMarks(string jString, string staffNo, string sessionToken)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnSubmitMarks", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("staffNo", staffNo),
+                    new global::Microsoft.OData.Client.BodyOperationParameter("sessionToken", sessionToken));
+        }
+        /// <summary>
+        /// There are no comments for CuStaffWebportal_FnClassListReport in the schema.
+        /// </summary>
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> CuStaffWebportal_FnClassListReport(string jString)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnClassListReport", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString));
+        }
+        /// <summary>
+        /// There are no comments for CuStaffWebportal_FnClassAttendanceReport in the schema.
+        /// </summary>
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> CuStaffWebportal_FnClassAttendanceReport(string jString)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnClassAttendanceReport", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString));
+        }
+        /// <summary>
+        /// There are no comments for CuStaffWebportal_FnMarksheetReport in the schema.
+        /// </summary>
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> CuStaffWebportal_FnMarksheetReport(string jString)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnMarksheetReport", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString));
         }
         /// <summary>
         /// There are no comments for RecruitmentPortal_HRJobAppInsert in the schema.
@@ -61930,6 +61996,27 @@ namespace NAV
         private global::System.Nullable<int> _Global_Dimension_No;
         partial void OnGlobal_Dimension_NoChanging(global::System.Nullable<int> value);
         partial void OnGlobal_Dimension_NoChanged();
+        /// <summary>
+        /// There are no comments for Property HOD in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string HOD
+        {
+            get
+            {
+                return this._HOD;
+            }
+            set
+            {
+                this.OnHODChanging(value);
+                this._HOD = value;
+                this.OnHODChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _HOD;
+        partial void OnHODChanging(string value);
+        partial void OnHODChanged();
     }
     /// <summary>
     /// There are no comments for EducationalBackgroundSingle in the schema.
@@ -78196,6 +78283,27 @@ namespace NAV
         private global::System.Nullable<global::System.DateTimeOffset> _Last_Modified_Date_Time;
         partial void OnLast_Modified_Date_TimeChanging(global::System.Nullable<global::System.DateTimeOffset> value);
         partial void OnLast_Modified_Date_TimeChanged();
+        /// <summary>
+        /// There are no comments for Property HOD in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string HOD
+        {
+            get
+            {
+                return this._HOD;
+            }
+            set
+            {
+                this.OnHODChanging(value);
+                this._HOD = value;
+                this.OnHODChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _HOD;
+        partial void OnHODChanging(string value);
+        partial void OnHODChanged();
     }
     /// <summary>
     /// There are no comments for QyEmployeesSingle in the schema.

@@ -1,16 +1,16 @@
-﻿using App.Server.Re_usables.GeneralClasses;
+﻿using App.Server.src.Re_usables.ActionFilters;
 using App.Server.src.Re_usables.Modules.DynamicsBC;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Extensions;
 using NAV;
 using System.Dynamic;
-using System.Text.Json.Nodes;
 
 //using System.Linq;
 
 namespace App.Server.src.Modules.ESS.Controllers
 {
     [AuthenticateActionFilter]
+    [LecturerActionFilter]
     public class LecturerUnitsController : ControllerBase
     {
         [HttpGet]
@@ -29,7 +29,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 dynamic response = new ExpandoObject();
 
                 var baseQuery = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).QyLecturerUnitDetails
-                    //.Where(obj => obj.Lecturer == GeneralController.SessionUser(HttpContext).userNo)
+                    .Where(obj => obj.Lecturer == GeneralController.SessionUser(HttpContext).userNo)
                     .Where(obj => obj.Semester == semester)
                     .AsQueryable();
                 if (GeneralController.RequestHasQuery(HttpContext) == false)
@@ -95,7 +95,7 @@ namespace App.Server.src.Modules.ESS.Controllers
         }
 
         //
-        enum fieldNames { Programme, Stage, Semester,Unit};
+        enum fieldNames { Code, Stage, Semester,Unit};
         [HttpGet]
         public IActionResult FieldsProps()
         {
@@ -109,7 +109,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 fieldProps.DataType = CustomDataTypes.Text.ToString();
                 switch (field)
                 {
-                    case fieldNames.Programme:
+                    case fieldNames.Code:
                         fieldProps.Caption = "Programme";
                         break;
                 }

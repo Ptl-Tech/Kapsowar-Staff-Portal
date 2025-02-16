@@ -41,6 +41,7 @@ namespace App.Server.Modules.HMIS.Controllers
                         authUser.isPortalSuperUser = true;
                         authUser.branchCode = QyUser.Global_Dimension_1_Code;
                         authUser.responsibilityCenter = QyUser.Responsibility_Center;
+                        authUser.isLecturer = QyUser.Lecturer??false;
                         //if(authUser.responsibilityCenter == "")
                         //{
                         //    throw new Exception("Staff responsibility center not set in Employee card.");
@@ -49,6 +50,12 @@ namespace App.Server.Modules.HMIS.Controllers
                         if (QyUserSetup != null) {
                             authUser.myUserId = QyUserSetup.User_ID;
                             authUser.customerNo = QyUserSetup.Staff_Travel_Account;
+                        }
+                        var department = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).QyDimensionValues.Where(x => x.Dimension_Code == "DEPARTMENT").Where(x => x.HOD == obj.userNo).FirstOrDefault();
+                        if (department != null)
+                        {
+                            authUser.isHOD = true;
+                            authUser.departmentCode = department.Code;
                         }
                         //if no session token
                         if (QyUser.PortalOTPDate.HasValue && QyUser.PortalOTPDate.Value.ToString() == DateTime.Now.ToString("yyyy-MM-dd") && QyUser.PortalOTPDevice == obj.sessionToken)

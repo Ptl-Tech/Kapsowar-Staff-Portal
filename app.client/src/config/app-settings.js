@@ -21,7 +21,7 @@ const config = {
         generalFailure:"Something went wrong. Kindly refresh the page and try again.",
         dataFetchFailure: "Fetching data failed. If the error persists, contact the system administrator for help.",
         dataDeletionFailure: "Deleting data failed. If the error persists, contact the system administrator for help.",
-        validationErrors: "There are validation error(s). Kindly check all the fields."
+        validationErrors: "There are validation error(s). Kindly check all the required fields."
     },
     baseApiRoute: "/api/",
 };

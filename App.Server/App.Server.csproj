@@ -25,9 +25,9 @@
     <PackageReference Include="System.ServiceModel.NetTcp" Version="6.0.*" />
     <PackageReference Include="System.ServiceModel.Security" Version="6.0.*" />
   </ItemGroup>
-  <!--<ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\app.client\app.client.esproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
     </ProjectReference>
-  </ItemGroup>-->
+  </ItemGroup>
 </Project>

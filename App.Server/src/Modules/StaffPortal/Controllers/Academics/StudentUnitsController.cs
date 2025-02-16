@@ -1,4 +1,4 @@
-﻿using App.Server.Re_usables.GeneralClasses;
+﻿using App.Server.src.Re_usables.ActionFilters;
 using App.Server.src.Modules.ESS.Models;
 using App.Server.src.Re_usables.Modules.DynamicsBC;
 using Microsoft.AspNetCore.Mvc;
@@ -13,6 +13,7 @@ using System.Text.Json.Nodes;
 namespace App.Server.src.Modules.ESS.Controllers
 {
     [AuthenticateActionFilter]
+    [LecturerActionFilter]
     public class StudentUnitsController : ControllerBase
     {
         [HttpGet]
@@ -106,6 +107,36 @@ namespace App.Server.src.Modules.ESS.Controllers
             }
         }
         //
+        [HttpPost]
+        public IActionResult SubmitMarks([FromBody] MarksEntry[] obj)
+        {
+            try
+            {
+                var user = GeneralController.SessionUser(HttpContext);
+                //
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.LiveNAVCompany2).FnSubmitMarksAsync(
+                    JsonSerializer.Serialize(obj),
+                    user.userNo,
+                    user.sessionToken)
+                    .Result;
+                var response = JsonNode.Parse(result.return_value);
+                if (response != null && response["status"]?.ToString() == "success")
+                {
+                    return Ok(new { response = response });
+                }
+                else
+                {
+                    var msg = response?["msg"]?.ToString() != "" ? response?["msg"]?.ToString() : Config.ErrorGeneralFailure;
+                    throw new Exception(msg);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(GeneralController.ProcessException(ex));
+            }
+        }
+        //
         [HttpGet]
         public IActionResult GetExamSemesters()
         {
@@ -118,6 +149,97 @@ namespace App.Server.src.Modules.ESS.Controllers
                     .ToList();
                 response.semesters = semesters;
                 return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(GeneralController.ProcessException(ex));
+            }
+
+        }
+        //
+        [HttpPost]
+        public IActionResult ClassListReport([FromBody] UnitData obj)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
+                }
+                obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
+                obj.fileName = obj.programme.Replace("/", "-")+"-"+obj.unit.Replace("/","-")+"_"+ obj.semester.Replace("/", "-")+ "-"+ obj.stage.Replace("/", "-");
+                //
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.LiveNAVCompany2).FnClassListReportAsync(JsonSerializer.Serialize(obj)).Result;
+                if (result.return_value != "")
+                {
+                    return Ok(new { response = result.return_value });
+                }
+                else
+                {
+                    throw new Exception(Config.ErrorGeneralFailure);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(GeneralController.ProcessException(ex));
+            }
+
+        }
+        //
+        [HttpPost]
+        public IActionResult MarkSheetReport([FromBody] UnitData obj)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
+                }
+                obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
+                obj.fileName = obj.programme.Replace("/", "-") + "-" + obj.unit.Replace("/", "_") + "-" + obj.semester.Replace("/", "-") + "-" + obj.stage.Replace("/", "-");
+
+                //
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.LiveNAVCompany2).FnMarksheetReportAsync(JsonSerializer.Serialize(obj)).Result;
+                if (result.return_value != "")
+                {
+                    return Ok(new { response = result.return_value });
+                }
+                else
+                {
+                    throw new Exception(Config.ErrorGeneralFailure);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(GeneralController.ProcessException(ex));
+            }
+
+        }
+        //
+        [HttpPost]
+        public IActionResult ClassAttendanceReport([FromBody] UnitData obj)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
+                }
+                obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
+                obj.fileName = obj.programme.Replace("/", "-") + "-" + obj.unit.Replace("/", "_") + "-" + obj.semester.Replace("/", "-") + "-" + obj.stage.Replace("/", "-");
+                //
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.LiveNAVCompany2).FnClassAttendanceReportAsync(JsonSerializer.Serialize(obj)).Result;
+                if (result.return_value != "")
+                {
+                    return Ok(new { response = result.return_value });
+                }
+                else
+                {
+                    throw new Exception(Config.ErrorGeneralFailure);
+                }
+
             }
             catch (Exception ex)
             {

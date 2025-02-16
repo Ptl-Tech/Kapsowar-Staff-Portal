@@ -44,9 +44,11 @@ namespace App.Server.Modules.HMIS.Models
         public bool isAccountVerified { get; set; }
         public string branchCode { get; set; } = "";
         public string responsibilityCenter { get; set; } = "";
-        public bool isLecturer { get; set; }
+        public bool isLecturer { get; set; } = false;
         public string myUserId { get; set; } = "";
         public string customerNo { get; set; } = "";
+        public bool isHOD { get; set; } = false;
+        public string? departmentCode { get; set; } = "";
     }
     public class ResetPassword
     {

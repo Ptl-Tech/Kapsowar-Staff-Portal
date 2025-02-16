@@ -7,7 +7,7 @@
         <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Pending'" @click="OnDeleteRecord()" class="flex items-center !bg-red-500" title="delete"><TrashIcon class="iconSmall" /><span> Delete</span></WButton>
         <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Pending Approval'" @click="OnCancelApproval('imprestRequest')" class="flex items-center !bg-red-500" title="cancel"><ArrowUturnLeftIcon class="iconSmall" /><span> Cancel Approval</span></WButton>
         <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Pending Approval'" @click="OnDelegateApproval('imprestRequest')" class="flex items-center !bg-yellow-500" title="delegate"><DocumentIcon class="iconSmall" /><span> Delegate Approval</span></WButton>
-        <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Approved'" @click="OnViewReport()" class="flex items-center !bg-green-500" title="delegate"><PrinterIcon class="iconSmall" /><span> Report</span></WButton>
+        <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Approved'" @click="OnDownloadReport()" class="flex items-center !bg-green-500" title="delegate"><PrinterIcon class="iconSmall" /><span> Report</span></WButton>
     </div>
 </template>
 <script>
