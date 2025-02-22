@@ -11,6 +11,8 @@ namespace App.Server.Modules.HMIS.Models
         [Required]
         public string password { get; set; } = "";
         public string? sessionToken { get; set; } = "";
+        [Required]
+        public string NavCompany { get; set; } = "";
     }
     public class SessionUser
     {
@@ -23,6 +25,8 @@ namespace App.Server.Modules.HMIS.Models
         [DisplayName("Staff No.")]
         public string userNo { get; set; } = "";
         public string? resetToken { get; set; } = "";
+        [Required]
+        public string navCompany { get; set; } = "";
     }
     public class AuthUser
     {
@@ -49,6 +53,7 @@ namespace App.Server.Modules.HMIS.Models
         public string customerNo { get; set; } = "";
         public bool isHOD { get; set; } = false;
         public string? departmentCode { get; set; } = "";
+        public string navCompany { get; set; } = "";
     }
     public class ResetPassword
     {

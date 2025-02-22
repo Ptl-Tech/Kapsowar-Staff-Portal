@@ -19,10 +19,10 @@ namespace App.Server.Modules.HMIS.Controllers
             try
             {
                 dynamic response = new ExpandoObject();
-                response.header = GV.WSclient.ODATAClient().QyImprestSurrenderHeaders
+                response.header = GV.WSclient.ODATAClient(HttpContext).QyImprestSurrenderHeaders
                     .Where(obj => obj.No == parentId)
                     .FirstOrDefault();
-                var baseQuery = GV.WSclient.ODATAClient().QyImprestSurrenderLines.AsQueryable();
+                var baseQuery = GV.WSclient.ODATAClient(HttpContext).QyImprestSurrenderLines.AsQueryable();
                 baseQuery = baseQuery.Where(obj => obj.Surrender_Doc_No == parentId);
                 if (GeneralController.RequestHasQuery(HttpContext) == false)
                 {
@@ -53,13 +53,13 @@ namespace App.Server.Modules.HMIS.Controllers
             try
             {
                 dynamic response = new ExpandoObject();
-                response.header = GV.WSclient.ODATAClient().QyImprestSurrenderHeaders
+                response.header = GV.WSclient.ODATAClient(HttpContext).QyImprestSurrenderHeaders
                     .Where(obj => obj.No == parentId)
                     .FirstOrDefault();
                 //
                 if (myAction != "create")
                 {
-                    response.formData = GV.WSclient.ODATAClient().QyImprestSurrenderLines
+                    response.formData = GV.WSclient.ODATAClient(HttpContext).QyImprestSurrenderLines
                     .Where(obj => obj.Line_No == recId)
                     .Where(obj => obj.Surrender_Doc_No == parentId)
                     .FirstOrDefault();

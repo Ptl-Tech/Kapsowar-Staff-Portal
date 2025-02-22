@@ -48,12 +48,14 @@
                     NewPassword: "",
                     ConfirmPassword: "",
                     ResetTokenCode: "",
+                    NavCompany: "",
                 },
                 valErrors:[],
             }
         },
         mounted() {
             this.form.userNo = this.$route.params.no;
+            this.form.NavCompany = this.$route.query.navCompany;
         },
         methods: {
             submitForm() {

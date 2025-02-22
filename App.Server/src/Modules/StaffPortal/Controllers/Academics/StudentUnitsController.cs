@@ -21,7 +21,7 @@ namespace App.Server.src.Modules.ESS.Controllers
         {
             try
             {
-                var semesterRec = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).PgSemestersSetup
+                var semesterRec = GV.WSclient.ODATAClient(HttpContext).PgSemestersSetup
                     .Where(obj => obj.Exam_Semester == true)
                     .Where(obj => obj.Code == semester)
                     .FirstOrDefault();
@@ -30,8 +30,8 @@ namespace App.Server.src.Modules.ESS.Controllers
                     throw new Exception($"Semester {semester} not found or is not activated for exam marks entry.");
                 }
                 dynamic response = new ExpandoObject();
-                response.examSetup = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).QyExamsSetup.ToList();
-                var baseQuery = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).QyStudentUnits
+                response.examSetup = GV.WSclient.ODATAClient(HttpContext).QyExamsSetup.ToList();
+                var baseQuery = GV.WSclient.ODATAClient(HttpContext).QyStudentUnits
                     .Where(obj => obj.Semester == semester)
                     .Where(obj => obj.Programme == programme)
                     .Where(obj => obj.Unit == unit)
@@ -66,7 +66,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             try
             {
                 dynamic response = new ExpandoObject();
-                response.examSemesters = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).PgSemestersSetup
+                response.examSemesters = GV.WSclient.ODATAClient(HttpContext).PgSemestersSetup
                     .Where(obj => obj.Exam_Semester == true)
                     .ToList();
                 return Ok(new { response });
@@ -84,7 +84,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             {
                 var user = GeneralController.SessionUser(HttpContext);
                 //
-                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.LiveNAVCompany2).FnMarksEntryAsync(
+                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnMarksEntryAsync(
                     JsonSerializer.Serialize(obj),
                     user.userNo,
                     user.sessionToken)
@@ -114,7 +114,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             {
                 var user = GeneralController.SessionUser(HttpContext);
                 //
-                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.LiveNAVCompany2).FnSubmitMarksAsync(
+                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnSubmitMarksAsync(
                     JsonSerializer.Serialize(obj),
                     user.userNo,
                     user.sessionToken)
@@ -144,7 +144,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             {
                 dynamic response = new ExpandoObject();
 
-                var semesters = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).PgSemestersSetup
+                var semesters = GV.WSclient.ODATAClient(HttpContext).PgSemestersSetup
                     .Where(obj => obj.Exam_Semester == true)
                     .ToList();
                 response.semesters = semesters;
@@ -169,7 +169,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
                 obj.fileName = obj.programme.Replace("/", "-")+"-"+obj.unit.Replace("/","-")+"_"+ obj.semester.Replace("/", "-")+ "-"+ obj.stage.Replace("/", "-");
                 //
-                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.LiveNAVCompany2).FnClassListReportAsync(JsonSerializer.Serialize(obj)).Result;
+                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnClassListReportAsync(JsonSerializer.Serialize(obj)).Result;
                 if (result.return_value != "")
                 {
                     return Ok(new { response = result.return_value });
@@ -200,7 +200,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 obj.fileName = obj.programme.Replace("/", "-") + "-" + obj.unit.Replace("/", "_") + "-" + obj.semester.Replace("/", "-") + "-" + obj.stage.Replace("/", "-");
 
                 //
-                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.LiveNAVCompany2).FnMarksheetReportAsync(JsonSerializer.Serialize(obj)).Result;
+                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnMarksheetReportAsync(JsonSerializer.Serialize(obj)).Result;
                 if (result.return_value != "")
                 {
                     return Ok(new { response = result.return_value });
@@ -230,7 +230,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
                 obj.fileName = obj.programme.Replace("/", "-") + "-" + obj.unit.Replace("/", "_") + "-" + obj.semester.Replace("/", "-") + "-" + obj.stage.Replace("/", "-");
                 //
-                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.LiveNAVCompany2).FnClassAttendanceReportAsync(JsonSerializer.Serialize(obj)).Result;
+                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnClassAttendanceReportAsync(JsonSerializer.Serialize(obj)).Result;
                 if (result.return_value != "")
                 {
                     return Ok(new { response = result.return_value });

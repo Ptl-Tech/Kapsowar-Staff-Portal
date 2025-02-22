@@ -18,7 +18,7 @@ namespace App.Server.src.Modules.ESS.Controllers
         {
             try
             {
-                var semesterRec = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).PgSemestersSetup
+                var semesterRec = GV.WSclient.ODATAClient(HttpContext).PgSemestersSetup
                     .Where(obj => obj.Exam_Semester == true)
                     .Where(obj => obj.Code == semester)
                     .FirstOrDefault();
@@ -28,7 +28,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 }
                 dynamic response = new ExpandoObject();
 
-                var baseQuery = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).QyLecturerUnitDetails
+                var baseQuery = GV.WSclient.ODATAClient(HttpContext).QyLecturerUnitDetails
                     .Where(obj => obj.Lecturer == GeneralController.SessionUser(HttpContext).userNo)
                     .Where(obj => obj.Semester == semester)
                     .AsQueryable();
@@ -63,7 +63,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             try
             {
                 dynamic response = new ExpandoObject();
-                response.examSemesters = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).PgSemestersSetup
+                response.examSemesters = GV.WSclient.ODATAClient(HttpContext).PgSemestersSetup
                     .Where(obj => obj.Exam_Semester == true)
                     .ToList();
                 return Ok(new { response });
@@ -81,7 +81,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             {
                 dynamic response = new ExpandoObject();
 
-                var semesters = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).PgSemestersSetup
+                var semesters = GV.WSclient.ODATAClient(HttpContext).PgSemestersSetup
                     .Where(obj => obj.Exam_Semester == true)
                     .ToList();
                 response.semesters = semesters;

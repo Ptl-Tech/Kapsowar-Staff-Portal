@@ -23,7 +23,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             {
                 dynamic response = new ExpandoObject();
 
-                var baseQuery = GV.WSclient.ODATAClient().QyPurchaseHeaders
+                var baseQuery = GV.WSclient.ODATAClient(HttpContext).QyPurchaseHeaders
                     .Where(obj => obj.Status == status)
                     .Where(obj => obj.Assigned_User_ID == GeneralController.SessionUser(HttpContext).myUserId)
                     .AsQueryable();
@@ -63,7 +63,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 response.dims = JsonNode.Parse(dimsStr);
                 if (!myAction.Contains("create"))
                 {
-                    var formData = GV.WSclient.ODATAClient().QyPurchaseHeaders
+                    var formData = GV.WSclient.ODATAClient(HttpContext).QyPurchaseHeaders
                         .Where(obj => obj.No == recId)
                         .Where(obj => obj.Assigned_User_ID == GeneralController.SessionUser(HttpContext).myUserId)
                         .FirstOrDefault();

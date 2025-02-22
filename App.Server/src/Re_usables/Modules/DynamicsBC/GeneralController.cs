@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using NAV;
 using System.Dynamic;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -173,7 +174,7 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
         }
         public bool FnIsAPIResponseSuccess(JsonNode? response)
         {
-           if(response != null && response["status"]?.ToString() == "success")
+            if (response != null && response["status"]?.ToString() == "success")
             {
                 return true;
             }
@@ -182,18 +183,45 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
         public string FnAPIResponseMessage(JsonNode? response)
         {
             var msg = "";
-            if(response != null)
+            if (response != null)
             {
                 msg = response?["msg"]?.ToString() != "" ? response?["msg"]?.ToString() : Config.ErrorGeneralFailure;
             }
-            return msg != null? msg:"";
+            return msg != null ? msg : "";
         }
-        public enum DocumentTypes { ImprestRequestHeader,ImprestRequestLine,
-            ImprestSurrenderHeader,ImprestSurrenderLine,
-            StaffClaimHeader,StaffClaimLine,
+        //
+        public string GetEmployeeNameByNo(HttpContext context, string empNo)
+        {
+            var employeeName = empNo;
+            var employee = GV.WSclient.ODATAClient(context).QyEmployees.Where(x => x.No == empNo).FirstOrDefault();
+            if (employee != null)
+            {
+                employeeName = employee.Full_Name;
+            }
+            return employeeName;
+        }
+        public string GetEmployeeNameByUserId(HttpContext context, string userId)
+        {
+            var employeeName = userId;
+            var userSetup = GV.WSclient.ODATAClient(context).QyUserSetup.Where(x => x.User_ID == userId).FirstOrDefault();
+            if (userSetup != null && userSetup.Employee_No != "")
+            {
+                var employee = GV.WSclient.ODATAClient(context).QyEmployees.Where(x => x.No == userSetup.Employee_No).FirstOrDefault();
+                if (employee != null)
+                {
+                    employeeName = employee.Full_Name;
+                }
+            }
+            return employeeName;
+        }
+        //
+        public enum DocumentTypes
+        {
+            ImprestRequestHeader, ImprestRequestLine,
+            ImprestSurrenderHeader, ImprestSurrenderLine,
+            StaffClaimHeader, StaffClaimLine,
             PurchaseRequestHeader, PurchaseRequestLine,
             StoreRequestHeader, StoreRequestLine
         };
-
     }
 }

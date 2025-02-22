@@ -10,6 +10,9 @@
                         <field-group label="Staff No." :valErrors="valErrors.userNo" :showMandatory="true">
                             <w-input type="text" v-model="form.userNo" required="true" />
                         </field-group>
+                        <field-group label="Select Company" :valErrors="valErrors.NavCompany">
+                            <NavCompaniesSelect v-model="form.NavCompany" />
+                        </field-group>
                         <div class="mt-4">
                             <w-button type="submit" class="w-full !text-center !rounded-full bg-theme-1 hover:bg-theme-1 link">SEND RESET TOKEN</w-button>
                         </div>
@@ -29,8 +32,9 @@
     import WButton from '@/re-usables/components/WButton.vue';
     import GuestLayout from '@/re-usables/page-templates/Guest.vue';
     import { useRouter } from 'vue-router'
+    import NavCompaniesSelect from '@/re-usables/components/NavCompaniesSelect.vue';
     export default {
-        components: { AuthenticationCard, FieldGroup, WInput, WButton, GuestLayout },
+        components: { AuthenticationCard, FieldGroup, WInput, WButton, GuestLayout, NavCompaniesSelect },
         setup() {
             const router = useRouter()
             return {router };
@@ -68,8 +72,8 @@
                             this.$root.FnNotification({ type: "modal", theme: "red", message: String(data.errors) });
                         } 
                         else {
-                            this.router.push('/auth/reset-password/' + this.form.userNo);
-                            var msg = "A reset token code has been sent to your email. Kindly use the code below to reset your password.";
+                            this.router.push('/auth/reset-password/' + this.form.userNo + '?navCompany=' + this.form.NavCompany);
+                            var msg = "A reset token code has been sent to your phone number via SMS. Kindly use the code below to reset your password.";
                             this.$root.FnNotification({ type: "popup", theme: "green", message: msg });
                         }
                     }).catch((error) => {

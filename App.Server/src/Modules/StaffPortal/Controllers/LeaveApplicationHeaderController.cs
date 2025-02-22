@@ -21,7 +21,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             {
                 dynamic response = new ExpandoObject();
 
-                var baseQuery = GV.WSclient.ODATAClient().QyLeaveApplications
+                var baseQuery = GV.WSclient.ODATAClient(HttpContext,Config.HospitalNavCompany).QyLeaveApplications
                     .Where(obj => obj.Status == status)
                     .Where(obj => obj.Employee_No == GeneralController.SessionUser(HttpContext).userNo)
                     .AsQueryable();
@@ -62,7 +62,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 }
                 obj.userNo = GeneralController.SessionUser(HttpContext).userNo;
                 //
-                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnLeaveApplicationAsync(JsonSerializer.Serialize(obj)).Result;
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.HospitalNavCompany).FnLeaveApplicationAsync(JsonSerializer.Serialize(obj)).Result;
                 var response = JsonNode.Parse(result.return_value);
                 if (response != null && response["status"]?.ToString() == "success")
                 {
@@ -89,7 +89,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 dynamic response = new ExpandoObject();
                 if (!myAction.Contains("create"))
                 {
-                    var formData = GV.WSclient.ODATAClient().QyLeaveApplications
+                    var formData = GV.WSclient.ODATAClient(HttpContext, Config.HospitalNavCompany).QyLeaveApplications
                         .Where(obj => obj.Document_No == recId)
                         .Where(obj => obj.Employee_No == GeneralController.SessionUser(HttpContext).userNo)
                         .FirstOrDefault();
@@ -113,7 +113,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             {
                 obj.myAction = "delete";
                 obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
-                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnLeaveApplicationAsync(JsonSerializer.Serialize(obj)).Result;
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.HospitalNavCompany).FnLeaveApplicationAsync(JsonSerializer.Serialize(obj)).Result;
                 var response = JsonNode.Parse(result.return_value);
                 if (response != null && response["status"]?.ToString() == "success")
                 {
@@ -139,7 +139,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 var obj = new GetLeaveBalance();
                 obj.leaveType = leaveType;
                 obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
-                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnGetStaffLeaveBalanceAsync(JsonSerializer.Serialize(obj)).Result;
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.HospitalNavCompany).FnGetStaffLeaveBalanceAsync(JsonSerializer.Serialize(obj)).Result;
                 var response = JsonNode.Parse(result.return_value);
                 if (response != null && response["status"]?.ToString() == "success")
                 {
@@ -169,7 +169,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 obj.type = "LeaveEndAndReturnDates";
                 obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
 
-                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnGetLeaveDatesAsync(JsonSerializer.Serialize(obj)).Result;
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.HospitalNavCompany).FnGetLeaveDatesAsync(JsonSerializer.Serialize(obj)).Result;
                 var response = JsonNode.Parse(result.return_value);
                 if (response != null && response["status"]?.ToString() == "success")
                 {
@@ -198,7 +198,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 }
                 obj.type = "LeaveDaysAndReturnDate";
                 obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
-                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnGetLeaveDatesAsync(JsonSerializer.Serialize(obj)).Result;
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.HospitalNavCompany).FnGetLeaveDatesAsync(JsonSerializer.Serialize(obj)).Result;
                 var response = JsonNode.Parse(result.return_value);
                 if (response != null && response["status"]?.ToString() == "success")
                 {

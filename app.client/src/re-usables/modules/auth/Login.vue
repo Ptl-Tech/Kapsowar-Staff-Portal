@@ -7,17 +7,20 @@
                 </template>
                 <template #body>
                     <form @submit.prevent="submitForm()">
-                        <field-group label="Staff No." :valErrors="valErrors.userNo" :showMandatory="true"> 
-                            <w-input type="text" v-model="form.userNo" required/>
+                        <field-group label="Staff No." :valErrors="valErrors.userNo" :showMandatory="true">
+                            <w-input type="text" v-model="form.userNo" required />
                         </field-group>
                         <field-group label="Password" :valErrors="valErrors.password" :showMandatory="true">
-                            <w-input type="password" v-model="form.password" required/>
+                            <w-input type="password" v-model="form.password" required />
+                        </field-group>
+                        <field-group label="Select Company" :valErrors="valErrors.NavCompany">
+                            <NavCompaniesSelect v-model="form.NavCompany" />
                         </field-group>
                         <div class="mt-4">
                             <w-button type="submit" class="w-full !text-center !rounded-full bg-theme-1 link hover:bg-theme-1">LOGIN</w-button>
                         </div>
                         <div class="text-center mt-2 sm:mt-4 flex gap-1 justify-center">
-                          <router-link to="/auth/forgot-password" class="text-blue-500 text-sm">Forgot Password?</router-link>
+                            <router-link to="/auth/forgot-password" class="text-blue-500 text-sm">Forgot Password?/First time login?</router-link>
                         </div>
                     </form>
                 </template>
@@ -31,9 +34,10 @@
     import WInput from '@/re-usables/components/WInput.vue';
     import WButton from '@/re-usables/components/WButton.vue';
     import GuestLayout from '@/re-usables/page-templates/Guest.vue';
+    import NavCompaniesSelect from '@/re-usables/components/NavCompaniesSelect.vue';
     import { useRouter } from 'vue-router'
     export default {
-        components: { AuthenticationCard, FieldGroup, WInput, WButton, GuestLayout },
+        components: { AuthenticationCard, FieldGroup, WInput, WButton, GuestLayout, NavCompaniesSelect },
         setup() {
             const router = useRouter()
             return {router };
@@ -43,7 +47,8 @@
                 form: {
                     userNo: "",
                     password: "",
-                    sessionToken:"",
+                    sessionToken: "",
+                    NavCompany: "",
                 },
                 valErrors: [],
             }

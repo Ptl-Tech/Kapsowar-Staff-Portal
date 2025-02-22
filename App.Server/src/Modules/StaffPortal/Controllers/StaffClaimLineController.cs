@@ -19,10 +19,10 @@ namespace App.Server.Modules.HMIS.Controllers
             try
             {
                 dynamic response = new ExpandoObject();
-                response.header = GV.WSclient.ODATAClient().QyStaffClaimHeaders
+                response.header = GV.WSclient.ODATAClient(HttpContext).QyStaffClaimHeaders
                     .Where(obj => obj.No == parentId)
                     .FirstOrDefault();
-                var baseQuery = GV.WSclient.ODATAClient().QyStaffClaimLines.AsQueryable();
+                var baseQuery = GV.WSclient.ODATAClient(HttpContext).QyStaffClaimLines.AsQueryable();
                 baseQuery = baseQuery.Where(obj => obj.No == parentId);
                 if (GeneralController.RequestHasQuery(HttpContext) == false)
                 {
@@ -53,13 +53,13 @@ namespace App.Server.Modules.HMIS.Controllers
             try
             {
                 dynamic response = new ExpandoObject();
-                response.header = GV.WSclient.ODATAClient().QyStaffClaimHeaders
+                response.header = GV.WSclient.ODATAClient(HttpContext).QyStaffClaimHeaders
                     .Where(obj => obj.No == parentId)
                     .FirstOrDefault();
                 //
                 if (myAction != "create")
                 {
-                    response.formData = GV.WSclient.ODATAClient().QyStaffClaimLines
+                    response.formData = GV.WSclient.ODATAClient(HttpContext).QyStaffClaimLines
                     .Where(obj => obj.Line_No == recId)
                     .Where(obj => obj.No == parentId)
                     .FirstOrDefault();

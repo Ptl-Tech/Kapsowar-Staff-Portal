@@ -22,7 +22,7 @@ namespace App.Server
         public static void initiateService()
         {
             string hostName = System.Net.Dns.GetHostName();
-            if (hostName == "DESKTOP-P80SI0S")//dev
+            if (hostName == Config.DevHostName)//dev
             {
                 navUsername = Config.DevNavUsername;
                 navPassword = Config.DevNavPassword;
@@ -50,7 +50,7 @@ namespace App.Server
             try
             {
                 initiateService();
-                //varCompanyName = navCompany;
+                varCompanyName = GV.GenController.GetNavCompany(context);
                 varCodeunit = varCodeunit == "" ? defaultCodeunit : varCodeunit;
                 return soapBaseUrl + navInstance + "/WS/"+ varCompanyName + "/Codeunit/" + varCodeunit;
             }
@@ -67,9 +67,9 @@ namespace App.Server
                 if(Config.AuthenticationMethod != "Windows")
                 {
                     initiateService();
-                    if (companyName == "")
+                    if(companyName == "")
                     {
-                        companyName = navCompany;
+                        companyName = GV.GenController.GetNavCompany(context);
                     }
                     BasicHttpBinding _binding = new BasicHttpBinding();
                     _binding.Security.Mode = BasicHttpSecurityMode.TransportCredentialOnly;
@@ -85,7 +85,7 @@ namespace App.Server
                 {
                     if (companyName == "")
                     {
-                        companyName = navCompany;
+                        companyName = GV.GenController.GetNavCompany(context);
                     }
                     string uri = GetSOAPUrl(context,(companyName == "" ? defaultNavCompany : companyName), (WebServiceName == "" ? defaultCodeunit : WebServiceName));
                     BasicHttpBinding binding = new BasicHttpBinding();
@@ -122,14 +122,15 @@ namespace App.Server
             return options;
         }
         //General ODATA Client - called when querying data using ODATA
-        public NAV.NAV ODATAClient(string companyName = "")
+        public NAV.NAV ODATAClient(HttpContext context,string companyName = "")
         {
             try
             {
                 initiateService();
-                if(companyName != "")
+                navCompany = companyName;
+                if (companyName == "")
                 {
-                    navCompany = companyName;
+                    navCompany = GV.GenController.GetNavCompany(context);
                 }
                 //string odataURL = odataBaseUrl + navInstance + "/{OdataV}/Company('" + companyName == "" ? navCompany : companyName + "')/";
                 string odataURL = $"{odataBaseUrl}{navInstance}/ODataV4/Company('{navCompany}')/";
@@ -154,6 +155,7 @@ namespace App.Server
             try
             {
                 initiateService();
+                navCompany = GV.GenController.GetNavCompany(context);
                 string odataURL = $"{odataBaseUrl}{navInstance}/ODataV4/Company('{navCompany}')/{webservice}?{filter}&$format=json";
                 var response = await GV.httpClient.GetAsync(odataURL);
                 if (response.IsSuccessStatusCode)

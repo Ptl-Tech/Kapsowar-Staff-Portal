@@ -23,7 +23,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             {
                 dynamic response = new ExpandoObject();
 
-                var baseQuery = GV.WSclient.ODATAClient().QyStaffClaimHeaders
+                var baseQuery = GV.WSclient.ODATAClient(HttpContext).QyStaffClaimHeaders
                     .Where(obj => obj.Status == status)
                     .Where(obj => obj.Employee_No == GeneralController.SessionUser(HttpContext).userNo)
                     .AsQueryable();
@@ -63,7 +63,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 response.dims = JsonNode.Parse(dimsStr);
                 if (!myAction.Contains("create"))
                 {
-                    var formData = GV.WSclient.ODATAClient().QyStaffClaimHeaders
+                    var formData = GV.WSclient.ODATAClient(HttpContext).QyStaffClaimHeaders
                         .Where(obj => obj.No == recId)
                         .Where(obj => obj.Employee_No == GeneralController.SessionUser(HttpContext).userNo)
                         .FirstOrDefault();

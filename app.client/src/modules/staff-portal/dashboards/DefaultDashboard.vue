@@ -32,8 +32,8 @@
         </grid-col>
     </grid>-->
         <!--Finance Services-->
-        <h4 v-if="$root.authUser.isHOD" class="font-semibold text-sm py-0.5 text-gray-500">Academic HOD Services:</h4>
-        <grid v-if="$root.authUser.isHOD" class="sm:!grid-cols-2 lg:!grid-cols-5">
+        <h4 v-if="$root.authUser.navCompany == appConfig.client.collegeCompany && $root.authUser.isHOD" class="font-semibold text-sm py-0.5 text-gray-500">Academic HOD Services:</h4>
+        <grid v-if="$root.authUser.navCompany == appConfig.client.collegeCompany && $root.authUser.isHOD" class="sm:!grid-cols-2 lg:!grid-cols-5">
             <!---->
             <grid-col>
                 <Tile class="bg-blue-500" :showLoader="isLoading">
@@ -113,8 +113,8 @@
             </grid-col>
         </grid>
         <!--Finance Services-->
-        <h4 class="font-semibold text-sm py-0.5 text-gray-500">Finance Services:</h4>
-        <grid class="sm:!grid-cols-2 lg:!grid-cols-5">
+        <h4 v-if="$root.authUser.navCompany == appConfig.client.collegeCompany" class="font-semibold text-sm py-0.5 text-gray-500">Finance Services:</h4>
+        <grid v-if="$root.authUser.navCompany == appConfig.client.collegeCompany" class="sm:!grid-cols-2 lg:!grid-cols-5">
             <!---->
             <grid-col>
                 <Tile class="bg-orange-500" :showLoader="isLoading">
@@ -220,6 +220,41 @@
                     </template>
                 </Tile>
             </grid-col>
+            <!---->
+            <grid-col>
+                <Tile class="bg-gray-600" :showLoader="isLoading">
+                    <template #icon>
+                        <ReceiptRefundIcon class="h-6 w-6" />
+                    </template>
+                    <template #label>
+                        <router-link to="/ess/petty-cash/header/list?status=Pending" class="underline">Petty Cash</router-link>
+                    </template>
+                    <template #value>
+                        <div class="flex gap-1 items-center">
+                            <span class="text-xs flex flex-col items-center">
+                                <span class="">Open</span>
+                                <span class="underline">
+                                    <router-link to="/ess/petty-cash/header/list?status=Pending">{{record.pettyCashOpen}}</router-link>
+                                </span>
+                            </span>
+                            <span class="border-r h-6"></span>
+                            <span class="text-xs flex flex-col items-center">
+                                <span class="">Pending</span>
+                                <span class="underline">
+                                    <router-link to="/ess/petty-cash/header/list?status=Pending Approval">{{record.pettyCashPending}}</router-link>
+                                </span>
+                            </span>
+                            <span class="border-r h-6"></span>
+                            <span class="text-xs flex flex-col items-center">
+                                <span class="">Approved</span>
+                                <span class="underline">
+                                    <router-link to="/ess/petty-cash/header/list?status=Approved">{{record.pettyCashApproved}}</router-link>
+                                </span>
+                            </span>
+                        </div>
+                    </template>
+                </Tile>
+            </grid-col>
         </grid>
         <!--HR Services-->
         <h4 class="font-semibold text-sm py-0.5 text-gray-500">HR Services:</h4>
@@ -261,8 +296,8 @@
             </grid-col>
         </grid>
         <!--Procurement Services-->
-        <h4 class="font-semibold text-sm py-0.5 text-gray-500">Procurement & Store Services:</h4>
-        <grid class="sm:!grid-cols-2 lg:!grid-cols-5">
+        <h4 v-if="$root.authUser.navCompany == appConfig.client.collegeCompany" class="font-semibold text-sm py-0.5 text-gray-500">Procurement & Store Services:</h4>
+        <grid v-if="$root.authUser.navCompany == appConfig.client.collegeCompany" class="sm:!grid-cols-2 lg:!grid-cols-5">
             <!---->
             <grid-col>
                 <Tile class="bg-cyan-500" :showLoader="isLoading">
@@ -432,15 +467,15 @@
                             this.record = data.response;
                             if (data.response != undefined) {
                                 localStorage.setItem("isWelcomed", JSON.stringify(true));
-                                /*var authUser = localStorage.getItem("authUser");
+                                var authUser = localStorage.getItem("authUser");
                                 if (authUser != null && authUser != "undefined") {
                                     var authUser2 = JSON.parse(authUser);
-                                    authUser2.PendingMyApproval = this.record.pendingMyApprovalHR + this.record.pendingMyApproval + this.record.pendingMyApprovalEmployee;
+                                    authUser2.PendingMyApproval = this.record.pendingMyApprovalCount;
                                     authUser2.newNotifications = this.record.newNotifications;
                                     localStorage.setItem("authUser", JSON.stringify(authUser2));
                                     this.$root.authUser.PendingMyApproval = authUser2.PendingMyApproval;
                                     this.$root.authUser.newNotifications = authUser2.newNotifications;
-                                }*/
+                                }
                             }
                         }
                         this.isLoading = false;

@@ -74,9 +74,17 @@
               "target": "Package",
               "version": "[6.6.2, )"
             },
+            "System.Formats.Asn1": {
+              "target": "Package",
+              "version": "[9.0.2, )"
+            },
             "System.Linq.Dynamic.Core": {
               "target": "Package",
-              "version": "[1.5.1, )"
+              "version": "[1.6.0.2, )"
+            },
+            "System.Security.Cryptography.Pkcs": {
+              "target": "Package",
+              "version": "[9.0.2, )"
             },
             "System.ServiceModel.Duplex": {
               "target": "Package",
@@ -97,6 +105,10 @@
             "System.ServiceModel.Security": {
               "target": "Package",
               "version": "[6.0.*, )"
+            },
+            "System.Text.RegularExpressions": {
+              "target": "Package",
+              "version": "[4.3.1, )"
             }
           },
           "imports": [
@@ -118,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.103/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

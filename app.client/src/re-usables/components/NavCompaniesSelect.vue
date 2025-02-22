@@ -13,14 +13,8 @@
         data() {
             return {
                 companies: [
-                    { id: "KRCS", name: "KRCS" },
-                    { id: "ICHA", name: "ICHA" },
-                    //{ id: "KRCS GF Management Unit", name: "KRCS Global Fund Unit" },
-                    //{ id: "E-Plus Medical Services", name: "E-Plus" },
-                    //{ id: "KRCS Training Institute", name: "KRCS Training Institute" },
-                    //{ id: "BIHC", name: "BIHC" },
-                    //{ id: "SWITCH", name: "Switch Media" },
-                    { id: "KRCS Test Co.", name: "KRCS Test Co." }
+                    { id: "AIC Kapsowar Mission Hospital", name: "Kapsowar Mission Hospital" },
+                    { id: "KAPSOWAR MTC LIVE", name: "Kapsowar Medical Training College" },
                 ]
             }
         },

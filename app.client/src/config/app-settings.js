@@ -7,9 +7,12 @@ const config = {
     },
     client: {
         name:'Kapsowar Mission Hospital',
+        name2:'Kapsowar Medical Training College',
         logoPath: '/images/client-logo.jpg',
         logoPath2: '/images/client-logo2.jpg',
         bgImagePath: '/images/background.jpg',
+        collegeCompany: 'KAPSOWAR MTC LIVE',
+        hospitalCompany: 'AIC Kapsowar Mission Hospital',
     },
     developer: {
       name: 'Potestas Technologies Ltd.',

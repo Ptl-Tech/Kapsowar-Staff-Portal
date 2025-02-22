@@ -70,7 +70,7 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
             {
                 var response = "{";
                 var dimsetup = GetDimSetupByCode(context, dimCode);
-                var dim = GV.WSclient.ODATAClient().QyDimensionValues
+                var dim = GV.WSclient.ODATAClient(HttpContext).QyDimensionValues
                 .Where(obj => obj.GlobalDimensionNo == dimsetup.DimNo)
                 .Where(obj => obj.Code == dimValue)
                 .Where(obj => obj.DimensionValueType == "Standard")
@@ -91,7 +91,7 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
         {
             //int DimNo2 = Int32.Parse(DimNo);
             dynamic response = new ExpandoObject();
-            var dim = GV.WSclient.ODATAClient().QyDimensionValues
+            var dim = GV.WSclient.ODATAClient(HttpContext).QyDimensionValues
                 .Where(obj => obj.GlobalDimensionNo == DimNo)
                 .Where(obj => obj.Code == DimCode)
                 .Where(obj => obj.DimensionValueType == "Standard")
@@ -104,7 +104,7 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
         public IActionResult GetDimensionsSetup()
         {
             dynamic response = new ExpandoObject();
-            var record = GV.WSclient.ODATAClient().QyGeneralLedgerSetup
+            var record = GV.WSclient.ODATAClient(HttpContext).QyGeneralLedgerSetup
                 .FirstOrDefault();
             if (record != null)
             {
@@ -214,7 +214,7 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
         public IActionResult QueryDims(string dimNo, string qString)
         {
             int dimNo2 = int.Parse(dimNo);
-            var dims = GV.WSclient.ODATAClient().QyDimensionValues
+            var dims = GV.WSclient.ODATAClient(HttpContext).QyDimensionValues
                 .Where(obj => obj.GlobalDimensionNo == int.Parse(dimNo))
                 .Where(obj => obj.DimensionValueType == "Standard")
                 .Where(obj => obj.Blocked == false)
@@ -227,7 +227,7 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
         public string GetDimsList(HttpContext context, int dimNo)
         {
             dynamic response = new ExpandoObject();
-            var dims = GV.WSclient.ODATAClient().QyDimensionValues
+            var dims = GV.WSclient.ODATAClient(HttpContext).QyDimensionValues
                 .Where(obj => obj.GlobalDimensionNo == dimNo)
                 .Where(obj => obj.DimensionValueType == "Standard")
                 .Where(obj => obj.Blocked == false)

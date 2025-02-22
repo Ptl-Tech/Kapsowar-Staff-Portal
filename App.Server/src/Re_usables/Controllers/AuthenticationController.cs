@@ -21,10 +21,15 @@ namespace App.Server.Modules.HMIS.Controllers
                 {
                     return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
                 }
-                GV.GenController.SetNavCompany(HttpContext);
-                var QyUser = GV.WSclient.ODATAClient().QyEmployees.Where(x => x.No == obj.userNo).FirstOrDefault();
+                HttpContext.Session.SetString("NavCompany", obj.NavCompany);
+                //GV.GenController.SetNavCompany(HttpContext);
+                var QyUser = GV.WSclient.ODATAClient(HttpContext).QyEmployees.Where(x => x.No == obj.userNo).FirstOrDefault();
                 if (QyUser != null)
                 {
+                    if (QyUser.PortalPassword == "")
+                    {
+                        throw new Exception("Password not set. Kindly use the forgot password/first time login link to set password.");
+                    }
                     if (FnIsPasswordMatched(obj.password, QyUser.PortalPassword))
                     {
                         GV.DimsController.SetCompanyDimensions(HttpContext);
@@ -42,16 +47,17 @@ namespace App.Server.Modules.HMIS.Controllers
                         authUser.branchCode = QyUser.Global_Dimension_1_Code;
                         authUser.responsibilityCenter = QyUser.Responsibility_Center;
                         authUser.isLecturer = QyUser.Lecturer??false;
+                        authUser.navCompany = obj.NavCompany;
                         //if(authUser.responsibilityCenter == "")
                         //{
                         //    throw new Exception("Staff responsibility center not set in Employee card.");
                         //}
-                        var QyUserSetup = GV.WSclient.ODATAClient().QyUserSetup.Where(x => x.Employee_No == obj.userNo).FirstOrDefault();
+                        var QyUserSetup = GV.WSclient.ODATAClient(HttpContext).QyUserSetup.Where(x => x.Employee_No == obj.userNo).FirstOrDefault();
                         if (QyUserSetup != null) {
                             authUser.myUserId = QyUserSetup.User_ID;
                             authUser.customerNo = QyUserSetup.Staff_Travel_Account;
                         }
-                        var department = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).QyDimensionValues.Where(x => x.Dimension_Code == "DEPARTMENT").Where(x => x.HOD == obj.userNo).FirstOrDefault();
+                        var department = GV.WSclient.ODATAClient(HttpContext).QyDimensionValues.Where(x => x.Dimension_Code == "DEPARTMENT").Where(x => x.HOD == obj.userNo).FirstOrDefault();
                         if (department != null)
                         {
                             authUser.isHOD = true;
@@ -214,7 +220,8 @@ namespace App.Server.Modules.HMIS.Controllers
                 {
                     throw new Exception(Config.userNoFieldShemaName + " field is required.");
                 }
-                var QyUser = GV.WSclient.ODATAClient().QyEmployees.Where(x => x.No == Obj.userNo).FirstOrDefault();
+                HttpContext.Session.SetString("NavCompany", Obj.navCompany);
+                var QyUser = GV.WSclient.ODATAClient(HttpContext).QyEmployees.Where(x => x.No == Obj.userNo).FirstOrDefault();
                 if (QyUser != null)
                 {
                     Random random = new Random();
@@ -226,12 +233,22 @@ namespace App.Server.Modules.HMIS.Controllers
                     if (returnV?["status"]?.ToString() == "success")
                     {
                         //send email
-                        string emailMessage = $"Dear {QyUser.First_Name},<br/>Use the code <b>{token}</b> to reset your portal password. Kindly note the code expires after 24 hours.";
-                        var receiver = QyUser.Company_E_Mail;
-                        var email = GV.WSclient.CuStaffWebportal(HttpContext).FnSendEmailAsync(Config.solutionName+" Reset Password Token", receiver, emailMessage, "").Result;
-                        if (email.return_value)
+                        //string emailMessage = $"Dear {QyUser.First_Name},<br/>Use the code <b>{token}</b> to reset your portal password. Kindly note the code expires after 24 hours.";
+                        //var receiver = QyUser.Company_E_Mail;
+                        //if (receiver != "")
+                        //{
+                        //    var email = GV.WSclient.CuStaffWebportal(HttpContext).FnSendEmailAsync(Config.solutionName + " Reset Password Token", receiver, emailMessage, "").Result;
+                        //}
+                        if (QyUser.Cellular_Phone_Number == "")
                         {
-                            return Ok(new { response = "success", msg = "Password reset token sent to your email (" + MaskEmail(QyUser.Company_E_Mail) + ")" });
+                            throw new Exception("Cellular/Personal phone number not found for staff no "+ QyUser.No);
+                        }
+                        var smsMessage = $"Use the OTP code {token} to reset your staff portal password";
+                        var sms = GV.WSclient.CuStaffWebportal(HttpContext).FnSendSMSAsync(QyUser.Cellular_Phone_Number, smsMessage,Config.smsPassCode).Result;
+                            //FnSendEmailAsync(Config.solutionName+" Reset Password Token", receiver, emailMessage, "").Result;
+                        if (sms.return_value)
+                        {
+                            return Ok(new { response = "success", msg = "Password reset token sent via SMS and email" });
                         }
                         else
                         {
@@ -269,7 +286,7 @@ namespace App.Server.Modules.HMIS.Controllers
                 }
                 var hashedPass = FnHashPassword(obj.newPassword);
                 obj.newPassword = hashedPass;
-                var QyUser = GV.WSclient.ODATAClient().QyEmployees.Where(x => x.Company_E_Mail == obj.userNo).FirstOrDefault();
+                var QyUser = GV.WSclient.ODATAClient(HttpContext).QyEmployees.Where(x => x.Company_E_Mail == obj.userNo).FirstOrDefault();
                 if (QyUser != null)
                 {
                     if (QyUser.PortalPassword != "" && FnIsPasswordMatched(obj.newPassword, QyUser.PortalPassword))
@@ -311,7 +328,7 @@ namespace App.Server.Modules.HMIS.Controllers
                 }
 
                 //var empStr = await GV.WSclient.ODATAFilter(HttpContext, WS.Employee().WSName, $"$filter=(No eq '{GeneralController.SessionUser(HttpContext).userNo}')", false);
-                var QyUser = GV.WSclient.ODATAClient().QyEmployees.Where(obj => obj.Company_E_Mail == authUserSession.email).FirstOrDefault();
+                var QyUser = GV.WSclient.ODATAClient(HttpContext).QyEmployees.Where(obj => obj.Company_E_Mail == authUserSession.email).FirstOrDefault();
                 if (QyUser != null)
                 {
                     if (!FnIsPasswordMatched(User.currentPassword, QyUser.PortalPassword))

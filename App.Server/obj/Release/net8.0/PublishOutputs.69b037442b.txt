@@ -9,6 +9,7 @@ C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\P
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\App.Server.pdb
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\Microsoft.AspNetCore.SpaProxy.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\Microsoft.Bcl.Cryptography.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Logging.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Protocols.WsTrust.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\Microsoft.IdentityModel.Tokens.dll
@@ -22,7 +23,9 @@ C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\P
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.Formats.Asn1.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.Linq.Dynamic.Core.dll
+C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.Security.Cryptography.Pkcs.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.ServiceModel.Duplex.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.ServiceModel.Federation.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.ServiceModel.Http.dll
@@ -95,3 +98,4 @@ C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\P
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\tr\System.ServiceModel.Primitives.resources.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\zh-Hans\System.ServiceModel.Primitives.resources.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\zh-Hant\System.ServiceModel.Primitives.resources.dll
+C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

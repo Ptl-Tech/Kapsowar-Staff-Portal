@@ -73,11 +73,13 @@
                             var res;
                             var msg = "";
                             res = data.response;
+                            msg = action == 'save' ? "Saved successfully." : "Submitted successfully";
+                            if (source.GuiAllowed) {
+                                this.$root.FnNotification({ type: "popup", theme: "green", message: msg });
+                            }
                             if (action == "save") {
-                                msg = "saved successfully.";
                                 this.$router.push(this.pageProps.formRoute + '/edit?recId=' + res.recId);
                             }
-                            this.$root.FnNotification({ type: "popup", theme: "green", message: msg });
                         }
                         this.$root.loader.isLoading = false;
                     }).catch((error) => {

@@ -45,7 +45,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             try
             {
                 dynamic response = new ExpandoObject();
-                response.periods = GV.WSclient.ODATAClient().QyPayrollPeriods
+                response.periods = GV.WSclient.ODATAClient(HttpContext).QyPayrollPeriods
                     .Where(x => x.Closed == true)
                     .ToList();
                 return Ok(new { response });

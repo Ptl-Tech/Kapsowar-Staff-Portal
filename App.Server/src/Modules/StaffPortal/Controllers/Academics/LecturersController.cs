@@ -18,7 +18,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             {
                 dynamic response = new ExpandoObject();
 
-                var baseQuery = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).PgLecturersList
+                var baseQuery = GV.WSclient.ODATAClient(HttpContext).PgLecturersList
                     .Where(obj => obj.Status == status)
                     .AsQueryable();
                 if (GeneralController.RequestHasQuery(HttpContext) == false)

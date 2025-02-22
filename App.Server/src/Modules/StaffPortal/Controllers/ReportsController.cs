@@ -16,7 +16,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             try
             {
                 dynamic response = new ExpandoObject();
-                response.periods = GV.WSclient.ODATAClient().QyPayrollPeriods
+                response.periods = GV.WSclient.ODATAClient(HttpContext, Config.HospitalNavCompany).QyPayrollPeriods
                     .Where(x => x.Closed == true)
                     .ToList();
                 return Ok(new { response });
@@ -38,7 +38,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 }
                 obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
                 //
-                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnGeneratePayslipAsync(JsonSerializer.Serialize(obj)).Result;
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.HospitalNavCompany).FnGeneratePayslipAsync(JsonSerializer.Serialize(obj)).Result;
                 ;
                 if (result.return_value != "")
                 {
@@ -62,7 +62,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             try
             {
                 dynamic response = new ExpandoObject();
-                response.periods = GV.WSclient.ODATAClient().QyPayrollPeriods
+                response.periods = GV.WSclient.ODATAClient(HttpContext, Config.HospitalNavCompany).QyPayrollPeriods
                     .Where(x => x.Closed == true)
                     .ToList();
                 return Ok(new { response });
@@ -84,7 +84,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 }
                 obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
                 //
-                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnGenerateP9ReportAsync(JsonSerializer.Serialize(obj)).Result;
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.HospitalNavCompany).FnGenerateP9ReportAsync(JsonSerializer.Serialize(obj)).Result;
                 if (result.return_value != "")
                 {
                     return Ok(new { response = result.return_value });

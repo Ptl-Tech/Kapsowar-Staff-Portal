@@ -20,7 +20,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             {
                 dynamic response = new ExpandoObject();
 
-                var baseQuery = GV.WSclient.ODATAClient(Config.LiveNAVCompany2).PgProgrammesList
+                var baseQuery = GV.WSclient.ODATAClient(HttpContext).PgProgrammesList
                     //.Where(x => x.Department_Code == GeneralController.SessionUser(HttpContext).departmentCode)
                     .AsQueryable();
                 if (category != "All")

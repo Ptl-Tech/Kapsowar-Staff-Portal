@@ -19,10 +19,10 @@ namespace App.Server.Modules.HMIS.Controllers
             try
             {
                 dynamic response = new ExpandoObject();
-                response.header = GV.WSclient.ODATAClient().QyPurchaseHeaders
+                response.header = GV.WSclient.ODATAClient(HttpContext).QyPurchaseHeaders
                     .Where(obj => obj.No == parentId)
                     .FirstOrDefault();
-                var baseQuery = GV.WSclient.ODATAClient().QyPurchaseLines.AsQueryable();
+                var baseQuery = GV.WSclient.ODATAClient(HttpContext).QyPurchaseLines.AsQueryable();
                 baseQuery = baseQuery.Where(obj => obj.Document_No == parentId);
                 if (GeneralController.RequestHasQuery(HttpContext) == false)
                 {
@@ -53,13 +53,13 @@ namespace App.Server.Modules.HMIS.Controllers
             try
             {
                 dynamic response = new ExpandoObject();
-                response.header = GV.WSclient.ODATAClient().QyPurchaseHeaders
+                response.header = GV.WSclient.ODATAClient(HttpContext).QyPurchaseHeaders
                     .Where(obj => obj.No == parentId)
                     .FirstOrDefault();
                 //
                 if (myAction != "create")
                 {
-                    response.formData = GV.WSclient.ODATAClient().QyPurchaseLines
+                    response.formData = GV.WSclient.ODATAClient(HttpContext).QyPurchaseLines
                     .Where(obj => obj.Line_No == recId)
                     .Where(obj => obj.Document_No == parentId)
                     .FirstOrDefault();

@@ -23,7 +23,7 @@
                 await context.Response.WriteAsync("Session token was not provided.");
                 return;
             }
-            var employee = GV.WSclient.ODATAClient().QyEmployees.Where(obj => obj.No == extractedStaffNo.ToString()).Where(x => x.Status1 == "Active").FirstOrDefault();
+            var employee = GV.WSclient.ODATAClient(HttpContext).QyEmployees.Where(obj => obj.No == extractedStaffNo.ToString()).Where(x => x.Status1 == "Active").FirstOrDefault();
             if (employee != null)
             {
                 if (employee.PortalSessionToken != extractedSessionToken)
