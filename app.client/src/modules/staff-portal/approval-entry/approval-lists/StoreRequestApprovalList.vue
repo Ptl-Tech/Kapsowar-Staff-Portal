@@ -1,23 +1,17 @@
 <template>
     <ListPageTemplate ref="tpList" :pageProps="this.pageProps" :actionsProps="this.actionsProps" @OnFetchData="OnFetchData($event)">
         <template #thead>
-            <WTh>Leave App. No.</WTh>
-            <WTh>Date Submitted</WTh>
-            <WTh>Leave Type</WTh>
-            <WTh>Days Applied</WTh>
-            <WTh>Start Date</WTh>
-            <WTh>End Date</WTh>
-            <WTh>Return to Work Date</WTh>
+            <WTh>Request No.</WTh>
+            <WTh>Document Date</WTh>
+            <WTh>Request Date</WTh>
+            <WTh>Description</WTh>
             <WTh>Actions</WTh>
         </template>
         <template v-for="(record,index) in records" #[`tbody-${index}`]>
             <WTd :linkTo="FnGetRecordLink(record)">{{record.Document_No != undefined? record.Document_No:record.No}}</WTd>
-            <WTd>{{$root.xFnNavDateObjToString(record.DocDetails.Date_Time_Sent_for_Approval)}}</WTd>
-            <WTd>{{record.DocDetails != null && record.DocDetails != ""? record.DocDetails.Leave_Type:""}}</WTd>
-            <WTd>{{record.DocDetails != null && record.DocDetails != ""? record.DocDetails.Days_Applied:""}}</WTd>
-            <WTd>{{record.DocDetails != null && record.DocDetails != ""? $root.xFnNavDateObjToString(record.DocDetails.Start_Date):""}}</WTd>
-            <WTd>{{record.DocDetails != null && record.DocDetails != ""? $root.xFnNavDateObjToString(record.DocDetails.End_Date):""}}</WTd>
-            <WTd>{{record.DocDetails != null && record.DocDetails != ""? $root.xFnNavDateObjToString(record.DocDetails.Return_to_Work_Date):""}}</WTd>
+            <WTd>{{record.Date_Time_Sent_for_Approval.split("T")[0]}} {{record.Date_Time_Sent_for_Approval.split("T")[1].split(".")[0]}}</WTd>
+            <WTd>{{FnGetEntryDocDetails(record,"Request_date","date")}}</WTd>
+            <WTd>{{FnGetEntryDocDetails(record,"Request_Description","")}}</WTd>
             <WTd>
                 <Actions :docLink="FnGetRecordLink(record)" :record="record"></Actions>
             </WTd>
@@ -37,9 +31,10 @@
         components: { Actions, ...W, WRouterLink, EyeIcon, Menu },
         data(){
             return {
-                records:[],
+                records: [],
+                entryDocDetails:[],
                 pageProps: {
-                    title: 'Leave Approvals List',
+                    title: 'Store Requests Approvals List',
                     pageType:"list",
                     pKey: 'No',
                     controller:'ApprovalManagement',
@@ -49,7 +44,9 @@
                     isRowDoubleClick:false
                 },
                 actionsProps: { isNew: false, isNewCaption: "", isEdit: false, isDelete: false, isFilter: true, isExport: true},
-                status:"",
+                status: "",
+                routeDocType: "store-request",
+                approvalDocType:"StoreRequest",
             }
         },
         mounted(){
@@ -58,12 +55,27 @@
         methods: {
             OnFetchData(response) {
                 this.records = response.records;
+                this.entryDocDetails = response.entryDocDetails;
                 this.$root.title = this.pageProps.title;
             },
             FnGetRecordLink(recApprovalEntry) {
                 var link = "";
-                link = "/ess/approval-entry/"+this.status+"/leave/view/" + recApprovalEntry.No + "/" + recApprovalEntry.Employee_ID+"/LeaveApplication";
+                link = "/ess/approval-entry/" + this.status + "/" + this.routeDocType + "/view/" + this.approvalDocType + '?recId=' + recApprovalEntry.Document_No + "&entryNo=" + recApprovalEntry.Entry_No+'&isApproval='+true;
                 return link;
+            },
+            FnGetEntryDocDetails(record, field,type) {
+                var value = "";
+                if (this.entryDocDetails && this.entryDocDetails[record.Document_No + "_" + record.Entry_No] != undefined) {
+                    var obj = JSON.parse(this.entryDocDetails[record.Document_No + "_" + record.Entry_No]);
+                    if (type == "") {
+                        value = obj[field];
+                    } else {
+                        if (type == "date") {
+                            value = this.$root.xFnNavDateObjToString(obj[field])
+                        }
+                    }
+                }
+                return value;
             }
         },
     }

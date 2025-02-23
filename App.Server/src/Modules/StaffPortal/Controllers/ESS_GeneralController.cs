@@ -18,7 +18,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             {
                 var obj = new Dashboard();
                 obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
-                obj.myUserId = GeneralController.SessionUser(HttpContext).userId;
+                obj.myUserId = GeneralController.SessionUser(HttpContext).myUserId;
                 //
                 var result = GV.WSclient.CuStaffWebportal(HttpContext).FnDashboardStatisticsAsync(JsonSerializer.Serialize(obj)).Result;
                 ;

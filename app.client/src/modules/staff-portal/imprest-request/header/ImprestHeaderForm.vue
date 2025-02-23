@@ -1,6 +1,7 @@
 <template>
     <div>
         <FormPageTemplate :title="pageProps.caption+' - '+$route.params.action">
+            <ApprovalForm v-if="$route.query.entryNo != undefined" @onFetchApprovalEntry="approvalEntry = $event" />
             <grid>
                 <grid-col v-if="$route.params.action != 'create'">
                     <field-group label="Imprest No.">
@@ -34,7 +35,7 @@
                 </grid-col>
             </grid>
             <grid v-if="record[pageProps.keys.recKey] != undefined">
-                <grid-col >
+                <grid-col>
                     <field-group label="Status">
                         <WInput type="text" required="false" :value="record.Status" formMode="view" />
                     </field-group>
@@ -47,9 +48,11 @@
                 </MenuTabs>
                 <Lines v-if="activeSubpart == 'imprestLines'" :filter="{parentId:record[pageProps.keys.recKey]}" />
             </div><!--</subparts-->
+            <ApproversList :records="approvers" v-if="record.Status != undefined && record.Status != 'Pending'"></ApproversList>
             <div class="flex gap-1 justify-center py-2">
                 <Actions ref="actions" :record="record" :pageProps="pageProps" :formData="form" @onValErrors="valErrors = $event" />
             </div>
+            <ApprovalActions v-if="approvalEntry != null && approvalEntry.Status != undefined && approvalEntry.Status == 'Open'" :record="approvalEntry" />
         </FormPageTemplate>
     </div>
 </template>
@@ -62,8 +65,9 @@
     import MenuTabs from '@/re-usables/components/MenuTabs/MenuTabs.vue';
     import MenuButton from '@/re-usables/components/MenuTabs/MenuButton.vue';
     import TomSelectDims from '@/re-usables/components/TomSelectDims.vue';
+    import { Apr } from '@/re-usables/imports/ApprovalComponents.js';
     export default {
-        components: { Actions, ...W, MenuTabs, MenuButton, TomSelectDims, Lines },
+        components: { Actions, ...W, ...Apr, MenuTabs, MenuButton, TomSelectDims, Lines },
         setup() {
             const { router, xIsFormLoaded, xOnAfterFormLoaded, xFnAutoSaveFormData } = useFormComposable();
             return { router, xIsFormLoaded, xOnAfterFormLoaded, xFnAutoSaveFormData };
@@ -108,7 +112,7 @@
             this.$root.title = this.pageProps.title;
         },
         beforeRouteLeave(to, from, next) {
-            this.xFnAutoSaveFormData({ to: to, from: from, next: next, status:'Open', saveAlways: true });
+            this.xFnAutoSaveFormData({ to: to, from: from, next: next, status: 'Open', saveAlways: true });
         },
         methods: {
             FnFetchSetups() {
@@ -137,6 +141,9 @@
                                 this.form.purpose = formData.Purpose;
                                 if (this.record.Status != "Pending") {
                                     this.formMode = "view";
+                                }
+                                if (data.response.approvers != undefined) {
+                                    this.approvers = data.response.approvers;
                                 }
                             }
                         }

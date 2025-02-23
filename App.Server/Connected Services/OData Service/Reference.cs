@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/22/2025 9:14:28 PM
+// Generation date: 2/23/2025 12:26:07 PM
 namespace NAV
 {
     /// <summary>
@@ -14864,6 +14864,13 @@ namespace NAV
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
+        <Property Name=""Employee_No"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""Employee No."" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
         <Property Name=""Comment"" Type=""Edm.Boolean"">
           <Annotation Term=""NAV.LabelId"" String=""timestamp"" />
           <Annotation Term=""NAV.NavType"">
@@ -15014,7 +15021,7 @@ namespace NAV
       </EntityType>
       <EntityType Name=""QyApprovalEntries"">
         <Key>
-          <PropertyRef Name=""AuxiliaryIndex1"" />
+          <PropertyRef Name=""Entry_No"" />
         </Key>
         <Property Name=""Table_ID"" Type=""Edm.Int32"">
           <Annotation Term=""NAV.LabelId"" String=""Table ID"" />
@@ -15156,20 +15163,20 @@ namespace NAV
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
-        <Property Name=""Comment"" Type=""Edm.Boolean"">
-          <Annotation Term=""NAV.LabelId"" String=""timestamp"" />
-          <Annotation Term=""NAV.NavType"">
-            <EnumMember>NAV.NavType/Bool</EnumMember>
-          </Annotation>
-          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
-        </Property>
-        <Property Name=""AuxiliaryIndex1"" Type=""Edm.Int32"" Nullable=""false"">
+        <Property Name=""Entry_No"" Type=""Edm.Int32"" Nullable=""false"">
           <Annotation Term=""NAV.LabelId"" String=""Entry No."" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/Int</EnumMember>
           </Annotation>
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
           <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Comment"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""timestamp"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
         <Annotation Term=""NAV.LabelId"" String=""QyApprovalEntries"" />
         <Annotation Term=""NAV.IsReadOnly"" Bool=""true"" />
@@ -21852,6 +21859,13 @@ namespace NAV
         </Property>
         <Property Name=""Assigned_User_ID"" Type=""Edm.String"" MaxLength=""50"">
           <Annotation Term=""NAV.LabelId"" String=""Assigned User ID"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Employee_No"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""Employee No."" />
           <Annotation Term=""NAV.NavType"">
             <EnumMember>NAV.NavType/String</EnumMember>
           </Annotation>
@@ -30034,6 +30048,18 @@ namespace NAV
         <Parameter Name=""jString"" Type=""Edm.String"" />
         <ReturnType Type=""Edm.String"" />
       </Action>
+      <Action Name=""CuStaffWebportal_FnApprovalStatistics"">
+        <Parameter Name=""jString"" Type=""Edm.String"" />
+        <ReturnType Type=""Edm.String"" />
+      </Action>
+      <Action Name=""CuStaffWebportal_FnDocumentApproval"">
+        <Parameter Name=""jString"" Type=""Edm.String"" />
+        <ReturnType Type=""Edm.String"" />
+      </Action>
+      <Action Name=""CuStaffWebportal_FnDelegateOrCancelDocumentApproval"">
+        <Parameter Name=""jString"" Type=""Edm.String"" />
+        <ReturnType Type=""Edm.Boolean"" />
+      </Action>
       <Action Name=""RecruitmentPortal_HRJobAppInsert"">
         <Parameter Name=""applicantType"" Type=""Edm.Int32"" />
         <Parameter Name=""requisitionNo"" Type=""Edm.String"" />
@@ -32988,6 +33014,9 @@ namespace NAV
         <ActionImport Name=""CuStaffWebportal_FnSendSMS"" Action=""NAV.CuStaffWebportal_FnSendSMS"" />
         <ActionImport Name=""CuStaffWebportal_FnPettyCashHeader"" Action=""NAV.CuStaffWebportal_FnPettyCashHeader"" />
         <ActionImport Name=""CuStaffWebportal_FnPettyCashLine"" Action=""NAV.CuStaffWebportal_FnPettyCashLine"" />
+        <ActionImport Name=""CuStaffWebportal_FnApprovalStatistics"" Action=""NAV.CuStaffWebportal_FnApprovalStatistics"" />
+        <ActionImport Name=""CuStaffWebportal_FnDocumentApproval"" Action=""NAV.CuStaffWebportal_FnDocumentApproval"" />
+        <ActionImport Name=""CuStaffWebportal_FnDelegateOrCancelDocumentApproval"" Action=""NAV.CuStaffWebportal_FnDelegateOrCancelDocumentApproval"" />
         <ActionImport Name=""RecruitmentPortal_HRJobAppInsert"" Action=""NAV.RecruitmentPortal_HRJobAppInsert"" />
         <ActionImport Name=""RecruitmentPortal_HRJobAppQualificationsInsert"" Action=""NAV.RecruitmentPortal_HRJobAppQualificationsInsert"" />
         <ActionImport Name=""RecruitmentPortal_HRJobAppRefereesInsert"" Action=""NAV.RecruitmentPortal_HRJobAppRefereesInsert"" />
@@ -37030,6 +37059,27 @@ namespace NAV
         public global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> CuStaffWebportal_FnPettyCashLine(string jString)
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnPettyCashLine", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString));
+        }
+        /// <summary>
+        /// There are no comments for CuStaffWebportal_FnApprovalStatistics in the schema.
+        /// </summary>
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> CuStaffWebportal_FnApprovalStatistics(string jString)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnApprovalStatistics", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString));
+        }
+        /// <summary>
+        /// There are no comments for CuStaffWebportal_FnDocumentApproval in the schema.
+        /// </summary>
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> CuStaffWebportal_FnDocumentApproval(string jString)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnDocumentApproval", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString));
+        }
+        /// <summary>
+        /// There are no comments for CuStaffWebportal_FnDelegateOrCancelDocumentApproval in the schema.
+        /// </summary>
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::System.Nullable<bool>> CuStaffWebportal_FnDelegateOrCancelDocumentApproval(string jString)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::System.Nullable<bool>>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnDelegateOrCancelDocumentApproval", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString));
         }
         /// <summary>
         /// There are no comments for RecruitmentPortal_HRJobAppInsert in the schema.
@@ -79541,6 +79591,27 @@ namespace NAV
         partial void OnAssigned_User_IDChanging(string value);
         partial void OnAssigned_User_IDChanged();
         /// <summary>
+        /// There are no comments for Property Employee_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Employee_No
+        {
+            get
+            {
+                return this._Employee_No;
+            }
+            set
+            {
+                this.OnEmployee_NoChanging(value);
+                this._Employee_No = value;
+                this.OnEmployee_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Employee_No;
+        partial void OnEmployee_NoChanging(string value);
+        partial void OnEmployee_NoChanged();
+        /// <summary>
         /// There are no comments for Property Comment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
@@ -80019,20 +80090,20 @@ namespace NAV
     /// There are no comments for QyApprovalEntries in the schema.
     /// </summary>
     /// <KeyProperties>
-    /// AuxiliaryIndex1
+    /// Entry_No
     /// </KeyProperties>
-    [global::Microsoft.OData.Client.Key("AuxiliaryIndex1")]
+    [global::Microsoft.OData.Client.Key("Entry_No")]
     public partial class QyApprovalEntries : global::Microsoft.OData.Client.BaseEntityType
     {
         /// <summary>
         /// Create a new QyApprovalEntries object.
         /// </summary>
-        /// <param name="auxiliaryIndex1">Initial value of AuxiliaryIndex1.</param>
+        /// <param name="entry_No">Initial value of Entry_No.</param>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public static QyApprovalEntries CreateQyApprovalEntries(int auxiliaryIndex1)
+        public static QyApprovalEntries CreateQyApprovalEntries(int entry_No)
         {
             QyApprovalEntries qyApprovalEntries = new QyApprovalEntries();
-            qyApprovalEntries.AuxiliaryIndex1 = auxiliaryIndex1;
+            qyApprovalEntries.Entry_No = entry_No;
             return qyApprovalEntries;
         }
         /// <summary>
@@ -80456,6 +80527,27 @@ namespace NAV
         partial void OnDocDetailsChanging(string value);
         partial void OnDocDetailsChanged();
         /// <summary>
+        /// There are no comments for Property Entry_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public int Entry_No
+        {
+            get
+            {
+                return this._Entry_No;
+            }
+            set
+            {
+                this.OnEntry_NoChanging(value);
+                this._Entry_No = value;
+                this.OnEntry_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private int _Entry_No;
+        partial void OnEntry_NoChanging(int value);
+        partial void OnEntry_NoChanged();
+        /// <summary>
         /// There are no comments for Property Comment in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
@@ -80476,27 +80568,6 @@ namespace NAV
         private global::System.Nullable<bool> _Comment;
         partial void OnCommentChanging(global::System.Nullable<bool> value);
         partial void OnCommentChanged();
-        /// <summary>
-        /// There are no comments for Property AuxiliaryIndex1 in the schema.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        public int AuxiliaryIndex1
-        {
-            get
-            {
-                return this._AuxiliaryIndex1;
-            }
-            set
-            {
-                this.OnAuxiliaryIndex1Changing(value);
-                this._AuxiliaryIndex1 = value;
-                this.OnAuxiliaryIndex1Changed();
-            }
-        }
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
-        private int _AuxiliaryIndex1;
-        partial void OnAuxiliaryIndex1Changing(int value);
-        partial void OnAuxiliaryIndex1Changed();
     }
     /// <summary>
     /// There are no comments for QyBankTransactionsBufferSingle in the schema.
@@ -100909,6 +100980,27 @@ namespace NAV
         private string _Assigned_User_ID;
         partial void OnAssigned_User_IDChanging(string value);
         partial void OnAssigned_User_IDChanged();
+        /// <summary>
+        /// There are no comments for Property Employee_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Employee_No
+        {
+            get
+            {
+                return this._Employee_No;
+            }
+            set
+            {
+                this.OnEmployee_NoChanging(value);
+                this._Employee_No = value;
+                this.OnEmployee_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Employee_No;
+        partial void OnEmployee_NoChanging(string value);
+        partial void OnEmployee_NoChanged();
         /// <summary>
         /// There are no comments for Property Comment in the schema.
         /// </summary>
@@ -132049,13 +132141,13 @@ namespace NAV
         /// Get an entity of type global::NAV.QyApprovalEntries as global::NAV.QyApprovalEntriesSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
-        /// <param name="auxiliaryIndex1">The value of auxiliaryIndex1</param>
+        /// <param name="entry_No">The value of entry_No</param>
         public static global::NAV.QyApprovalEntriesSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyApprovalEntries> _source,
-            int auxiliaryIndex1)
+            int entry_No)
         {
             global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
             {
-                { "AuxiliaryIndex1", auxiliaryIndex1 }
+                { "Entry_No", entry_No }
             };
             return new global::NAV.QyApprovalEntriesSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
         }

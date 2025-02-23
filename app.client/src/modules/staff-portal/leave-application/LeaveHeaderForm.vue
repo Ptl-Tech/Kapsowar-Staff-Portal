@@ -1,6 +1,7 @@
 <template>
     <div>
         <FormPageTemplate :title="pageProps.title+'-'+$route.params.action" @close="$emit('closeModal')">
+            <ApprovalForm v-if="$route.query.entryNo != undefined" @onFetchApprovalEntry="approvalEntry = $event" />
             <grid>
                 <grid-col v-if="$route.params.action != 'create'">
                     <field-group label="Leave Application No.">
@@ -61,7 +62,7 @@
                 </grid-col>
                 <grid-col>
                     <field-group label="Reliever" :showMandatory="false" :valErrors="valErrors.reliever">
-                        <TomSelectFetch v-if="xIsFormLoaded" tsId="reliever" v-model="form.reliever" :cProps="{valueField:'No',labelField:'Full_Name',searchField:['No'],recordField:'Reliever_No',webservice:'QyEmployees'}" :filter="record.Status != 'Released'? ``:`No eq '${record.Reliever_No}'`" :record="record" :formMode="formMode"/>
+                        <TomSelectFetch v-if="xIsFormLoaded" tsId="reliever" v-model="form.reliever" :cProps="{valueField:'No',labelField:'Full_Name',searchField:['No'],recordField:'Reliever_No',webservice:'QyEmployees'}" :filter="record.Status != 'Released'? ``:`No eq '${record.Reliever_No}'`" :record="record" :formMode="formMode" />
                     </field-group>
                 </grid-col>
                 <grid-col>
@@ -102,8 +103,9 @@
     import Actions from '@/modules/staff-portal/leave-application/LeaveHeaderActions.vue';
     import { useFormComposable } from '@/re-usables/composables/FormPageComposable.js';
     import TomSelectFetch from '@/re-usables/components/TomSelectFetch.vue';
+    import { Apr } from '@/re-usables/imports/ApprovalComponents.js';
     export default {
-        components: { Actions, ...W, ModalPageTemplate, TomSelectFetch },
+        components: { Actions, ...W,...Apr, ModalPageTemplate, TomSelectFetch },
         emits: ["closeModal"],
         setup() {
             const { router, xIsFormLoaded, xOnAfterFormLoaded } = useFormComposable();
@@ -142,7 +144,7 @@
                 isFetchingBalances: false,
                 isFetchingDates: false,
                 balances: {},
-                attachmentB64:''
+                attachmentB64: ''
             }
         },
         created() {
@@ -187,6 +189,10 @@
                                 if (this.record.Status != "Open") {
                                     this.formMode = "view";
                                 }
+                                if (data.response.approvers != undefined) {
+                                    this.approvers = data.response.approvers;
+                                }
+                                this.GetLeaveDaysAndReturnDate();
                             }
                         }
                         this.xOnAfterFormLoaded();

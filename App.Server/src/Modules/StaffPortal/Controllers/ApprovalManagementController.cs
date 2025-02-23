@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Extensions;
 using NAV;
 using System.Dynamic;
+using System.Net.Mail;
+
 //using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Nodes;
@@ -17,37 +19,34 @@ namespace webapi.Modules.ESS.Controllers
     public class ApprovalManagementController : ControllerBase
     {
         [IsApproverActionFilter]
-        public async Task<IActionResult> Index(string docType, string status)
+        public IActionResult Index(string docType, string status)
         {
             try
             {
+                var companyName = docType == ApprovalDocumentTypes.LeaveApplication.GetDisplayName() ? Config.HospitalNavCompany : "";
                 dynamic response = new ExpandoObject();
-                var baseQuery = GV.WSclient.ODATAClient(HttpContext).QyApprovalEntries
+                var baseQuery = GV.WSclient.ODATAClient(HttpContext, companyName).QyApprovalEntries
                     .Where(obj => obj.Approver_ID != "")
                     .Where(obj => obj.Approver_ID == GeneralController.SessionUser(HttpContext).myUserId)
                     .Where(obj => obj.Status == status)
                     .Where(x => x.Table_ID == GetDocumentTableID(docType))
                     .AsQueryable();
+                var entryDocDetails = new JsonObject();
                 //
                 if (GeneralController.RequestHasQuery(HttpContext) == false)
                 {
                     var maxTake = SearchFilterController.FnGetMaxTake(HttpContext);
                     var records = baseQuery.Take(maxTake).ToList();
-                    //filter = filter + $"&$top={maxTake}&$orderby=Date_Time_Sent_for_Approval asc";
                     if (records != null)
                     {
-                        foreach (QyApprovalEntries rec in records)
-                        {
-                            var details = await GetApprovalDocumentDetails(HttpContext, rec.Document_No, docType);
-                            rec.DocDetails = details;
-                        }
+                        response.entryDocDetails = GetApprovalEntriesDocDetails(records, docType, HttpContext);
                     }
                     response.records = records;
                     if (docType == ApprovalDocumentTypes.LeaveApplication.GetDisplayName())
                     {
                         var obj = new Dashboard();
                         obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
-                        obj.myUserId = GeneralController.SessionUser(HttpContext).userId;
+                        obj.myUserId = GeneralController.SessionUser(HttpContext).myUserId;
                         var result = GV.WSclient.CuStaffWebportal(HttpContext).FnApprovalStatisticsAsync(JsonSerializer.Serialize(obj)).Result;
                         response.pendingStatistics = result.return_value != "" ? JsonNode.Parse(result.return_value) : "";
                     }
@@ -59,14 +58,10 @@ namespace webapi.Modules.ESS.Controllers
                     clsProps.WSName = ModelInstance.GetType().Name;
                     clsProps.WSInstance = ModelInstance;
                     List<object> baseResults = new List<object>(baseQuery);
-                    var records = GV.SearchFilter.FnSearchFilter(HttpContext, baseResults, clsProps);
+                    dynamic records = GV.SearchFilter.FnSearchFilter(HttpContext, baseResults, clsProps);
                     if (records != null)
                     {
-                        foreach (QyApprovalEntries rec in records)
-                        {
-                            var details = await GetApprovalDocumentDetails(HttpContext, rec.Document_No, docType);
-                            rec.DocDetails = details;
-                        }
+                        response.entryDocDetails = GetApprovalEntriesDocDetails(records, docType, HttpContext);
                     }
                     response.records = records;
                 }
@@ -78,64 +73,41 @@ namespace webapi.Modules.ESS.Controllers
                 return BadRequest(GeneralController.ProcessException(ex));
             }
         }
-        //[IsApproverActionFilter]
-        //[HttpGet]
-        //public async Task<IActionResult> GetFormData(string myAction, string docNo, string entryNo, string docType)
-        //{
-        //    try
-        //    {
-        //        dynamic response = new ExpandoObject();
-        //        if (docType == "timesheet" || docType == "leave")
-        //        {
-        //            var filter = $"$filter=Employee_ID eq '{entryNo}' and Approver_ID eq '{GeneralController.SessionUser(HttpContext).EmployeeNo}' and No eq '{docNo}'&$orderby = Date_Time_Sent_for_Approval desc";
-        //            var approvalEntryStr = await GV.WSclient.ODATAFilter(HttpContext, WS.HRApprovalEntry().WSName, filter, false);
-        //            var formData = approvalEntryStr != null ? JsonNode.Parse(approvalEntryStr) : null;
-        //            response.formData = formData;
-        //            response.docType = docType;
-        //        }
-        //        else
-        //        {
-        //            var approvalEntryStr = "";
-        //            if (docType == "TOR" || docType == "Mission-Report" || docType == "memo" || docType == "staff-request" || docType == "ME-projects-report" || docType == "ME-branch-report" || docType == "ME-annual-report" || docType == "access-request")
-        //            {
-        //                var filter = $"$filter=Entry_No eq {int.Parse(entryNo)} and Document_No eq '{docNo}' and Employee_Approver_ID eq '{GeneralController.SessionUser(HttpContext).EmployeeNo}'";
-        //                approvalEntryStr = await GV.WSclient.ODATAFilter(HttpContext, WS.ApprovalEntry().WSName, filter, false);
-        //            }
-        //            else if (docType == "transport")
-        //            {
-        //                var filter = $"$filter=Entry_No eq {int.Parse(entryNo)} and Document_No eq '{docNo}' and Approver_ID eq '{GeneralController.SessionUser(HttpContext).EmployeeNo}'";
-        //                approvalEntryStr = await GV.WSclient.ODATAFilter(HttpContext, WS.ApprovalEntry().WSName, filter, false);
-        //            }
-        //            else if (docType == "store-request" || docType == "purchase-request")
-        //            {
-        //                var filter = $"$filter=Entry_No eq {int.Parse(entryNo)} and Document_No eq '{docNo}' and Approver_ID eq '{GeneralController.SessionUser(HttpContext).UserId}'";
-        //                approvalEntryStr = await GV.WSclient.ODATAFilter(HttpContext, WS.ApprovalEntry().WSName, filter, false);
-        //            }
-        //            else
-        //            {
-        //                approvalEntryStr = await GV.WSclient.ODATAFilter(HttpContext, WS.ApprovalEntry().WSName, $"$filter=Entry_No eq {int.Parse(entryNo)} and Document_No eq '{docNo}' and Approver_ID eq '{GeneralController.SessionUser(HttpContext).EmployeeNo}'", false);
-        //            }
-        //            var formData = approvalEntryStr != null ? JsonNode.Parse(approvalEntryStr) : null;
-        //            response.formData = formData;
-        //        }
-        //        return Ok(new { response });
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        return BadRequest(GeneralController.ProcessException(ex));
-        //    }
-        //}
+        [IsApproverActionFilter]
         [HttpGet]
-        public dynamic? GetApprovers(HttpContext context, string? docNo, int tableID)
+        public IActionResult GetFormData(string myAction, string docNo, int entryNo, string docType)
         {
             try
             {
-                var approvers = GV.WSclient.ODATAClient(HttpContext).QyApprovalEntries
-                   .Where(obj => obj.Status != "Cancelled")
+                var companyName = docType == ApprovalDocumentTypes.LeaveApplication.GetDisplayName() ? Config.HospitalNavCompany : "";
+                dynamic response = new ExpandoObject();
+                var formData = GV.WSclient.ODATAClient(HttpContext, companyName).QyApprovalEntries
+                    .Where(obj => obj.Approver_ID != "")
+                    .Where(obj => obj.Approver_ID == GeneralController.SessionUser(HttpContext).myUserId)
+                    .Where(obj => obj.Entry_No == entryNo)
+                    .Where(x => x.Document_No == docNo)
+                    .FirstOrDefault();
+                response.formData = formData;
+                return Ok(new { response });
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(GeneralController.ProcessException(ex));
+            }
+        }
+        [HttpGet]
+        public dynamic? GetApprovers(HttpContext context, string? docNo,string docType)
+        {
+            try
+            {
+                var tableID = GetDocumentTableID(docType);
+                var companyName = docType == ApprovalDocumentTypes.LeaveApplication.GetDisplayName() ? Config.HospitalNavCompany : "";
+                var approvers = GV.WSclient.ODATAClient(context, companyName).QyApprovalEntries
+                   .Where(obj => obj.Status != "Canceled")
                    .Where(obj => obj.Status != "Rejected")
                    .Where(x => x.Table_ID == tableID)
                    .Where(x => x.Document_No == docNo)
-                   .AsQueryable();
+                   .ToList();
                 if (approvers != null)
                 {
                     foreach (QyApprovalEntries approver in approvers)
@@ -171,7 +143,8 @@ namespace webapi.Modules.ESS.Controllers
                 }
                 obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
                 obj.myUserId = GeneralController.SessionUser(HttpContext).myUserId;
-                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnDocumentApprovalAsync(JsonSerializer.Serialize(obj)).Result;
+                var companyName = obj.docType == ApprovalDocumentTypes.LeaveApplication.GetDisplayName() ? Config.HospitalNavCompany : "";
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, companyName).FnDocumentApprovalAsync(JsonSerializer.Serialize(obj)).Result;
                 if (result.return_value != "")
                 {
                     return Ok(new { response = result.return_value });
@@ -212,56 +185,6 @@ namespace webapi.Modules.ESS.Controllers
 
         }
         //
-        public dynamic? GetApprovalDocumentDetails(HttpContext context, string docNo, string docType)
-        {
-            try
-            {
-                dynamic response = new ExpandoObject();
-                if (docType == ApprovalDocumentTypes.LeaveApplication.GetDisplayName())
-                {
-                    response.result = GV.WSclient.ODATAClient(context, Config.HospitalNavCompany).QyLeaveApplications
-                        .Where(obj => obj.Document_No == docNo)
-                        .FirstOrDefault();
-                }
-                else if (docType == ApprovalDocumentTypes.ImprestRequest.GetDisplayName())
-                {
-                    response.result = GV.WSclient.ODATAClient(HttpContext).QyImprestHeaders
-                        .Where(obj => obj.No == docNo)
-                        .FirstOrDefault();
-                }
-                else if (docType == ApprovalDocumentTypes.ImprestSurrender.GetDisplayName())
-                {
-                    response.result = GV.WSclient.ODATAClient(HttpContext).QyImprestSurrenderHeaders
-                        .Where(obj => obj.No == docNo)
-                        .FirstOrDefault();
-                }
-                else if (docType == ApprovalDocumentTypes.StaffClaim.GetDisplayName())
-                {
-                    response.result = GV.WSclient.ODATAClient(HttpContext).QyStaffClaimHeaders
-                        .Where(obj => obj.No == docNo)
-                        .FirstOrDefault();
-                }
-                else if (docType == ApprovalDocumentTypes.PurchaseRequest.GetDisplayName())
-                {
-                    response.result = GV.WSclient.ODATAClient(HttpContext).QyPurchaseHeaders
-                        .Where(obj => obj.No == docNo)
-                        .FirstOrDefault();
-                }
-                else if (docType == ApprovalDocumentTypes.StoreRequest.GetDisplayName())
-                {
-                    response.result = GV.WSclient.ODATAClient(HttpContext).QyStoreReqHeaders
-                        .Where(obj => obj.No == docNo)
-                        .FirstOrDefault();
-                }
-                return response;
-            }
-            catch (Exception)
-            {
-                return null;
-            }
-
-        }
-        //
         [HttpPost]
         public IActionResult DelegateOrCancelDocumentApproval([FromBody] DelegateOrCancelApproval obj)
         {
@@ -271,7 +194,8 @@ namespace webapi.Modules.ESS.Controllers
                 {
                     return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
                 }
-                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnDelegateOrCancelDocumentApprovalAsync(JsonSerializer.Serialize(obj)).Result;
+                var companyName = obj.docType == ApprovalDocumentTypes.LeaveApplication.GetDisplayName() ? Config.HospitalNavCompany : "";
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, companyName).FnDelegateOrCancelDocumentApprovalAsync(JsonSerializer.Serialize(obj)).Result;
                 if (result.return_value)
                 {
                     return Ok(new { response = result.return_value });
@@ -294,7 +218,7 @@ namespace webapi.Modules.ESS.Controllers
             var tableID = 0;
             if (documentType == ApprovalDocumentTypes.LeaveApplication.GetDisplayName())
             {
-                tableID = 50079;
+                tableID = 50305;
             }
             else if (documentType == ApprovalDocumentTypes.ImprestRequest.GetDisplayName())
             {
@@ -316,12 +240,100 @@ namespace webapi.Modules.ESS.Controllers
             {
                 tableID = 50375;
             }
+            else if (documentType == ApprovalDocumentTypes.PettyCash.GetDisplayName())
+            {
+                tableID = 50669;
+            }
             return tableID;
+        }
+        //
+        public JsonObject? GetApprovalEntriesDocDetails(List<QyApprovalEntries> entries, string docType, HttpContext context)
+        {
+            dynamic obj = new JsonObject();
+            if (entries != null)
+            {
+                foreach (var entry in entries)
+                {
+                    if (docType == ApprovalDocumentTypes.LeaveApplication.GetDisplayName())
+                    {
+                        var result = GV.WSclient.ODATAClient(context, Config.HospitalNavCompany).QyLeaveApplications
+                            .Where(x => x.Document_No == entry.Document_No)
+                            .FirstOrDefault();
+                        if (result != null)
+                        {
+                            obj[entry.Document_No + "_" + entry.Entry_No] = JsonSerializer.Serialize(result);
+                        }
+                    }
+                    else if (docType == ApprovalDocumentTypes.ImprestRequest.GetDisplayName())
+                    {
+                        var result = GV.WSclient.ODATAClient(HttpContext).QyImprestHeaders
+                            .Where(x => x.No == entry.Document_No)
+                            .FirstOrDefault();
+                        if (result != null)
+                        {
+                            obj[entry.Document_No + "_" + entry.Entry_No] = JsonSerializer.Serialize(result);
+                        }
+                    }
+                    else if (docType == ApprovalDocumentTypes.ImprestSurrender.GetDisplayName())
+                    {
+                        var result = GV.WSclient.ODATAClient(HttpContext).QyImprestSurrenderHeaders
+                            .Where(x => x.No == entry.Document_No)
+                            .FirstOrDefault();
+                        if (result != null)
+                        {
+                            obj[entry.Document_No + "_" + entry.Entry_No] = JsonSerializer.Serialize(result);
+                        }
+                    }
+                    else if (docType == ApprovalDocumentTypes.StaffClaim.GetDisplayName())
+                    {
+                        var result = GV.WSclient.ODATAClient(HttpContext).QyStaffClaimHeaders
+                            .Where(x => x.No == entry.Document_No)
+                            .FirstOrDefault();
+                        if (result != null)
+                        {
+                            obj[entry.Document_No + "_" + entry.Entry_No] = JsonSerializer.Serialize(result);
+                        }
+                    }
+                    else if (docType == ApprovalDocumentTypes.PurchaseRequest.GetDisplayName())
+                    {
+                        var result = GV.WSclient.ODATAClient(HttpContext).QyPurchaseHeaders
+                            .Where(x => x.No == entry.Document_No)
+                            .FirstOrDefault();
+                        if (result != null)
+                        {
+                            obj[entry.Document_No + "_" + entry.Entry_No] = JsonSerializer.Serialize(result);
+                        }
+                    }
+                    else if (docType == ApprovalDocumentTypes.StoreRequest.GetDisplayName())
+                    {
+                        var result = GV.WSclient.ODATAClient(HttpContext).QyStoreReqHeaders
+                            .Where(x => x.No == entry.Document_No)
+                            .FirstOrDefault();
+                        if (result != null)
+                        {
+                            obj[entry.Document_No + "_" + entry.Entry_No] = JsonSerializer.Serialize(result);
+                        }
+                    }
+                    //
+                    else if (docType == ApprovalDocumentTypes.PettyCash.GetDisplayName())
+                    {
+                        var result = GV.WSclient.ODATAClient(HttpContext).PgPettyCashList
+                            .Where(x => x.No == entry.Document_No)
+                            .FirstOrDefault();
+                        if (result != null)
+                        {
+                            obj[entry.Document_No + "_" + entry.Entry_No] = JsonSerializer.Serialize(result);
+                        }
+                    }
+
+                }
+            }
+            return obj;
         }
     }
     public enum ApprovalDocumentTypes
     {
-        LeaveApplication, ImprestRequest, ImprestSurrender, StaffClaim, PurchaseRequest, StoreRequest
+        LeaveApplication, ImprestRequest, ImprestSurrender, StaffClaim, PurchaseRequest, StoreRequest,PettyCash
     };
 
 }

@@ -89,8 +89,10 @@
 					if (this.loadedOptions != null) {
                         var activeOption = this.loadedOptions.find(obj => obj[this.cProps.valueField] == value);
                         var option = {};
-                        option[this.cProps.valueField] = value;
-                        option[this.cProps.labelField] = activeOption[this.cProps.labelField];
+						option[this.cProps.valueField] = value;
+						if (activeOption != undefined) {
+                            option[this.cProps.labelField] = activeOption[this.cProps.labelField];
+						}
                         MyTomSelect[tsId].updateOption(value, option);
 					}
                     MyTomSelect[tsId].setValue([value]);

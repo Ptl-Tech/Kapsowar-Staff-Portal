@@ -19,13 +19,13 @@ export const supplierPortalRoutes = [
                 meta: { requiresAuth: true },
                 children: [
                     { path: 'list', name: "ApprovalList", component: () => import('@/modules/staff-portal/approval-entry/ApprovalList.vue'), },
-                    { path: ':status/imprest/:action/:no/:entryNo/:docType', component: () => import('@/modules/staff-portal/imprest-request/header/ImprestHeaderForm.vue') },
-                    { path: ':status/imprest-surrender/:action/:no/:entryNo/:docType', component: () => import('@/modules/staff-portal/imprest-surrender/header/ImprestSurrenderHeaderForm.vue') },
-                    { path: ':status/leave/:action/:no/:entryNo/:docType', component: () => import('@/modules/staff-portal/leave-application/LeaveHeaderForm.vue') },
-                    { path: ':status/staff-claim/:action/:no/:entryNo/:docType', component: () => import('@/modules/staff-portal/staff-claim/header/StaffClaimHeaderForm.vue') },
-                    { path: ':status/purchase-request/:action/:no/:entryNo/:docType', component: () => import('@/modules/staff-portal/purchase-request/header/PurchaseRequestHeaderForm.vue') },
-                    { path: ':status/store-request/:action/:no/:entryNo/:docType', component: () => import('@/modules/staff-portal/store-request/header/StoreRequestHeaderForm.vue') },
-                    { path: ':status/petty-cash/:action/:no/:entryNo/:docType', component: () => import('@/modules/staff-portal/petty-cash/header/PettyCashHeaderForm.vue') },
+                    { path: ':status/imprest-request/:action/:docType', component: () => import('@/modules/staff-portal/imprest-request/header/ImprestHeaderForm.vue') },
+                    { path: ':status/imprest-surrender/:action/:docType', component: () => import('@/modules/staff-portal/imprest-surrender/header/ImprestSurrenderHeaderForm.vue') },
+                    { path: ':status/leave-application/:action/:docType', component: () => import('@/modules/staff-portal/leave-application/LeaveHeaderForm.vue') },
+                    { path: ':status/staff-claim/:action/:docType', component: () => import('@/modules/staff-portal/staff-claim/header/StaffClaimHeaderForm.vue') },
+                    { path: ':status/purchase-request/:action/:docType', component: () => import('@/modules/staff-portal/purchase-request/header/PurchaseRequestHeaderForm.vue') },
+                    { path: ':status/store-request/:action/:docType', component: () => import('@/modules/staff-portal/store-request/header/StoreRequestHeaderForm.vue') },
+                    { path: ':status/petty-cash/:action/:docType', component: () => import('@/modules/staff-portal/petty-cash/header/PettyCashHeaderForm.vue') },
                 ]
             },
             /**

@@ -10,6 +10,7 @@ using System.Reflection.PortableExecutable;
 //using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using webapi.Modules.ESS.Controllers;
 
 namespace App.Server.src.Modules.ESS.Controllers
 {
@@ -54,7 +55,7 @@ namespace App.Server.src.Modules.ESS.Controllers
         }
         //
         [HttpGet]
-        public IActionResult GetFormData(string myAction, string recId)
+        public IActionResult GetFormData(string myAction, string recId, bool isApproval = false)
         {
             try
             {
@@ -63,13 +64,22 @@ namespace App.Server.src.Modules.ESS.Controllers
                 response.dims = JsonNode.Parse(dimsStr);
                 if (!myAction.Contains("create"))
                 {
-                    var formData = GV.WSclient.ODATAClient(HttpContext).QyPurchaseHeaders
-                        .Where(obj => obj.No == recId)
-                        .Where(obj => obj.Assigned_User_ID == GeneralController.SessionUser(HttpContext).myUserId)
-                        .FirstOrDefault();
+                    var baseQuery = GV.WSclient.ODATAClient(HttpContext).QyPurchaseHeaders
+                        .Where(obj => obj.No == recId).AsQueryable();
+                    if (!isApproval)
+                    {
+                        baseQuery = baseQuery.Where(obj => obj.Assigned_User_ID == GeneralController.SessionUser(HttpContext).myUserId);
+                    }
+
+                    var formData = baseQuery.FirstOrDefault();
                     if (formData == null)
                     {
                         throw new Exception("Document not found");
+                    }
+                    if (formData != null && formData.Status != "Open")
+                    {
+                        var approvers = GV.ApprovalMgt.GetApprovers(HttpContext, formData.No, ApprovalDocumentTypes.PurchaseRequest.GetDisplayName());
+                        response.approvers = approvers;
                     }
                     response.formData = formData;
                 }
@@ -104,7 +114,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 var response = JsonNode.Parse(result.return_value);
                 if (response != null && response["status"]?.ToString() == "success")
                 {
-                    return Ok(new { response = response});
+                    return Ok(new { response = response });
                 }
                 else
                 {
@@ -118,7 +128,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                 return BadRequest(GeneralController.ProcessException(ex));
             }
         }
-        
+
         [HttpPost]
         public IActionResult Delete([FromBody] DeletePurchaseRequestHeader obj)
         {

@@ -32,7 +32,6 @@ namespace App.Server.Modules.HMIS.Models
     {
         [DisplayName("Staff No.")]
         public string userNo { get; set; } = "";
-        public string userId { get; set; } = "";
         public string fullName { get; set; } = "";
         public string firstName { get; set; } = "";
         public string middleName { get; set; } = "";

@@ -8,6 +8,7 @@ using System.Dynamic;
 //using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using webapi.Modules.ESS.Controllers;
 
 namespace App.Server.src.Modules.ESS.Controllers
 {
@@ -82,20 +83,28 @@ namespace App.Server.src.Modules.ESS.Controllers
         }
         //
         [HttpGet]
-        public IActionResult GetFormData(string myAction, string recId)
+        public IActionResult GetFormData(string myAction, string recId,bool isApproval)
         {
             try
             {
                 dynamic response = new ExpandoObject();
                 if (!myAction.Contains("create"))
                 {
-                    var formData = GV.WSclient.ODATAClient(HttpContext, Config.HospitalNavCompany).QyLeaveApplications
-                        .Where(obj => obj.Document_No == recId)
-                        .Where(obj => obj.Employee_No == GeneralController.SessionUser(HttpContext).userNo)
-                        .FirstOrDefault();
+                    var baseQuery = GV.WSclient.ODATAClient(HttpContext, Config.HospitalNavCompany).QyLeaveApplications
+                        .Where(obj => obj.Document_No == recId).AsQueryable();
+                    if (!isApproval)
+                    {
+                        baseQuery = baseQuery.Where(obj => obj.Employee_No == GeneralController.SessionUser(HttpContext).userNo);
+                    }
+                    var formData = baseQuery.FirstOrDefault();
                     if (formData == null)
                     {
                         throw new Exception("Leave not found");
+                    }
+                    if (formData != null && formData.Status != "Open")
+                    {
+                        var approvers = GV.ApprovalMgt.GetApprovers(HttpContext, formData.Document_No, ApprovalDocumentTypes.LeaveApplication.GetDisplayName());
+                        response.approvers = approvers;
                     }
                     response.formData = formData;
                 }

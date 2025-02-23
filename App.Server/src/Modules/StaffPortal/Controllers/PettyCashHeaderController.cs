@@ -10,6 +10,7 @@ using System.Reflection.PortableExecutable;
 //using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using webapi.Modules.ESS.Controllers;
 
 namespace App.Server.src.Modules.ESS.Controllers
 {
@@ -52,7 +53,7 @@ namespace App.Server.src.Modules.ESS.Controllers
         }
         //
         [HttpGet]
-        public IActionResult GetFormData(string myAction, string recId)
+        public IActionResult GetFormData(string myAction, string recId, bool isApproval = false)
         {
             try
             {
@@ -61,13 +62,22 @@ namespace App.Server.src.Modules.ESS.Controllers
                 response.dims = JsonNode.Parse(dimsStr);
                 if (!myAction.Contains("create"))
                 {
-                    var formData = GV.WSclient.ODATAClient(HttpContext).PgPettyCashList
+                    var baseQuery = GV.WSclient.ODATAClient(HttpContext).PgPettyCashList
                         .Where(obj => obj.No == recId)
-                        .Where(obj => obj.PF_No == GeneralController.SessionUser(HttpContext).userNo)
-                        .FirstOrDefault();
+                       .AsQueryable();
+                    if (!isApproval)
+                    {
+                        baseQuery = baseQuery.Where(obj => obj.PF_No == GeneralController.SessionUser(HttpContext).userNo);
+                    }
+                    var formData = baseQuery.FirstOrDefault();
                     if (formData == null)
                     {
                         throw new Exception("Document not found");
+                    }
+                    if (formData != null && formData.Status != "Pending")
+                    {
+                        var approvers = GV.ApprovalMgt.GetApprovers(HttpContext, formData.No, ApprovalDocumentTypes.PettyCash.GetDisplayName());
+                        response.approvers = approvers;
                     }
                     response.formData = formData;
                 }

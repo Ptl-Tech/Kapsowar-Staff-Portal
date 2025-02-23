@@ -1,6 +1,6 @@
 <template>
-    <div :class="[$route.params.entryNo == undefined? '':'py-1','flex gap-0.5 justify-center']">
-        <WRouterLink v-if="$route.params.entryNo == undefined" :to="docLink" class="!bg-blue-500 rounded-sm !text-xs !py-0.5" title="Open Document"><EyeIcon class="iconSmall" /> <span class="hidden sm:flex">View</span></WRouterLink>
+    <div :class="[$route.query.entryNo == undefined? '':'py-1','flex gap-0.5 justify-center']">
+        <WRouterLink v-if="$route.query.entryNo == undefined" :to="docLink" class="!bg-blue-500 rounded-sm !text-xs !py-0.5" title="Open Document"><EyeIcon class="iconSmall" /> <span class="hidden sm:flex">View</span></WRouterLink>
         <WButton v-if="record.Status == 'Open'" class="!bg-green-500 rounded-sm !text-xs !py-0.5" @click="OnApprove()"><CheckIcon class="iconSmall" />Approve</WButton>
         <WButton v-if="record.Status == 'Open'" class="!bg-red-500 rounded-sm !text-xs !py-0.5" @click="OnReject()"><XMarkIcon class="iconSmall" />Reject</WButton>
     </div>
@@ -9,7 +9,7 @@
 <script>
     import { W } from '@/re-usables/imports/ActionsPartComponents.js'
     import { MenuItem } from '@headlessui/vue'
-    import ApprovalRejectionForm from '@/modules/ess/approval-entry/ApprovalRejectionForm.vue';
+    import ApprovalRejectionForm from '@/modules/staff-portal/approval-entry/ApprovalRejectionForm.vue';
     import { useRouter } from 'vue-router'
     import WRouterLink from '@/re-usables/components/WRouterLink.vue'
     import WButton from '@/re-usables/components/WButton.vue'
@@ -58,8 +58,8 @@
                     })
                     .then(data => {
                         if (data && data.errors) {
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = data.errors;
+                            var msg = data.errors;
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         }
                         else {
                             var res;
@@ -67,20 +67,20 @@
                             res = data.response;
                             if (res) {
                                 msg = "Approved successfully.";
-                                this.$root.FnNotification(msg, 'bg-green-500', false);
+                                this.$root.FnNotification({ type: "poup", theme: "green", message: msg });
                                 this.router.push("ess/approval-entry/list?status=Open&docType=" + this.$route.params.docType);
                                 this.router.go();
                                 this.ReducePendingApprovalCount();
                             } else {
-                                this.$root.errorModal.isShow = true;
-                                this.$root.errorModal.message = this.appConfig.errors.generalFailure;
+                                var msg = this.appConfig.errors.generalFailure;
+                                this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                             }
                            
                         }
                         this.$root.loader.isLoading = false;
                     }).catch((error) => {
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = error;
+                        var msg = error;
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         this.$root.loader.isLoading = false;
                     });
             },
@@ -116,8 +116,8 @@
                     })
                     .then(data => {
                         if (data && data.errors) {
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = data.errors;
+                            var msg = data.errors;
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         }
                         else {
                             var res;
@@ -130,15 +130,15 @@
                                 this.router.go();
                                 this.ReducePendingApprovalCount();
                             } else {
-                                this.$root.errorModal.isShow = true;
-                                this.$root.errorModal.message = this.appConfig.errors.generalFailure;
+                                var msg = this.appConfig.errors.generalFailure;
+                                this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                             }
 
                         }
                         this.$root.loader.isLoading = false;
                     }).catch((error) => {
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = error;
+                        var msg = error;
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         this.$root.loader.isLoading = false;
                     });
             },

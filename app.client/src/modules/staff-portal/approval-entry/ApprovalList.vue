@@ -1,5 +1,5 @@
 <template>
-    <ImprestsApprovalList v-if="$route.query.docType == 'ImprestRequest''"></ImprestsApprovalList>
+    <ImprestsApprovalList v-if="$route.query.docType == 'ImprestRequest'"></ImprestsApprovalList>
     <ImprestSurrendersApprovalList v-if="$route.query.docType == 'ImprestSurrender'"></ImprestSurrendersApprovalList>
     <PettyCashApprovalList v-if="$route.query.docType == 'PettyCash'"></PettyCashApprovalList>
     <StaffClaimApprovalList v-if="$route.query.docType == 'StaffClaim'"></StaffClaimApprovalList>
@@ -13,7 +13,7 @@
     import Actions from '@/modules/staff-portal/approval-entry/ApprovalActions.vue';
     import WRouterLink from '@/re-usables/components/WRouterLink.vue'
     import { EyeIcon } from '@heroicons/vue/24/outline'
-    const ImprestsApprovalList = defineAsyncComponent(() => import('@/modules/staff-portal/approval-entry/approval-lists/ImprestApprovalList.vue'));
+    const ImprestsApprovalList = defineAsyncComponent(() => import('@/modules/staff-portal/approval-entry/approval-lists/ImprestRequestApprovalList.vue'));
     const ImprestSurrendersApprovalList = defineAsyncComponent(() => import('@/modules/staff-portal/approval-entry/approval-lists/ImprestSurrenderApprovalList.vue'));
     const PettyCashApprovalList = defineAsyncComponent(() => import('@/modules/staff-portal/approval-entry/approval-lists/PettyCashApprovalList.vue'));
     const LeaveApprovalList = defineAsyncComponent(() => import('@/modules/staff-portal/approval-entry/approval-lists/LeaveApprovalList.vue'));

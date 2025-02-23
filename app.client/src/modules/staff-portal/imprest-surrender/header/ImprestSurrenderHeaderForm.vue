@@ -1,6 +1,7 @@
 <template>
     <div>
         <FormPageTemplate :title="pageProps.caption+' - '+$route.params.action">
+            <ApprovalForm v-if="$route.query.entryNo != undefined" @onFetchApprovalEntry="approvalEntry = $event" />
             <grid>
                 <grid-col v-if="$route.params.action != 'create'">
                     <field-group label="Surrender No.">
@@ -40,9 +41,11 @@
                 </MenuTabs>
                 <Lines v-if="activeSubpart == 'lines'" :filter="{parentId:record[pageProps.keys.recKey]}" />
             </div><!--</subparts-->
+            <ApproversList :records="approvers" v-if="record.Status != undefined && record.Status != 'Pending'"></ApproversList>
             <div class="flex gap-1 justify-center py-2">
                 <Actions ref="actions" :record="record" :pageProps="pageProps" :formData="form" @onValErrors="valErrors = $event" />
             </div>
+            <ApprovalActions v-if="approvalEntry != null && approvalEntry.Status != undefined && approvalEntry.Status == 'Open'" :record="approvalEntry" />
         </FormPageTemplate>
     </div>
 </template>
@@ -56,8 +59,9 @@
     import MenuButton from '@/re-usables/components/MenuTabs/MenuButton.vue';
     import TomSelectFetch from '@/re-usables/components/TomSelectFetch.vue';
     import TomSelectDims from '@/re-usables/components/TomSelectDims.vue';
+    import { Apr } from '@/re-usables/imports/ApprovalComponents.js';
     export default {
-        components: { Actions, ...W, MenuTabs, MenuButton, TomSelectFetch, TomSelectDims, Lines },
+        components: { Actions, ...W,...Apr, MenuTabs, MenuButton, TomSelectFetch, TomSelectDims, Lines },
         setup() {
             const { router, xIsFormLoaded, xOnAfterFormLoaded, xFnAutoSaveFormData } = useFormComposable();
             return { router, xIsFormLoaded, xOnAfterFormLoaded, xFnAutoSaveFormData };
@@ -125,6 +129,9 @@
                                 this.form.imprestNo = formData.Imprest_Issue_Doc_No;
                                 if (this.record.Status != "Pending") {
                                     this.formMode = "view";
+                                }
+                                if (data.response.approvers != undefined) {
+                                    this.approvers = data.response.approvers;
                                 }
                             }
                         }

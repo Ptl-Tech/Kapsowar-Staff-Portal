@@ -1,5 +1,6 @@
 ﻿using App.Server.src.Re_usables.Modules.DynamicsBC;
 using System.Net;
+using webapi.Modules.ESS.Controllers;
 
 namespace App.Server
 {
@@ -10,7 +11,7 @@ namespace App.Server
         //
         public static WSClient WSclient = new();
         public static SearchFilterController SearchFilter = new();
-        //public static ApprovalManagementController ApprovalMgt = new();
+        public static ApprovalManagementController ApprovalMgt = new();
         public static GeneralController GenController = new();
         public static DimensionsController DimsController = new();
         //public static PermissionsController PermissionsController = new();

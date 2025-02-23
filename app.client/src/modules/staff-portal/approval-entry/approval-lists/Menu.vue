@@ -42,7 +42,7 @@
             if(this.$route.fullPath.includes('status=Open')){
                 var stats = localStorage.getItem("pendingStatistics");
                 if (stats != null) {
-                    this.pendingStatistics = JSON.parse(stats);
+                   this.pendingStatistics = JSON.parse(stats);
                 }
             }
         },

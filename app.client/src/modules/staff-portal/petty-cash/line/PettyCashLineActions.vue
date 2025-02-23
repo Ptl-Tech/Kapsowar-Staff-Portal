@@ -3,7 +3,7 @@
         <WButton v-if="pageProps.pageType == 'form' && formData.myAction != 'view'" class="!bg-blue-500 rounded-sm" @click="OnSubmit('save')"><CheckIcon class="iconSmall" />Save</WButton>
         <WRouterLink :to="pageProps.formRoute+'/edit?parentId='+record[pageProps.keys.parentKey]+'&recId='+record[pageProps.keys.recKey]" v-if="record[pageProps.keys.recKey] != undefined" class="flex items-center !bg-blue-500" title="Edit"><PencilSquareIcon class="iconSmall" /><span> Edit</span></WRouterLink>
         <WRouterLink :to="pageProps.formRoute+'/view?parentId='+record[pageProps.keys.parentKey]+'&recId='+record[pageProps.keys.recKey]" v-if="record[pageProps.keys.recKey] != undefined && $route.params.action != 'view' && pageProps.pageType == 'list'" class="flex items-center !bg-gray-500" title="View"><EyeIcon class="iconSmall" /><span> View</span></WRouterLink>
-        <WButton v-if="record[pageProps.keys.recKey] != undefined && header.Status == 'Pending'" @click="OnDeleteRecord()" class="flex items-center !bg-red-500" title="delete"><TrashIcon class="iconSmall" /><span> Delete</span></WButton>
+        <WButton v-if="record[pageProps.keys.recKey] != undefined && header != null && header.Status == 'Pending'" @click="OnDeleteRecord()" class="flex items-center !bg-red-500" title="delete"><TrashIcon class="iconSmall" /><span> Delete</span></WButton>
     </div>
 </template>
 <script>

@@ -48,6 +48,7 @@ namespace App.Server.Modules.HMIS.Controllers
                         authUser.responsibilityCenter = QyUser.Responsibility_Center;
                         authUser.isLecturer = QyUser.Lecturer??false;
                         authUser.navCompany = obj.NavCompany;
+                        authUser.myUserId = "XXXXXXXXX";
                         //if(authUser.responsibilityCenter == "")
                         //{
                         //    throw new Exception("Staff responsibility center not set in Employee card.");
@@ -55,6 +56,7 @@ namespace App.Server.Modules.HMIS.Controllers
                         var QyUserSetup = GV.WSclient.ODATAClient(HttpContext).QyUserSetup.Where(x => x.Employee_No == obj.userNo).FirstOrDefault();
                         if (QyUserSetup != null) {
                             authUser.myUserId = QyUserSetup.User_ID;
+                            //authUser.myUserId ="ALEX";
                             authUser.customerNo = QyUserSetup.Staff_Travel_Account;
                         }
                         var department = GV.WSclient.ODATAClient(HttpContext).QyDimensionValues.Where(x => x.Dimension_Code == "DEPARTMENT").Where(x => x.HOD == obj.userNo).FirstOrDefault();

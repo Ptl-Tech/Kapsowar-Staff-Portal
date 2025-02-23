@@ -1,17 +1,19 @@
 <template>
-    <div v-if="actionsProps.scope == undefined || actionsProps.scope == 'singleRecord'" :class="[pageProps.pageType == 'list'? 'flex-col':'flex-col sm:flex-row','flex gap-0.5']">
+    <div v-if="record.Employee_No == undefined || record.Employee_No == $root.authUser.userNo" :class="[pageProps.pageType == 'list'? 'flex-col':'flex-col sm:flex-row','flex gap-0.5']">
         <WButton v-if="pageProps.pageType == 'form' && formData.myAction != 'view'" class="!bg-blue-500 rounded-sm" @click="OnSubmit('save')"><CheckIcon class="iconSmall" />Save Only</WButton>
         <WButton v-if="pageProps.pageType == 'form' && formData.myAction != 'view'" class="!bg-green-500 rounded-sm" @click="OnSubmit('submit')"><CheckIcon class="iconSmall" />Save & Send for Approval</WButton>
         <WRouterLink :to="pageProps.formRoute+'/edit?parentId='+record[pageProps.keys.parentKey]+'&recId='+record[pageProps.keys.recKey]" v-if="record.Status != undefined && record.Status == 'Open'" class="flex items-center !bg-blue-500" title="Edit"><PencilSquareIcon class="iconSmall" /><span> Edit</span></WRouterLink>
         <WRouterLink :to="pageProps.formRoute+'/view?parentId='+record[pageProps.keys.parentKey]+'&recId='+record[pageProps.keys.recKey]" v-if="record[pageProps.keys.recKey] != undefined && $route.params.action != 'view' && pageProps.pageType == 'list'" class="flex items-center !bg-gray-500" title="View"><EyeIcon class="iconSmall" /><span> View</span></WRouterLink>
+        <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Pending Approval'" @click="OnDelegateOrCancelApproval('LeaveApplication','cancelApproval',record[pageProps.keys.recKey])" class="flex items-center !bg-red-500" title="cancel"><ArrowUturnLeftIcon class="iconSmall" /><span> Cancel Approval</span></WButton>
+        <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Pending Approval'" @click="OnDelegateOrCancelApproval('LeaveApplication','delegateApproval',record[pageProps.keys.recKey])" class="flex items-center !bg-yellow-500" title="delegate"><DocumentIcon class="iconSmall" /><span> Delegate Approval</span></WButton>
         <WButton v-if="record[pageProps.keys.recKey] != undefined && record.Status == 'Open'" @click="OnDeleteRecord()" class="flex items-center !bg-red-500" title="delete"><TrashIcon class="iconSmall" /><span> Delete</span></WButton>
     </div>
 </template>
 <script>
-    import {W} from '@/re-usables/imports/ActionsPartComponents.js'
+    import { W } from '@/re-usables/imports/ActionsPartComponents.js'
     import { useRouter } from 'vue-router'
     export default {
-        props: {record: { default: null }, header: { default: null }, formData: { default: "" }, pageProps: { default: {} }, actionsProps: { default: {} }},
+        props: { record: { default: null }, header: { default: null }, formData: { default: "" }, pageProps: { default: {} }, actionsProps: { default: {} } },
         components: { ...W },
         emits: ["onAction"],
         setup() {
@@ -20,12 +22,12 @@
         },
         data() {
             return {
-                isModal:false
+                isModal: false
             }
         },
         methods: {
             OnSubmit(action) {
-                if (!confirm('Are you sure you want to ' + action +'?')) { return; }
+                if (!confirm('Are you sure you want to ' + action + '?')) { return; }
                 var body;
                 var url;
                 var docNo = "";
@@ -37,12 +39,12 @@
                     }
                     docNo = this.record.Line_No;
                 } else {
-                    if(action !== "cancel") {
+                    if (action !== "cancel") {
                         url = this.appConfig.baseApiRoute + this.pageProps.controller + "/Store";
                         body = this.formData;
                         if (body.myAction.indexOf("#" + action) == -1) {
                             body.myAction = this.$route.params.action + "#" + action;
-                        } 
+                        }
                         body.startDate = new Date(body.startDate).toISOString().split("T")[0]
                         body.endDate = new Date(body.endDate).toISOString().split("T")[0]
                         docNo = this.formData.DocNo;
@@ -66,7 +68,7 @@
                             this.$root.FnNotification({ type: "popup", theme: "red", message: msg });
                         }
                         else if (data && data.errors) {
-                           var msg = data.errors;
+                            var msg = data.errors;
                             this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         }
                         else {
@@ -88,9 +90,52 @@
                         this.$root.loader.isLoading = false;
                     });
             },
+            OnDelegateOrCancelApproval(docType, action, docNo) {
+                if (!confirm('Are you sure you want to update approval?')) { return; }
+                var url = this.appConfig.baseApiRoute + "ApprovalManagement/DelegateOrCancelDocumentApproval";
+                var body = {};
+                body.docType = docType;
+                body.recId = this.record[this.pageProps.keys.recId];
+                body.myAction = action;
+                body.docNo = docNo;
+                this.$root.loader.isLoading = true;
+                const requestOptions = {
+                    method: "POST",
+                    headers: { 'Content-Type': "application/json" },
+                    body: JSON.stringify(body)
+                };
+
+                fetch(url, requestOptions)
+                    .then(response => {
+                        return response.json();
+                    })
+                    .then(data => {
+                        if (data && data.valErrors) {
+                            this.valErrors = data.valErrors;
+                        }
+                        else if (data && data.errors) {
+                            var msg = data.errors;
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
+                        }
+                        else {
+                            this.$root.FnNotification("Delegated successfully", 'bg-green-500', false);
+                            if (this.pageProps.pageType == 'form') {
+                                this.$router.go(-1);
+                            } else {
+                                this.$router.go();
+                            }
+
+                        }
+                        this.$root.loader.isLoading = false;
+                    }).catch((error) => {
+                        var msg = error;
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
+                        this.$root.loader.isLoading = false;
+                    });
+            },
             OnDeleteRecord() {
                 if (!confirm('Are you sure you want to delete this record?')) { return; }
-                var url = this.appConfig.baseApiRoute + this.pageProps.controller+"/Delete";
+                var url = this.appConfig.baseApiRoute + this.pageProps.controller + "/Delete";
                 this.$root.loader.isLoading = true;
                 const requestOptions = {
                     method: "POST",
@@ -116,7 +161,7 @@
                             } else {
                                 this.$router.go();
                             }
-                
+
                         }
                         this.$root.loader.isLoading = false;
                     }).catch((error) => {
