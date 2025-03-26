@@ -137,6 +137,9 @@ namespace CuStaffWebportal
         [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnDelegateOrCancelDocume" +
             "ntApproval", ReplyAction="*")]
         System.Threading.Tasks.Task<CuStaffWebportal.FnDelegateOrCancelDocumentApproval_Result> FnDelegateOrCancelDocumentApprovalAsync(CuStaffWebportal.FnDelegateOrCancelDocumentApproval request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnStaffCheckinCheckout", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnStaffCheckinCheckout_Result> FnStaffCheckinCheckoutAsync(CuStaffWebportal.FnStaffCheckinCheckout request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1735,6 +1738,46 @@ namespace CuStaffWebportal
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnStaffCheckinCheckout", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnStaffCheckinCheckout
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnStaffCheckinCheckout()
+        {
+        }
+        
+        public FnStaffCheckinCheckout(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnStaffCheckinCheckout_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnStaffCheckinCheckout_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnStaffCheckinCheckout_Result()
+        {
+        }
+        
+        public FnStaffCheckinCheckout_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     public interface CuStaffWebportal_PortChannel : CuStaffWebportal.CuStaffWebportal_Port, System.ServiceModel.IClientChannel
     {
@@ -2299,6 +2342,19 @@ namespace CuStaffWebportal
             CuStaffWebportal.FnDelegateOrCancelDocumentApproval inValue = new CuStaffWebportal.FnDelegateOrCancelDocumentApproval();
             inValue.jString = jString;
             return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnDelegateOrCancelDocumentApprovalAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnStaffCheckinCheckout_Result> CuStaffWebportal.CuStaffWebportal_Port.FnStaffCheckinCheckoutAsync(CuStaffWebportal.FnStaffCheckinCheckout request)
+        {
+            return base.Channel.FnStaffCheckinCheckoutAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnStaffCheckinCheckout_Result> FnStaffCheckinCheckoutAsync(string jString)
+        {
+            CuStaffWebportal.FnStaffCheckinCheckout inValue = new CuStaffWebportal.FnStaffCheckinCheckout();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnStaffCheckinCheckoutAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

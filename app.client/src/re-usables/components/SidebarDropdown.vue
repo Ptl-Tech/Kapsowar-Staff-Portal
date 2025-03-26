@@ -1,7 +1,7 @@
 <template>
     <div :class="['relative py-0.5',!isLast? 'border-b border-gray-500':'border-t border-gray-500']">
         <!--<div @click="open = ! open" :class="['flex items-center justify-between cursor-pointer pr-2 pl-1 py-1.5 text-xs leading-5 text-white gap-1 font-bold border-t',isLast? 'border-b':'']">-->
-        <div @click="open = ! open" :class="['flex items-center justify-between cursor-pointer pr-2 pl-0 py-1 text-xs leading-5 text-white gap-1 font-medium hover:bg-theme-1 hover:rounded-md']">
+        <div @click="open = ! open" :class="['flex items-center justify-between cursor-pointer pr-2 pl-0 py-1 text-xs leading-5 text-white gap-1 font-medium hover:bg-theme-3 hover:rounded-md']">
             <span class="flex items-center gap-0.5"><slot name="caption" /></span>
             <ChevronDownIcon v-if="!open" class="h-3 w-3 font-bold" />
             <ChevronUpIcon v-if="open" class="h-3 w-3 font-bold" />

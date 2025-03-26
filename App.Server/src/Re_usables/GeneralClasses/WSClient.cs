@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using NAV;
 using System.Net;
 using System.Net.Http.Headers;
 using System.ServiceModel;
@@ -150,12 +151,12 @@ namespace App.Server
         }
         //
         [HttpGet]
-        public async Task<string> ODATAFilter(HttpContext context, string? webservice, string filter, bool isList = false)
+        public async Task<string> ODATAFilter(HttpContext context, string? webservice, string filter, bool isList = false,string company="")
         {
             try
             {
                 initiateService();
-                navCompany = GV.GenController.GetNavCompany(context);
+                navCompany = company == ""? GV.GenController.GetNavCompany(context):company;
                 string odataURL = $"{odataBaseUrl}{navInstance}/ODataV4/Company('{navCompany}')/{webservice}?{filter}&$format=json";
                 var response = await GV.httpClient.GetAsync(odataURL);
                 if (response.IsSuccessStatusCode)

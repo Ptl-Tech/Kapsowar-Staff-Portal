@@ -1,36 +1,36 @@
 <template>
     <div>
         <!--Admin Services-->
-        <!--<h4 class="font-semibold text-sm text-gray-500">Admin & General Services:</h4>
-    <grid class="sm:!grid-cols-2 lg:!grid-cols-5">
-        <grid-col>
-            <Tile class="bg-red-500" :showLoader="isLoading">
-                <template #icon>
-                    <DocumentCheckIcon class="h-6 w-6" />
-                </template>
-                <template #label>
-                    <router-link to="/ess/approval-entry/list?status=Open&docType=advance" class="underline">Approval Entries</router-link>
-                </template>
-                <template #value>
-                    <div class="flex gap-1 items-center">
-                        <span class="text-xs flex flex-col items-center">
-                            <span class="">Open</span>
-                            <span class="underline">
-                                <router-link to="/ess/approval-entry/list?status=Open&docType=advance">{{$root.authUser.PendingMyApproval}}</router-link>
+        <h4 class="font-semibold text-sm text-gray-500">Admin Services:</h4>
+        <grid class="sm:!grid-cols-2 lg:!grid-cols-5">
+            <grid-col>
+                <Tile class="bg-red-500" :showLoader="isLoading">
+                    <template #icon>
+                        <DocumentCheckIcon class="h-6 w-6" />
+                    </template>
+                    <template #label>
+                        <router-link to="/ess/approval-entry/list?status=Open&docType=LeaveApplication" class="underline">Approval Entries</router-link>
+                    </template>
+                    <template #value>
+                        <div class="flex gap-1 items-center">
+                            <span class="text-xs flex flex-col items-center">
+                                <span class="">Open</span>
+                                <span class="underline">
+                                    <router-link to="/ess/approval-entry/list?status=Open&docType=LeaveApplication">{{$root.authUser.pendingMyApproval}}</router-link>
+                                </span>
                             </span>
-                        </span>
-                        <span class="border-r h-6"></span>
-                        <span class="text-xs flex flex-col items-center">
-                            <span class="">Approved</span>
-                            <span class="underline">
-                                <router-link to="/ess/approval-entry/list?status=Approved&docType=advance">{{record.approvedDocumentsHR + record.approvedDocuments}}</router-link>
+                            <span class="border-r h-6"></span>
+                            <span class="text-xs flex flex-col items-center">
+                                <span class="">Approved</span>
+                                <span class="underline">
+                                    <router-link to="/ess/approval-entry/list?status=Open&docType=LeaveApplication">{{record.approvedDocuments}}</router-link>
+                                </span>
                             </span>
-                        </span>
-                    </div>
-                </template>
-            </Tile>
-        </grid-col>
-    </grid>-->
+                        </div>
+                    </template>
+                </Tile>
+            </grid-col>
+        </grid>
         <!--Finance Services-->
         <h4 v-if="$root.authUser.navCompany == appConfig.client.collegeCompany && $root.authUser.isHOD" class="font-semibold text-sm py-0.5 text-gray-500">Academic HOD Services:</h4>
         <grid v-if="$root.authUser.navCompany == appConfig.client.collegeCompany && $root.authUser.isHOD" class="sm:!grid-cols-2 lg:!grid-cols-5">
@@ -371,43 +371,43 @@
         </grid>
         <!--Transport Services-->
         <!--<h4 class="font-semibold text-sm py-0.5 text-gray-500">Transport & Logistics Services:</h4>
-    <grid class="sm:!grid-cols-2 lg:!grid-cols-5">-->
+        <grid class="sm:!grid-cols-2 lg:!grid-cols-5">-->
         <!---->
         <!--<grid-col>
-            <Tile class="bg-indigo-500" :showLoader="isLoading">
-                <template #icon>
-                    <TruckIcon class="h-6 w-6" />
-                </template>
-                <template #label>
-                    <router-link to="/ess/transport-request/list?status=Open" class="underline">Transport Requests</router-link>
-                </template>
-                <template #value>
-                    <div class="flex gap-1 items-center">
-                        <span class="text-xs flex flex-col items-center">
-                            <span class="">Open</span>
-                            <span class="underline">
-                                <router-link to="/ess/transport-request/list?status=Open">{{record.openTransportRequests}}</router-link>
+                <Tile class="bg-indigo-500" :showLoader="isLoading">
+                    <template #icon>
+                        <TruckIcon class="h-6 w-6" />
+                    </template>
+                    <template #label>
+                        <router-link to="/ess/transport-request/list?status=Open" class="underline">Transport Requests</router-link>
+                    </template>
+                    <template #value>
+                        <div class="flex gap-1 items-center">
+                            <span class="text-xs flex flex-col items-center">
+                                <span class="">Open</span>
+                                <span class="underline">
+                                    <router-link to="/ess/transport-request/list?status=Open">{{record.openTransportRequests}}</router-link>
+                                </span>
                             </span>
-                        </span>
-                        <span class="border-r h-6"></span>
-                        <span class="text-xs flex flex-col items-center">
-                            <span class="">Pending</span>
-                            <span class="underline">
-                                <router-link to="/ess/transport-request/list?status=Pending Approval">{{record.pendingTransportRequests}}</router-link>
+                            <span class="border-r h-6"></span>
+                            <span class="text-xs flex flex-col items-center">
+                                <span class="">Pending</span>
+                                <span class="underline">
+                                    <router-link to="/ess/transport-request/list?status=Pending Approval">{{record.pendingTransportRequests}}</router-link>
+                                </span>
                             </span>
-                        </span>
-                        <span class="border-r h-6"></span>
-                        <span class="text-xs flex flex-col items-center">
-                            <span class="">Approved</span>
-                            <span class="underline">
-                                <router-link to="/ess/transport-request/list?status=Released">{{record.approvedTransportRequests}}</router-link>
+                            <span class="border-r h-6"></span>
+                            <span class="text-xs flex flex-col items-center">
+                                <span class="">Approved</span>
+                                <span class="underline">
+                                    <router-link to="/ess/transport-request/list?status=Released">{{record.approvedTransportRequests}}</router-link>
+                                </span>
                             </span>
-                        </span>
-                    </div>
-                </template>
-            </Tile>
-        </grid-col>
-    </grid>-->
+                        </div>
+                    </template>
+                </Tile>
+            </grid-col>
+        </grid>-->
 
     </div>
 </template>
@@ -415,11 +415,11 @@
     import Tile from '@/re-usables/components/Tile.vue';
     import Grid from '@/re-usables/components/Grid.vue';
     import GridCol from '@/re-usables/components/GridCol.vue';
-    import { DocumentCheckIcon, UserPlusIcon,NumberedListIcon,DocumentTextIcon,DocumentChartBarIcon,DocumentPlusIcon,DocumentArrowDownIcon,FaceSmileIcon,ArrowPathRoundedSquareIcon,CircleStackIcon, CalendarDaysIcon, ClockIcon, CurrencyDollarIcon, ArrowsPointingInIcon, ClipboardDocumentCheckIcon, ArrowUturnDownIcon, TruckIcon, ReceiptRefundIcon, BanknotesIcon,UserGroupIcon,UserCircleIcon } from '@heroicons/vue/24/outline'
+    import { DocumentCheckIcon, UserPlusIcon, NumberedListIcon, DocumentTextIcon, DocumentChartBarIcon, DocumentPlusIcon, DocumentArrowDownIcon, FaceSmileIcon, ArrowPathRoundedSquareIcon, CircleStackIcon, CalendarDaysIcon, ClockIcon, CurrencyDollarIcon, ArrowsPointingInIcon, ClipboardDocumentCheckIcon, ArrowUturnDownIcon, TruckIcon, ReceiptRefundIcon, BanknotesIcon, UserGroupIcon, UserCircleIcon } from '@heroicons/vue/24/outline'
     export default {
         components: {
-            Tile, Grid, GridCol, UserPlusIcon, DocumentTextIcon, DocumentChartBarIcon, DocumentPlusIcon, DocumentArrowDownIcon, FaceSmileIcon,ArrowPathRoundedSquareIcon,
-           DocumentCheckIcon, CurrencyDollarIcon, ArrowsPointingInIcon,CircleStackIcon,
+            Tile, Grid, GridCol, UserPlusIcon, DocumentTextIcon, DocumentChartBarIcon, DocumentPlusIcon, DocumentArrowDownIcon, FaceSmileIcon, ArrowPathRoundedSquareIcon,
+            DocumentCheckIcon, CurrencyDollarIcon, ArrowsPointingInIcon, CircleStackIcon,
             ClipboardDocumentCheckIcon, ArrowUturnDownIcon, TruckIcon, UserCircleIcon,
             ReceiptRefundIcon, BanknotesIcon, CalendarDaysIcon, ClockIcon, UserGroupIcon, NumberedListIcon
         },
@@ -455,7 +455,7 @@
                 const requestOptions = {
                     method: "GET",
                 };
-                fetch(this.appConfig.baseApiRoute +this.pageProps.controller+ '/Dashboard', requestOptions)
+                fetch(this.appConfig.baseApiRoute + this.pageProps.controller + '/Dashboard', requestOptions)
                     .then(response => {
                         return response.json();
                     })

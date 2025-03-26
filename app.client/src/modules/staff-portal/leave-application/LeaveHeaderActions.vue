@@ -76,13 +76,11 @@
                             var msg = "";
                             res = data.response;
                             msg = action == 'save' ? "Saved successfully." : "Submitted successfully";
-                            if (source.GuiAllowed) {
-                                this.$root.FnNotification({ type: "popup", theme: "green", message: msg });
-                            }
                             if (action == "save") {
                                 this.$router.push(this.pageProps.formRoute + '/edit?recId=' + res.recId);
                             }
                         }
+                        this.$root.FnNotification({ type: "popup", theme: "green", message: "Submitted successfully" });
                         this.$root.loader.isLoading = false;
                     }).catch((error) => {
                         var msg = error;

@@ -13,21 +13,21 @@
                         <TomSelectFetch v-if="xIsFormLoaded" tsId="leaveTypes" v-model="form.leaveType" :cProps="{valueField:'Code',labelField:'Code',searchField:['Code'],recordField:'Leave_Type',webservice:'QyLeaveTypes'}" :filter="record.Status != 'Released'? ``:`Code eq '${record.LeaveType}'`" :record="record" :formMode="formMode" @change="FnOnLeaveTypeChange()" />
                     </field-group>
                 </grid-col>
-                <grid-col>
-                    <field-group label="Leave Opening Balance" :showLoader="isFetchingBalances">
-                        <WInput type="number" required="false" :value="balances.reimbursedDays" formMode="view" />
-                    </field-group>
-                </grid-col>
-                <grid-col>
+                <!--<grid-col>
                     <field-group label="Days Entitled" :showLoader="isFetchingBalances">
                         <WInput type="number" required="false" :value="balances.allocatedDays" formMode="view" />
                     </field-group>
-                </grid-col>
+                </grid-col>-->
                 <grid-col>
                     <field-group label="Days Taken" :showLoader="isFetchingBalances">
                         <WInput type="number" required="false" :value="balances.daysTaken" formMode="view" />
                     </field-group>
                 </grid-col>
+                <!--<grid-col>
+                    <field-group label="Leave brought forward" :showLoader="isFetchingBalances">
+                        <WInput type="number" required="false" :value="balances.reimbursedDays" formMode="view" />
+                    </field-group>
+                </grid-col>-->
                 <grid-col>
                     <field-group label="Leave Balance" :showLoader="isFetchingBalances">
                         <WInput type="number" required="false" :value="balances.balance" formMode="view" />
@@ -38,13 +38,8 @@
             <div class="text-sm font-semibold !py-2">Leave Details:</div>
             <grid>
                 <grid-col>
-                    <field-group label="Leave Start Date" showMandatory="true" @change="GetLeaveDaysAndReturnDate()" :valErrors="valErrors.startDate">
+                    <field-group label="Leave Start Date" showMandatory="true" @change="GetLeaveEndAndReturnDates()" :valErrors="valErrors.startDate">
                         <WInput type="date" required="true" v-model="form.startDate" :formMode="formMode" :min="!$root.authUser.IsApplyBackdatedLeave? new Date().toISOString().split('T')[0]:''" />
-                    </field-group>
-                </grid-col>
-                <grid-col>
-                    <field-group label="Leave End Date" showMandatory="true" :valErrors="valErrors.endDate">
-                        <WInput type="date" required="true" v-model="form.endDate" @change="GetLeaveDaysAndReturnDate()" :formMode="formMode" :min="!$root.authUser.IsApplyBackdatedLeave? new Date().toISOString().split('T')[0]:''" />
                     </field-group>
                 </grid-col>
                 <grid-col>
@@ -56,13 +51,18 @@
                     </field-group>
                 </grid-col>
                 <grid-col>
+                    <field-group label="Leave End Date" showMandatory="true" :valErrors="valErrors.endDate">
+                        <WInput type="date" required="true" v-model="form.endDate" @change="GetLeaveDaysAndReturnDate()" :formMode="'view'" :min="!$root.authUser.IsApplyBackdatedLeave? new Date().toISOString().split('T')[0]:''" />
+                    </field-group>
+                </grid-col>
+                <grid-col>
                     <field-group label="Leave Return Date" :showLoader="isFetchingDates">
                         <WInput type="date" required="true" v-model="form.returnDate" formMode="view" />
                     </field-group>
                 </grid-col>
                 <grid-col>
                     <field-group label="Reliever" :showMandatory="false" :valErrors="valErrors.reliever">
-                        <TomSelectFetch v-if="xIsFormLoaded" tsId="reliever" v-model="form.reliever" :cProps="{valueField:'No',labelField:'Full_Name',searchField:['No'],recordField:'Reliever_No',webservice:'QyEmployees'}" :filter="record.Status != 'Released'? ``:`No eq '${record.Reliever_No}'`" :record="record" :formMode="formMode" />
+                        <TomSelectFetch v-if="xIsFormLoaded" tsId="reliever" v-model="form.reliever" :cProps="{valueField:'No',labelField:'Full_Name',searchField:['No'],recordField:'Reliever_No',webservice:'QyEmployees'}" :filter="record.Status != 'Released'? `Responsibility_Center eq '${$root.authUser.responsibilityCenter}'`:`No eq '${record.Reliever_No}'`" :record="record" :formMode="formMode" />
                     </field-group>
                 </grid-col>
                 <grid-col>
@@ -155,7 +155,7 @@
         },
         mounted() {
             if (this.record.Days_Applied != undefined) {
-                this.form.noOfdays = this.record.Days_Applied;
+                this.form.noOfDays = this.record.Days_Applied;
             }
         },
         methods: {
@@ -185,7 +185,7 @@
                                 this.form.returnDate = this.$root.xFnNavDateObjToISODate(formData.Return_to_Work_Date);
                                 this.form.reliever = formData.Reliever_No;
                                 this.form.comments = formData.Reson_for_Request;
-                                this.form.noOfdays = parseFloat(formData.Days_Applied);
+                                this.form.noOfDays = parseFloat(formData.Days_Applied);
                                 if (this.record.Status != "Open") {
                                     this.formMode = "view";
                                 }
@@ -229,7 +229,7 @@
             },
             GetLeaveDaysAndReturnDate() {
                 this.form.returnDate = "";
-                this.form.appliedDays = 0;
+                this.form.noOfDays = 0;
                 if (this.form.startDate == "" || this.form.endDate == "") {
                     return;
                 }

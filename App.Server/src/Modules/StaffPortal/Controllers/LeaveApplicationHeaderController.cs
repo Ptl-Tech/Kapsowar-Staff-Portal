@@ -167,7 +167,7 @@ namespace App.Server.src.Modules.ESS.Controllers
 
         }
         [HttpPost]
-        public IActionResult LeaveEndAndReturnDates([FromBody] LeaveReturnDate obj)
+        public IActionResult LeaveEndAndReturnDates([FromBody] LeaveEndDate obj)
         {
             try
             {

@@ -162,7 +162,12 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
                 {
                     query = "";
                 }
-                var data = await GV.WSclient.ODATAFilter(HttpContext, webservice, query, isList);
+                var company = "";
+                if(webservice.ToLower() == "qyemployees")
+                {
+                    company = Config.HospitalNavCompany;
+                }
+                var data = await GV.WSclient.ODATAFilter(HttpContext, webservice, query, isList, company);
                 dynamic response = new ExpandoObject();
                 response.response = data != null ? JsonNode.Parse(data) : null;
                 return Ok(response);

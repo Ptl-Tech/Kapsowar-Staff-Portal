@@ -42,9 +42,12 @@
                 </template>
                 <template #content>
                     <sidebar-link to="/ess/leave-application/list?status=Open" :active="($route.name == 'leaveList' || $route.name == 'leaveForm')?true:false" :sidebarDropdown="true">Leave Applications</sidebar-link>
-                    <!--<sidebar-link to="/ess/leave-recall/list?status=Open" :active="this.$route.path.includes('/ess/leave-recall') || $route.path.includes('/ess/leave-recall/form')?true:false" :sidebarDropdown="true">Leave Recalls</sidebar-link>-->
                     <sidebar-link to="/ess/reports/payslip" :active="this.$route.fullPath == '/ess/reports/payslip'?true:false" :sidebarDropdown="true" :isLast="false">Payslip</sidebar-link>
-                    <sidebar-link to="/ess/reports/p9" :active="decodeURI(this.$route.fullPath) == '/ess/reports/p9'" :sidebarDropdown="true" :isLast="true">P9</sidebar-link>
+                    <sidebar-link to="/ess/reports/p9" :active="decodeURI(this.$route.fullPath) == '/ess/reports/p9'" :sidebarDropdown="true" :isLast="false">P9</sidebar-link>
+                    <sidebar-link to="/ess/staff-next-of-kin/list" :active="decodeURI(this.$route.fullPath) == '/ess/staff-next-of-kin/list'" :sidebarDropdown="true" :isLast="false">Next of Kin</sidebar-link>
+                    <sidebar-link to="/ess/staff-dependant/list?type=Dependant" :active="decodeURI(this.$route.fullPath) == '/ess/staff-dependant/list?type=Dependant'" :sidebarDropdown="true" :isLast="false">Dependants</sidebar-link>
+                    <sidebar-link to="/ess/staff-dependant/list?type=Beneficiary" :active="decodeURI(this.$route.fullPath) == '/ess/staff-dependant/list?type=Beneficiary'" :sidebarDropdown="true" :isLast="false">Beneficiaries</sidebar-link>
+                    <sidebar-link to="/ess/staff-attendance/list?status=Open" :active="($route.name == 'StaffAttendanceList')?true:false" :sidebarDropdown="true" :isLast="true">Staff Attendance</sidebar-link>
                 </template>
             </SidebarDropdown>
             <!---->

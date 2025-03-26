@@ -47,7 +47,23 @@ namespace App.Server.src.Modules.ESS.Models
         public DateOnly startDate { get; set; }
         //
         [DisplayName("End Date")]
-        public DateOnly endDate { get; set; }
+        public DateOnly? endDate { get; set; }
+        //
+        [DisplayName("No. of Days")]
+        public int noOfDays { get; set; }
+        public string? type { get; set; } = "";
+
+    }
+    public class LeaveEndDate
+    {
+        public string? staffNo { get; set; } = "";
+        [Required]
+        [DisplayName("Leave Type")]
+        public string leaveType { get; set; } = "";
+        //
+        [Required]
+        [DisplayName("Start Date")]
+        public DateOnly startDate { get; set; }
         //
         [DisplayName("No. of Days")]
         public int noOfDays { get; set; }

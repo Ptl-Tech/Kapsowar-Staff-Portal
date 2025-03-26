@@ -179,6 +179,12 @@ export const supplierPortalRoutes = [
                     },
                 ]
             },
+            //
+            { path: 'staff-dependant/list', name: "StaffDependantList", component: () => import('@/modules/staff-portal/staff-next-of-kin/StaffDependantList.vue') },
+            { path: 'staff-next-of-kin/list', name: "StaffNextOfKinList", component: () => import('@/modules/staff-portal/staff-next-of-kin/StaffNextOfKinList.vue') },
+            //
+            { path: 'staff-attendance/list', name: "StaffAttendanceList", component: () => import('@/modules/staff-portal/staff-attendance/AttendanceList.vue') },
+            //
             {
                 path: 'academics',
                 meta: { requiresAuth: true },
@@ -187,7 +193,7 @@ export const supplierPortalRoutes = [
                         path: 'students-list',
                         children: [
                             { path: 'list', name: "studentsList", component: () => import('@/modules/staff-portal/academics/student-list/StudentList.vue') },
-                            { path: 'form/:action',name:"studentsForm", component: () => import('@/modules/staff-portal/academics/student-list/StudentForm.vue') },
+                            { path: 'form/:action', name: "studentsForm", component: () => import('@/modules/staff-portal/academics/student-list/StudentForm.vue') },
                         ]
                     },
                     {
@@ -209,7 +215,7 @@ export const supplierPortalRoutes = [
                     { path: 'lecturer-unit/form/:action', name: "lecturerUnitForm", component: () => import('@/modules/staff-portal/academics/lecturer-unit/LecturerUnitForm.vue') },
                     //
                     { path: 'student-unit/list', name: "studentUnitList", component: () => import('@/modules/staff-portal/academics/student-unit/StudentUnitList.vue') },
-
+                    //
                 ]
             },
 

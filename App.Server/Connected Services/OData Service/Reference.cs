@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-// Generation date: 2/23/2025 12:26:07 PM
+// Generation date: 3/2/2025 5:14:49 PM
 namespace NAV
 {
     /// <summary>
@@ -1638,6 +1638,23 @@ namespace NAV
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
         private global::Microsoft.OData.Client.DataServiceQuery<QyReceiptNPaymentTypes> _QyReceiptNPaymentTypes;
         /// <summary>
+        /// There are no comments for QyStaffAttendance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<QyStaffAttendance> QyStaffAttendance
+        {
+            get
+            {
+                if ((this._QyStaffAttendance == null))
+                {
+                    this._QyStaffAttendance = base.CreateQuery<QyStaffAttendance>("QyStaffAttendance");
+                }
+                return this._QyStaffAttendance;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<QyStaffAttendance> _QyStaffAttendance;
+        /// <summary>
         /// There are no comments for QyStaffClaimHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
@@ -1671,6 +1688,40 @@ namespace NAV
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
         private global::Microsoft.OData.Client.DataServiceQuery<QyStaffClaimLines> _QyStaffClaimLines;
+        /// <summary>
+        /// There are no comments for QyStaffDependants in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<QyStaffDependants> QyStaffDependants
+        {
+            get
+            {
+                if ((this._QyStaffDependants == null))
+                {
+                    this._QyStaffDependants = base.CreateQuery<QyStaffDependants>("QyStaffDependants");
+                }
+                return this._QyStaffDependants;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<QyStaffDependants> _QyStaffDependants;
+        /// <summary>
+        /// There are no comments for QyStaffNextOfKin in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<QyStaffNextOfKin> QyStaffNextOfKin
+        {
+            get
+            {
+                if ((this._QyStaffNextOfKin == null))
+                {
+                    this._QyStaffNextOfKin = base.CreateQuery<QyStaffNextOfKin>("QyStaffNextOfKin");
+                }
+                return this._QyStaffNextOfKin;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<QyStaffNextOfKin> _QyStaffNextOfKin;
         /// <summary>
         /// There are no comments for QyStoreReqHeaders in the schema.
         /// </summary>
@@ -3036,6 +3087,14 @@ namespace NAV
             base.AddObject("QyReceiptNPaymentTypes", qyReceiptNPaymentTypes);
         }
         /// <summary>
+        /// There are no comments for QyStaffAttendance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public void AddToQyStaffAttendance(QyStaffAttendance qyStaffAttendance)
+        {
+            base.AddObject("QyStaffAttendance", qyStaffAttendance);
+        }
+        /// <summary>
         /// There are no comments for QyStaffClaimHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
@@ -3050,6 +3109,22 @@ namespace NAV
         public void AddToQyStaffClaimLines(QyStaffClaimLines qyStaffClaimLines)
         {
             base.AddObject("QyStaffClaimLines", qyStaffClaimLines);
+        }
+        /// <summary>
+        /// There are no comments for QyStaffDependants in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public void AddToQyStaffDependants(QyStaffDependants qyStaffDependants)
+        {
+            base.AddObject("QyStaffDependants", qyStaffDependants);
+        }
+        /// <summary>
+        /// There are no comments for QyStaffNextOfKin in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public void AddToQyStaffNextOfKin(QyStaffNextOfKin qyStaffNextOfKin)
+        {
+            base.AddObject("QyStaffNextOfKin", qyStaffNextOfKin);
         }
         /// <summary>
         /// There are no comments for QyStoreReqHeaders in the schema.
@@ -23527,6 +23602,224 @@ namespace NAV
         <Annotation Term=""NAV.LabelId"" String=""QyReceiptNPaymentTypes"" />
         <Annotation Term=""NAV.IsReadOnly"" Bool=""true"" />
       </EntityType>
+      <EntityType Name=""QyStaffAttendance"">
+        <Key>
+          <PropertyRef Name=""Visit_No"" />
+        </Key>
+        <Property Name=""Visit_No"" Type=""Edm.String"" Nullable=""false"" MaxLength=""250"">
+          <Annotation Term=""NAV.LabelId"" String=""Visit No."" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Staff_No"" Type=""Edm.String"" MaxLength=""10"">
+          <Annotation Term=""NAV.LabelId"" String=""Staff No."" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Full_Name"" Type=""Edm.String"" MaxLength=""150"">
+          <Annotation Term=""NAV.LabelId"" String=""Full Name"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Phone_No"" Type=""Edm.String"" MaxLength=""150"">
+          <Annotation Term=""NAV.LabelId"" String=""Phone No."" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Email"" Type=""Edm.String"" MaxLength=""150"">
+          <Annotation Term=""NAV.LabelId"" String=""Email"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Company"" Type=""Edm.String"" MaxLength=""150"">
+          <Annotation Term=""NAV.LabelId"" String=""Company"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Office_Station_Department"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Office Station/Department"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Signed_in_by"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""Signed in by"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Transaction_Date"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Transaction Date"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Time_In"" Type=""Edm.String"" MaxLength=""4"">
+          <Annotation Term=""NAV.LabelId"" String=""Time In"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Time_Out"" Type=""Edm.String"" MaxLength=""4"">
+          <Annotation Term=""NAV.LabelId"" String=""Time Out"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Signed_Out_By"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""Signed Out By"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Checked_Out"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""Checked Out"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Comment"" Type=""Edm.String"" MaxLength=""250"">
+          <Annotation Term=""NAV.LabelId"" String=""Comment"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Comment_By"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Comment By"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Category"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Category"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Hours_Worked"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""Hours Worked"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Payroll_Month"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Payroll Month"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Payroll_Year"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Payroll Year"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Location_Coordinates"" Type=""Edm.String"" MaxLength=""250"">
+          <Annotation Term=""NAV.LabelId"" String=""Location Coordinates"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Sign_in_Comments"" Type=""Edm.String"" MaxLength=""250"">
+          <Annotation Term=""NAV.LabelId"" String=""Sign in Comments"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Sign_out_Comments"" Type=""Edm.String"" MaxLength=""250"">
+          <Annotation Term=""NAV.LabelId"" String=""Sign out Comments"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Date"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Date"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Login_date_time"" Type=""Edm.DateTimeOffset"">
+          <Annotation Term=""NAV.LabelId"" String=""Login date time"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/DateTime</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Entry_Type"" Type=""Edm.String"" MaxLength=""4"">
+          <Annotation Term=""NAV.LabelId"" String=""Entry Type"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Signin_Location"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""Signin Location"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Signin_Location_Coordinates"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""Signin Location Coordinates"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Signout_Location"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""Signout Location"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Signout_Location_Coordinates"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""Signout Location Coordinates"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Department_Name"" Type=""Edm.String"" MaxLength=""150"">
+          <Annotation Term=""NAV.LabelId"" String=""Name"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Annotation Term=""NAV.LabelId"" String=""QyStaffAttendance"" />
+        <Annotation Term=""NAV.IsReadOnly"" Bool=""true"" />
+      </EntityType>
       <EntityType Name=""QyStaffClaimHeaders"">
         <Key>
           <PropertyRef Name=""No"" />
@@ -24194,6 +24487,203 @@ namespace NAV
           <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
         </Property>
         <Annotation Term=""NAV.LabelId"" String=""QyStaffClaimLines"" />
+        <Annotation Term=""NAV.IsReadOnly"" Bool=""true"" />
+      </EntityType>
+      <EntityType Name=""QyStaffDependants"">
+        <Key>
+          <PropertyRef Name=""Employee_Code"" />
+          <PropertyRef Name=""SurName"" />
+          <PropertyRef Name=""Other_Names"" />
+        </Key>
+        <Property Name=""Employee_Code"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Employee Code"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Relationship"" Type=""Edm.String"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Relationship"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""SurName"" Type=""Edm.String"" Nullable=""false"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""SurName"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Other_Names"" Type=""Edm.String"" Nullable=""false"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Other Names"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""ID_No_Passport_No"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""ID No/Passport No"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Date_Of_Birth"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Date Of Birth"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Occupation"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Occupation"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Address"" Type=""Edm.String"" MaxLength=""250"">
+          <Annotation Term=""NAV.LabelId"" String=""Address"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Office_Tel_No"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Office Tel No"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Home_Tel_No"" Type=""Edm.String"" MaxLength=""50"">
+          <Annotation Term=""NAV.LabelId"" String=""Home Tel No"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Remarks"" Type=""Edm.String"" MaxLength=""250"">
+          <Annotation Term=""NAV.LabelId"" String=""Remarks"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Type"" Type=""Edm.String"" MaxLength=""4"">
+          <Annotation Term=""NAV.LabelId"" String=""Type"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Line_No"" Type=""Edm.Int32"">
+          <Annotation Term=""NAV.LabelId"" String=""Line No."" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Int</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Code"" Type=""Edm.String"" MaxLength=""10"">
+          <Annotation Term=""NAV.LabelId"" String=""Code"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Percentage"" Type=""Edm.Decimal"" Scale=""Variable"">
+          <Annotation Term=""NAV.LabelId"" String=""Percentage(%)"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Real</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""No"" Type=""Edm.String"" MaxLength=""10"">
+          <Annotation Term=""NAV.LabelId"" String=""No."" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Comment"" Type=""Edm.Boolean"">
+          <Annotation Term=""NAV.LabelId"" String=""timestamp"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Bool</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Annotation Term=""NAV.LabelId"" String=""QyStaffDependants"" />
+        <Annotation Term=""NAV.IsReadOnly"" Bool=""true"" />
+      </EntityType>
+      <EntityType Name=""QyStaffNextOfKin"">
+        <Key>
+          <PropertyRef Name=""Patient_No"" />
+          <PropertyRef Name=""Names"" />
+        </Key>
+        <Property Name=""Patient_No"" Type=""Edm.String"" Nullable=""false"" MaxLength=""20"">
+          <Annotation Term=""NAV.LabelId"" String=""Patient No"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Names"" Type=""Edm.String"" Nullable=""false"" MaxLength=""200"">
+          <Annotation Term=""NAV.LabelId"" String=""Names"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+          <Annotation Term=""NAV.AllowEditOnCreate"" Bool=""true"" />
+        </Property>
+        <Property Name=""Relationship"" Type=""Edm.String"" MaxLength=""4"">
+          <Annotation Term=""NAV.LabelId"" String=""Relationship"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Occupation"" Type=""Edm.String"" MaxLength=""200"">
+          <Annotation Term=""NAV.LabelId"" String=""Occupation"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Date_of_Birth"" Type=""Edm.Date"">
+          <Annotation Term=""NAV.LabelId"" String=""Date of Birth"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/Date</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Tel_No"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""Tel No"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""E_Mail"" Type=""Edm.String"" MaxLength=""100"">
+          <Annotation Term=""NAV.LabelId"" String=""E-Mail"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Property Name=""Address"" Type=""Edm.String"" MaxLength=""200"">
+          <Annotation Term=""NAV.LabelId"" String=""Address"" />
+          <Annotation Term=""NAV.NavType"">
+            <EnumMember>NAV.NavType/String</EnumMember>
+          </Annotation>
+          <Annotation Term=""NAV.AllowEdit"" Bool=""false"" />
+        </Property>
+        <Annotation Term=""NAV.LabelId"" String=""QyStaffNextOfKin"" />
         <Annotation Term=""NAV.IsReadOnly"" Bool=""true"" />
       </EntityType>
       <EntityType Name=""QyStoreReqHeaders"">
@@ -29614,8 +30104,11 @@ namespace NAV
         <NavigationProperty Name=""QyPurchaseHeaders"" Type=""Collection(NAV.QyPurchaseHeaders)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""QyPurchaseLines"" Type=""Collection(NAV.QyPurchaseLines)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""QyReceiptNPaymentTypes"" Type=""Collection(NAV.QyReceiptNPaymentTypes)"" ContainsTarget=""true"" />
+        <NavigationProperty Name=""QyStaffAttendance"" Type=""Collection(NAV.QyStaffAttendance)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""QyStaffClaimHeaders"" Type=""Collection(NAV.QyStaffClaimHeaders)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""QyStaffClaimLines"" Type=""Collection(NAV.QyStaffClaimLines)"" ContainsTarget=""true"" />
+        <NavigationProperty Name=""QyStaffDependants"" Type=""Collection(NAV.QyStaffDependants)"" ContainsTarget=""true"" />
+        <NavigationProperty Name=""QyStaffNextOfKin"" Type=""Collection(NAV.QyStaffNextOfKin)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""QyStoreReqHeaders"" Type=""Collection(NAV.QyStoreReqHeaders)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""QyStoreReqLines"" Type=""Collection(NAV.QyStoreReqLines)"" ContainsTarget=""true"" />
         <NavigationProperty Name=""QyStudentUnits"" Type=""Collection(NAV.QyStudentUnits)"" ContainsTarget=""true"" />
@@ -30059,6 +30552,10 @@ namespace NAV
       <Action Name=""CuStaffWebportal_FnDelegateOrCancelDocumentApproval"">
         <Parameter Name=""jString"" Type=""Edm.String"" />
         <ReturnType Type=""Edm.Boolean"" />
+      </Action>
+      <Action Name=""CuStaffWebportal_FnStaffCheckinCheckout"">
+        <Parameter Name=""jString"" Type=""Edm.String"" />
+        <ReturnType Type=""Edm.String"" />
       </Action>
       <Action Name=""RecruitmentPortal_HRJobAppInsert"">
         <Parameter Name=""applicantType"" Type=""Edm.Int32"" />
@@ -33017,6 +33514,7 @@ namespace NAV
         <ActionImport Name=""CuStaffWebportal_FnApprovalStatistics"" Action=""NAV.CuStaffWebportal_FnApprovalStatistics"" />
         <ActionImport Name=""CuStaffWebportal_FnDocumentApproval"" Action=""NAV.CuStaffWebportal_FnDocumentApproval"" />
         <ActionImport Name=""CuStaffWebportal_FnDelegateOrCancelDocumentApproval"" Action=""NAV.CuStaffWebportal_FnDelegateOrCancelDocumentApproval"" />
+        <ActionImport Name=""CuStaffWebportal_FnStaffCheckinCheckout"" Action=""NAV.CuStaffWebportal_FnStaffCheckinCheckout"" />
         <ActionImport Name=""RecruitmentPortal_HRJobAppInsert"" Action=""NAV.RecruitmentPortal_HRJobAppInsert"" />
         <ActionImport Name=""RecruitmentPortal_HRJobAppQualificationsInsert"" Action=""NAV.RecruitmentPortal_HRJobAppQualificationsInsert"" />
         <ActionImport Name=""RecruitmentPortal_HRJobAppRefereesInsert"" Action=""NAV.RecruitmentPortal_HRJobAppRefereesInsert"" />
@@ -35516,6 +36014,28 @@ namespace NAV
             </Record>
           </Annotation>
         </EntitySet>
+        <EntitySet Name=""QyStaffAttendance"" EntityType=""NAV.QyStaffAttendance"">
+          <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
+            <Record>
+              <PropertyValue Property=""Supported"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.DeleteRestrictions"">
+            <Record>
+              <PropertyValue Property=""Deletable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.InsertRestrictions"">
+            <Record>
+              <PropertyValue Property=""Insertable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.UpdateRestrictions"">
+            <Record>
+              <PropertyValue Property=""Updatable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+        </EntitySet>
         <EntitySet Name=""QyStaffClaimHeaders"" EntityType=""NAV.QyStaffClaimHeaders"">
           <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
             <Record>
@@ -35539,6 +36059,50 @@ namespace NAV
           </Annotation>
         </EntitySet>
         <EntitySet Name=""QyStaffClaimLines"" EntityType=""NAV.QyStaffClaimLines"">
+          <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
+            <Record>
+              <PropertyValue Property=""Supported"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.DeleteRestrictions"">
+            <Record>
+              <PropertyValue Property=""Deletable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.InsertRestrictions"">
+            <Record>
+              <PropertyValue Property=""Insertable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.UpdateRestrictions"">
+            <Record>
+              <PropertyValue Property=""Updatable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+        </EntitySet>
+        <EntitySet Name=""QyStaffDependants"" EntityType=""NAV.QyStaffDependants"">
+          <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
+            <Record>
+              <PropertyValue Property=""Supported"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.DeleteRestrictions"">
+            <Record>
+              <PropertyValue Property=""Deletable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.InsertRestrictions"">
+            <Record>
+              <PropertyValue Property=""Insertable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+          <Annotation Term=""Org.OData.Capabilities.V1.UpdateRestrictions"">
+            <Record>
+              <PropertyValue Property=""Updatable"" Bool=""false"" />
+            </Record>
+          </Annotation>
+        </EntitySet>
+        <EntitySet Name=""QyStaffNextOfKin"" EntityType=""NAV.QyStaffNextOfKin"">
           <Annotation Term=""Org.OData.Capabilities.V1.ChangeTracking"">
             <Record>
               <PropertyValue Property=""Supported"" Bool=""false"" />
@@ -37080,6 +37644,13 @@ namespace NAV
         public global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::System.Nullable<bool>> CuStaffWebportal_FnDelegateOrCancelDocumentApproval(string jString)
         {
             return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<global::System.Nullable<bool>>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnDelegateOrCancelDocumentApproval", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString));
+        }
+        /// <summary>
+        /// There are no comments for CuStaffWebportal_FnStaffCheckinCheckout in the schema.
+        /// </summary>
+        public global::Microsoft.OData.Client.DataServiceActionQuerySingle<string> CuStaffWebportal_FnStaffCheckinCheckout(string jString)
+        {
+            return new global::Microsoft.OData.Client.DataServiceActionQuerySingle<string>(this, this.BaseUri.OriginalString.Trim('/') + "/CuStaffWebportal_FnStaffCheckinCheckout", new global::Microsoft.OData.Client.BodyOperationParameter("jString", jString));
         }
         /// <summary>
         /// There are no comments for RecruitmentPortal_HRJobAppInsert in the schema.
@@ -105995,6 +106566,681 @@ namespace NAV
         partial void OnTypeChanged();
     }
     /// <summary>
+    /// There are no comments for QyStaffAttendanceSingle in the schema.
+    /// </summary>
+    public partial class QyStaffAttendanceSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<QyStaffAttendance>
+    {
+        /// <summary>
+        /// Initialize a new QyStaffAttendanceSingle object.
+        /// </summary>
+        public QyStaffAttendanceSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new QyStaffAttendanceSingle object.
+        /// </summary>
+        public QyStaffAttendanceSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new QyStaffAttendanceSingle object.
+        /// </summary>
+        public QyStaffAttendanceSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<QyStaffAttendance> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for QyStaffAttendance in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Visit_No
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Visit_No")]
+    public partial class QyStaffAttendance : global::Microsoft.OData.Client.BaseEntityType
+    {
+        /// <summary>
+        /// Create a new QyStaffAttendance object.
+        /// </summary>
+        /// <param name="visit_No">Initial value of Visit_No.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public static QyStaffAttendance CreateQyStaffAttendance(string visit_No)
+        {
+            QyStaffAttendance qyStaffAttendance = new QyStaffAttendance();
+            qyStaffAttendance.Visit_No = visit_No;
+            return qyStaffAttendance;
+        }
+        /// <summary>
+        /// There are no comments for Property Visit_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Visit_No
+        {
+            get
+            {
+                return this._Visit_No;
+            }
+            set
+            {
+                this.OnVisit_NoChanging(value);
+                this._Visit_No = value;
+                this.OnVisit_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Visit_No;
+        partial void OnVisit_NoChanging(string value);
+        partial void OnVisit_NoChanged();
+        /// <summary>
+        /// There are no comments for Property Staff_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Staff_No
+        {
+            get
+            {
+                return this._Staff_No;
+            }
+            set
+            {
+                this.OnStaff_NoChanging(value);
+                this._Staff_No = value;
+                this.OnStaff_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Staff_No;
+        partial void OnStaff_NoChanging(string value);
+        partial void OnStaff_NoChanged();
+        /// <summary>
+        /// There are no comments for Property Full_Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Full_Name
+        {
+            get
+            {
+                return this._Full_Name;
+            }
+            set
+            {
+                this.OnFull_NameChanging(value);
+                this._Full_Name = value;
+                this.OnFull_NameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Full_Name;
+        partial void OnFull_NameChanging(string value);
+        partial void OnFull_NameChanged();
+        /// <summary>
+        /// There are no comments for Property Phone_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Phone_No
+        {
+            get
+            {
+                return this._Phone_No;
+            }
+            set
+            {
+                this.OnPhone_NoChanging(value);
+                this._Phone_No = value;
+                this.OnPhone_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Phone_No;
+        partial void OnPhone_NoChanging(string value);
+        partial void OnPhone_NoChanged();
+        /// <summary>
+        /// There are no comments for Property Email in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Email
+        {
+            get
+            {
+                return this._Email;
+            }
+            set
+            {
+                this.OnEmailChanging(value);
+                this._Email = value;
+                this.OnEmailChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Email;
+        partial void OnEmailChanging(string value);
+        partial void OnEmailChanged();
+        /// <summary>
+        /// There are no comments for Property Company in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Company
+        {
+            get
+            {
+                return this._Company;
+            }
+            set
+            {
+                this.OnCompanyChanging(value);
+                this._Company = value;
+                this.OnCompanyChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Company;
+        partial void OnCompanyChanging(string value);
+        partial void OnCompanyChanged();
+        /// <summary>
+        /// There are no comments for Property Office_Station_Department in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Office_Station_Department
+        {
+            get
+            {
+                return this._Office_Station_Department;
+            }
+            set
+            {
+                this.OnOffice_Station_DepartmentChanging(value);
+                this._Office_Station_Department = value;
+                this.OnOffice_Station_DepartmentChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Office_Station_Department;
+        partial void OnOffice_Station_DepartmentChanging(string value);
+        partial void OnOffice_Station_DepartmentChanged();
+        /// <summary>
+        /// There are no comments for Property Signed_in_by in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Signed_in_by
+        {
+            get
+            {
+                return this._Signed_in_by;
+            }
+            set
+            {
+                this.OnSigned_in_byChanging(value);
+                this._Signed_in_by = value;
+                this.OnSigned_in_byChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Signed_in_by;
+        partial void OnSigned_in_byChanging(string value);
+        partial void OnSigned_in_byChanged();
+        /// <summary>
+        /// There are no comments for Property Transaction_Date in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Transaction_Date
+        {
+            get
+            {
+                return this._Transaction_Date;
+            }
+            set
+            {
+                this.OnTransaction_DateChanging(value);
+                this._Transaction_Date = value;
+                this.OnTransaction_DateChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Transaction_Date;
+        partial void OnTransaction_DateChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnTransaction_DateChanged();
+        /// <summary>
+        /// There are no comments for Property Time_In in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Time_In
+        {
+            get
+            {
+                return this._Time_In;
+            }
+            set
+            {
+                this.OnTime_InChanging(value);
+                this._Time_In = value;
+                this.OnTime_InChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Time_In;
+        partial void OnTime_InChanging(string value);
+        partial void OnTime_InChanged();
+        /// <summary>
+        /// There are no comments for Property Time_Out in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Time_Out
+        {
+            get
+            {
+                return this._Time_Out;
+            }
+            set
+            {
+                this.OnTime_OutChanging(value);
+                this._Time_Out = value;
+                this.OnTime_OutChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Time_Out;
+        partial void OnTime_OutChanging(string value);
+        partial void OnTime_OutChanged();
+        /// <summary>
+        /// There are no comments for Property Signed_Out_By in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Signed_Out_By
+        {
+            get
+            {
+                return this._Signed_Out_By;
+            }
+            set
+            {
+                this.OnSigned_Out_ByChanging(value);
+                this._Signed_Out_By = value;
+                this.OnSigned_Out_ByChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Signed_Out_By;
+        partial void OnSigned_Out_ByChanging(string value);
+        partial void OnSigned_Out_ByChanged();
+        /// <summary>
+        /// There are no comments for Property Checked_Out in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Checked_Out
+        {
+            get
+            {
+                return this._Checked_Out;
+            }
+            set
+            {
+                this.OnChecked_OutChanging(value);
+                this._Checked_Out = value;
+                this.OnChecked_OutChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Checked_Out;
+        partial void OnChecked_OutChanging(global::System.Nullable<bool> value);
+        partial void OnChecked_OutChanged();
+        /// <summary>
+        /// There are no comments for Property Comment in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Comment
+        {
+            get
+            {
+                return this._Comment;
+            }
+            set
+            {
+                this.OnCommentChanging(value);
+                this._Comment = value;
+                this.OnCommentChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Comment;
+        partial void OnCommentChanging(string value);
+        partial void OnCommentChanged();
+        /// <summary>
+        /// There are no comments for Property Comment_By in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Comment_By
+        {
+            get
+            {
+                return this._Comment_By;
+            }
+            set
+            {
+                this.OnComment_ByChanging(value);
+                this._Comment_By = value;
+                this.OnComment_ByChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Comment_By;
+        partial void OnComment_ByChanging(string value);
+        partial void OnComment_ByChanged();
+        /// <summary>
+        /// There are no comments for Property Category in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Category
+        {
+            get
+            {
+                return this._Category;
+            }
+            set
+            {
+                this.OnCategoryChanging(value);
+                this._Category = value;
+                this.OnCategoryChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Category;
+        partial void OnCategoryChanging(string value);
+        partial void OnCategoryChanged();
+        /// <summary>
+        /// There are no comments for Property Hours_Worked in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<decimal> Hours_Worked
+        {
+            get
+            {
+                return this._Hours_Worked;
+            }
+            set
+            {
+                this.OnHours_WorkedChanging(value);
+                this._Hours_Worked = value;
+                this.OnHours_WorkedChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<decimal> _Hours_Worked;
+        partial void OnHours_WorkedChanging(global::System.Nullable<decimal> value);
+        partial void OnHours_WorkedChanged();
+        /// <summary>
+        /// There are no comments for Property Payroll_Month in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Payroll_Month
+        {
+            get
+            {
+                return this._Payroll_Month;
+            }
+            set
+            {
+                this.OnPayroll_MonthChanging(value);
+                this._Payroll_Month = value;
+                this.OnPayroll_MonthChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Payroll_Month;
+        partial void OnPayroll_MonthChanging(global::System.Nullable<int> value);
+        partial void OnPayroll_MonthChanged();
+        /// <summary>
+        /// There are no comments for Property Payroll_Year in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Payroll_Year
+        {
+            get
+            {
+                return this._Payroll_Year;
+            }
+            set
+            {
+                this.OnPayroll_YearChanging(value);
+                this._Payroll_Year = value;
+                this.OnPayroll_YearChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Payroll_Year;
+        partial void OnPayroll_YearChanging(global::System.Nullable<int> value);
+        partial void OnPayroll_YearChanged();
+        /// <summary>
+        /// There are no comments for Property Location_Coordinates in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Location_Coordinates
+        {
+            get
+            {
+                return this._Location_Coordinates;
+            }
+            set
+            {
+                this.OnLocation_CoordinatesChanging(value);
+                this._Location_Coordinates = value;
+                this.OnLocation_CoordinatesChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Location_Coordinates;
+        partial void OnLocation_CoordinatesChanging(string value);
+        partial void OnLocation_CoordinatesChanged();
+        /// <summary>
+        /// There are no comments for Property Sign_in_Comments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Sign_in_Comments
+        {
+            get
+            {
+                return this._Sign_in_Comments;
+            }
+            set
+            {
+                this.OnSign_in_CommentsChanging(value);
+                this._Sign_in_Comments = value;
+                this.OnSign_in_CommentsChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Sign_in_Comments;
+        partial void OnSign_in_CommentsChanging(string value);
+        partial void OnSign_in_CommentsChanged();
+        /// <summary>
+        /// There are no comments for Property Sign_out_Comments in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Sign_out_Comments
+        {
+            get
+            {
+                return this._Sign_out_Comments;
+            }
+            set
+            {
+                this.OnSign_out_CommentsChanging(value);
+                this._Sign_out_Comments = value;
+                this.OnSign_out_CommentsChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Sign_out_Comments;
+        partial void OnSign_out_CommentsChanging(string value);
+        partial void OnSign_out_CommentsChanged();
+        /// <summary>
+        /// There are no comments for Property Date in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Date
+        {
+            get
+            {
+                return this._Date;
+            }
+            set
+            {
+                this.OnDateChanging(value);
+                this._Date = value;
+                this.OnDateChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Date;
+        partial void OnDateChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnDateChanged();
+        /// <summary>
+        /// There are no comments for Property Login_date_time in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::System.DateTimeOffset> Login_date_time
+        {
+            get
+            {
+                return this._Login_date_time;
+            }
+            set
+            {
+                this.OnLogin_date_timeChanging(value);
+                this._Login_date_time = value;
+                this.OnLogin_date_timeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::System.DateTimeOffset> _Login_date_time;
+        partial void OnLogin_date_timeChanging(global::System.Nullable<global::System.DateTimeOffset> value);
+        partial void OnLogin_date_timeChanged();
+        /// <summary>
+        /// There are no comments for Property Entry_Type in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Entry_Type
+        {
+            get
+            {
+                return this._Entry_Type;
+            }
+            set
+            {
+                this.OnEntry_TypeChanging(value);
+                this._Entry_Type = value;
+                this.OnEntry_TypeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Entry_Type;
+        partial void OnEntry_TypeChanging(string value);
+        partial void OnEntry_TypeChanged();
+        /// <summary>
+        /// There are no comments for Property Signin_Location in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Signin_Location
+        {
+            get
+            {
+                return this._Signin_Location;
+            }
+            set
+            {
+                this.OnSignin_LocationChanging(value);
+                this._Signin_Location = value;
+                this.OnSignin_LocationChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Signin_Location;
+        partial void OnSignin_LocationChanging(string value);
+        partial void OnSignin_LocationChanged();
+        /// <summary>
+        /// There are no comments for Property Signin_Location_Coordinates in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Signin_Location_Coordinates
+        {
+            get
+            {
+                return this._Signin_Location_Coordinates;
+            }
+            set
+            {
+                this.OnSignin_Location_CoordinatesChanging(value);
+                this._Signin_Location_Coordinates = value;
+                this.OnSignin_Location_CoordinatesChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Signin_Location_Coordinates;
+        partial void OnSignin_Location_CoordinatesChanging(string value);
+        partial void OnSignin_Location_CoordinatesChanged();
+        /// <summary>
+        /// There are no comments for Property Signout_Location in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Signout_Location
+        {
+            get
+            {
+                return this._Signout_Location;
+            }
+            set
+            {
+                this.OnSignout_LocationChanging(value);
+                this._Signout_Location = value;
+                this.OnSignout_LocationChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Signout_Location;
+        partial void OnSignout_LocationChanging(string value);
+        partial void OnSignout_LocationChanged();
+        /// <summary>
+        /// There are no comments for Property Signout_Location_Coordinates in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Signout_Location_Coordinates
+        {
+            get
+            {
+                return this._Signout_Location_Coordinates;
+            }
+            set
+            {
+                this.OnSignout_Location_CoordinatesChanging(value);
+                this._Signout_Location_Coordinates = value;
+                this.OnSignout_Location_CoordinatesChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Signout_Location_Coordinates;
+        partial void OnSignout_Location_CoordinatesChanging(string value);
+        partial void OnSignout_Location_CoordinatesChanged();
+        /// <summary>
+        /// There are no comments for Property Department_Name in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Department_Name
+        {
+            get
+            {
+                return this._Department_Name;
+            }
+            set
+            {
+                this.OnDepartment_NameChanging(value);
+                this._Department_Name = value;
+                this.OnDepartment_NameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Department_Name;
+        partial void OnDepartment_NameChanging(string value);
+        partial void OnDepartment_NameChanged();
+    }
+    /// <summary>
     /// There are no comments for QyStaffClaimHeadersSingle in the schema.
     /// </summary>
     public partial class QyStaffClaimHeadersSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<QyStaffClaimHeaders>
@@ -108039,6 +109285,630 @@ namespace NAV
         private string _Account_Type;
         partial void OnAccount_TypeChanging(string value);
         partial void OnAccount_TypeChanged();
+    }
+    /// <summary>
+    /// There are no comments for QyStaffDependantsSingle in the schema.
+    /// </summary>
+    public partial class QyStaffDependantsSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<QyStaffDependants>
+    {
+        /// <summary>
+        /// Initialize a new QyStaffDependantsSingle object.
+        /// </summary>
+        public QyStaffDependantsSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new QyStaffDependantsSingle object.
+        /// </summary>
+        public QyStaffDependantsSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new QyStaffDependantsSingle object.
+        /// </summary>
+        public QyStaffDependantsSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<QyStaffDependants> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for QyStaffDependants in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Employee_Code
+    /// SurName
+    /// Other_Names
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Employee_Code", "SurName", "Other_Names")]
+    public partial class QyStaffDependants : global::Microsoft.OData.Client.BaseEntityType
+    {
+        /// <summary>
+        /// Create a new QyStaffDependants object.
+        /// </summary>
+        /// <param name="employee_Code">Initial value of Employee_Code.</param>
+        /// <param name="surName">Initial value of SurName.</param>
+        /// <param name="other_Names">Initial value of Other_Names.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public static QyStaffDependants CreateQyStaffDependants(string employee_Code, string surName, string other_Names)
+        {
+            QyStaffDependants qyStaffDependants = new QyStaffDependants();
+            qyStaffDependants.Employee_Code = employee_Code;
+            qyStaffDependants.SurName = surName;
+            qyStaffDependants.Other_Names = other_Names;
+            return qyStaffDependants;
+        }
+        /// <summary>
+        /// There are no comments for Property Employee_Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Employee_Code
+        {
+            get
+            {
+                return this._Employee_Code;
+            }
+            set
+            {
+                this.OnEmployee_CodeChanging(value);
+                this._Employee_Code = value;
+                this.OnEmployee_CodeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Employee_Code;
+        partial void OnEmployee_CodeChanging(string value);
+        partial void OnEmployee_CodeChanged();
+        /// <summary>
+        /// There are no comments for Property Relationship in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Relationship
+        {
+            get
+            {
+                return this._Relationship;
+            }
+            set
+            {
+                this.OnRelationshipChanging(value);
+                this._Relationship = value;
+                this.OnRelationshipChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Relationship;
+        partial void OnRelationshipChanging(string value);
+        partial void OnRelationshipChanged();
+        /// <summary>
+        /// There are no comments for Property SurName in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string SurName
+        {
+            get
+            {
+                return this._SurName;
+            }
+            set
+            {
+                this.OnSurNameChanging(value);
+                this._SurName = value;
+                this.OnSurNameChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _SurName;
+        partial void OnSurNameChanging(string value);
+        partial void OnSurNameChanged();
+        /// <summary>
+        /// There are no comments for Property Other_Names in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Other_Names
+        {
+            get
+            {
+                return this._Other_Names;
+            }
+            set
+            {
+                this.OnOther_NamesChanging(value);
+                this._Other_Names = value;
+                this.OnOther_NamesChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Other_Names;
+        partial void OnOther_NamesChanging(string value);
+        partial void OnOther_NamesChanged();
+        /// <summary>
+        /// There are no comments for Property ID_No_Passport_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string ID_No_Passport_No
+        {
+            get
+            {
+                return this._ID_No_Passport_No;
+            }
+            set
+            {
+                this.OnID_No_Passport_NoChanging(value);
+                this._ID_No_Passport_No = value;
+                this.OnID_No_Passport_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _ID_No_Passport_No;
+        partial void OnID_No_Passport_NoChanging(string value);
+        partial void OnID_No_Passport_NoChanged();
+        /// <summary>
+        /// There are no comments for Property Date_Of_Birth in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Date_Of_Birth
+        {
+            get
+            {
+                return this._Date_Of_Birth;
+            }
+            set
+            {
+                this.OnDate_Of_BirthChanging(value);
+                this._Date_Of_Birth = value;
+                this.OnDate_Of_BirthChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Date_Of_Birth;
+        partial void OnDate_Of_BirthChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnDate_Of_BirthChanged();
+        /// <summary>
+        /// There are no comments for Property Occupation in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Occupation
+        {
+            get
+            {
+                return this._Occupation;
+            }
+            set
+            {
+                this.OnOccupationChanging(value);
+                this._Occupation = value;
+                this.OnOccupationChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Occupation;
+        partial void OnOccupationChanging(string value);
+        partial void OnOccupationChanged();
+        /// <summary>
+        /// There are no comments for Property Address in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Address
+        {
+            get
+            {
+                return this._Address;
+            }
+            set
+            {
+                this.OnAddressChanging(value);
+                this._Address = value;
+                this.OnAddressChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Address;
+        partial void OnAddressChanging(string value);
+        partial void OnAddressChanged();
+        /// <summary>
+        /// There are no comments for Property Office_Tel_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Office_Tel_No
+        {
+            get
+            {
+                return this._Office_Tel_No;
+            }
+            set
+            {
+                this.OnOffice_Tel_NoChanging(value);
+                this._Office_Tel_No = value;
+                this.OnOffice_Tel_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Office_Tel_No;
+        partial void OnOffice_Tel_NoChanging(string value);
+        partial void OnOffice_Tel_NoChanged();
+        /// <summary>
+        /// There are no comments for Property Home_Tel_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Home_Tel_No
+        {
+            get
+            {
+                return this._Home_Tel_No;
+            }
+            set
+            {
+                this.OnHome_Tel_NoChanging(value);
+                this._Home_Tel_No = value;
+                this.OnHome_Tel_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Home_Tel_No;
+        partial void OnHome_Tel_NoChanging(string value);
+        partial void OnHome_Tel_NoChanged();
+        /// <summary>
+        /// There are no comments for Property Remarks in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Remarks
+        {
+            get
+            {
+                return this._Remarks;
+            }
+            set
+            {
+                this.OnRemarksChanging(value);
+                this._Remarks = value;
+                this.OnRemarksChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Remarks;
+        partial void OnRemarksChanging(string value);
+        partial void OnRemarksChanged();
+        /// <summary>
+        /// There are no comments for Property Type in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Type
+        {
+            get
+            {
+                return this._Type;
+            }
+            set
+            {
+                this.OnTypeChanging(value);
+                this._Type = value;
+                this.OnTypeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Type;
+        partial void OnTypeChanging(string value);
+        partial void OnTypeChanged();
+        /// <summary>
+        /// There are no comments for Property Line_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<int> Line_No
+        {
+            get
+            {
+                return this._Line_No;
+            }
+            set
+            {
+                this.OnLine_NoChanging(value);
+                this._Line_No = value;
+                this.OnLine_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<int> _Line_No;
+        partial void OnLine_NoChanging(global::System.Nullable<int> value);
+        partial void OnLine_NoChanged();
+        /// <summary>
+        /// There are no comments for Property Code in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Code
+        {
+            get
+            {
+                return this._Code;
+            }
+            set
+            {
+                this.OnCodeChanging(value);
+                this._Code = value;
+                this.OnCodeChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Code;
+        partial void OnCodeChanging(string value);
+        partial void OnCodeChanged();
+        /// <summary>
+        /// There are no comments for Property Percentage in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<decimal> Percentage
+        {
+            get
+            {
+                return this._Percentage;
+            }
+            set
+            {
+                this.OnPercentageChanging(value);
+                this._Percentage = value;
+                this.OnPercentageChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<decimal> _Percentage;
+        partial void OnPercentageChanging(global::System.Nullable<decimal> value);
+        partial void OnPercentageChanged();
+        /// <summary>
+        /// There are no comments for Property No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string No
+        {
+            get
+            {
+                return this._No;
+            }
+            set
+            {
+                this.OnNoChanging(value);
+                this._No = value;
+                this.OnNoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _No;
+        partial void OnNoChanging(string value);
+        partial void OnNoChanged();
+        /// <summary>
+        /// There are no comments for Property Comment in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<bool> Comment
+        {
+            get
+            {
+                return this._Comment;
+            }
+            set
+            {
+                this.OnCommentChanging(value);
+                this._Comment = value;
+                this.OnCommentChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<bool> _Comment;
+        partial void OnCommentChanging(global::System.Nullable<bool> value);
+        partial void OnCommentChanged();
+    }
+    /// <summary>
+    /// There are no comments for QyStaffNextOfKinSingle in the schema.
+    /// </summary>
+    public partial class QyStaffNextOfKinSingle : global::Microsoft.OData.Client.DataServiceQuerySingle<QyStaffNextOfKin>
+    {
+        /// <summary>
+        /// Initialize a new QyStaffNextOfKinSingle object.
+        /// </summary>
+        public QyStaffNextOfKinSingle(global::Microsoft.OData.Client.DataServiceContext context, string path)
+            : base(context, path) {}
+
+        /// <summary>
+        /// Initialize a new QyStaffNextOfKinSingle object.
+        /// </summary>
+        public QyStaffNextOfKinSingle(global::Microsoft.OData.Client.DataServiceContext context, string path, bool isComposable)
+            : base(context, path, isComposable) {}
+
+        /// <summary>
+        /// Initialize a new QyStaffNextOfKinSingle object.
+        /// </summary>
+        public QyStaffNextOfKinSingle(global::Microsoft.OData.Client.DataServiceQuerySingle<QyStaffNextOfKin> query)
+            : base(query) {}
+
+    }
+    /// <summary>
+    /// There are no comments for QyStaffNextOfKin in the schema.
+    /// </summary>
+    /// <KeyProperties>
+    /// Patient_No
+    /// Names
+    /// </KeyProperties>
+    [global::Microsoft.OData.Client.Key("Patient_No", "Names")]
+    public partial class QyStaffNextOfKin : global::Microsoft.OData.Client.BaseEntityType
+    {
+        /// <summary>
+        /// Create a new QyStaffNextOfKin object.
+        /// </summary>
+        /// <param name="patient_No">Initial value of Patient_No.</param>
+        /// <param name="names">Initial value of Names.</param>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public static QyStaffNextOfKin CreateQyStaffNextOfKin(string patient_No, string names)
+        {
+            QyStaffNextOfKin qyStaffNextOfKin = new QyStaffNextOfKin();
+            qyStaffNextOfKin.Patient_No = patient_No;
+            qyStaffNextOfKin.Names = names;
+            return qyStaffNextOfKin;
+        }
+        /// <summary>
+        /// There are no comments for Property Patient_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Patient_No
+        {
+            get
+            {
+                return this._Patient_No;
+            }
+            set
+            {
+                this.OnPatient_NoChanging(value);
+                this._Patient_No = value;
+                this.OnPatient_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Patient_No;
+        partial void OnPatient_NoChanging(string value);
+        partial void OnPatient_NoChanged();
+        /// <summary>
+        /// There are no comments for Property Names in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Names
+        {
+            get
+            {
+                return this._Names;
+            }
+            set
+            {
+                this.OnNamesChanging(value);
+                this._Names = value;
+                this.OnNamesChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Names;
+        partial void OnNamesChanging(string value);
+        partial void OnNamesChanged();
+        /// <summary>
+        /// There are no comments for Property Relationship in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Relationship
+        {
+            get
+            {
+                return this._Relationship;
+            }
+            set
+            {
+                this.OnRelationshipChanging(value);
+                this._Relationship = value;
+                this.OnRelationshipChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Relationship;
+        partial void OnRelationshipChanging(string value);
+        partial void OnRelationshipChanged();
+        /// <summary>
+        /// There are no comments for Property Occupation in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Occupation
+        {
+            get
+            {
+                return this._Occupation;
+            }
+            set
+            {
+                this.OnOccupationChanging(value);
+                this._Occupation = value;
+                this.OnOccupationChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Occupation;
+        partial void OnOccupationChanging(string value);
+        partial void OnOccupationChanged();
+        /// <summary>
+        /// There are no comments for Property Date_of_Birth in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Nullable<global::Microsoft.OData.Edm.Date> Date_of_Birth
+        {
+            get
+            {
+                return this._Date_of_Birth;
+            }
+            set
+            {
+                this.OnDate_of_BirthChanging(value);
+                this._Date_of_Birth = value;
+                this.OnDate_of_BirthChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Nullable<global::Microsoft.OData.Edm.Date> _Date_of_Birth;
+        partial void OnDate_of_BirthChanging(global::System.Nullable<global::Microsoft.OData.Edm.Date> value);
+        partial void OnDate_of_BirthChanged();
+        /// <summary>
+        /// There are no comments for Property Tel_No in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Tel_No
+        {
+            get
+            {
+                return this._Tel_No;
+            }
+            set
+            {
+                this.OnTel_NoChanging(value);
+                this._Tel_No = value;
+                this.OnTel_NoChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Tel_No;
+        partial void OnTel_NoChanging(string value);
+        partial void OnTel_NoChanged();
+        /// <summary>
+        /// There are no comments for Property E_Mail in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string E_Mail
+        {
+            get
+            {
+                return this._E_Mail;
+            }
+            set
+            {
+                this.OnE_MailChanging(value);
+                this._E_Mail = value;
+                this.OnE_MailChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _E_Mail;
+        partial void OnE_MailChanging(string value);
+        partial void OnE_MailChanged();
+        /// <summary>
+        /// There are no comments for Property Address in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public string Address
+        {
+            get
+            {
+                return this._Address;
+            }
+            set
+            {
+                this.OnAddressChanging(value);
+                this._Address = value;
+                this.OnAddressChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private string _Address;
+        partial void OnAddressChanging(string value);
+        partial void OnAddressChanged();
     }
     /// <summary>
     /// There are no comments for QyStoreReqHeadersSingle in the schema.
@@ -126525,6 +128395,27 @@ namespace NAV
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyReceiptNPaymentTypes> _QyReceiptNPaymentTypes;
         /// <summary>
+        /// There are no comments for QyStaffAttendance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffAttendance> QyStaffAttendance
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._QyStaffAttendance == null))
+                {
+                    this._QyStaffAttendance = Context.CreateQuery<global::NAV.QyStaffAttendance>(GetPath("QyStaffAttendance"));
+                }
+                return this._QyStaffAttendance;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffAttendance> _QyStaffAttendance;
+        /// <summary>
         /// There are no comments for QyStaffClaimHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
@@ -126566,6 +128457,48 @@ namespace NAV
         }
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
         private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffClaimLines> _QyStaffClaimLines;
+        /// <summary>
+        /// There are no comments for QyStaffDependants in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffDependants> QyStaffDependants
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._QyStaffDependants == null))
+                {
+                    this._QyStaffDependants = Context.CreateQuery<global::NAV.QyStaffDependants>(GetPath("QyStaffDependants"));
+                }
+                return this._QyStaffDependants;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffDependants> _QyStaffDependants;
+        /// <summary>
+        /// There are no comments for QyStaffNextOfKin in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffNextOfKin> QyStaffNextOfKin
+        {
+            get
+            {
+                if (!this.IsComposable)
+                {
+                    throw new global::System.NotSupportedException("The previous function is not composable.");
+                }
+                if ((this._QyStaffNextOfKin == null))
+                {
+                    this._QyStaffNextOfKin = Context.CreateQuery<global::NAV.QyStaffNextOfKin>(GetPath("QyStaffNextOfKin"));
+                }
+                return this._QyStaffNextOfKin;
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffNextOfKin> _QyStaffNextOfKin;
         /// <summary>
         /// There are no comments for QyStoreReqHeaders in the schema.
         /// </summary>
@@ -129402,6 +131335,27 @@ namespace NAV
         partial void OnQyReceiptNPaymentTypesChanging(global::System.Collections.ObjectModel.Collection<global::NAV.QyReceiptNPaymentTypes> value);
         partial void OnQyReceiptNPaymentTypesChanged();
         /// <summary>
+        /// There are no comments for Property QyStaffAttendance in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffAttendance> QyStaffAttendance
+        {
+            get
+            {
+                return this._QyStaffAttendance;
+            }
+            set
+            {
+                this.OnQyStaffAttendanceChanging(value);
+                this._QyStaffAttendance = value;
+                this.OnQyStaffAttendanceChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffAttendance> _QyStaffAttendance = new global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffAttendance>();
+        partial void OnQyStaffAttendanceChanging(global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffAttendance> value);
+        partial void OnQyStaffAttendanceChanged();
+        /// <summary>
         /// There are no comments for Property QyStaffClaimHeaders in the schema.
         /// </summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
@@ -129443,6 +131397,48 @@ namespace NAV
         private global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffClaimLines> _QyStaffClaimLines = new global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffClaimLines>();
         partial void OnQyStaffClaimLinesChanging(global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffClaimLines> value);
         partial void OnQyStaffClaimLinesChanged();
+        /// <summary>
+        /// There are no comments for Property QyStaffDependants in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffDependants> QyStaffDependants
+        {
+            get
+            {
+                return this._QyStaffDependants;
+            }
+            set
+            {
+                this.OnQyStaffDependantsChanging(value);
+                this._QyStaffDependants = value;
+                this.OnQyStaffDependantsChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffDependants> _QyStaffDependants = new global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffDependants>();
+        partial void OnQyStaffDependantsChanging(global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffDependants> value);
+        partial void OnQyStaffDependantsChanged();
+        /// <summary>
+        /// There are no comments for Property QyStaffNextOfKin in the schema.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        public global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffNextOfKin> QyStaffNextOfKin
+        {
+            get
+            {
+                return this._QyStaffNextOfKin;
+            }
+            set
+            {
+                this.OnQyStaffNextOfKinChanging(value);
+                this._QyStaffNextOfKin = value;
+                this.OnQyStaffNextOfKinChanged();
+            }
+        }
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.OData.Client.Design.T4", "2.7.0")]
+        private global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffNextOfKin> _QyStaffNextOfKin = new global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffNextOfKin>();
+        partial void OnQyStaffNextOfKinChanging(global::System.Collections.ObjectModel.Collection<global::NAV.QyStaffNextOfKin> value);
+        partial void OnQyStaffNextOfKinChanged();
         /// <summary>
         /// There are no comments for Property QyStoreReqHeaders in the schema.
         /// </summary>
@@ -132754,6 +134750,29 @@ namespace NAV
             return new global::NAV.QyReceiptNPaymentTypesSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
         }
         /// <summary>
+        /// Get an entity of type global::NAV.QyStaffAttendance as global::NAV.QyStaffAttendanceSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::NAV.QyStaffAttendanceSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffAttendance> _source, global::System.Collections.Generic.IDictionary<string, object> keys)
+        {
+            return new global::NAV.QyStaffAttendanceSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.QyStaffAttendance as global::NAV.QyStaffAttendanceSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="visit_No">The value of visit_No</param>
+        public static global::NAV.QyStaffAttendanceSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffAttendance> _source,
+            string visit_No)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Visit_No", visit_No }
+            };
+            return new global::NAV.QyStaffAttendanceSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
         /// Get an entity of type global::NAV.QyStaffClaimHeaders as global::NAV.QyStaffClaimHeadersSingle specified by key from an entity set
         /// </summary>
         /// <param name="_source">source entity set</param>
@@ -132801,6 +134820,61 @@ namespace NAV
                 { "Line_No", line_No }
             };
             return new global::NAV.QyStaffClaimLinesSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.QyStaffDependants as global::NAV.QyStaffDependantsSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::NAV.QyStaffDependantsSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffDependants> _source, global::System.Collections.Generic.IDictionary<string, object> keys)
+        {
+            return new global::NAV.QyStaffDependantsSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.QyStaffDependants as global::NAV.QyStaffDependantsSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="employee_Code">The value of employee_Code</param>
+        /// <param name="surName">The value of surName</param>
+        /// <param name="other_Names">The value of other_Names</param>
+        public static global::NAV.QyStaffDependantsSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffDependants> _source,
+            string employee_Code, 
+            string surName, 
+            string other_Names)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Employee_Code", employee_Code }, 
+                { "SurName", surName }, 
+                { "Other_Names", other_Names }
+            };
+            return new global::NAV.QyStaffDependantsSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.QyStaffNextOfKin as global::NAV.QyStaffNextOfKinSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="keys">dictionary with the names and values of keys</param>
+        public static global::NAV.QyStaffNextOfKinSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffNextOfKin> _source, global::System.Collections.Generic.IDictionary<string, object> keys)
+        {
+            return new global::NAV.QyStaffNextOfKinSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
+        }
+        /// <summary>
+        /// Get an entity of type global::NAV.QyStaffNextOfKin as global::NAV.QyStaffNextOfKinSingle specified by key from an entity set
+        /// </summary>
+        /// <param name="_source">source entity set</param>
+        /// <param name="patient_No">The value of patient_No</param>
+        /// <param name="names">The value of names</param>
+        public static global::NAV.QyStaffNextOfKinSingle ByKey(this global::Microsoft.OData.Client.DataServiceQuery<global::NAV.QyStaffNextOfKin> _source,
+            string patient_No, 
+            string names)
+        {
+            global::System.Collections.Generic.IDictionary<string, object> keys = new global::System.Collections.Generic.Dictionary<string, object>
+            {
+                { "Patient_No", patient_No }, 
+                { "Names", names }
+            };
+            return new global::NAV.QyStaffNextOfKinSingle(_source.Context, _source.GetKeyPath(global::Microsoft.OData.Client.Serializer.GetKeyString(_source.Context, keys)));
         }
         /// <summary>
         /// Get an entity of type global::NAV.QyStoreReqHeaders as global::NAV.QyStoreReqHeadersSingle specified by key from an entity set
