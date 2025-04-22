@@ -10,7 +10,7 @@
                 </grid-col>
                 <grid-col>
                     <field-group label="Leave Type" :showMandatory="false" :valErrors="valErrors.leaveType">
-                        <TomSelectFetch v-if="xIsFormLoaded" tsId="leaveTypes" v-model="form.leaveType" :cProps="{valueField:'Code',labelField:'Code',searchField:['Code'],recordField:'Leave_Type',webservice:'QyLeaveTypes'}" :filter="record.Status != 'Released'? ``:`Code eq '${record.LeaveType}'`" :record="record" :formMode="formMode" @change="FnOnLeaveTypeChange()" />
+                        <TomSelectFetch v-if="xIsFormLoaded" tsId="leaveTypes" v-model="form.leaveType" :cProps="{valueField:'Code',labelField:'Code',searchField:['Code'],recordField:'Leave_Type',webservice:'QyLeaveTypes'}" :filter="record.Status != 'Released'? $root.authUser.gender == 'Male'? `Gender ne 'Female'`:`Gender ne 'Male'`:`Code eq '${record.LeaveType}'`" :record="record" :formMode="formMode" @change="FnOnLeaveTypeChange()" />
                     </field-group>
                 </grid-col>
                 <!--<grid-col>
@@ -46,7 +46,7 @@
                     <field-group label="No. of Days" showMandatory="true" :valErrors="valErrors.noOfDays">
                         <WSelect required="true" v-model="form.noOfDays" @change="GetLeaveEndAndReturnDates()" :formMode="formMode">
                             <option value="0">--select--</option>
-                            <option v-if="balances.balance != undefined" v-for="index in parseFloat(balances.balance)" :value="index">{{index}}</option>
+                            <option v-if="balances.balance != undefined" v-for="index in Math.round(parseFloat(balances.balance))" :value="index">{{index}}</option>
                         </WSelect>
                     </field-group>
                 </grid-col>
@@ -79,13 +79,13 @@
                     </span>
                 </grid-col>
                 <grid-col v-if="$route.params.action != 'create'">
-                    <field-group label="Approvals Statu">
+                    <field-group label="Approvals Status">
                         <WInput type="text" required="true" v-model="record.Status" formMode="view" />
                     </field-group>
                 </grid-col>
                 <grid-col v-if="$route.params.action != 'create'">
                     <field-group label="Applied By">
-                        <WInput type="text" required="true" v-model="record.Employee_No" formMode="view" />
+                        <WInput type="text" required="true" :value="record.Employee_No+' - '+record.Empoyee_Name" formMode="view" />
                     </field-group>
                 </grid-col>
             </grid>
@@ -105,7 +105,7 @@
     import TomSelectFetch from '@/re-usables/components/TomSelectFetch.vue';
     import { Apr } from '@/re-usables/imports/ApprovalComponents.js';
     export default {
-        components: { Actions, ...W,...Apr, ModalPageTemplate, TomSelectFetch },
+        components: { Actions, ...W, ...Apr, ModalPageTemplate, TomSelectFetch },
         emits: ["closeModal"],
         setup() {
             const { router, xIsFormLoaded, xOnAfterFormLoaded } = useFormComposable();
@@ -185,7 +185,7 @@
                                 this.form.returnDate = this.$root.xFnNavDateObjToISODate(formData.Return_to_Work_Date);
                                 this.form.reliever = formData.Reliever_No;
                                 this.form.comments = formData.Reson_for_Request;
-                                this.form.noOfDays = parseFloat(formData.Days_Applied);
+                                this.form.noOfDays = formData.Days_Applied;
                                 if (this.record.Status != "Open") {
                                     this.formMode = "view";
                                 }
@@ -208,7 +208,8 @@
                 const requestOptions = {
                     method: "GET",
                 };
-                var url = this.appConfig.baseApiRoute + this.pageProps.controller + '/GetLeaveBalances?leaveType=' + this.form.leaveType;
+                var empNo = this.record.Employee_No == undefined ? '' : this.record.Employee_No;
+                var url = this.appConfig.baseApiRoute + this.pageProps.controller + '/GetLeaveBalances?leaveType=' + this.form.leaveType + '&empNo=' + empNo;
                 fetch(url, requestOptions)
                     .then(response => {
                         return response.json();
@@ -228,6 +229,9 @@
                     });
             },
             GetLeaveDaysAndReturnDate() {
+                if (this.record.Status == undefined || (this.record.Status != undefined && this.record.Status == 'Open')) {
+                    return;
+                }
                 this.form.returnDate = "";
                 this.form.noOfDays = 0;
                 if (this.form.startDate == "" || this.form.endDate == "") {

@@ -45,8 +45,6 @@
                         if (body.myAction.indexOf("#" + action) == -1) {
                             body.myAction = this.$route.params.action + "#" + action;
                         }
-                        body.startDate = new Date(body.startDate).toISOString().split("T")[0]
-                        body.endDate = new Date(body.endDate).toISOString().split("T")[0]
                         docNo = this.formData.DocNo;
                     }
                 }
@@ -76,11 +74,13 @@
                             var msg = "";
                             res = data.response;
                             msg = action == 'save' ? "Saved successfully." : "Submitted successfully";
+                            this.$root.FnNotification({ type: "popup", theme: "green", message: "Submitted successfully" });
                             if (action == "save") {
                                 this.$router.push(this.pageProps.formRoute + '/edit?recId=' + res.recId);
+                            } else {
+                                this.$router.go();
                             }
                         }
-                        this.$root.FnNotification({ type: "popup", theme: "green", message: "Submitted successfully" });
                         this.$root.loader.isLoading = false;
                     }).catch((error) => {
                         var msg = error;

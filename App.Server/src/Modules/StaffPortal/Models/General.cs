@@ -19,9 +19,9 @@ namespace App.Server.src.Modules.ESS.Models
         public string? myUserId { get; set; } = "";
         [Required]
         public string type { get; set; } = "";
-        [Required]
-        public string location { get; set; } = "";
-        [Required]
-        public string coordinates { get; set; } = "";
+        //[Required]
+        public string? location { get; set; } = "";
+        //[Required]
+        public string? coordinates { get; set; } = "";
     }
 }

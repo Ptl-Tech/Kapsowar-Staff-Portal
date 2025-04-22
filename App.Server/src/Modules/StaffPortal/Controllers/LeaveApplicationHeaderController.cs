@@ -62,6 +62,7 @@ namespace App.Server.src.Modules.ESS.Controllers
                     return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
                 }
                 obj.userNo = GeneralController.SessionUser(HttpContext).userNo;
+                obj.myUserId = GeneralController.SessionUser(HttpContext).myUserId;
                 //
                 var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.HospitalNavCompany).FnLeaveApplicationAsync(JsonSerializer.Serialize(obj)).Result;
                 var response = JsonNode.Parse(result.return_value);
@@ -141,13 +142,13 @@ namespace App.Server.src.Modules.ESS.Controllers
             }
         }
         [HttpGet]
-        public IActionResult GetLeaveBalances(string leaveType)
+        public IActionResult GetLeaveBalances(string leaveType, string empNo)
         {
             try
             {
                 var obj = new GetLeaveBalance();
                 obj.leaveType = leaveType;
-                obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
+                obj.staffNo = empNo;
                 var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.HospitalNavCompany).FnGetStaffLeaveBalanceAsync(JsonSerializer.Serialize(obj)).Result;
                 var response = JsonNode.Parse(result.return_value);
                 if (response != null && response["status"]?.ToString() == "success")

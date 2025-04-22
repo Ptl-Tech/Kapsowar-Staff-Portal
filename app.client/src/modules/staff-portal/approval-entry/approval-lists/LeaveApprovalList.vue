@@ -3,6 +3,8 @@
         <template #thead>
             <WTh>Leave App. No.</WTh>
             <WTh>Document Date</WTh>
+            <WTh>Staff No.</WTh>
+            <WTh>Staff Name</WTh>
             <WTh>Leave Type</WTh>
             <WTh>Days Applied</WTh>
             <WTh>Start Date</WTh>
@@ -13,6 +15,8 @@
         <template v-for="(record,index) in records" #[`tbody-${index}`]>
             <WTd :linkTo="FnGetRecordLink(record)">{{record.Document_No != undefined? record.Document_No:record.No}}</WTd>
             <WTd>{{record.Date_Time_Sent_for_Approval.split("T")[0]}} {{record.Date_Time_Sent_for_Approval.split("T")[1].split(".")[0]}}</WTd>
+            <WTd>{{FnGetEntryDocDetails(record,"Employee_No","")}}</WTd>
+            <WTd>{{FnGetEntryDocDetails(record,"Empoyee_Name","")}}</WTd>
             <WTd>{{FnGetEntryDocDetails(record,"Leave_Type","")}}</WTd>
             <WTd>{{FnGetEntryDocDetails(record,"Days_Applied","")}}</WTd>
             <WTd>{{FnGetEntryDocDetails(record,"Start_Date","date")}}</WTd>

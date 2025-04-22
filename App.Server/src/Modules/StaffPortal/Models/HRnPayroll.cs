@@ -9,6 +9,7 @@ namespace App.Server.src.Modules.ESS.Models
         public string myAction { get; set; } = "";
         public string? recId { get; set; } = "";
         public string userNo { get; set; } = "";
+        public string myUserId { get; set; } = "";
         public string? comments { get; set; } = "";
         [Required]
         public string leaveType { get; set; } = "";
