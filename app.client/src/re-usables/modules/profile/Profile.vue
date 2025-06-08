@@ -45,15 +45,15 @@
                     })
                     .then(data => {
                         if (data && data.errors) {
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = this.appConfig.errors.dataFetchFailure;
+                            var msg = this.appConfig.errors.dataFetchFailure;
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         } else {
                             this.record = data.response.profile;
                         }
                         this.$root.loader.isLoading = false;
                     }).catch((error) => {
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = this.appConfig.errors.dataFetchFailure;
+                        var msg = this.appConfig.errors.dataFetchFailure;
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         this.$root.loader.isLoading = false;
                     });
             },

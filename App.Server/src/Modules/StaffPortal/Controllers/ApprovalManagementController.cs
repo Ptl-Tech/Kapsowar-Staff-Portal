@@ -333,7 +333,7 @@ namespace webapi.Modules.ESS.Controllers
     }
     public enum ApprovalDocumentTypes
     {
-        LeaveApplication, ImprestRequest, ImprestSurrender, StaffClaim, PurchaseRequest, StoreRequest,PettyCash
+        LeaveApplication, ImprestRequest, ImprestSurrender, StaffClaim, PurchaseRequest, StoreRequest,PettyCash, TrainingApplication
     };
 
 }

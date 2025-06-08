@@ -17,7 +17,7 @@
                     <div id="sidebar" class="z-40 sm:30 bg-theme-2 top-0 sm:top-12 w-50 sm:w-48 hidden sm:block absolute sm:relative borderx-t border-gray-400">
                         <DefaultSidebar></DefaultSidebar>
                     </div>
-                    <main class="containerx w-full">
+                    <main :class="['containerx w-full',$route.path == '/ess/dashboard'? 'bg-gray-100':'']">
                         <!--Body-->
                         <div class="text-gray-900 pt-2 mt-12 bg-grayx-100 pl-1 pr-0.5 sm:pl-2 sm:pr-1 min-h-screen">
                             <router-view></router-view>
@@ -241,9 +241,9 @@
             },
             title: function () {
                 if (this.title != undefined) {
-                    document.title = this.title + ' - ' + "CHG";
+                    document.title = this.title + ' - ' + "Kapsowar Mission Hospital";
                 } else {
-                    document.title = "Staff Portal" + ' - ' + "CHG";
+                    document.title = "Staff Portal" + ' - ' + "Kapsowar Mission Hospital";
                 }
             }
         }

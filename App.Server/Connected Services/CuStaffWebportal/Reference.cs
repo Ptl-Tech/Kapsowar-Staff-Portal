@@ -140,6 +140,22 @@ namespace CuStaffWebportal
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnStaffCheckinCheckout", ReplyAction="*")]
         System.Threading.Tasks.Task<CuStaffWebportal.FnStaffCheckinCheckout_Result> FnStaffCheckinCheckoutAsync(CuStaffWebportal.FnStaffCheckinCheckout request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnUpdateApprovalEntry", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnUpdateApprovalEntry_Result> FnUpdateApprovalEntryAsync(CuStaffWebportal.FnUpdateApprovalEntry request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnGenerateLeaveStatement" +
+            "Report", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnGenerateLeaveStatementReport_Result> FnGenerateLeaveStatementReportAsync(CuStaffWebportal.FnGenerateLeaveStatementReport request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnTrainingHeader", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnTrainingHeader_Result> FnTrainingHeaderAsync(CuStaffWebportal.FnTrainingHeader request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnTrainingLine", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnTrainingLine_Result> FnTrainingLineAsync(CuStaffWebportal.FnTrainingLine request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal:FnTrainingReport", ReplyAction="*")]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnTrainingReport_Result> FnTrainingReportAsync(CuStaffWebportal.FnTrainingReport request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -1778,6 +1794,214 @@ namespace CuStaffWebportal
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnUpdateApprovalEntry", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnUpdateApprovalEntry
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string docNo;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=1)]
+        public int tableId;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=2)]
+        public string myUserId;
+        
+        public FnUpdateApprovalEntry()
+        {
+        }
+        
+        public FnUpdateApprovalEntry(string docNo, int tableId, string myUserId)
+        {
+            this.docNo = docNo;
+            this.tableId = tableId;
+            this.myUserId = myUserId;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnUpdateApprovalEntry_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnUpdateApprovalEntry_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnUpdateApprovalEntry_Result()
+        {
+        }
+        
+        public FnUpdateApprovalEntry_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnGenerateLeaveStatementReport", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnGenerateLeaveStatementReport
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnGenerateLeaveStatementReport()
+        {
+        }
+        
+        public FnGenerateLeaveStatementReport(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnGenerateLeaveStatementReport_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnGenerateLeaveStatementReport_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnGenerateLeaveStatementReport_Result()
+        {
+        }
+        
+        public FnGenerateLeaveStatementReport_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnTrainingHeader", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnTrainingHeader
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnTrainingHeader()
+        {
+        }
+        
+        public FnTrainingHeader(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnTrainingHeader_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnTrainingHeader_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnTrainingHeader_Result()
+        {
+        }
+        
+        public FnTrainingHeader_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnTrainingLine", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnTrainingLine
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnTrainingLine()
+        {
+        }
+        
+        public FnTrainingLine(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnTrainingLine_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnTrainingLine_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnTrainingLine_Result()
+        {
+        }
+        
+        public FnTrainingLine_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnTrainingReport", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnTrainingReport
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string jString;
+        
+        public FnTrainingReport()
+        {
+        }
+        
+        public FnTrainingReport(string jString)
+        {
+            this.jString = jString;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="FnTrainingReport_Result", WrapperNamespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", IsWrapped=true)]
+    public partial class FnTrainingReport_Result
+    {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="urn:microsoft-dynamics-schemas/codeunit/CuStaffWebportal", Order=0)]
+        public string return_value;
+        
+        public FnTrainingReport_Result()
+        {
+        }
+        
+        public FnTrainingReport_Result(string return_value)
+        {
+            this.return_value = return_value;
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
     public interface CuStaffWebportal_PortChannel : CuStaffWebportal.CuStaffWebportal_Port, System.ServiceModel.IClientChannel
     {
@@ -2355,6 +2579,73 @@ namespace CuStaffWebportal
             CuStaffWebportal.FnStaffCheckinCheckout inValue = new CuStaffWebportal.FnStaffCheckinCheckout();
             inValue.jString = jString;
             return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnStaffCheckinCheckoutAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnUpdateApprovalEntry_Result> CuStaffWebportal.CuStaffWebportal_Port.FnUpdateApprovalEntryAsync(CuStaffWebportal.FnUpdateApprovalEntry request)
+        {
+            return base.Channel.FnUpdateApprovalEntryAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnUpdateApprovalEntry_Result> FnUpdateApprovalEntryAsync(string docNo, int tableId, string myUserId)
+        {
+            CuStaffWebportal.FnUpdateApprovalEntry inValue = new CuStaffWebportal.FnUpdateApprovalEntry();
+            inValue.docNo = docNo;
+            inValue.tableId = tableId;
+            inValue.myUserId = myUserId;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnUpdateApprovalEntryAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnGenerateLeaveStatementReport_Result> CuStaffWebportal.CuStaffWebportal_Port.FnGenerateLeaveStatementReportAsync(CuStaffWebportal.FnGenerateLeaveStatementReport request)
+        {
+            return base.Channel.FnGenerateLeaveStatementReportAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnGenerateLeaveStatementReport_Result> FnGenerateLeaveStatementReportAsync(string jString)
+        {
+            CuStaffWebportal.FnGenerateLeaveStatementReport inValue = new CuStaffWebportal.FnGenerateLeaveStatementReport();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnGenerateLeaveStatementReportAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnTrainingHeader_Result> CuStaffWebportal.CuStaffWebportal_Port.FnTrainingHeaderAsync(CuStaffWebportal.FnTrainingHeader request)
+        {
+            return base.Channel.FnTrainingHeaderAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnTrainingHeader_Result> FnTrainingHeaderAsync(string jString)
+        {
+            CuStaffWebportal.FnTrainingHeader inValue = new CuStaffWebportal.FnTrainingHeader();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnTrainingHeaderAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnTrainingLine_Result> CuStaffWebportal.CuStaffWebportal_Port.FnTrainingLineAsync(CuStaffWebportal.FnTrainingLine request)
+        {
+            return base.Channel.FnTrainingLineAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnTrainingLine_Result> FnTrainingLineAsync(string jString)
+        {
+            CuStaffWebportal.FnTrainingLine inValue = new CuStaffWebportal.FnTrainingLine();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnTrainingLineAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<CuStaffWebportal.FnTrainingReport_Result> CuStaffWebportal.CuStaffWebportal_Port.FnTrainingReportAsync(CuStaffWebportal.FnTrainingReport request)
+        {
+            return base.Channel.FnTrainingReportAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<CuStaffWebportal.FnTrainingReport_Result> FnTrainingReportAsync(string jString)
+        {
+            CuStaffWebportal.FnTrainingReport inValue = new CuStaffWebportal.FnTrainingReport();
+            inValue.jString = jString;
+            return ((CuStaffWebportal.CuStaffWebportal_Port)(this)).FnTrainingReportAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

@@ -10,6 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Connected Services\OData Service\OData ServiceCsdl.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Connected Services\OData Service\OData ServiceCsdl.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.SpaProxy">
       <Version>8.*-*</Version>
     </PackageReference>
@@ -18,6 +26,7 @@
     <PackageReference Include="Microsoft.OData.Edm" Version="8.2.3" />
     <PackageReference Include="Microsoft.Spatial" Version="8.2.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
     <PackageReference Include="System.Formats.Asn1" Version="9.0.2" />
     <PackageReference Include="System.Linq.Dynamic.Core" Version="1.6.0.2" />
     <PackageReference Include="System.Security.Cryptography.Pkcs" Version="9.0.2" />
@@ -26,6 +35,7 @@
     <PackageReference Include="System.ServiceModel.Http" Version="6.0.*" />
     <PackageReference Include="System.ServiceModel.NetTcp" Version="6.0.*" />
     <PackageReference Include="System.ServiceModel.Security" Version="6.0.*" />
+    <PackageReference Include="System.Text.Json" Version="9.0.5" />
     <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
   </ItemGroup>
   <ItemGroup>

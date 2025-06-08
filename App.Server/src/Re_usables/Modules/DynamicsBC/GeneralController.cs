@@ -226,7 +226,8 @@ namespace App.Server.src.Re_usables.Modules.DynamicsBC
             ImprestSurrenderHeader, ImprestSurrenderLine,
             StaffClaimHeader, StaffClaimLine,
             PurchaseRequestHeader, PurchaseRequestLine,
-            StoreRequestHeader, StoreRequestLine
+            StoreRequestHeader, StoreRequestLine,
+            TrainingApplicationHeader, TrainingApplicationLine
         };
     }
 }

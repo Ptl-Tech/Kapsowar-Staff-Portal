@@ -61,8 +61,8 @@
             submitForm() {
                 var validatePass = this.validatePassword();
                 if (validatePass != "success") {
-                    this.$root.errorModal.isShow = true;
-                    this.$root.errorModal.message = "<b>The Password must contain:</b><br/> - at least one capital letter.<br/>-at least one special character.<br/>-at least 8 characters long.<br/>-both letters and numbers.";
+                    var msg = "<b>The Password must contain:</b><br/> - at least one capital letter.<br/>-at least one special character.<br/>-at least 8 characters long.<br/>-both letters and numbers.";
+                    this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                     return;
                 }
                 this.$root.loader.isLoading = true;

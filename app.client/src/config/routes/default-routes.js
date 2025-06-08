@@ -34,13 +34,6 @@ export const defaultRoutes = [
     //profile
     { path: '/profile', component: () => import('@/re-usables/modules/profile/Profile.vue'), meta: { requiresAuth: true } },
     { path: '/change-password', component: () => import('@/re-usables/modules/auth/ChangePassword.vue') },
-    //WSystem
-    {
-        path: '/wsystem',
-        meta: { requiresAuth: true },
-        children: [
-            { path: 'file-preview', component: () => import('@/re-usables/page-templates/FilePreviewPageTemplate.vue'), },
-        ]
-    },
-
+    //Other
+    { path: '/report-preview', component: () => import('@/re-usables/page-templates/FilePreviewPageTemplate.vue'), meta: { requiresAuth: true } },
 ];

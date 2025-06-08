@@ -3,12 +3,25 @@ export function useGeneralComposable() {
     function xFnNavDateObjToString(navDateObj) {
         return navDateObj.Day + "-" + navDateObj.Month + "-" + navDateObj.Year;
     }
+    //function xFnNavDateObjToISODate(navDateObj) {
+    //    var date = "";
+    //    if (navDateObj.Day != undefined) {
+    //        date = new Date(navDateObj.Year, navDateObj.Month, navDateObj.Day).toISOString().split("T")[0];
+    //    }
+    //    return date;
+    //}
     function xFnNavDateObjToISODate(navDateObj) {
-        var date = "";
+        var dateStr = "";
         if (navDateObj.Day != undefined) {
-            date = new Date(navDateObj.Year, navDateObj.Month, navDateObj.Day).toISOString().split("T")[0];
+            var year = navDateObj.Year;
+            var month = navDateObj.Month - 1;
+            var day = navDateObj.Day;
+            var date = new Date(year, month, day);
+            dateStr = date.getFullYear() + "-" +
+                String(date.getMonth() + 1).padStart(2, '0') + "-" +
+                String(date.getDate()).padStart(2, '0');
         }
-        return date;
+        return dateStr;
     }
     function xFnDownloadDocumentAttachment(entryNo,docNo) {
         this.$root.loader.isLoading = true;

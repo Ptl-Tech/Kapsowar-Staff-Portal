@@ -12,14 +12,16 @@
         created() {
             this.GetReport();
         },
-        methods:{
+        methods: {
             GetReport() {
-                this.dataRoute = this.appConfig.baseApiRoute+this.$route.query.source.replaceAll("__", "/");
+                var controller = this.$route.query.src;
+                var body = JSON.stringify(this.$route.query);
+                this.dataRoute = this.appConfig.baseApiRoute + controller;
                 this.$root.loader.isLoading = true;
                 const requestOptions = {
                     method: "POST",
                     headers: { 'Content-Type': "application/json" },
-                    body: JSON.stringify(this.$route.query)
+                    body: body
                 };
                 fetch(this.dataRoute, requestOptions)
                     .then(response => {
@@ -27,8 +29,8 @@
                     })
                     .then(data => {
                         if (data && data.errors) {
-                            this.$root.errorModal.isShow = true;
-                            this.$root.errorModal.message = data.errors;
+                            var msg = data.errors;
+                            this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         }
                         else {
                             var b64 = data.response;
@@ -42,19 +44,10 @@
                         }
                         this.$root.loader.isLoading = false;
                     }).catch((error) => {
-                        this.$root.errorModal.isShow = true;
-                        this.$root.errorModal.message = error;
+                        var msg = error;
+                        this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                         this.$root.loader.isLoading = false;
                     });
-            },
-            queryToJSON(query) {
-                let pairs = query.slice(1).split('&');
-                let result = {};
-                pairs.forEach(pair => {
-                    let [key, value] = pair.split('=');
-                    result[decodeURIComponent(key)] = decodeURIComponent(value || '');
-                });
-                return result;
             }
         }
     };

@@ -16,6 +16,7 @@ namespace App.Server.src.Modules.ESS.Models
         [Required]
         public DateOnly startDate { get; set; }
         public DateOnly? endDate { get; set; }
+        public DateOnly? returnDate { get; set; }
         [Required]
         public decimal noOfDays { get; set; }
         [Required]

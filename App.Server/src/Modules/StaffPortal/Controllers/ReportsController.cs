@@ -250,8 +250,66 @@ namespace App.Server.src.Modules.ESS.Controllers
             }
 
         }
-        
+
         //
+        [HttpPost]
+        public IActionResult LeaveStatementReport([FromBody] LeaveStatement obj)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
+                }
+                obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
+                //
+                var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.HospitalNavCompany).FnGenerateLeaveStatementReportAsync(JsonSerializer.Serialize(obj)).Result;
+                if (result.return_value != "")
+                {
+                    return Ok(new { response = result.return_value });
+                }
+                else
+                {
+                    throw new Exception(Config.ErrorGeneralFailure);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(GeneralController.ProcessException(ex));
+            }
+
+        }
+        //
+        [HttpPost]
+        public IActionResult TrainingApplicationReport([FromBody] TrainingApplicationReport obj)
+        {
+            try
+            {
+                if (!ModelState.IsValid)
+                {
+                    return base.BadRequest(GeneralController.FnValidationErrors(ModelState));
+                }
+                obj.staffNo = GeneralController.SessionUser(HttpContext).userNo;
+                obj.docNo = obj.Application_No;
+                //
+                var result = GV.WSclient.CuStaffWebportal(HttpContext).FnTrainingReportAsync(JsonSerializer.Serialize(obj)).Result;
+                if (result.return_value != "")
+                {
+                    return Ok(new { response = result.return_value });
+                }
+                else
+                {
+                    throw new Exception(Config.ErrorGeneralFailure);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(GeneralController.ProcessException(ex));
+            }
+
+        }
     }
 
 }

@@ -1,4 +1,7 @@
 <template>
+    <div class="flex items-center justify-center">
+        <img src="/images/profile-avatar.png" class="h-14 w-14 sm:h-20 sm:w-20 rounded-full border border-gray-600 inline-block" alt="client logo">
+    </div>
     <div>
         <grid>
             <grid-col>
@@ -18,17 +21,42 @@
             </grid-col>
             <grid-col>
                 <field-group label="Date of Birth">
-                    <WInput type="text" :value="profile.Date_Of_Birth != undefined?profile.Date_Of_Birth.split('T')[0]:''" formMode="view" />
+                    <WInput type="text" :value="$root.xFnNavDateObjToString(profile.Date_Of_Birth)" formMode="view" />
+                </field-group>
+            </grid-col>
+            <grid-col>
+                <field-group label="Age">
+                    <WInput type="text" v-model="profile.DAge" formMode="view" />
                 </field-group>
             </grid-col>
             <grid-col>
                 <field-group label="Email">
-                    <WInput type="text" v-model="profile.E_Mail" formMode="view" />
+                    <WInput type="text" v-model="profile.Company_E_Mail" formMode="view" />
                 </field-group>
             </grid-col>
             <grid-col>
                 <field-group label="Phone Number">
-                    <WInput type="text" v-model="profile.Home_Phone_Number" formMode="view" />
+                    <WInput type="text" v-model="profile.Cellular_Phone_Number" formMode="view" />
+                </field-group>
+            </grid-col>
+            <grid-col>
+                <field-group label="Date of Joining">
+                    <WInput type="text" :value="$root.xFnNavDateObjToString(profile.Date_of_Joining_the_Company)" formMode="view" />
+                </field-group>
+            </grid-col>
+            <grid-col>
+                <field-group label="Contract End Date">
+                    <WInput type="text" :value="$root.xFnNavDateObjToString(profile.Contract_End_Date)" formMode="view" />
+                </field-group>
+            </grid-col>
+            <grid-col>
+                <field-group label="Length of Service">
+                    <WInput type="text" v-model="profile._x003C_DSsservice_x003E_" formMode="view" />
+                </field-group>
+            </grid-col>
+            <grid-col>
+                <field-group label="Retirement Date">
+                    <WInput type="text" :value="$root.xFnNavDateObjToString(profile.Date_Of_Leaving_the_Company)" formMode="view" />
                 </field-group>
             </grid-col>
         </grid>

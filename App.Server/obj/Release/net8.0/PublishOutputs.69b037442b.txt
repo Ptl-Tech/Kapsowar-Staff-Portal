@@ -24,6 +24,7 @@ C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\P
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.Formats.Asn1.dll
+C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.IO.Pipelines.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.Linq.Dynamic.Core.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.Security.Cryptography.Pkcs.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.ServiceModel.Duplex.dll
@@ -33,6 +34,8 @@ C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\P
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.ServiceModel.NetTcp.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.ServiceModel.Primitives.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.ServiceModel.Security.dll
+C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.Text.Encodings.Web.dll
+C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\System.Text.Json.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\cs\System.ServiceModel.Federation.resources.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\de\System.ServiceModel.Federation.resources.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\es\System.ServiceModel.Federation.resources.dll
@@ -99,3 +102,4 @@ C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\P
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\zh-Hans\System.ServiceModel.Primitives.resources.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\zh-Hant\System.ServiceModel.Primitives.resources.dll
 C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Work\Other\ptl\Kapsowar\Kapsowar Staff Portal\App.Server\obj\Release\net8.0\PubTmp\Out\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll

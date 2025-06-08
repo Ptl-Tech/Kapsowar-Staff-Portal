@@ -57,4 +57,15 @@ namespace App.Server.src.Modules.ESS.Models
         [Required]
         public string No { get; set; } = "";
     }
+    public class LeaveStatement
+    {
+        public string? staffNo { get; set; } = "";
+    }
+    public class TrainingApplicationReport
+    {
+        public string? staffNo { get; set; } = "";
+        public string? docNo { get; set; } = "";
+        [Required]
+        public string Application_No { get; set; } = "";
+    }
 }

@@ -29,14 +29,18 @@
                 <MenuLink :linkTo="pageProps.listRoute+'?status=Released'">Approved</MenuLink>
             </MenuTabs>
         </template>
+        <template #listMoreActions>
+            <WRouterLink :to="'/report-preview?'+encodeURI('src=Reports/LeaveStatementReport')" class="flex items-center !bg-blue-500" title="View"><PrinterIcon class="iconSmall" /><span> Leave Statement</span></WRouterLink>
+        </template>
     </ListPageTemplate>
 </template>
 <script>
     import { W } from '@/re-usables/imports/ListPageComponents.js';
     import Actions from '@/modules/staff-portal/leave-application/LeaveHeaderActions.vue';
     import { useRouter } from 'vue-router'
+    import { PrinterIcon } from '@heroicons/vue/24/outline';
     export default {
-        components: { Actions, ...W },
+        components: { Actions, ...W, PrinterIcon },
         setup() {
             const router = useRouter();
             return { router };
@@ -53,7 +57,7 @@
                     listRoute: "/ess/leave-application/list",
                     isLinkTabs: true,
                 },
-                actionsProps: { isNew: true, isNewCaption: "New Leave", isEdit: true, isDelete: false, isFilter: true, isExport: true },
+                actionsProps: { isNew: true, isNewCaption: "New Leave", isEdit: true, isDelete: false, isFilter: true, isExport: true,moreActions:true },
             }
         },
         methods: {

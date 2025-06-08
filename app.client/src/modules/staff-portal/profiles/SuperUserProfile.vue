@@ -42,6 +42,7 @@
                 </template>
                 <template #content>
                     <sidebar-link to="/ess/leave-application/list?status=Open" :active="($route.name == 'leaveList' || $route.name == 'leaveForm')?true:false" :sidebarDropdown="true">Leave Applications</sidebar-link>
+                    <sidebar-link to="/ess/training/header/list?status=Open" :active="($route.name == 'TrainingHeaderList' || $route.name == 'TrainingHeaderForm')?true:false" :sidebarDropdown="true">Training Applications</sidebar-link>
                     <sidebar-link to="/ess/reports/payslip" :active="this.$route.fullPath == '/ess/reports/payslip'?true:false" :sidebarDropdown="true" :isLast="false">Payslip</sidebar-link>
                     <sidebar-link to="/ess/reports/p9" :active="decodeURI(this.$route.fullPath) == '/ess/reports/p9'" :sidebarDropdown="true" :isLast="false">P9</sidebar-link>
                     <sidebar-link to="/ess/staff-next-of-kin/list" :active="decodeURI(this.$route.fullPath) == '/ess/staff-next-of-kin/list'" :sidebarDropdown="true" :isLast="false">Next of Kin</sidebar-link>

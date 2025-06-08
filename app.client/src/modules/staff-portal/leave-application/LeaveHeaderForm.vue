@@ -42,12 +42,17 @@
                         <WInput type="date" required="true" v-model="form.startDate" :formMode="formMode" :min="!$root.authUser.IsApplyBackdatedLeave? new Date().toISOString().split('T')[0]:''" />
                     </field-group>
                 </grid-col>
-                <grid-col>
+                <grid-col v-if="record.Status == undefined || record.Status == 'Open'">
                     <field-group label="No. of Days" showMandatory="true" :valErrors="valErrors.noOfDays">
                         <WSelect required="true" v-model="form.noOfDays" @change="GetLeaveEndAndReturnDates()" :formMode="formMode">
                             <option value="0">--select--</option>
                             <option v-if="balances.balance != undefined" v-for="index in Math.round(parseFloat(balances.balance))" :value="index">{{index}}</option>
                         </WSelect>
+                    </field-group>
+                </grid-col>
+                <grid-col v-else>
+                    <field-group label="No. of Days" showMandatory="true" :valErrors="valErrors.noOfDays">
+                        <WInput type="number" required="true" v-model="form.noOfDays" :formMode="'view'" />
                     </field-group>
                 </grid-col>
                 <grid-col>
@@ -192,7 +197,9 @@
                                 if (data.response.approvers != undefined) {
                                     this.approvers = data.response.approvers;
                                 }
-                                this.GetLeaveDaysAndReturnDate();
+                                if (this.record.Status == "Open") {
+                                    this.GetLeaveDaysAndReturnDate();
+                                }
                             }
                         }
                         this.xOnAfterFormLoaded();
@@ -260,7 +267,7 @@
                             this.form.noOfDays = parseInt(res.noOfDays);
                             this.form.returnDate = new Date(res.returnDate).toISOString().split("T")[0];
                             var maxDays = parseFloat(this.balances.balance);
-                            if (this.form.noOfDays > maxDays) {
+                            if (this.form.noOfDays > maxDays && (this.record.Status == undefined || this.record.Status == "Open")) {
                                 var msg = "The maximum number of leave days you can apply for is " + maxDays;
                                 this.$root.FnNotification({ type: "modal", theme: "red", message: msg });
                                 this.form.noOfDays = 0;

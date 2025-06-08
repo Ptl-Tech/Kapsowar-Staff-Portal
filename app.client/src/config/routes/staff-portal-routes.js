@@ -105,6 +105,16 @@ export const supplierPortalRoutes = [
                     { path: 'line/form/:action', component: () => import('@/modules/staff-portal/petty-cash/line/PettyCashLineForm.vue') },
                 ]
             },
+            {
+                path: 'training',
+                meta: { requiresAuth: true },
+                children: [
+                    { path: 'header/list', name: "TrainingHeaderList", component: () => import('@/modules/staff-portal/training-application/header/TrainingHeaderList.vue') },
+                    { path: 'header/form/:action', name: "TrainingHeaderForm", component: () => import('@/modules/staff-portal/training-application/header/TrainingHeaderForm.vue') },
+                    { path: 'line/list', name: "TrainingLineList", component: () => import('@/modules/staff-portal/training-application/line/TrainingLineList.vue') },
+                    { path: 'line/form/:action', component: () => import('@/modules/staff-portal/training-application/line/TrainingLineForm.vue') },
+                ]
+            },
             /**
              * HR ROUTES
              */

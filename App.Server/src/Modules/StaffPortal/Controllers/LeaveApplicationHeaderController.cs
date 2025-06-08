@@ -148,7 +148,7 @@ namespace App.Server.src.Modules.ESS.Controllers
             {
                 var obj = new GetLeaveBalance();
                 obj.leaveType = leaveType;
-                obj.staffNo = empNo;
+                obj.staffNo = (empNo == null || empNo == "") ? GeneralController.SessionUser(HttpContext).userNo:empNo;
                 var result = GV.WSclient.CuStaffWebportal(HttpContext, Config.HospitalNavCompany).FnGetStaffLeaveBalanceAsync(JsonSerializer.Serialize(obj)).Result;
                 var response = JsonNode.Parse(result.return_value);
                 if (response != null && response["status"]?.ToString() == "success")
