@@ -16,8 +16,8 @@
         public static readonly string LiveHostName = "";
         public static readonly string LiveNAVInstance = "BC140";
         public static readonly string LiveCredentialType = "NavUserPassword";
-        public static readonly string LiveSoapBaseUrl = "http://WIN-6U0N5BV0KKH:5047/";
-        public static readonly string LiveOdataBaseUrl = "http://WIN-6U0N5BV0KKH:5048/";
+        public static readonly string LiveSoapBaseUrl = "http://win-si35b4p0fn8:7047/";
+        public static readonly string LiveOdataBaseUrl = "http://win-si35b4p0fn8:7048/";
         public static readonly string LiveNavUsername = "Admin";
         public static readonly string LiveNavPassword = "Admin@123";
         public static readonly string LiveNAVCompany = "AIC Kapsowar Mission Hospital";

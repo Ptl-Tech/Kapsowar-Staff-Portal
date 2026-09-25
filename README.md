@@ -26,11 +26,37 @@ cd App.Server
 dotnet publish -c Release -o C:\publish\KapsowarStaffPortal
 ```
 
-Check the output folder contains `App.Server.dll`, `web.config` and `wwwroot\index.html` (with `wwwroot\assets\`). If `wwwroot` is missing, run `npm run build` in `app.client` and copy the contents of `app.client\dist` into `wwwroot`.
+**Where the output goes:**
+
+| Publish method | Output folder |
+| --- | --- |
+| Command line | The path passed to `-o` (above: `C:\publish\KapsowarStaffPortal`) |
+| Visual Studio, `FolderProfile1` | The `PublishUrl` in `App.Server/Properties/PublishProfiles/FolderProfile1.pubxml` (currently `C:\Work\Other\ptl\Kapsowar\Publishes\KapsowarStaffPortal`; edit it to suit your machine) |
+| Visual Studio, new Folder profile | The folder you chose when creating the profile (also shown at the end of the publish) |
+
+The output folder should look like this:
+
+```
+KapsowarStaffPortal\
+  App.Server.dll
+  web.config
+  appsettings.json
+  ...other .dll files
+  wwwroot\
+    index.html
+    assets\
+```
+
+If `wwwroot` is missing or empty, run `npm run build` in `app.client` and copy the contents of `app.client\dist` into `wwwroot`.
 
 ### 3. Create the IIS site
 
-1. Copy the publish output to the server, e.g. `C:\inetpub\KapsowarStaffPortal`.
+1. Copy the **contents** of the output folder to the server, e.g. `C:\inetpub\KapsowarStaffPortal`.
+
+   Any folder works, including `C:\inetpub\wwwroot`:
+   - `C:\inetpub\KapsowarStaffPortal` or `C:\inetpub\wwwroot\KapsowarStaffPortal` as its **own site** (steps below) — recommended.
+   - Directly in `C:\inetpub\wwwroot`, replacing the Default Web Site: delete the default `iisstart.htm`/`iisstart.png`, then set the Default Web Site's application pool to **No Managed Code** instead of creating a new site.
+   - Do **not** put it in a subfolder of `C:\inetpub\wwwroot` and "Convert to Application" under the Default Web Site — the app would run at `/KapsowarStaffPortal/`, which it isn't set up for (see Notes).
 2. **Application Pools → Add Application Pool**
    - Name: `KapsowarStaffPortal`
    - .NET CLR version: **No Managed Code**
@@ -43,6 +69,7 @@ Check the output folder contains `App.Server.dll`, `web.config` and `wwwroot\ind
    ```
    icacls "C:\inetpub\KapsowarStaffPortal" /grant "IIS AppPool\KapsowarStaffPortal:(OI)(CI)RX"
    ```
+   Folders under `C:\inetpub\wwwroot` are already readable by IIS, so this step can usually be skipped there.
 5. Browse to the site.
 
 ### 4. Updating an existing deployment
