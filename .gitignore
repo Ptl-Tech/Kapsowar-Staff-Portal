@@ -1,0 +1,28 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userprefs
+
+# .NET build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.log
+
+# Publish output
+publish/
+PubTmp/
+
+# Node / Vite (app.client also has its own .gitignore)
+node_modules/
+app.client/dist/
+App.Server/wwwroot/
+
+# OS / editor
+Thumbs.db
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
